@@ -1,4 +1,5 @@
 <?php
+    ini_set('max_execution_time ', 0);
 	header('Content-type: application/json');
 	session_start();
 	if (!$_SESSION['userDir']) {
@@ -15,6 +16,10 @@
 	require_once $sdk_dir . 'EbatNs_ServiceProxy.php';
 	require_once $sdk_dir . 'EbatNs_DataConverter.php';
 
+	$token = '';
+    if (isset($_SESSION['token'])) {
+        $token = $_SESSION['token'];
+    }
 
 	$session = new EbatNs_Session();
 	$session->setSiteId(0);
@@ -24,7 +29,7 @@
 	$session->setAppId('LPhi-APIEba-PRD-4ed499e41-3f0a1858');
 	$session->setCertId('PRD-ed499e41f3ab-57bd-4472-b204-dc85');
 	$session->setAuthType(EBAY_AUTHTYPE_AUTHNAUTH);
-	$session->setRequestToken('');
+	$session->setRequestToken($token);
 	$session->setTokenUsePickupFile(false);
 	$session->setTokenMode(true);
 

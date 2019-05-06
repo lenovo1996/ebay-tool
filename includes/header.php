@@ -28,8 +28,8 @@
         <div class="panel-body text-center" style="height: 92px">
             <div class="list-group-item">
 				<?php
-					if ($_SESSION['token']) {
-						echo 'Account: <span class="text-danger">' . $_SESSION['title'] . '</span>';
+					if (isset($_SESSION['token'])) {
+						echo 'Account: <span class="text-danger" title="' . $_SESSION['token'] . '">' . $_SESSION['title'] . '</span>';
 					} else {
 						echo 'Chưa chọn account';
 					}

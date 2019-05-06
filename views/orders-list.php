@@ -25,15 +25,15 @@
             <div class="panel-body">
                 <div class="form-group col-md-3">
                     <label>Lấy order từ ngày:</label>
-                    <input class="date form-control">
+                    <input class="date form-control start">
                 </div>
                 <div class="form-group col-md-3">
                     <label>Đến ngày:</label>
-                    <input class="date form-control">
+                    <input class="date form-control end">
                 </div>
                 <div class="form-group text-center col-md-1">
                     <label>Click</label>
-                    <button class="btn btn sm btn-primary" data-loading-text="Đang lấy orders ...">Lấy orders</button>
+                    <button class="btn btn sm btn-primary get-orders" data-loading-text="Đang lấy orders ...">Lấy orders</button>
                 </div>
                 <div class="clearfix"></div>
                 <div class="orders-list"></div>
@@ -81,4 +81,21 @@
 		todayHighlight: true,
 		autoclose: true
     });
+
+    $('.get-orders').click(function () {
+        $(this).button('loading');
+
+        $.ajax({
+            url: '/api/order/order-list.php',
+            data: {
+                start: $('.start').val(),
+                end: $('.end').val()
+            },
+            success: function (res) {
+                console.log(res);
+                $('.get-orders').button('reset');
+            }
+        });
+    });
+
 </script>

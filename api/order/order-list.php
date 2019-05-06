@@ -13,7 +13,7 @@
 		$getordersrequest->setCreateTimeFrom($startDate . "T00:00:00.000Z");
 	}
 	if ($endDate) {
-		$getordersrequest->setCreateTimeTo($endDate . "T00:00:00.000Z");
+		$getordersrequest->setCreateTimeTo($endDate . "T23:59:59.000Z");
 	}
 
 	$pagination = new PaginationType();
