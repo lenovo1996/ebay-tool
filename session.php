@@ -1,0 +1,33 @@
+<?php
+	header('Content-type: application/json');
+	session_start();
+	if (!$_SESSION['userDir']) {
+		echo json_encode([
+			'result' => false,
+			'msg' => 'Chưa đăng nhập'
+		]);
+		die;
+	}
+
+	$sdk_dir = $_SERVER["DOCUMENT_ROOT"] . '/sdk/trading/';
+
+	require_once $sdk_dir . 'EbatNs_Session.php';
+	require_once $sdk_dir . 'EbatNs_ServiceProxy.php';
+	require_once $sdk_dir . 'EbatNs_DataConverter.php';
+
+
+	$session = new EbatNs_Session();
+	$session->setSiteId(0);
+	$session->setUseHttpCompression(1);
+	$session->setAppMode(0);
+	$session->setDevId('	f3338f86-b407-4a7a-baff-adcf74800f2c');
+	$session->setAppId('LPhi-APIEba-PRD-4ed499e41-3f0a1858');
+	$session->setCertId('PRD-ed499e41f3ab-57bd-4472-b204-dc85');
+	$session->setAuthType(EBAY_AUTHTYPE_AUTHNAUTH);
+	$session->setRequestToken('');
+	$session->setTokenUsePickupFile(false);
+	$session->setTokenMode(true);
+
+	$proxy = new EbatNs_ServiceProxy($session, 'EbatNs_DataConverterUtf8');
+
+	return $proxy;
