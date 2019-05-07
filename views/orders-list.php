@@ -1,8 +1,8 @@
 <?php
-	session_start();
-	if (!$_SESSION['userDir']) {
-		header('location: /views/login.php');
-	}
+session_start();
+if (!$_SESSION['userDir']) {
+    header('location: /views/login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -24,19 +24,31 @@
 <body style="padding-top:60px;">
 <div class="container" style="width: 70%">
 
-	<?php include '../includes/header.php' ?>
+    <?php include '../includes/header.php' ?>
 
     <div class="col-md-12">
         <div class="panel panel-primary">
             <div class="panel-heading">Danh Sách Orders</div>
             <div class="panel-body">
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-2">
                     <label>Lấy order từ ngày:</label>
                     <input class="date form-control start">
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-2">
                     <label>Đến ngày:</label>
                     <input class="date form-control end">
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Buyer User Name:</label>
+                    <input class="form-control buyer_user_name" placeholder="Nhập Buyer user name để lọc theo order">
+                </div>
+                <div class="form-group col-md-2">
+                    <label style="white-space: nowrap">Waiting shipment:</label>
+                    <p><input class="waiting_shipment" type="checkbox" checked></p>
+                </div>
+                <div class="form-group col-md-2">
+                    <label style="white-space: nowrap">Chưa có tracking:</label>
+                    <p><input class="blank_tracking" type="checkbox"></p>
                 </div>
                 <div class="form-group text-center col-md-1">
                     <label>Click</label>
@@ -75,7 +87,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary save" data-loading-text="Loading...">Save changes</button>
+                    <button type="button" class="btn btn-primary save" data-loading-text="Loading...">Save changes
+                    </button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -103,7 +116,9 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary save-tracking" data-loading-text="Loading...">Save changes</button>
+                    <button type="button" class="btn btn-primary save-tracking" data-loading-text="Loading...">Save
+                        changes
+                    </button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -128,7 +143,9 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary save-note" data-loading-text="Loading...">Save changes</button>
+                    <button type="button" class="btn btn-primary save-note" data-loading-text="Loading...">Save
+                        changes
+                    </button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -159,56 +176,68 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.vi.min.js"></script>
 
     <script>
-		$('.date').datepicker({
-			format: 'yyyy-mm-dd',
-			todayHighlight: true,
-			autoclose: true
-		});
+        $('.date').datepicker({
+            format: 'yyyy-mm-dd',
+            todayHighlight: true,
+            autoclose: true,
+        });
 
-		$('.get-orders').click(function () {
-			$(this).button('loading');
+        $('.get-orders').click(function () {
+            $(this).button('loading');
 
-			$.ajax({
-				url: '/api/order/order-list.php',
-				data: {
-					start: $('.start').val(),
-					end: $('.end').val()
-				},
-				success: function (res) {
+            $.ajax({
+                url: '/api/order/order-list.php',
+                data: {
+                    start: $('.start').val(),
+                    end: $('.end').val(),
+                    buyerUserName: $('.buyer_user_name').val(),
+                    waitingShipment: $('.waiting_shipment').prop('checked'),
+                    blankTracking: $('.blank_tracking').prop('checked'),
+                },
+                success: function (res) {
 
-					$('.orders-list').html('');
+                    $('.orders-list').html('');
 
-					$.each(res, function (key, item) {
-						var shipped = '';
-						var markasshipped = '<li><a class="mark-as-shipped" data-status="1">Mark as shipped</a></li>';
-						var paid = 'N/A';
+                    var keys = Object.keys(res);
 
-						if (item.PaidTime) {
-							paid = item.PaidTime.substr(0, 10);
-						}
+                    keys.sort(function (a, b) {
+                        return b - a;
+                    });
 
-						if (item.ShippedTime) {
-							shipped = 'Shipped ' + item.ShippedTime.substr(0, 10) + ' <br />';
-							markasshipped = '<li><a class="mark-not-shipped" data-status="0">Mark not shipped</a></li>';
-						}
+                    for (var i = 0; i < keys.length; i++) {
 
-						var button = `<li><a class="cancel-order">Cancel order</a></li>`;
+                        var item = res[keys[i]];
 
-						if (item.status == 'Cancelled') {
-							button = '';
-							shipped += item.status + '<br />';
-							markasshipped = '';
-						}
+                        var shipped = '';
+                        var markasshipped = '<li><a class="mark-as-shipped" data-status="1">Mark as shipped</a></li>';
+                        var paid = 'N/A';
 
-						var myNote = '';
-						if (item.note) {
-							myNote = `<div class="alert alert-warning" style=" padding: 5px; margin-bottom: 0px; ">My note: ${item.note}</div>`;
+                        if (item.PaidTime) {
+                            paid = item.PaidTime.substr(0, 10);
                         }
 
-						var html = `<div class="bs-callout bs-callout-danger rootEl"  data-orderid="${item.id}" data-transactionid="${item.transactionId}" data-itemid="${item.item.id}">
+                        if (item.ShippedTime) {
+                            shipped = 'Shipped ' + item.ShippedTime.substr(0, 10) + ' <br />';
+                            markasshipped = '<li><a class="mark-not-shipped" data-status="0">Mark not shipped</a></li>';
+                        }
+
+                        var button = `<li><a class="cancel-order">Cancel order</a></li>`;
+
+                        if (item.status == 'Cancelled') {
+                            button = '';
+                            shipped += item.status + '<br />';
+                            markasshipped = '';
+                        }
+
+                        var myNote = '';
+                        if (item.note) {
+                            myNote = `<div class="alert alert-warning" style=" padding: 5px; margin-bottom: 0px; ">My note: ${item.note}</div>`;
+                        }
+
+                        var html = `<div class="bs-callout bs-callout-danger rootEl"  data-orderid="${item.id}" data-transactionid="${item.transactionId}" data-itemid="${item.item.id}">
                         <div class="col-md-2">
                             <div class="dropdown">
-                                ${shipped}
+                                ${shipped} (<a class="view-record">${item.saleRecord}</a>)
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     <span class="caret"></span>
@@ -231,11 +260,11 @@
                             </div>
                             <div style="float: left; width: 80%">
                                 <p>
-                                    <a href="https://www.ebay.com/itm/${item.item.id}">${item.item.title} (${item.item.id}) - <span class="badge badge-dark">${item.item.conditionDisplayName}</span>
-                                    </a>
+                                    <a href="https://www.ebay.com/itm/${item.item.id}">${item.item.title}</a> (${item.item.id}) - <span class="badge badge-dark">${item.item.conditionDisplayName}</span>
+
                                 </p>
                                 <p>Buyer: ${item.buyerName} - <a href="https://www.ebay.com/usr/${item.BuyerUserID}">${item.BuyerUserID}</a></p>
-                                <p>Tracking: <span class="text-warning">${item.TrackingNumber}</span> (<a class="edit-tracking">edit</a>) - sale record: ${item.saleRecord}</p>
+                                <p>Tracking: <span class="text-warning">${item.TrackingNumber}</span> (<a class="edit-tracking">edit</a>)</p>
                                 ${myNote}
                             </div>
                         </div>
@@ -252,163 +281,163 @@
                         <div class="clearfix"></div>
                     </div>`;
 
-						$('.orders-list').append(html);
-					});
+                        $('.orders-list').append(html);
+                    }
 
 
-					$('.get-orders').button('reset');
-				}
-			});
-		});
+                    $('.get-orders').button('reset');
+                }
+            });
+        });
 
 
-		$(document).on('click', '.mark-as-shipped, .mark-not-shipped', function () {
+        $(document).on('click', '.mark-as-shipped, .mark-not-shipped', function () {
 
-			var rootEl = $(this).closest('.rootEl');
+            var rootEl = $(this).closest('.rootEl');
 
-			var c = confirm('Bạn chắc chắn thực hiện hành động này chứ?');
+            var c = confirm('Bạn chắc chắn thực hiện hành động này chứ?');
 
-			if (c) {
-				var status = $(this).data('status');
-				var orderId = rootEl.data('orderid');
-				var transactionId = rootEl.data('transactionid');
-				$.ajax({
-					url: '/api/order/mark-as-shipped.php',
-					data: {
-						status: status,
-						order_id: orderId,
-						transaction_id: transactionId
-					},
-					success: function (res) {
-						console.log(res.Ack);
-						if (res.Ack == 'Success') {
-							alert("thành công!");
-						}
-					}
-				})
+            if (c) {
+                var status = $(this).data('status');
+                var orderId = rootEl.data('orderid');
+                var transactionId = rootEl.data('transactionid');
+                $.ajax({
+                    url: '/api/order/mark-as-shipped.php',
+                    data: {
+                        status: status,
+                        order_id: orderId,
+                        transaction_id: transactionId
+                    },
+                    success: function (res) {
+                        console.log(res.Ack);
+                        if (res.Ack == 'Success') {
+                            alert("thành công!");
+                        }
+                    }
+                })
 
-			}
-		});
+            }
+        });
 
-		$(document).on('click', '.cancel-order', function () {
-			var rootEl = $(this).closest('.rootEl');
-			var orderId = rootEl.data('orderid');
-			$('#cancel-order').modal('show');
-			$('#cancel-order').find('[name="order_id"]').val(orderId);
-		});
+        $(document).on('click', '.cancel-order', function () {
+            var rootEl = $(this).closest('.rootEl');
+            var orderId = rootEl.data('orderid');
+            $('#cancel-order').modal('show');
+            $('#cancel-order').find('[name="order_id"]').val(orderId);
+        });
 
-		$(document).on('click', '.cancel-order-confirm', function () {
-			$(this).button('loading');
-			var self = this;
-			var orderId = $('#cancel-order').find('[name="order_id"]').val();
-			var reason = $('#cancel-order').find('#reason').val();
+        $(document).on('click', '.cancel-order-confirm', function () {
+            $(this).button('loading');
+            var self = this;
+            var orderId = $('#cancel-order').find('[name="order_id"]').val();
+            var reason = $('#cancel-order').find('#reason').val();
 
-			$.ajax({
-				url: '/api/order/cancel-order.php',
-				type: 'post',
-				data: {
-					orderId: orderId,
-					cancelReason: reason
-				},
-				success: function (res) {
-					alert('Đã gửi lệnh cancel order');
-					$('.get-orders').click();
-					$(self).button('reset');
-				}
-			});
-		});
+            $.ajax({
+                url: '/api/order/cancel-order.php',
+                type: 'post',
+                data: {
+                    orderId: orderId,
+                    cancelReason: reason
+                },
+                success: function (res) {
+                    alert('Đã gửi lệnh cancel order');
+                    $('.get-orders').click();
+                    $(self).button('reset');
+                }
+            });
+        });
 
-		$(document).on('click', '.edit-tracking', function () {
-			var rootEl = $(this).closest('.rootEl');
-			var orderId = rootEl.data('orderid');
-			$('#add-tracking').modal('show');
-			$('#add-tracking').find('[name="order_id"]').val(orderId);
-		});
+        $(document).on('click', '.edit-tracking', function () {
+            var rootEl = $(this).closest('.rootEl');
+            var orderId = rootEl.data('orderid');
+            $('#add-tracking').modal('show');
+            $('#add-tracking').find('[name="order_id"]').val(orderId);
+        });
 
 
-		$(document).on('click', '.save-tracking', function () {
-			$(this).button('loading');
-			var self = this;
-			var orderId = $('#add-tracking').find('[name="order_id"]').val();
-			var tracking_number = $('#add-tracking').find('#tracking_number').val();
-			var shipping_carrier_used = $('#add-tracking').find('#shipping_carrier_used').val();
+        $(document).on('click', '.save-tracking', function () {
+            $(this).button('loading');
+            var self = this;
+            var orderId = $('#add-tracking').find('[name="order_id"]').val();
+            var tracking_number = $('#add-tracking').find('#tracking_number').val();
+            var shipping_carrier_used = $('#add-tracking').find('#shipping_carrier_used').val();
 
-			$.ajax({
-				url: '/api/order/add-tracking.php',
-				type: 'post',
-				data: {
-					orderId: orderId,
-					trackingNumber: tracking_number,
-					ShippingCarrierUsed: shipping_carrier_used
-				},
-				success: function (res) {
-					$(self).button('reset');
-					if (res.Ack == 'Success') {
-						alert('Cập nhật tracking number thành công');
-						$('#add-tracking').modal('hide');
-						$('#add-tracking').find('#tracking_number').val('');
-						$('#add-tracking').find('#shipping_carrier_used').val('');
-					} else {
-						alert(res.Errors[0].ShortMessage);
-					}
-					$('.get-orders').click();
-				}
-			});
-		});
+            $.ajax({
+                url: '/api/order/add-tracking.php',
+                type: 'post',
+                data: {
+                    orderId: orderId,
+                    trackingNumber: tracking_number,
+                    ShippingCarrierUsed: shipping_carrier_used
+                },
+                success: function (res) {
+                    $(self).button('reset');
+                    if (res.Ack == 'Success') {
+                        alert('Cập nhật tracking number thành công');
+                        $('#add-tracking').modal('hide');
+                        $('#add-tracking').find('#tracking_number').val('');
+                        $('#add-tracking').find('#shipping_carrier_used').val('');
+                    } else {
+                        alert(res.Errors[0].ShortMessage);
+                    }
+                    $('.get-orders').click();
+                }
+            });
+        });
 
-		$(document).on('click', '.add-note', function () {
-			var rootEl = $(this).closest('.rootEl');
-			var orderId = rootEl.data('orderid');
-			var itemId = rootEl.data('itemid');
-			$('#add-note-modal').modal('show');
-			$('#add-note-modal').find('[name="order_id"]').val(orderId);
-			$('#add-note-modal').find('[name="item_id"]').val(itemId);
-		});
+        $(document).on('click', '.add-note', function () {
+            var rootEl = $(this).closest('.rootEl');
+            var orderId = rootEl.data('orderid');
+            var itemId = rootEl.data('itemid');
+            $('#add-note-modal').modal('show');
+            $('#add-note-modal').find('[name="order_id"]').val(orderId);
+            $('#add-note-modal').find('[name="item_id"]').val(itemId);
+        });
 
-		$(document).on('click', '.save-note', function () {
-			$(this).button('loading');
-			var self = this;
-			var orderId = $('#add-note-modal').find('[name="order_id"]').val();
-			var itemId = $('#add-note-modal').find('[name="item_id"]').val();
-			var note_content = $('#add-note-modal').find('#note_content').val();
+        $(document).on('click', '.save-note', function () {
+            $(this).button('loading');
+            var self = this;
+            var orderId = $('#add-note-modal').find('[name="order_id"]').val();
+            var itemId = $('#add-note-modal').find('[name="item_id"]').val();
+            var note_content = $('#add-note-modal').find('#note_content').val();
 
-			$.ajax({
-				url: '/api/order/add-note.php',
-				type: 'post',
-				data: {
-					orderId: orderId,
-					itemId: itemId,
-					noteContent: note_content
-				},
-				success: function (res) {
-					$(self).button('reset');
-					if (res.Ack == 'Success') {
-						alert('Cập nhật note number thành công');
-						$('#add-note-modal').modal('hide');
-						$('#add-note-modal').find('#note_content').val('');
-					} else {
-						alert(res.Errors[0].ShortMessage);
-					}
-					$('.get-orders').click();
-				}
-			});
-		});
+            $.ajax({
+                url: '/api/order/add-note.php',
+                type: 'post',
+                data: {
+                    orderId: orderId,
+                    itemId: itemId,
+                    noteContent: note_content
+                },
+                success: function (res) {
+                    $(self).button('reset');
+                    if (res.Ack == 'Success') {
+                        alert('Cập nhật note number thành công');
+                        $('#add-note-modal').modal('hide');
+                        $('#add-note-modal').find('#note_content').val('');
+                    } else {
+                        alert(res.Errors[0].ShortMessage);
+                    }
+                    $('.get-orders').click();
+                }
+            });
+        });
 
-		$(document).on('click', '.view-record', function () {
-			var rootEl = $(this).closest('.rootEl');
-			var orderId = rootEl.data('orderid');
+        $(document).on('click', '.view-record', function () {
+            var rootEl = $(this).closest('.rootEl');
+            var orderId = rootEl.data('orderid');
 
-			$.ajax({
+            $.ajax({
                 url: '/api/order/order-detail.php',
                 data: {
-					order_id: orderId
+                    order_id: orderId
                 },
                 success: function (res) {
                     $('#detail').html(res);
                     $('#order-detail-modal').modal('show');
-				}
+                }
             })
 
-		});
+        });
 
     </script>

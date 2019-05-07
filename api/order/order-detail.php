@@ -1,63 +1,98 @@
 <?php
 
-	error_reporting(E_ERROR); ini_set('display_errors', 1);
-	$orderId = $_GET['order_id'];
+error_reporting(E_ERROR);
+ini_set('display_errors', 1);
+$orderId = $_GET['order_id'];
 
-	list($itemId, $transactionId) = explode('-', $orderId);
+$proxy = require_once '../../session.php';
 
-	$proxy = require_once '../../session.php';
+require_once $sdk_dir . 'GetOrdersRequestType.php';
 
-	require_once $sdk_dir . 'GetOrderTransactionsRequestType.php';
+$getordersrequest = new GetOrdersRequestType();
+$orderidarray = new OrderIDArrayType();
+$getordersrequest->setOrderIDArray($orderidarray);
+$orderidarray->addOrderID($orderId);
+$getordersrequest->setVersion("1101");
 
-	$getordertransactionsrequest = new GetOrderTransactionsRequestType();
+$response = $proxy->GetOrders($getordersrequest);
 
-	$getordertransactionsrequest->setIncludeFinalValueFees("true");
-	$itemtransactionidarray = new ItemTransactionIDArrayType();
-	$getordertransactionsrequest->setItemTransactionIDArray($itemtransactionidarray);
-	$itemtransactionid = new ItemTransactionIDType();
-	$itemtransactionidarray->addItemTransactionID($itemtransactionid);
-	$itemtransactionid->setItemID($itemId);
-	$itemtransactionid->setTransactionID($transactionId);
-	$orderidarray = new OrderIDArrayType();
-	$getordertransactionsrequest->setOrderIDArray($orderidarray);
-	$orderidarray->addOrderID($orderId);
-	$getordertransactionsrequest->addDetailLevel("ReturnAll");
-	$getordertransactionsrequest->setVersion("1101");
+$order = $response->getOrderArray()[0];
 
-	$response = $proxy->GetOrderTransactions($getordertransactionsrequest);
+$transaction = $order->getTransactionArray()[0];
+$buyer = $transaction->getBuyer();
+$shippingAddr = $order->getShippingAddress();
 
-	$order = $response->getOrderArray()[0];
+$item = $transaction->getItem();
+try {
+    $payment = substr($order->getPaidTime(), 0, 10) . ' (' . $order->getCheckoutStatus()->PaymentMethod . ')';
+    if ($transaction->getShippingDetails()) {
+        $tracking = $transaction->getShippingDetails()->getShipmentTrackingDetails()[0]->getShipmentTrackingNumber();
+    }
+    $tracking = 'N/A';
+} catch (\Exception $e) {
+    $payment = 'N/A';
+    $tracking = 'N/A';
+}
 
-	$buyer = $order->getTransactionArray()[0]->getBuyer();
-	$buyerInfo = $order->getTransactionArray()[0]->getBuyer()->getBuyerInfo();
-
-	try {
-		$payment = $order->getTransactionArray()[0]->getPaidTime() . ' (<a href="https://www.paypal.com/myaccount/transactions/details/' . $order->getMonetaryDetails()->getPayments()->getPayment()[0]->getReferenceId()->value . '">' . $order->getCheckoutStatus()->PaymentMethod . '</a>)';
-	} catch (\Exception $e) {
-		$payment = 'N/A';
-	}
-
-	header('Content-Type: text/html');
-	echo '
+header('Content-Type: text/html');
+echo '
 	
 	<div class="col-md-6">
 		<div class="panel panel-info">
 			<div class="panel-heading">Purchase detail</div>
 			<div class="panel-body">
-				<div class="list-group-item">Buyer: ' . $buyerInfo->UserFirstName . '' . $buyerInfo->UserLastName . ' (' . $buyer->UserID . ')</div>
+				<div class="list-group-item">Buyer: ' . $buyer->UserFirstName . '' . $buyer->UserLastName . ' (' . $order->BuyerUserID . ')</div>
 				<div class="list-group-item">Email: ' . $buyer->Email . '</div>
-				<div class="list-group-item">Date paid: ' . $payment.'</div>
+				<div class="list-group-item">Date paid: ' . $payment . '</div>
 			</div>
 		</div>
 	</div>
-	
 	<div class="col-md-6">
-		<div class="panel panel info">
+		<div class="panel panel-info">
 			<div class="panel-heading">Shiping detail</div>
 			<div class="panel-body">
-				
+				<div class="list-group-item">Shipping Method: ' . $order->getShippingDetails()->getShippingServiceOptions()[0]->getShippingService() . '</div>
+				<div class="list-group-item">Tracking: ' . $tracking . '</div>
+				<div class="list-group-item">Ship to: ' . $shippingAddr->Name . '</div>
+				<div class="list-group-item">Street: ' . $shippingAddr->Street1 . '</div>
+				<div class="list-group-item">City: ' . $shippingAddr->CityName . '</div>
+				<div class="list-group-item">State/province: ' . $shippingAddr->StateOrProvince . '</div>
+				<div class="list-group-item">Zip code: ' . $shippingAddr->PostalCode . '</div>
+				<div class="list-group-item">Country/region: ' . $shippingAddr->CountryName . '</div>
 			</div>
 		</div>
 	</div>
+	<div class="col-md-12">
+	    <div class="panel panel-info">
+			<div class="panel-heading">Item detail</div>
+			<div class="panel-body">
+			    <div class="col-md-6">
+                            <div style="float: left; width: 15%">
+                                <a href="https://www.ebay.com/itm/292799546666">
+                                    <img src="https://thumbs4.ebaystatic.com/pict/' . $item->getItemId() . '8080_1.jpg"
+                                         style="width: 90%">
+                                </a>
+                            </div>
+                            <div style="float: left; width: 80%">
+                                <p>
+                                    <a href="https://www.ebay.com/itm/' . $item->getItemId() . '">' . $item->getTitle() . '</a> (' . $item->getItemId() . ')</span>
+                                </p>
+                                <p>Tracking: <span class="text-warning">' . $tracking . '</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            Qty: ' . $transaction->getQuantityPurchased() . '
+                        </div>
+                        <div class="col-md-2">
+                            Total: ' . $order->Total->value . '
+                        </div>
+
+                        <div class="col-md-3">
+                            Date Paid: ' . substr($order->getPaidTime(), 0, 10) . '
+                        </div>
+			</div>
+			</div>
+		</div>
+    </div>
 	<div class="clearfix"></div>
 	';
