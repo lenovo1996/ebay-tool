@@ -17,7 +17,7 @@ class TaxTableType extends EbatNs_ComplexType
 	/**
 	* @var TaxJurisdictionType
 	**/
-	protected $TaxJurisdiction;
+	public $TaxJurisdiction;
 
 
 	/**

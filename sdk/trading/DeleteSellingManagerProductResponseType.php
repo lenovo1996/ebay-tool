@@ -17,7 +17,7 @@ class DeleteSellingManagerProductResponseType extends AbstractResponseType
 	/**
 	* @var SellingManagerProductDetailsType
 	**/
-	protected $DeletedSellingManagerProductDetails;
+	public $DeletedSellingManagerProductDetails;
 
 
 	/**

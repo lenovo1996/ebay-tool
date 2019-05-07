@@ -17,7 +17,7 @@ class RecoupmentPolicyConsentType extends EbatNs_ComplexType
 	/**
 	* @var SiteCodeType
 	**/
-	protected $Site;
+	public $Site;
 
 
 	/**

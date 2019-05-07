@@ -16,7 +16,7 @@ class GetSessionIDRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $RuName;
+	public $RuName;
 
 
 	/**

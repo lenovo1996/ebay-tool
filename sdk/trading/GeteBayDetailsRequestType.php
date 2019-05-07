@@ -19,7 +19,7 @@ class GeteBayDetailsRequestType extends AbstractRequestType
 	/**
 	* @var DetailNameCodeType
 	**/
-	protected $DetailName;
+	public $DetailName;
 
 
 	/**

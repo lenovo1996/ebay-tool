@@ -22,107 +22,107 @@ class MyMessagesAlertType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Sender;
+	public $Sender;
 
 	/**
 	* @var string
 	**/
-	protected $RecipientUserID;
+	public $RecipientUserID;
 
 	/**
 	* @var string
 	**/
-	protected $Subject;
+	public $Subject;
 
 	/**
 	* @var string
 	**/
-	protected $Priority;
+	public $Priority;
 
 	/**
 	* @var MyMessagesAlertIDType
 	**/
-	protected $AlertID;
+	public $AlertID;
 
 	/**
 	* @var string
 	**/
-	protected $ExternalAlertID;
+	public $ExternalAlertID;
 
 	/**
 	* @var string
 	**/
-	protected $ContentType;
+	public $ContentType;
 
 	/**
 	* @var string
 	**/
-	protected $Text;
+	public $Text;
 
 	/**
 	* @var MyMessagesAlertResolutionStatusCode
 	**/
-	protected $ResolutionStatus;
+	public $ResolutionStatus;
 
 	/**
 	* @var boolean
 	**/
-	protected $Read;
+	public $Read;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreationDate;
+	public $CreationDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ReceiveDate;
+	public $ReceiveDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ExpirationDate;
+	public $ExpirationDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ResolutionDate;
+	public $ResolutionDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastReadDate;
+	public $LastReadDate;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var boolean
 	**/
-	protected $IsTimedResolution;
+	public $IsTimedResolution;
 
 	/**
 	* @var string
 	**/
-	protected $ActionURL;
+	public $ActionURL;
 
 	/**
 	* @var MyMessagesResponseDetailsType
 	**/
-	protected $ResponseDetails;
+	public $ResponseDetails;
 
 	/**
 	* @var MyMessagesForwardDetailsType
 	**/
-	protected $ForwardDetails;
+	public $ForwardDetails;
 
 	/**
 	* @var MyMessagesFolderType
 	**/
-	protected $Folder;
+	public $Folder;
 
 
 	/**

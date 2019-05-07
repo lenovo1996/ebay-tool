@@ -18,47 +18,47 @@ class StoreFontType extends EbatNs_ComplexType
 	/**
 	* @var StoreFontFaceCodeType
 	**/
-	protected $NameFace;
+	public $NameFace;
 
 	/**
 	* @var StoreFontSizeCodeType
 	**/
-	protected $NameSize;
+	public $NameSize;
 
 	/**
 	* @var string
 	**/
-	protected $NameColor;
+	public $NameColor;
 
 	/**
 	* @var StoreFontFaceCodeType
 	**/
-	protected $TitleFace;
+	public $TitleFace;
 
 	/**
 	* @var StoreFontSizeCodeType
 	**/
-	protected $TitleSize;
+	public $TitleSize;
 
 	/**
 	* @var string
 	**/
-	protected $TitleColor;
+	public $TitleColor;
 
 	/**
 	* @var StoreFontFaceCodeType
 	**/
-	protected $DescFace;
+	public $DescFace;
 
 	/**
 	* @var StoreFontSizeCodeType
 	**/
-	protected $DescSize;
+	public $DescSize;
 
 	/**
 	* @var string
 	**/
-	protected $DescColor;
+	public $DescColor;
 
 
 	/**

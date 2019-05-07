@@ -18,7 +18,7 @@ class SetMessagePreferencesRequestType extends AbstractRequestType
 	/**
 	* @var ASQPreferencesType
 	**/
-	protected $ASQPreferences;
+	public $ASQPreferences;
 
 
 	/**

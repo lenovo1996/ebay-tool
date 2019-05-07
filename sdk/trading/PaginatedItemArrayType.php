@@ -18,12 +18,12 @@ class PaginatedItemArrayType extends EbatNs_ComplexType
 	/**
 	* @var ItemArrayType
 	**/
-	protected $ItemArray;
+	public $ItemArray;
 
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 
 	/**

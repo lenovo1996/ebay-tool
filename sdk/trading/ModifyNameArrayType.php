@@ -17,7 +17,7 @@ class ModifyNameArrayType extends EbatNs_ComplexType
 	/**
 	* @var ModifyNameType
 	**/
-	protected $ModifyName;
+	public $ModifyName;
 
 
 	/**

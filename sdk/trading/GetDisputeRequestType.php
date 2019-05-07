@@ -21,7 +21,7 @@ class GetDisputeRequestType extends AbstractRequestType
 	/**
 	* @var DisputeIDType
 	**/
-	protected $DisputeID;
+	public $DisputeID;
 
 
 	/**

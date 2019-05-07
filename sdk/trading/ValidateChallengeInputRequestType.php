@@ -17,17 +17,17 @@ class ValidateChallengeInputRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $ChallengeToken;
+	public $ChallengeToken;
 
 	/**
 	* @var string
 	**/
-	protected $UserInput;
+	public $UserInput;
 
 	/**
 	* @var boolean
 	**/
-	protected $KeepTokenValid;
+	public $KeepTokenValid;
 
 
 	/**

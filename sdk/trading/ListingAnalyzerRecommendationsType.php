@@ -17,7 +17,7 @@ class ListingAnalyzerRecommendationsType extends EbatNs_ComplexType
 	/**
 	* @var ListingTipArrayType
 	**/
-	protected $ListingTipArray;
+	public $ListingTipArray;
 
 
 	/**

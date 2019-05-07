@@ -14,19 +14,19 @@
 class EbatNs_SimpleType
 { 
 	// type-name
-	protected $_typeName; 
+	public $_typeName; 
 	// namespace (prefix)
-	protected $_ns; 
+	public $_ns; 
 	// namespace (fullname)
-	protected $_nsURI; 
+	public $_nsURI; 
 	// array or not
-	protected $_isArrayType = false; 
+	public $_isArrayType = false; 
 	// associative array of attribute-names
 	public $_attributes = array(); 
 	// values of attributes
 	public $attributeValues = null; 
 	// a plain value (in case of a simple-type)
-	protected $value = null;
+	public $value = null;
 
 	function __construct( $typeName = 'string', $nsURI = 'http://www.w3.org/2001/XMLSchema' )
 	{

@@ -18,82 +18,82 @@ class ApiAccessRuleType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $CallName;
+	public $CallName;
 
 	/**
 	* @var boolean
 	**/
-	protected $CountsTowardAggregate;
+	public $CountsTowardAggregate;
 
 	/**
 	* @var long
 	**/
-	protected $DailyHardLimit;
+	public $DailyHardLimit;
 
 	/**
 	* @var long
 	**/
-	protected $DailySoftLimit;
+	public $DailySoftLimit;
 
 	/**
 	* @var long
 	**/
-	protected $DailyUsage;
+	public $DailyUsage;
 
 	/**
 	* @var long
 	**/
-	protected $HourlyHardLimit;
+	public $HourlyHardLimit;
 
 	/**
 	* @var long
 	**/
-	protected $HourlySoftLimit;
+	public $HourlySoftLimit;
 
 	/**
 	* @var long
 	**/
-	protected $HourlyUsage;
+	public $HourlyUsage;
 
 	/**
 	* @var int
 	**/
-	protected $Period;
+	public $Period;
 
 	/**
 	* @var long
 	**/
-	protected $PeriodicHardLimit;
+	public $PeriodicHardLimit;
 
 	/**
 	* @var long
 	**/
-	protected $PeriodicSoftLimit;
+	public $PeriodicSoftLimit;
 
 	/**
 	* @var long
 	**/
-	protected $PeriodicUsage;
+	public $PeriodicUsage;
 
 	/**
 	* @var dateTime
 	**/
-	protected $PeriodicStartDate;
+	public $PeriodicStartDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTime;
+	public $ModTime;
 
 	/**
 	* @var AccessRuleCurrentStatusCodeType
 	**/
-	protected $RuleCurrentStatus;
+	public $RuleCurrentStatus;
 
 	/**
 	* @var AccessRuleStatusCodeType
 	**/
-	protected $RuleStatus;
+	public $RuleStatus;
 
 
 	/**

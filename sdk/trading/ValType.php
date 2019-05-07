@@ -16,17 +16,17 @@ class ValType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ValueLiteral;
+	public $ValueLiteral;
 
 	/**
 	* @var string
 	**/
-	protected $SuggestedValueLiteral;
+	public $SuggestedValueLiteral;
 
 	/**
 	* @var int
 	**/
-	protected $ValueID;
+	public $ValueID;
 
 
 	/**

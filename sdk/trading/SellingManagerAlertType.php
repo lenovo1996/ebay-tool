@@ -23,42 +23,42 @@ class SellingManagerAlertType extends EbatNs_ComplexType
 	/**
 	* @var SellingManagerAlertTypeCodeType
 	**/
-	protected $AlertType;
+	public $AlertType;
 
 	/**
 	* @var SellingManagerSoldListingsPropertyTypeCodeType
 	**/
-	protected $SoldAlert;
+	public $SoldAlert;
 
 	/**
 	* @var SellingManagerInventoryPropertyTypeCodeType
 	**/
-	protected $InventoryAlert;
+	public $InventoryAlert;
 
 	/**
 	* @var SellingManagerAutomationPropertyTypeCodeType
 	**/
-	protected $AutomationAlert;
+	public $AutomationAlert;
 
 	/**
 	* @var SellingManagerPaisaPayPropertyTypeCodeType
 	**/
-	protected $PaisaPayAlert;
+	public $PaisaPayAlert;
 
 	/**
 	* @var SellingManagerGeneralPropertyTypeCodeType
 	**/
-	protected $GeneralAlert;
+	public $GeneralAlert;
 
 	/**
 	* @var int
 	**/
-	protected $DurationInDays;
+	public $DurationInDays;
 
 	/**
 	* @var long
 	**/
-	protected $Count;
+	public $Count;
 
 
 	/**

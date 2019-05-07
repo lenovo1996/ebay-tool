@@ -16,7 +16,7 @@ class ListingEnhancementDurationReferenceType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $Duration;
+	public $Duration;
 
 
 	/**

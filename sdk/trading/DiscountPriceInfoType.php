@@ -24,37 +24,37 @@ class DiscountPriceInfoType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $OriginalRetailPrice;
+	public $OriginalRetailPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MinimumAdvertisedPrice;
+	public $MinimumAdvertisedPrice;
 
 	/**
 	* @var MinimumAdvertisedPriceExposureCodeType
 	**/
-	protected $MinimumAdvertisedPriceExposure;
+	public $MinimumAdvertisedPriceExposure;
 
 	/**
 	* @var PricingTreatmentCodeType
 	**/
-	protected $PricingTreatment;
+	public $PricingTreatment;
 
 	/**
 	* @var boolean
 	**/
-	protected $SoldOneBay;
+	public $SoldOneBay;
 
 	/**
 	* @var boolean
 	**/
-	protected $SoldOffeBay;
+	public $SoldOffeBay;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MadeForOutletComparisonPrice;
+	public $MadeForOutletComparisonPrice;
 
 
 	/**

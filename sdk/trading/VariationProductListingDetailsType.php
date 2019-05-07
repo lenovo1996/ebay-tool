@@ -21,27 +21,27 @@ class VariationProductListingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ISBN;
+	public $ISBN;
 
 	/**
 	* @var string
 	**/
-	protected $UPC;
+	public $UPC;
 
 	/**
 	* @var string
 	**/
-	protected $EAN;
+	public $EAN;
 
 	/**
 	* @var string
 	**/
-	protected $ProductReferenceID;
+	public $ProductReferenceID;
 
 	/**
 	* @var NameValueListType
 	**/
-	protected $NameValueList;
+	public $NameValueList;
 
 
 	/**

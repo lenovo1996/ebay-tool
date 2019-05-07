@@ -25,12 +25,12 @@ class MessageMediaType extends EbatNs_ComplexType
 	/**
 	* @var anyURI
 	**/
-	protected $MediaURL;
+	public $MediaURL;
 
 	/**
 	* @var string
 	**/
-	protected $MediaName;
+	public $MediaName;
 
 
 	/**

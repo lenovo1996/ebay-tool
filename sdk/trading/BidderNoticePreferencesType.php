@@ -16,7 +16,7 @@ class BidderNoticePreferencesType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $UnsuccessfulBidderNoticeIncludeMyItems;
+	public $UnsuccessfulBidderNoticeIncludeMyItems;
 
 
 	/**

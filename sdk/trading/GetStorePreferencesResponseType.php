@@ -17,7 +17,7 @@ class GetStorePreferencesResponseType extends AbstractResponseType
 	/**
 	* @var StorePreferencesType
 	**/
-	protected $StorePreferences;
+	public $StorePreferences;
 
 
 	/**

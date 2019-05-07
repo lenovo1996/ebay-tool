@@ -17,7 +17,7 @@ class GetCategoryMappingsRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $CategoryVersion;
+	public $CategoryVersion;
 
 
 	/**

@@ -17,7 +17,7 @@ class AttributeType extends EbatNs_ComplexType
 	/**
 	* @var ValType
 	**/
-	protected $Value;
+	public $Value;
 
 
 	/**

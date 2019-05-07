@@ -16,7 +16,7 @@ class RevokeTokenRequestType extends AbstractRequestType
 	/**
 	* @var boolean
 	**/
-	protected $UnsubscribeNotification;
+	public $UnsubscribeNotification;
 
 
 	/**

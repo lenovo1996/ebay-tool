@@ -18,37 +18,37 @@ class ReviseSellingManagerTemplateResponseType extends AbstractResponseType
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 	/**
 	* @var FeesType
 	**/
-	protected $Fees;
+	public $Fees;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $Category2ID;
+	public $Category2ID;
 
 	/**
 	* @var boolean
 	**/
-	protected $VerifyOnly;
+	public $VerifyOnly;
 
 	/**
 	* @var string
 	**/
-	protected $SaleTemplateName;
+	public $SaleTemplateName;
 
 	/**
 	* @var SellingManagerProductDetailsType
 	**/
-	protected $SellingManagerProductDetails;
+	public $SellingManagerProductDetails;
 
 
 	/**

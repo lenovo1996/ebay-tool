@@ -17,7 +17,7 @@ class ShipmentLineItemType extends EbatNs_ComplexType
 	/**
 	* @var LineItemType
 	**/
-	protected $LineItem;
+	public $LineItem;
 
 
 	/**

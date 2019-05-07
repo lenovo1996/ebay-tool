@@ -21,32 +21,32 @@ class BestOfferDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $BestOfferCount;
+	public $BestOfferCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $BestOfferEnabled;
+	public $BestOfferEnabled;
 
 	/**
 	* @var AmountType
 	**/
-	protected $BestOffer;
+	public $BestOffer;
 
 	/**
 	* @var BestOfferStatusCodeType
 	**/
-	protected $BestOfferStatus;
+	public $BestOfferStatus;
 
 	/**
 	* @var BestOfferTypeCodeType
 	**/
-	protected $BestOfferType;
+	public $BestOfferType;
 
 	/**
 	* @var boolean
 	**/
-	protected $NewBestOffer;
+	public $NewBestOffer;
 
 
 	/**

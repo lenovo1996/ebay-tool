@@ -22,12 +22,12 @@ class PaymentsInformationType extends EbatNs_ComplexType
 	/**
 	* @var PaymentInformationType
 	**/
-	protected $Payments;
+	public $Payments;
 
 	/**
 	* @var RefundInformationType
 	**/
-	protected $Refunds;
+	public $Refunds;
 
 
 	/**

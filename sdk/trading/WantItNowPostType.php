@@ -18,37 +18,37 @@ class WantItNowPostType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $PostID;
+	public $PostID;
 
 	/**
 	* @var SiteCodeType
 	**/
-	protected $Site;
+	public $Site;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var int
 	**/
-	protected $ResponseCount;
+	public $ResponseCount;
 
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 
 	/**

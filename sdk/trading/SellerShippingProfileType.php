@@ -16,12 +16,12 @@ class SellerShippingProfileType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $ShippingProfileID;
+	public $ShippingProfileID;
 
 	/**
 	* @var string
 	**/
-	protected $ShippingProfileName;
+	public $ShippingProfileName;
 
 
 	/**

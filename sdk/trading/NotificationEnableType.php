@@ -19,12 +19,12 @@ class NotificationEnableType extends EbatNs_ComplexType
 	/**
 	* @var NotificationEventTypeCodeType
 	**/
-	protected $EventType;
+	public $EventType;
 
 	/**
 	* @var EnableCodeType
 	**/
-	protected $EventEnable;
+	public $EventEnable;
 
 
 	/**

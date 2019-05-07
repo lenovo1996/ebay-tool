@@ -20,22 +20,22 @@ class ProductSearchPageType extends EbatNs_ComplexType
 	/**
 	* @var CharacteristicsSetType
 	**/
-	protected $SearchCharacteristicsSet;
+	public $SearchCharacteristicsSet;
 
 	/**
 	* @var CharacteristicsSearchCodeType
 	**/
-	protected $SearchType;
+	public $SearchType;
 
 	/**
 	* @var CharacteristicType
 	**/
-	protected $SortCharacteristics;
+	public $SortCharacteristics;
 
 	/**
 	* @var DataElementSetType
 	**/
-	protected $DataElementSet;
+	public $DataElementSet;
 
 
 	/**

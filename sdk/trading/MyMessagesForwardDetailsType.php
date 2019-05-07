@@ -16,12 +16,12 @@ class MyMessagesForwardDetailsType extends EbatNs_ComplexType
 	/**
 	* @var dateTime
 	**/
-	protected $UserForwardDate;
+	public $UserForwardDate;
 
 	/**
 	* @var string
 	**/
-	protected $ForwardMessageEncoding;
+	public $ForwardMessageEncoding;
 
 
 	/**

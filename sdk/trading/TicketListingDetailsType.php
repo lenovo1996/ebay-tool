@@ -17,22 +17,22 @@ class TicketListingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $EventTitle;
+	public $EventTitle;
 
 	/**
 	* @var string
 	**/
-	protected $Venue;
+	public $Venue;
 
 	/**
 	* @var string
 	**/
-	protected $PrintedDate;
+	public $PrintedDate;
 
 	/**
 	* @var string
 	**/
-	protected $PrintedTime;
+	public $PrintedTime;
 
 
 	/**

@@ -18,27 +18,27 @@ class CalculatedHandlingDiscountType extends EbatNs_ComplexType
 	/**
 	* @var HandlingNameCodeType
 	**/
-	protected $DiscountName;
+	public $DiscountName;
 
 	/**
 	* @var AmountType
 	**/
-	protected $OrderHandlingAmount;
+	public $OrderHandlingAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $EachAdditionalAmount;
+	public $EachAdditionalAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $EachAdditionalOffAmount;
+	public $EachAdditionalOffAmount;
 
 	/**
 	* @var float
 	**/
-	protected $EachAdditionalPercentOff;
+	public $EachAdditionalPercentOff;
 
 
 	/**

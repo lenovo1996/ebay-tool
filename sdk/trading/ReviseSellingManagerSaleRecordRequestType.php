@@ -21,27 +21,27 @@ class ReviseSellingManagerSaleRecordRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var OrderIDType
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 	/**
 	* @var SellingManagerSoldOrderType
 	**/
-	protected $SellingManagerSoldOrder;
+	public $SellingManagerSoldOrder;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

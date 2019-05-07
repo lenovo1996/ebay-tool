@@ -18,32 +18,32 @@ class GetOrdersResponseType extends AbstractResponseType
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasMoreOrders;
+	public $HasMoreOrders;
 
 	/**
 	* @var OrderArrayType
 	**/
-	protected $OrderArray;
+	public $OrderArray;
 
 	/**
 	* @var int
 	**/
-	protected $OrdersPerPage;
+	public $OrdersPerPage;
 
 	/**
 	* @var int
 	**/
-	protected $PageNumber;
+	public $PageNumber;
 
 	/**
 	* @var int
 	**/
-	protected $ReturnedOrderCountActual;
+	public $ReturnedOrderCountActual;
 
 
 	/**

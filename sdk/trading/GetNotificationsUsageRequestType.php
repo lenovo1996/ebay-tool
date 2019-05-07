@@ -19,17 +19,17 @@ class GetNotificationsUsageRequestType extends AbstractRequestType
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 
 	/**

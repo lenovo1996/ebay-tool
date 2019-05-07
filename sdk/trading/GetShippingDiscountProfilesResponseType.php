@@ -23,47 +23,47 @@ class GetShippingDiscountProfilesResponseType extends AbstractResponseType
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $CurrencyID;
+	public $CurrencyID;
 
 	/**
 	* @var FlatShippingDiscountType
 	**/
-	protected $FlatShippingDiscount;
+	public $FlatShippingDiscount;
 
 	/**
 	* @var CalculatedShippingDiscountType
 	**/
-	protected $CalculatedShippingDiscount;
+	public $CalculatedShippingDiscount;
 
 	/**
 	* @var boolean
 	**/
-	protected $PromotionalShippingDiscount;
+	public $PromotionalShippingDiscount;
 
 	/**
 	* @var CalculatedHandlingDiscountType
 	**/
-	protected $CalculatedHandlingDiscount;
+	public $CalculatedHandlingDiscount;
 
 	/**
 	* @var PromotionalShippingDiscountDetailsType
 	**/
-	protected $PromotionalShippingDiscountDetails;
+	public $PromotionalShippingDiscountDetails;
 
 	/**
 	* @var ShippingInsuranceType
 	**/
-	protected $ShippingInsurance;
+	public $ShippingInsurance;
 
 	/**
 	* @var ShippingInsuranceType
 	**/
-	protected $InternationalShippingInsurance;
+	public $InternationalShippingInsurance;
 
 	/**
 	* @var CombinedPaymentPeriodCodeType
 	**/
-	protected $CombinedDuration;
+	public $CombinedDuration;
 
 
 	/**

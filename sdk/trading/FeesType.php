@@ -17,7 +17,7 @@ class FeesType extends EbatNs_ComplexType
 	/**
 	* @var FeeType
 	**/
-	protected $Fee;
+	public $Fee;
 
 
 	/**

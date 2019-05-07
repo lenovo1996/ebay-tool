@@ -16,12 +16,12 @@ class DataElementSetType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $DataElement;
+	public $DataElement;
 
 	/**
 	* @var int
 	**/
-	protected $DataElementID;
+	public $DataElementID;
 
 
 	/**

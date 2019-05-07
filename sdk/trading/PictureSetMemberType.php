@@ -19,17 +19,17 @@ class PictureSetMemberType extends EbatNs_ComplexType
 	/**
 	* @var anyURI
 	**/
-	protected $MemberURL;
+	public $MemberURL;
 
 	/**
 	* @var int
 	**/
-	protected $PictureHeight;
+	public $PictureHeight;
 
 	/**
 	* @var int
 	**/
-	protected $PictureWidth;
+	public $PictureWidth;
 
 
 	/**

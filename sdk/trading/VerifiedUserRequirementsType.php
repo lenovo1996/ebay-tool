@@ -17,12 +17,12 @@ class VerifiedUserRequirementsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $VerifiedUser;
+	public $VerifiedUser;
 
 	/**
 	* @var int
 	**/
-	protected $MinimumFeedbackScore;
+	public $MinimumFeedbackScore;
 
 
 	/**

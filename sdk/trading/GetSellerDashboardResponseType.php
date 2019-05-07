@@ -23,37 +23,37 @@ class GetSellerDashboardResponseType extends AbstractResponseType
 	/**
 	* @var SearchStandingDashboardType
 	**/
-	protected $SearchStanding;
+	public $SearchStanding;
 
 	/**
 	* @var SellerFeeDiscountDashboardType
 	**/
-	protected $SellerFeeDiscount;
+	public $SellerFeeDiscount;
 
 	/**
 	* @var PowerSellerDashboardType
 	**/
-	protected $PowerSellerStatus;
+	public $PowerSellerStatus;
 
 	/**
 	* @var PolicyComplianceDashboardType
 	**/
-	protected $PolicyCompliance;
+	public $PolicyCompliance;
 
 	/**
 	* @var BuyerSatisfactionDashboardType
 	**/
-	protected $BuyerSatisfaction;
+	public $BuyerSatisfaction;
 
 	/**
 	* @var SellerAccountDashboardType
 	**/
-	protected $SellerAccount;
+	public $SellerAccount;
 
 	/**
 	* @var PerformanceDashboardType
 	**/
-	protected $Performance;
+	public $Performance;
 
 
 	/**

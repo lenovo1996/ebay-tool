@@ -19,12 +19,12 @@ class GetSellingManagerSoldListingsResponseType extends AbstractResponseType
 	/**
 	* @var SellingManagerSoldOrderType
 	**/
-	protected $SaleRecord;
+	public $SaleRecord;
 
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 
 	/**

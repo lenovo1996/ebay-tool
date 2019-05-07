@@ -21,32 +21,32 @@ class PickupMethodSelectedType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $PickupMethod;
+	public $PickupMethod;
 
 	/**
 	* @var string
 	**/
-	protected $PickupStoreID;
+	public $PickupStoreID;
 
 	/**
 	* @var PickupStatusCodeType
 	**/
-	protected $PickupStatus;
+	public $PickupStatus;
 
 	/**
 	* @var string
 	**/
-	protected $MerchantPickupCode;
+	public $MerchantPickupCode;
 
 	/**
 	* @var dateTime
 	**/
-	protected $PickupFulfillmentTime;
+	public $PickupFulfillmentTime;
 
 	/**
 	* @var string
 	**/
-	protected $PickupLocationUUID;
+	public $PickupLocationUUID;
 
 
 	/**

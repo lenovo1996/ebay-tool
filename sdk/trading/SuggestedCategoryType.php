@@ -19,12 +19,12 @@ class SuggestedCategoryType extends EbatNs_ComplexType
 	/**
 	* @var CategoryType
 	**/
-	protected $Category;
+	public $Category;
 
 	/**
 	* @var int
 	**/
-	protected $PercentItemFound;
+	public $PercentItemFound;
 
 
 	/**

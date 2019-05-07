@@ -16,7 +16,7 @@ class LabelType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 
 	/**

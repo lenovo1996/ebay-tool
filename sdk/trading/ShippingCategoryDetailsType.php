@@ -21,22 +21,22 @@ class ShippingCategoryDetailsType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $ShippingCategory;
+	public $ShippingCategory;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

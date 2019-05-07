@@ -19,7 +19,7 @@ class RefundArrayType extends EbatNs_ComplexType
 	/**
 	* @var RefundType
 	**/
-	protected $Refund;
+	public $Refund;
 
 
 	/**

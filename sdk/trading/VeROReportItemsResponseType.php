@@ -17,12 +17,12 @@ class VeROReportItemsResponseType extends AbstractResponseType
 	/**
 	* @var long
 	**/
-	protected $VeROReportPacketID;
+	public $VeROReportPacketID;
 
 	/**
 	* @var VeROReportPacketStatusCodeType
 	**/
-	protected $VeROReportPacketStatus;
+	public $VeROReportPacketStatus;
 
 
 	/**

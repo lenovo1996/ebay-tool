@@ -17,7 +17,7 @@ class ReviseSellingManagerProductResponseType extends AbstractResponseType
 	/**
 	* @var SellingManagerProductDetailsType
 	**/
-	protected $SellingManagerProductDetails;
+	public $SellingManagerProductDetails;
 
 
 	/**

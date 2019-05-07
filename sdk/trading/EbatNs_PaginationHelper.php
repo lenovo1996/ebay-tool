@@ -10,27 +10,27 @@
 //
 class EbatNs_PaginationHelper
 {
-    protected $_proxy;
+    public $_proxy;
 
-    protected $_callname;
+    public $_callname;
 
-    protected $_request;
+    public $_request;
 
-    protected $_responseElementToMerge;
+    public $_responseElementToMerge;
 
-    protected $_maxEntries;
+    public $_maxEntries;
 
-    protected $_currentPage;
+    public $_currentPage;
 
-    protected $_receivedElements;
+    public $_receivedElements;
 
-    protected $_accumulatedResponse;
+    public $_accumulatedResponse;
 
-    protected $_receivedMaxPages;
+    public $_receivedMaxPages;
 
-    protected $_bCountedByHandler;
+    public $_bCountedByHandler;
 
-    protected $_debug = 0;
+    public $_debug = 0;
 
     // if $responseElementToMerge is set to '__COUNT_BY_HANDLER' an attached handler HAS to count the elements
     // and inform the $EbatNs_ServiceProxy by calling ->incrementPaginationCounter();

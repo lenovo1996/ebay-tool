@@ -17,17 +17,17 @@ class NameValueListType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var string
 	**/
-	protected $Value;
+	public $Value;
 
 	/**
 	* @var ItemSpecificSourceCodeType
 	**/
-	protected $Source;
+	public $Source;
 
 
 	/**

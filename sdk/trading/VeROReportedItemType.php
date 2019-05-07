@@ -22,17 +22,17 @@ class VeROReportedItemType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var VeROItemStatusCodeType
 	**/
-	protected $ItemStatus;
+	public $ItemStatus;
 
 	/**
 	* @var string
 	**/
-	protected $ItemReasonForFailure;
+	public $ItemReasonForFailure;
 
 
 	/**

@@ -17,7 +17,7 @@ class ItemRatingDetailArrayType extends EbatNs_ComplexType
 	/**
 	* @var ItemRatingDetailsType
 	**/
-	protected $ItemRatingDetails;
+	public $ItemRatingDetails;
 
 
 	/**

@@ -17,12 +17,12 @@ class MultiLegShippingServiceType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $ShippingService;
+	public $ShippingService;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalShippingCost;
+	public $TotalShippingCost;
 
 
 	/**

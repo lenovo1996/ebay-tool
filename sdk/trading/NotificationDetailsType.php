@@ -21,52 +21,52 @@ class NotificationDetailsType extends EbatNs_ComplexType
 	/**
 	* @var anyURI
 	**/
-	protected $DeliveryURL;
+	public $DeliveryURL;
 
 	/**
 	* @var string
 	**/
-	protected $ReferenceID;
+	public $ReferenceID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ExpirationTime;
+	public $ExpirationTime;
 
 	/**
 	* @var NotificationEventTypeCodeType
 	**/
-	protected $Type;
+	public $Type;
 
 	/**
 	* @var int
 	**/
-	protected $Retries;
+	public $Retries;
 
 	/**
 	* @var NotificationEventStateCodeType
 	**/
-	protected $DeliveryStatus;
+	public $DeliveryStatus;
 
 	/**
 	* @var dateTime
 	**/
-	protected $NextRetryTime;
+	public $NextRetryTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $DeliveryTime;
+	public $DeliveryTime;
 
 	/**
 	* @var string
 	**/
-	protected $ErrorMessage;
+	public $ErrorMessage;
 
 	/**
 	* @var string
 	**/
-	protected $DeliveryURLName;
+	public $DeliveryURLName;
 
 
 	/**

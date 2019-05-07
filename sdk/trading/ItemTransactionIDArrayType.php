@@ -17,7 +17,7 @@ class ItemTransactionIDArrayType extends EbatNs_ComplexType
 	/**
 	* @var ItemTransactionIDType
 	**/
-	protected $ItemTransactionID;
+	public $ItemTransactionID;
 
 
 	/**

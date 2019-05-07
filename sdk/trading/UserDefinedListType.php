@@ -21,37 +21,37 @@ class UserDefinedListType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var int
 	**/
-	protected $ItemCount;
+	public $ItemCount;
 
 	/**
 	* @var int
 	**/
-	protected $FavoriteSearcheCount;
+	public $FavoriteSearcheCount;
 
 	/**
 	* @var int
 	**/
-	protected $FavoriteSellerCount;
+	public $FavoriteSellerCount;
 
 	/**
 	* @var ItemArrayType
 	**/
-	protected $ItemArray;
+	public $ItemArray;
 
 	/**
 	* @var MyeBayFavoriteSearchListType
 	**/
-	protected $FavoriteSearches;
+	public $FavoriteSearches;
 
 	/**
 	* @var MyeBayFavoriteSellerListType
 	**/
-	protected $FavoriteSellers;
+	public $FavoriteSellers;
 
 
 	/**

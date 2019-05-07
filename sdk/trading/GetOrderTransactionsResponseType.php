@@ -17,7 +17,7 @@ class GetOrderTransactionsResponseType extends AbstractResponseType
 	/**
 	* @var OrderArrayType
 	**/
-	protected $OrderArray;
+	public $OrderArray;
 
 
 	/**

@@ -21,12 +21,12 @@ class MultiLegShippingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var MultiLegShipmentType
 	**/
-	protected $SellerShipmentToLogisticsProvider;
+	public $SellerShipmentToLogisticsProvider;
 
 	/**
 	* @var MultiLegShipmentType
 	**/
-	protected $LogisticsProviderShipmentToBuyer;
+	public $LogisticsProviderShipmentToBuyer;
 
 
 	/**

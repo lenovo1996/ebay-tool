@@ -20,42 +20,42 @@ class ApplicationDeliveryPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var anyURI
 	**/
-	protected $ApplicationURL;
+	public $ApplicationURL;
 
 	/**
 	* @var EnableCodeType
 	**/
-	protected $ApplicationEnable;
+	public $ApplicationEnable;
 
 	/**
 	* @var anyURI
 	**/
-	protected $AlertEmail;
+	public $AlertEmail;
 
 	/**
 	* @var EnableCodeType
 	**/
-	protected $AlertEnable;
+	public $AlertEnable;
 
 	/**
 	* @var NotificationPayloadTypeCodeType
 	**/
-	protected $NotificationPayloadType;
+	public $NotificationPayloadType;
 
 	/**
 	* @var DeviceTypeCodeType
 	**/
-	protected $DeviceType;
+	public $DeviceType;
 
 	/**
 	* @var string
 	**/
-	protected $PayloadVersion;
+	public $PayloadVersion;
 
 	/**
 	* @var DeliveryURLDetailType
 	**/
-	protected $DeliveryURLDetails;
+	public $DeliveryURLDetails;
 
 
 	/**

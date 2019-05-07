@@ -16,17 +16,17 @@ class FetchTokenResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $eBayAuthToken;
+	public $eBayAuthToken;
 
 	/**
 	* @var dateTime
 	**/
-	protected $HardExpirationTime;
+	public $HardExpirationTime;
 
 	/**
 	* @var string
 	**/
-	protected $RESTToken;
+	public $RESTToken;
 
 
 	/**

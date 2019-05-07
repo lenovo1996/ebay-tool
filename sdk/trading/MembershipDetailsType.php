@@ -20,7 +20,7 @@ class MembershipDetailsType extends EbatNs_ComplexType
 	/**
 	* @var MembershipDetailType
 	**/
-	protected $Program;
+	public $Program;
 
 
 	/**

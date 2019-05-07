@@ -21,37 +21,37 @@ class GetUserDisputesResponseType extends AbstractResponseType
 	/**
 	* @var DisputeIDType
 	**/
-	protected $StartingDisputeID;
+	public $StartingDisputeID;
 
 	/**
 	* @var DisputeIDType
 	**/
-	protected $EndingDisputeID;
+	public $EndingDisputeID;
 
 	/**
 	* @var DisputeArrayType
 	**/
-	protected $DisputeArray;
+	public $DisputeArray;
 
 	/**
 	* @var int
 	**/
-	protected $ItemsPerPage;
+	public $ItemsPerPage;
 
 	/**
 	* @var int
 	**/
-	protected $PageNumber;
+	public $PageNumber;
 
 	/**
 	* @var DisputeFilterCountType
 	**/
-	protected $DisputeFilterCount;
+	public $DisputeFilterCount;
 
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 
 	/**

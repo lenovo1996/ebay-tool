@@ -17,22 +17,22 @@ class URLDetailsType extends EbatNs_ComplexType
 	/**
 	* @var URLTypeCodeType
 	**/
-	protected $URLType;
+	public $URLType;
 
 	/**
 	* @var anyURI
 	**/
-	protected $URL;
+	public $URL;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

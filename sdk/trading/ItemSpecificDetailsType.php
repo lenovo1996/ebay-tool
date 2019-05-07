@@ -16,32 +16,32 @@ class ItemSpecificDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MaxItemSpecificsPerItem;
+	public $MaxItemSpecificsPerItem;
 
 	/**
 	* @var int
 	**/
-	protected $MaxValuesPerName;
+	public $MaxValuesPerName;
 
 	/**
 	* @var int
 	**/
-	protected $MaxCharactersPerValue;
+	public $MaxCharactersPerValue;
 
 	/**
 	* @var int
 	**/
-	protected $MaxCharactersPerName;
+	public $MaxCharactersPerName;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

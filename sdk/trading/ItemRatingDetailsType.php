@@ -18,12 +18,12 @@ class ItemRatingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var FeedbackRatingDetailCodeType
 	**/
-	protected $RatingDetail;
+	public $RatingDetail;
 
 	/**
 	* @var int
 	**/
-	protected $Rating;
+	public $Rating;
 
 
 	/**

@@ -18,22 +18,22 @@ class BidGroupType extends EbatNs_ComplexType
 	/**
 	* @var BidGroupItemType
 	**/
-	protected $BidGroupItem;
+	public $BidGroupItem;
 
 	/**
 	* @var long
 	**/
-	protected $BidGroupID;
+	public $BidGroupID;
 
 	/**
 	* @var string
 	**/
-	protected $BidGroupName;
+	public $BidGroupName;
 
 	/**
 	* @var BidGroupStatusCodeType
 	**/
-	protected $BidGroupStatus;
+	public $BidGroupStatus;
 
 
 	/**

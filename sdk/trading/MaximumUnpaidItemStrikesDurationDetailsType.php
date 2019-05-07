@@ -17,12 +17,12 @@ class MaximumUnpaidItemStrikesDurationDetailsType extends EbatNs_ComplexType
 	/**
 	* @var PeriodCodeType
 	**/
-	protected $Period;
+	public $Period;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 
 	/**

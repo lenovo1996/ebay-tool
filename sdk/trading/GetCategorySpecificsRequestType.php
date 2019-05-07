@@ -17,47 +17,47 @@ class GetCategorySpecificsRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastUpdateTime;
+	public $LastUpdateTime;
 
 	/**
 	* @var int
 	**/
-	protected $MaxNames;
+	public $MaxNames;
 
 	/**
 	* @var int
 	**/
-	protected $MaxValuesPerName;
+	public $MaxValuesPerName;
 
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var CategoryItemSpecificsType
 	**/
-	protected $CategorySpecific;
+	public $CategorySpecific;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExcludeRelationships;
+	public $ExcludeRelationships;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeConfidence;
+	public $IncludeConfidence;
 
 	/**
 	* @var boolean
 	**/
-	protected $CategorySpecificsFileInfo;
+	public $CategorySpecificsFileInfo;
 
 
 	/**

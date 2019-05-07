@@ -20,17 +20,17 @@ class MarkUpMarkDownEventType extends EbatNs_ComplexType
 	/**
 	* @var MarkUpMarkDownEventTypeCodeType
 	**/
-	protected $Type;
+	public $Type;
 
 	/**
 	* @var dateTime
 	**/
-	protected $Time;
+	public $Time;
 
 	/**
 	* @var string
 	**/
-	protected $Reason;
+	public $Reason;
 
 
 	/**

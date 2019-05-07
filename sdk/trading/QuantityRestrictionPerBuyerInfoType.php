@@ -18,7 +18,7 @@ class QuantityRestrictionPerBuyerInfoType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MaximumQuantity;
+	public $MaximumQuantity;
 
 
 	/**

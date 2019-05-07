@@ -18,22 +18,22 @@ class ProductInfoType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $AverageStartPrice;
+	public $AverageStartPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AverageSoldPrice;
+	public $AverageSoldPrice;
 
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 	/**
 	* @var ProductStateCodeType
 	**/
-	protected $ProductState;
+	public $ProductState;
 
 
 	/**

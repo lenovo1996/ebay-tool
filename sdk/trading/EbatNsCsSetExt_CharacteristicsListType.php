@@ -20,15 +20,15 @@ class EbatNsCsSetExt_CharacteristicsListType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_AttributeArrayType
 	 */
-	protected $Initial;
+	public $Initial;
 	/**
 	 * @var EbatNsCsSetExt_AttributeArrayType
 	 */
-	protected $Conditional;
+	public $Conditional;
 	/**
 	 * @var EbatNsCsSetExt_AttributeArrayType
 	 */
-	protected $Other;
+	public $Other;
 
 	/**
 	 * @return EbatNsCsSetExt_AttributeArrayType

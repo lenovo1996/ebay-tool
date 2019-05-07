@@ -17,12 +17,12 @@ class EndFixedPriceItemResponseType extends AbstractResponseType
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 
 	/**

@@ -17,22 +17,22 @@ class StoreCustomCategoryType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var int
 	**/
-	protected $Order;
+	public $Order;
 
 	/**
 	* @var StoreCustomCategoryType
 	**/
-	protected $ChildCategory;
+	public $ChildCategory;
 
 
 	/**

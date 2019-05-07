@@ -17,42 +17,42 @@ class BuyingGuideType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var anyURI
 	**/
-	protected $URL;
+	public $URL;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var int
 	**/
-	protected $ProductFinderID;
+	public $ProductFinderID;
 
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 	/**
 	* @var string
 	**/
-	protected $Text;
+	public $Text;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreationTime;
+	public $CreationTime;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 
 	/**

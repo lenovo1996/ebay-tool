@@ -18,7 +18,7 @@ class DeleteSellingManagerTemplateRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 
 	/**

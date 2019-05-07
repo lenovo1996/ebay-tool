@@ -18,12 +18,12 @@ class GetMessagePreferencesRequestType extends AbstractRequestType
 	/**
 	* @var UserIDType
 	**/
-	protected $SellerID;
+	public $SellerID;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeASQPreferences;
+	public $IncludeASQPreferences;
 
 
 	/**

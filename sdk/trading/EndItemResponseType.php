@@ -16,7 +16,7 @@ class EndItemResponseType extends AbstractResponseType
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 
 	/**

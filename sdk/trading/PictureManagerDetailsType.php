@@ -16,37 +16,37 @@ class PictureManagerDetailsType extends EbatNs_ComplexType
 	/**
 	* @var PictureManagerSubscriptionLevelCodeType
 	**/
-	protected $SubscriptionLevel;
+	public $SubscriptionLevel;
 
 	/**
 	* @var int
 	**/
-	protected $StorageUsed;
+	public $StorageUsed;
 
 	/**
 	* @var int
 	**/
-	protected $TotalStorageAvailable;
+	public $TotalStorageAvailable;
 
 	/**
 	* @var boolean
 	**/
-	protected $KeepOriginal;
+	public $KeepOriginal;
 
 	/**
 	* @var boolean
 	**/
-	protected $WatermarkEPS;
+	public $WatermarkEPS;
 
 	/**
 	* @var boolean
 	**/
-	protected $WatermarkUserID;
+	public $WatermarkUserID;
 
 	/**
 	* @var PictureManagerFolderType
 	**/
-	protected $Folder;
+	public $Folder;
 
 
 	/**

@@ -23,152 +23,152 @@ class SellingManagerSoldOrderType extends EbatNs_ComplexType
 	/**
 	* @var SellingManagerSoldTransactionType
 	**/
-	protected $SellingManagerSoldTransaction;
+	public $SellingManagerSoldTransaction;
 
 	/**
 	* @var AddressType
 	**/
-	protected $ShippingAddress;
+	public $ShippingAddress;
 
 	/**
 	* @var ShippingDetailsType
 	**/
-	protected $ShippingDetails;
+	public $ShippingDetails;
 
 	/**
 	* @var AmountType
 	**/
-	protected $CashOnDeliveryCost;
+	public $CashOnDeliveryCost;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalAmount;
+	public $TotalAmount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalQuantity;
+	public $TotalQuantity;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ItemCost;
+	public $ItemCost;
 
 	/**
 	* @var VATRateType
 	**/
-	protected $VATRate;
+	public $VATRate;
 
 	/**
 	* @var AmountType
 	**/
-	protected $NetInsuranceFee;
+	public $NetInsuranceFee;
 
 	/**
 	* @var AmountType
 	**/
-	protected $VATInsuranceFee;
+	public $VATInsuranceFee;
 
 	/**
 	* @var AmountType
 	**/
-	protected $VATShippingFee;
+	public $VATShippingFee;
 
 	/**
 	* @var AmountType
 	**/
-	protected $NetShippingFee;
+	public $NetShippingFee;
 
 	/**
 	* @var AmountType
 	**/
-	protected $NetTotalAmount;
+	public $NetTotalAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $VATTotalAmount;
+	public $VATTotalAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ActualShippingCost;
+	public $ActualShippingCost;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AdjustmentAmount;
+	public $AdjustmentAmount;
 
 	/**
 	* @var string
 	**/
-	protected $NotesToBuyer;
+	public $NotesToBuyer;
 
 	/**
 	* @var string
 	**/
-	protected $NotesFromBuyer;
+	public $NotesFromBuyer;
 
 	/**
 	* @var string
 	**/
-	protected $NotesToSeller;
+	public $NotesToSeller;
 
 	/**
 	* @var SellingManagerOrderStatusType
 	**/
-	protected $OrderStatus;
+	public $OrderStatus;
 
 	/**
 	* @var UnpaidItemStatusTypeCodeType
 	**/
-	protected $UnpaidItemStatus;
+	public $UnpaidItemStatus;
 
 	/**
 	* @var AmountType
 	**/
-	protected $SalePrice;
+	public $SalePrice;
 
 	/**
 	* @var int
 	**/
-	protected $EmailsSent;
+	public $EmailsSent;
 
 	/**
 	* @var int
 	**/
-	protected $DaysSinceSale;
+	public $DaysSinceSale;
 
 	/**
 	* @var string
 	**/
-	protected $BuyerID;
+	public $BuyerID;
 
 	/**
 	* @var string
 	**/
-	protected $BuyerEmail;
+	public $BuyerEmail;
 
 	/**
 	* @var long
 	**/
-	protected $SaleRecordID;
+	public $SaleRecordID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreationTime;
+	public $CreationTime;
 
 	/**
 	* @var AmountType
 	**/
-	protected $RefundAmount;
+	public $RefundAmount;
 
 	/**
 	* @var string
 	**/
-	protected $RefundStatus;
+	public $RefundStatus;
 
 
 	/**

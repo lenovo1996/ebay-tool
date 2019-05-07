@@ -17,7 +17,7 @@ class TopRatedSellerDetailsType extends EbatNs_ComplexType
 	/**
 	* @var TopRatedProgramCodeType
 	**/
-	protected $TopRatedProgram;
+	public $TopRatedProgram;
 
 
 	/**

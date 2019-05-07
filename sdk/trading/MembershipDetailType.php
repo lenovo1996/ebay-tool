@@ -20,17 +20,17 @@ class MembershipDetailType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ProgramName;
+	public $ProgramName;
 
 	/**
 	* @var SiteCodeType
 	**/
-	protected $Site;
+	public $Site;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ExpiryDate;
+	public $ExpiryDate;
 
 
 	/**

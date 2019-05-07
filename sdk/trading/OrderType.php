@@ -45,237 +45,237 @@ class OrderType extends EbatNs_ComplexType
 	/**
 	* @var OrderIDType
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 	/**
 	* @var OrderStatusCodeType
 	**/
-	protected $OrderStatus;
+	public $OrderStatus;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AdjustmentAmount;
+	public $AdjustmentAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AmountPaid;
+	public $AmountPaid;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AmountSaved;
+	public $AmountSaved;
 
 	/**
 	* @var CheckoutStatusType
 	**/
-	protected $CheckoutStatus;
+	public $CheckoutStatus;
 
 	/**
 	* @var ShippingDetailsType
 	**/
-	protected $ShippingDetails;
+	public $ShippingDetails;
 
 	/**
 	* @var TradingRoleCodeType
 	**/
-	protected $CreatingUserRole;
+	public $CreatingUserRole;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreatedTime;
+	public $CreatedTime;
 
 	/**
 	* @var BuyerPaymentMethodCodeType
 	**/
-	protected $PaymentMethods;
+	public $PaymentMethods;
 
 	/**
 	* @var string
 	**/
-	protected $SellerEmail;
+	public $SellerEmail;
 
 	/**
 	* @var AddressType
 	**/
-	protected $ShippingAddress;
+	public $ShippingAddress;
 
 	/**
 	* @var ShippingServiceOptionsType
 	**/
-	protected $ShippingServiceSelected;
+	public $ShippingServiceSelected;
 
 	/**
 	* @var AmountType
 	**/
-	protected $Subtotal;
+	public $Subtotal;
 
 	/**
 	* @var AmountType
 	**/
-	protected $Total;
+	public $Total;
 
 	/**
 	* @var ExternalTransactionType
 	**/
-	protected $ExternalTransaction;
+	public $ExternalTransaction;
 
 	/**
 	* @var TransactionArrayType
 	**/
-	protected $TransactionArray;
+	public $TransactionArray;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $BuyerUserID;
+	public $BuyerUserID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $PaidTime;
+	public $PaidTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ShippedTime;
+	public $ShippedTime;
 
 	/**
 	* @var boolean
 	**/
-	protected $IntegratedMerchantCreditCardEnabled;
+	public $IntegratedMerchantCreditCardEnabled;
 
 	/**
 	* @var boolean
 	**/
-	protected $BundlePurchase;
+	public $BundlePurchase;
 
 	/**
 	* @var string
 	**/
-	protected $BuyerCheckoutMessage;
+	public $BuyerCheckoutMessage;
 
 	/**
 	* @var string
 	**/
-	protected $EIASToken;
+	public $EIASToken;
 
 	/**
 	* @var PaymentHoldStatusCodeType
 	**/
-	protected $PaymentHoldStatus;
+	public $PaymentHoldStatus;
 
 	/**
 	* @var PaymentHoldDetailType
 	**/
-	protected $PaymentHoldDetails;
+	public $PaymentHoldDetails;
 
 	/**
 	* @var AmountType
 	**/
-	protected $RefundAmount;
+	public $RefundAmount;
 
 	/**
 	* @var string
 	**/
-	protected $RefundStatus;
+	public $RefundStatus;
 
 	/**
 	* @var RefundArrayType
 	**/
-	protected $RefundArray;
+	public $RefundArray;
 
 	/**
 	* @var boolean
 	**/
-	protected $IsMultiLegShipping;
+	public $IsMultiLegShipping;
 
 	/**
 	* @var MultiLegShippingDetailsType
 	**/
-	protected $MultiLegShippingDetails;
+	public $MultiLegShippingDetails;
 
 	/**
 	* @var PaymentsInformationType
 	**/
-	protected $MonetaryDetails;
+	public $MonetaryDetails;
 
 	/**
 	* @var PickupDetailsType
 	**/
-	protected $PickupDetails;
+	public $PickupDetails;
 
 	/**
 	* @var PickupMethodSelectedType
 	**/
-	protected $PickupMethodSelected;
+	public $PickupMethodSelected;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $SellerUserID;
+	public $SellerUserID;
 
 	/**
 	* @var string
 	**/
-	protected $SellerEIASToken;
+	public $SellerEIASToken;
 
 	/**
 	* @var token
 	**/
-	protected $CancelReason;
+	public $CancelReason;
 
 	/**
 	* @var CancelStatusCodeType
 	**/
-	protected $CancelStatus;
+	public $CancelStatus;
 
 	/**
 	* @var string
 	**/
-	protected $CancelReasonDetails;
+	public $CancelReasonDetails;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingConvenienceCharge;
+	public $ShippingConvenienceCharge;
 
 	/**
 	* @var CancelDetailType
 	**/
-	protected $CancelDetail;
+	public $CancelDetail;
 
 	/**
 	* @var token
 	**/
-	protected $LogisticsPlanType;
+	public $LogisticsPlanType;
 
 	/**
 	* @var TaxIdentifierType
 	**/
-	protected $BuyerTaxIdentifier;
+	public $BuyerTaxIdentifier;
 
 	/**
 	* @var BuyerPackageEnclosuresType
 	**/
-	protected $BuyerPackageEnclosures;
+	public $BuyerPackageEnclosures;
 
 	/**
 	* @var string
 	**/
-	protected $ExtendedOrderID;
+	public $ExtendedOrderID;
 
 	/**
 	* @var boolean
 	**/
-	protected $ContainseBayPlusTransaction;
+	public $ContainseBayPlusTransaction;
 
 	/**
 	* @var boolean
 	**/
-	protected $eBayCollectAndRemitTax;
+	public $eBayCollectAndRemitTax;
 
 
 	/**

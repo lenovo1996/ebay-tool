@@ -17,7 +17,7 @@ class AddDisputeResponseType extends AbstractResponseType
 	/**
 	* @var DisputeIDType
 	**/
-	protected $DisputeID;
+	public $DisputeID;
 
 
 	/**

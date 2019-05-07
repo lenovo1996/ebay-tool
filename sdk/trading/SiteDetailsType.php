@@ -17,22 +17,22 @@ class SiteDetailsType extends EbatNs_ComplexType
 	/**
 	* @var SiteCodeType
 	**/
-	protected $Site;
+	public $Site;
 
 	/**
 	* @var int
 	**/
-	protected $SiteID;
+	public $SiteID;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

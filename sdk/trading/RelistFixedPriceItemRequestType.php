@@ -17,12 +17,12 @@ class RelistFixedPriceItemRequestType extends AbstractRequestType
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 	/**
 	* @var string
 	**/
-	protected $DeletedField;
+	public $DeletedField;
 
 
 	/**

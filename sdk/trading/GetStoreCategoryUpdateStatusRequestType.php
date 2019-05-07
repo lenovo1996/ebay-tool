@@ -16,7 +16,7 @@ class GetStoreCategoryUpdateStatusRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $TaskID;
+	public $TaskID;
 
 
 	/**

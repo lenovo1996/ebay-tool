@@ -16,37 +16,37 @@ class SellingManagerAutoListAccordingToScheduleType extends EbatNs_ComplexType
 	/**
 	* @var DayOfWeekCodeType
 	**/
-	protected $DayOfWeek;
+	public $DayOfWeek;
 
 	/**
 	* @var int
 	**/
-	protected $ListingPeriodInWeeks;
+	public $ListingPeriodInWeeks;
 
 	/**
 	* @var time
 	**/
-	protected $ListAtSpecificTimeOfDay;
+	public $ListAtSpecificTimeOfDay;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var int
 	**/
-	protected $MaxActiveItemCount;
+	public $MaxActiveItemCount;
 
 	/**
 	* @var int
 	**/
-	protected $ListingHoldInventoryLevel;
+	public $ListingHoldInventoryLevel;
 
 
 	/**

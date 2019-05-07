@@ -17,17 +17,17 @@ class ExtendedContactDetailsType extends EbatNs_ComplexType
 	/**
 	* @var ContactHoursDetailsType
 	**/
-	protected $ContactHoursDetails;
+	public $ContactHoursDetails;
 
 	/**
 	* @var boolean
 	**/
-	protected $ClassifiedAdContactByEmailEnabled;
+	public $ClassifiedAdContactByEmailEnabled;
 
 	/**
 	* @var string
 	**/
-	protected $PayPerLeadPhoneNumber;
+	public $PayPerLeadPhoneNumber;
 
 
 	/**

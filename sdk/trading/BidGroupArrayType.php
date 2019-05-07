@@ -17,7 +17,7 @@ class BidGroupArrayType extends EbatNs_ComplexType
 	/**
 	* @var BidGroupType
 	**/
-	protected $BidGroup;
+	public $BidGroup;
 
 
 	/**

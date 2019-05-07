@@ -17,27 +17,27 @@ class LineItemType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $Quantity;
+	public $Quantity;
 
 	/**
 	* @var string
 	**/
-	protected $CountryOfOrigin;
+	public $CountryOfOrigin;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 
 	/**

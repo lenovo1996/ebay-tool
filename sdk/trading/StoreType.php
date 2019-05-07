@@ -26,97 +26,97 @@ class StoreType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var string
 	**/
-	protected $URLPath;
+	public $URLPath;
 
 	/**
 	* @var anyURI
 	**/
-	protected $URL;
+	public $URL;
 
 	/**
 	* @var StoreSubscriptionLevelCodeType
 	**/
-	protected $SubscriptionLevel;
+	public $SubscriptionLevel;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var StoreLogoType
 	**/
-	protected $Logo;
+	public $Logo;
 
 	/**
 	* @var StoreThemeType
 	**/
-	protected $Theme;
+	public $Theme;
 
 	/**
 	* @var StoreHeaderStyleCodeType
 	**/
-	protected $HeaderStyle;
+	public $HeaderStyle;
 
 	/**
 	* @var long
 	**/
-	protected $HomePage;
+	public $HomePage;
 
 	/**
 	* @var StoreItemListLayoutCodeType
 	**/
-	protected $ItemListLayout;
+	public $ItemListLayout;
 
 	/**
 	* @var StoreItemListSortOrderCodeType
 	**/
-	protected $ItemListSortOrder;
+	public $ItemListSortOrder;
 
 	/**
 	* @var StoreCustomHeaderLayoutCodeType
 	**/
-	protected $CustomHeaderLayout;
+	public $CustomHeaderLayout;
 
 	/**
 	* @var string
 	**/
-	protected $CustomHeader;
+	public $CustomHeader;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExportListings;
+	public $ExportListings;
 
 	/**
 	* @var StoreCustomCategoryArrayType
 	**/
-	protected $CustomCategories;
+	public $CustomCategories;
 
 	/**
 	* @var StoreCustomListingHeaderType
 	**/
-	protected $CustomListingHeader;
+	public $CustomListingHeader;
 
 	/**
 	* @var MerchDisplayCodeType
 	**/
-	protected $MerchDisplay;
+	public $MerchDisplay;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastOpenedTime;
+	public $LastOpenedTime;
 
 	/**
 	* @var boolean
 	**/
-	protected $TitleWithCompatibility;
+	public $TitleWithCompatibility;
 
 
 	/**

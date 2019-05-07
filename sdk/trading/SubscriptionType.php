@@ -16,17 +16,17 @@ class SubscriptionType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $EIASToken;
+	public $EIASToken;
 
 	/**
 	* @var SiteCodeType
 	**/
-	protected $SiteID;
+	public $SiteID;
 
 	/**
 	* @var boolean
 	**/
-	protected $Active;
+	public $Active;
 
 
 	/**

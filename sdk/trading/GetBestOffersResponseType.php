@@ -20,27 +20,27 @@ class GetBestOffersResponseType extends AbstractResponseType
 	/**
 	* @var BestOfferArrayType
 	**/
-	protected $BestOfferArray;
+	public $BestOfferArray;
 
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 	/**
 	* @var ItemBestOffersArrayType
 	**/
-	protected $ItemBestOffersArray;
+	public $ItemBestOffersArray;
 
 	/**
 	* @var int
 	**/
-	protected $PageNumber;
+	public $PageNumber;
 
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 
 	/**

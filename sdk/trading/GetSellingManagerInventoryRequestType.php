@@ -21,37 +21,37 @@ class GetSellingManagerInventoryRequestType extends AbstractRequestType
 	/**
 	* @var SellingManagerProductSortCodeType
 	**/
-	protected $Sort;
+	public $Sort;
 
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var SortOrderCodeType
 	**/
-	protected $SortOrder;
+	public $SortOrder;
 
 	/**
 	* @var SellingManagerSearchType
 	**/
-	protected $Search;
+	public $Search;
 
 	/**
 	* @var long
 	**/
-	protected $StoreCategoryID;
+	public $StoreCategoryID;
 
 	/**
 	* @var SellingManagerInventoryPropertyTypeCodeType
 	**/
-	protected $Filter;
+	public $Filter;
 
 
 	/**

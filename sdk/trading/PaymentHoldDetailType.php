@@ -22,22 +22,22 @@ class PaymentHoldDetailType extends EbatNs_ComplexType
 	/**
 	* @var dateTime
 	**/
-	protected $ExpectedReleaseDate;
+	public $ExpectedReleaseDate;
 
 	/**
 	* @var RequiredSellerActionArrayType
 	**/
-	protected $RequiredSellerActionArray;
+	public $RequiredSellerActionArray;
 
 	/**
 	* @var int
 	**/
-	protected $NumOfReqSellerActions;
+	public $NumOfReqSellerActions;
 
 	/**
 	* @var PaymentHoldReasonCodeType
 	**/
-	protected $PaymentHoldReason;
+	public $PaymentHoldReason;
 
 
 	/**

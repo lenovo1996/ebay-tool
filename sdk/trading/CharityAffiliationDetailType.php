@@ -17,17 +17,17 @@ class CharityAffiliationDetailType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $CharityID;
+	public $CharityID;
 
 	/**
 	* @var CharityAffiliationTypeCodeType
 	**/
-	protected $AffiliationType;
+	public $AffiliationType;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastUsedTime;
+	public $LastUsedTime;
 
 
 	/**

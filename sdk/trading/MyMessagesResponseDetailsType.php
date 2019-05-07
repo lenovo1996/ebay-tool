@@ -16,17 +16,17 @@ class MyMessagesResponseDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $ResponseEnabled;
+	public $ResponseEnabled;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ResponseURL;
+	public $ResponseURL;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UserResponseDate;
+	public $UserResponseDate;
 
 
 	/**

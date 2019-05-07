@@ -18,17 +18,17 @@ class ItemsCanceledEventType extends AbstractResponseType
 	/**
 	* @var ItemIDArrayType
 	**/
-	protected $CanceledItemIDArray;
+	public $CanceledItemIDArray;
 
 	/**
 	* @var boolean
 	**/
-	protected $EligibleForRelist;
+	public $EligibleForRelist;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $SellerID;
+	public $SellerID;
 
 
 	/**

@@ -17,7 +17,7 @@ class BidderDetailArrayType extends EbatNs_ComplexType
 	/**
 	* @var BidderDetailType
 	**/
-	protected $BidderDetail;
+	public $BidderDetail;
 
 
 	/**

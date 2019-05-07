@@ -19,12 +19,12 @@ class AddMemberMessageAAQToPartnerRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var MemberMessageType
 	**/
-	protected $MemberMessage;
+	public $MemberMessage;
 
 
 	/**

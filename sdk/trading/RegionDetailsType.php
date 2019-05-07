@@ -17,22 +17,22 @@ class RegionDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $RegionID;
+	public $RegionID;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

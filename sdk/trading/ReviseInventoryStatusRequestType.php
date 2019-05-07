@@ -20,7 +20,7 @@ class ReviseInventoryStatusRequestType extends AbstractRequestType
 	/**
 	* @var InventoryStatusType
 	**/
-	protected $InventoryStatus;
+	public $InventoryStatus;
 
 
 	/**

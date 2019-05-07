@@ -21,7 +21,7 @@ class IntegratedMerchantCreditCardInfoType extends EbatNs_ComplexType
 	/**
 	* @var SiteCodeType
 	**/
-	protected $SupportedSite;
+	public $SupportedSite;
 
 
 	/**

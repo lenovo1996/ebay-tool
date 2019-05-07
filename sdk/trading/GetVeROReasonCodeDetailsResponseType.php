@@ -17,7 +17,7 @@ class GetVeROReasonCodeDetailsResponseType extends AbstractResponseType
 	/**
 	* @var VeROReasonCodeDetailsType
 	**/
-	protected $VeROReasonCodeDetails;
+	public $VeROReasonCodeDetails;
 
 
 	/**

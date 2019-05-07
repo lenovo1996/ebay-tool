@@ -25,32 +25,32 @@ class GetVeROReportStatusRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $VeROReportPacketID;
+	public $VeROReportPacketID;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeReportedItemDetails;
+	public $IncludeReportedItemDetails;
 
 	/**
 	* @var dateTime
 	**/
-	protected $TimeFrom;
+	public $TimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $TimeTo;
+	public $TimeTo;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 
 	/**

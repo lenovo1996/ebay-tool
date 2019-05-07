@@ -18,12 +18,12 @@ class ReviseInventoryStatusResponseType extends AbstractResponseType
 	/**
 	* @var InventoryStatusType
 	**/
-	protected $InventoryStatus;
+	public $InventoryStatus;
 
 	/**
 	* @var InventoryFeesType
 	**/
-	protected $Fees;
+	public $Fees;
 
 
 	/**

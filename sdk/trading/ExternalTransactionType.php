@@ -21,27 +21,27 @@ class ExternalTransactionType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ExternalTransactionID;
+	public $ExternalTransactionID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ExternalTransactionTime;
+	public $ExternalTransactionTime;
 
 	/**
 	* @var AmountType
 	**/
-	protected $FeeOrCreditAmount;
+	public $FeeOrCreditAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $PaymentOrRefundAmount;
+	public $PaymentOrRefundAmount;
 
 	/**
 	* @var PaymentTransactionStatusCodeType
 	**/
-	protected $ExternalTransactionStatus;
+	public $ExternalTransactionStatus;
 
 
 	/**

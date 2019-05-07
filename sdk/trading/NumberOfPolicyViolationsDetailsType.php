@@ -17,7 +17,7 @@ class NumberOfPolicyViolationsDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $Count;
+	public $Count;
 
 
 	/**

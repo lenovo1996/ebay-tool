@@ -21,57 +21,57 @@ class AddItemResponseContainerType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var FeesType
 	**/
-	protected $Fees;
+	public $Fees;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $Category2ID;
+	public $Category2ID;
 
 	/**
 	* @var string
 	**/
-	protected $CorrelationID;
+	public $CorrelationID;
 
 	/**
 	* @var ErrorType
 	**/
-	protected $Errors;
+	public $Errors;
 
 	/**
 	* @var string
 	**/
-	protected $Message;
+	public $Message;
 
 	/**
 	* @var DiscountReasonCodeType
 	**/
-	protected $DiscountReason;
+	public $DiscountReason;
 
 	/**
 	* @var ListingRecommendationsType
 	**/
-	protected $ListingRecommendations;
+	public $ListingRecommendations;
 
 
 	/**

@@ -20,12 +20,12 @@ class GetVeROReasonCodeDetailsRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $ReasonCodeID;
+	public $ReasonCodeID;
 
 	/**
 	* @var boolean
 	**/
-	protected $ReturnAllSites;
+	public $ReturnAllSites;
 
 
 	/**

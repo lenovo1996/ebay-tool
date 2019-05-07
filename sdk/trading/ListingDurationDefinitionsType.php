@@ -17,7 +17,7 @@ class ListingDurationDefinitionsType extends EbatNs_ComplexType
 	/**
 	* @var ListingDurationDefinitionType
 	**/
-	protected $ListingDuration;
+	public $ListingDuration;
 
 
 	/**

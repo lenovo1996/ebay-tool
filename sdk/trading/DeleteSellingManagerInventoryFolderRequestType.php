@@ -16,7 +16,7 @@ class DeleteSellingManagerInventoryFolderRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 
 	/**

@@ -18,17 +18,17 @@ class CartItemType extends EbatNs_ComplexType
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 	/**
 	* @var long
 	**/
-	protected $ReferenceID;
+	public $ReferenceID;
 
 	/**
 	* @var ModifyActionCodeType
 	**/
-	protected $Action;
+	public $Action;
 
 
 	/**

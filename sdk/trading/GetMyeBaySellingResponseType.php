@@ -21,47 +21,47 @@ class GetMyeBaySellingResponseType extends AbstractResponseType
 	/**
 	* @var SellingSummaryType
 	**/
-	protected $SellingSummary;
+	public $SellingSummary;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $ScheduledList;
+	public $ScheduledList;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $ActiveList;
+	public $ActiveList;
 
 	/**
 	* @var PaginatedOrderTransactionArrayType
 	**/
-	protected $SoldList;
+	public $SoldList;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $UnsoldList;
+	public $UnsoldList;
 
 	/**
 	* @var MyeBaySellingSummaryType
 	**/
-	protected $Summary;
+	public $Summary;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $BidList;
+	public $BidList;
 
 	/**
 	* @var PaginatedOrderTransactionArrayType
 	**/
-	protected $DeletedFromSoldList;
+	public $DeletedFromSoldList;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $DeletedFromUnsoldList;
+	public $DeletedFromUnsoldList;
 
 
 	/**

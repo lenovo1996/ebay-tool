@@ -20,27 +20,27 @@ class SMSSubscriptionType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $SMSPhone;
+	public $SMSPhone;
 
 	/**
 	* @var SMSSubscriptionUserStatusCodeType
 	**/
-	protected $UserStatus;
+	public $UserStatus;
 
 	/**
 	* @var WirelessCarrierIDCodeType
 	**/
-	protected $CarrierID;
+	public $CarrierID;
 
 	/**
 	* @var SMSSubscriptionErrorCodeCodeType
 	**/
-	protected $ErrorCode;
+	public $ErrorCode;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemToUnsubscribe;
+	public $ItemToUnsubscribe;
 
 
 	/**

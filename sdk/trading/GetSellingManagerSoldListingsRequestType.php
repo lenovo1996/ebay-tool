@@ -24,42 +24,42 @@ class GetSellingManagerSoldListingsRequestType extends AbstractRequestType
 	/**
 	* @var SellingManagerSearchType
 	**/
-	protected $Search;
+	public $Search;
 
 	/**
 	* @var long
 	**/
-	protected $StoreCategoryID;
+	public $StoreCategoryID;
 
 	/**
 	* @var SellingManagerSoldListingsPropertyTypeCodeType
 	**/
-	protected $Filter;
+	public $Filter;
 
 	/**
 	* @var boolean
 	**/
-	protected $Archived;
+	public $Archived;
 
 	/**
 	* @var SellingManagerSoldListingsSortTypeCodeType
 	**/
-	protected $Sort;
+	public $Sort;
 
 	/**
 	* @var SortOrderCodeType
 	**/
-	protected $SortOrder;
+	public $SortOrder;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var TimeRangeType
 	**/
-	protected $SaleDateRange;
+	public $SaleDateRange;
 
 
 	/**

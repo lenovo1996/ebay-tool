@@ -17,7 +17,7 @@ class AttributeSetArrayType extends EbatNs_ComplexType
 	/**
 	* @var AttributeSetType
 	**/
-	protected $AttributeSet;
+	public $AttributeSet;
 
 
 	/**

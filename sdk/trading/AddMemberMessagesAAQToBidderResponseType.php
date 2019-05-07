@@ -17,7 +17,7 @@ class AddMemberMessagesAAQToBidderResponseType extends AbstractResponseType
 	/**
 	* @var AddMemberMessagesAAQToBidderResponseContainerType
 	**/
-	protected $AddMemberMessagesAAQToBidderResponseContainer;
+	public $AddMemberMessagesAAQToBidderResponseContainer;
 
 
 	/**

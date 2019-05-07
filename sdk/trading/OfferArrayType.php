@@ -17,7 +17,7 @@ class OfferArrayType extends EbatNs_ComplexType
 	/**
 	* @var OfferType
 	**/
-	protected $Offer;
+	public $Offer;
 
 
 	/**

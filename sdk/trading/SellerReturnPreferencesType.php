@@ -16,7 +16,7 @@ class SellerReturnPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $OptedIn;
+	public $OptedIn;
 
 
 	/**

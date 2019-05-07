@@ -17,7 +17,7 @@ class RefundTransactionArrayType extends EbatNs_ComplexType
 	/**
 	* @var RefundTransactionType
 	**/
-	protected $RefundTransaction;
+	public $RefundTransaction;
 
 
 	/**

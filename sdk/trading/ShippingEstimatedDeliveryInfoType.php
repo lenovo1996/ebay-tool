@@ -17,12 +17,12 @@ class ShippingEstimatedDeliveryInfoType extends EbatNs_ComplexType
 	/**
 	* @var dateTime
 	**/
-	protected $OriginalDeliveryEstimatedTimeMin;
+	public $OriginalDeliveryEstimatedTimeMin;
 
 	/**
 	* @var dateTime
 	**/
-	protected $OriginalDeliveryEstimatedTimeMax;
+	public $OriginalDeliveryEstimatedTimeMax;
 
 
 	/**

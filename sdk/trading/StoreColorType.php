@@ -16,17 +16,17 @@ class StoreColorType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Primary;
+	public $Primary;
 
 	/**
 	* @var string
 	**/
-	protected $Secondary;
+	public $Secondary;
 
 	/**
 	* @var string
 	**/
-	protected $Accent;
+	public $Accent;
 
 
 	/**

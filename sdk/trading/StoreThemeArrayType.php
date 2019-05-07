@@ -18,12 +18,12 @@ class StoreThemeArrayType extends EbatNs_ComplexType
 	/**
 	* @var StoreThemeType
 	**/
-	protected $Theme;
+	public $Theme;
 
 	/**
 	* @var StoreColorSchemeArrayType
 	**/
-	protected $GenericColorSchemeArray;
+	public $GenericColorSchemeArray;
 
 
 	/**

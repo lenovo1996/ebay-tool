@@ -24,117 +24,117 @@ class ShippingServiceDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExpeditedService;
+	public $ExpeditedService;
 
 	/**
 	* @var boolean
 	**/
-	protected $InternationalService;
+	public $InternationalService;
 
 	/**
 	* @var token
 	**/
-	protected $ShippingService;
+	public $ShippingService;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingServiceID;
+	public $ShippingServiceID;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingTimeMax;
+	public $ShippingTimeMax;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingTimeMin;
+	public $ShippingTimeMin;
 
 	/**
 	* @var ShippingServiceCodeType
 	**/
-	protected $ShippingServiceCode;
+	public $ShippingServiceCode;
 
 	/**
 	* @var ShippingTypeCodeType
 	**/
-	protected $ServiceType;
+	public $ServiceType;
 
 	/**
 	* @var ShippingPackageCodeType
 	**/
-	protected $ShippingPackage;
+	public $ShippingPackage;
 
 	/**
 	* @var boolean
 	**/
-	protected $DimensionsRequired;
+	public $DimensionsRequired;
 
 	/**
 	* @var boolean
 	**/
-	protected $ValidForSellingFlow;
+	public $ValidForSellingFlow;
 
 	/**
 	* @var boolean
 	**/
-	protected $SurchargeApplicable;
+	public $SurchargeApplicable;
 
 	/**
 	* @var ShippingCarrierCodeType
 	**/
-	protected $ShippingCarrier;
+	public $ShippingCarrier;
 
 	/**
 	* @var boolean
 	**/
-	protected $CODService;
+	public $CODService;
 
 	/**
 	* @var AnnouncementMessageType
 	**/
-	protected $DeprecationDetails;
+	public $DeprecationDetails;
 
 	/**
 	* @var int
 	**/
-	protected $MappedToShippingServiceID;
+	public $MappedToShippingServiceID;
 
 	/**
 	* @var token
 	**/
-	protected $CostGroupFlat;
+	public $CostGroupFlat;
 
 	/**
 	* @var ShippingServicePackageDetailsType
 	**/
-	protected $ShippingServicePackageDetails;
+	public $ShippingServicePackageDetails;
 
 	/**
 	* @var boolean
 	**/
-	protected $WeightRequired;
+	public $WeightRequired;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 	/**
 	* @var token
 	**/
-	protected $ShippingCategory;
+	public $ShippingCategory;
 
 
 	/**

@@ -18,22 +18,22 @@ class PromotionalShippingDiscountDetailsType extends EbatNs_ComplexType
 	/**
 	* @var DiscountNameCodeType
 	**/
-	protected $DiscountName;
+	public $DiscountName;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingCost;
+	public $ShippingCost;
 
 	/**
 	* @var AmountType
 	**/
-	protected $OrderAmount;
+	public $OrderAmount;
 
 	/**
 	* @var int
 	**/
-	protected $ItemCount;
+	public $ItemCount;
 
 
 	/**

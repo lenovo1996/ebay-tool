@@ -23,87 +23,87 @@ class OfferType extends EbatNs_ComplexType
 	/**
 	* @var BidActionCodeType
 	**/
-	protected $Action;
+	public $Action;
 
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $Currency;
+	public $Currency;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MaxBid;
+	public $MaxBid;
 
 	/**
 	* @var int
 	**/
-	protected $Quantity;
+	public $Quantity;
 
 	/**
 	* @var boolean
 	**/
-	protected $SecondChanceEnabled;
+	public $SecondChanceEnabled;
 
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $SiteCurrency;
+	public $SiteCurrency;
 
 	/**
 	* @var dateTime
 	**/
-	protected $TimeBid;
+	public $TimeBid;
 
 	/**
 	* @var AmountType
 	**/
-	protected $HighestBid;
+	public $HighestBid;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ConvertedPrice;
+	public $ConvertedPrice;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var UserType
 	**/
-	protected $User;
+	public $User;
 
 	/**
 	* @var boolean
 	**/
-	protected $UserConsent;
+	public $UserConsent;
 
 	/**
 	* @var int
 	**/
-	protected $BidCount;
+	public $BidCount;
 
 	/**
 	* @var string
 	**/
-	protected $Message;
+	public $Message;
 
 	/**
 	* @var BestOfferIDType
 	**/
-	protected $BestOfferID;
+	public $BestOfferID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MyMaxBid;
+	public $MyMaxBid;
 
 
 	/**

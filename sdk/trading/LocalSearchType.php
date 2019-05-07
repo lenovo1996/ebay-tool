@@ -16,12 +16,12 @@ class LocalSearchType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MaxDistance;
+	public $MaxDistance;
 
 	/**
 	* @var string
 	**/
-	protected $PostalCode;
+	public $PostalCode;
 
 
 	/**

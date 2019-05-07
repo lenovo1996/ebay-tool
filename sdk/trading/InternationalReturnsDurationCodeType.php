@@ -17,7 +17,7 @@ class InternationalReturnsDurationCodeType extends EbatNs_ComplexType
 	/**
 	* @var ReturnsDurationCodeType
 	**/
-	protected $InternationalReturnsDuration;
+	public $InternationalReturnsDuration;
 
 
 	/**

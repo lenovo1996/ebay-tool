@@ -17,17 +17,17 @@ class ProStoresDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $SellerThirdPartyUsername;
+	public $SellerThirdPartyUsername;
 
 	/**
 	* @var string
 	**/
-	protected $StoreName;
+	public $StoreName;
 
 	/**
 	* @var EnableCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 
 	/**

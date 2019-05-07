@@ -9,7 +9,7 @@
 //
 class EbatNs_DataConverter
 {
-    protected $options = array();
+    public $options = array();
 
     function __construct ()
     {

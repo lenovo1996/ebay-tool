@@ -16,7 +16,7 @@ class SaveItemToSellingManagerTemplateResponseType extends AbstractResponseType
 	/**
 	* @var long
 	**/
-	protected $TemplateID;
+	public $TemplateID;
 
 
 	/**

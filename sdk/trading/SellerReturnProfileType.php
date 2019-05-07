@@ -16,12 +16,12 @@ class SellerReturnProfileType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $ReturnProfileID;
+	public $ReturnProfileID;
 
 	/**
 	* @var string
 	**/
-	protected $ReturnProfileName;
+	public $ReturnProfileName;
 
 
 	/**

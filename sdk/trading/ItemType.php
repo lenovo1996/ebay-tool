@@ -74,712 +74,712 @@ class ItemType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ApplicationData;
+	public $ApplicationData;
 
 	/**
 	* @var AttributeSetArrayType
 	**/
-	protected $AttributeSetArray;
+	public $AttributeSetArray;
 
 	/**
 	* @var AttributeArrayType
 	**/
-	protected $AttributeArray;
+	public $AttributeArray;
 
 	/**
 	* @var LookupAttributeArrayType
 	**/
-	protected $LookupAttributeArray;
+	public $LookupAttributeArray;
 
 	/**
 	* @var boolean
 	**/
-	protected $AutoPay;
+	public $AutoPay;
 
 	/**
 	* @var BiddingDetailsType
 	**/
-	protected $BiddingDetails;
+	public $BiddingDetails;
 
 	/**
 	* @var BuyerProtectionCodeType
 	**/
-	protected $BuyerProtection;
+	public $BuyerProtection;
 
 	/**
 	* @var AmountType
 	**/
-	protected $BuyItNowPrice;
+	public $BuyItNowPrice;
 
 	/**
 	* @var boolean
 	**/
-	protected $CategoryMappingAllowed;
+	public $CategoryMappingAllowed;
 
 	/**
 	* @var CharityType
 	**/
-	protected $Charity;
+	public $Charity;
 
 	/**
 	* @var CountryCodeType
 	**/
-	protected $Country;
+	public $Country;
 
 	/**
 	* @var CrossPromotionsType
 	**/
-	protected $CrossPromotion;
+	public $CrossPromotion;
 
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $Currency;
+	public $Currency;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var DescriptionReviseModeCodeType
 	**/
-	protected $DescriptionReviseMode;
+	public $DescriptionReviseMode;
 
 	/**
 	* @var DistanceType
 	**/
-	protected $Distance;
+	public $Distance;
 
 	/**
 	* @var HitCounterCodeType
 	**/
-	protected $HitCounter;
+	public $HitCounter;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var ListingDetailsType
 	**/
-	protected $ListingDetails;
+	public $ListingDetails;
 
 	/**
 	* @var ListingDesignerType
 	**/
-	protected $ListingDesigner;
+	public $ListingDesigner;
 
 	/**
 	* @var token
 	**/
-	protected $ListingDuration;
+	public $ListingDuration;
 
 	/**
 	* @var ListingEnhancementsCodeType
 	**/
-	protected $ListingEnhancement;
+	public $ListingEnhancement;
 
 	/**
 	* @var ListingTypeCodeType
 	**/
-	protected $ListingType;
+	public $ListingType;
 
 	/**
 	* @var string
 	**/
-	protected $Location;
+	public $Location;
 
 	/**
 	* @var int
 	**/
-	protected $LotSize;
+	public $LotSize;
 
 	/**
 	* @var string
 	**/
-	protected $PartnerCode;
+	public $PartnerCode;
 
 	/**
 	* @var string
 	**/
-	protected $PartnerName;
+	public $PartnerName;
 
 	/**
 	* @var PaymentDetailsType
 	**/
-	protected $PaymentDetails;
+	public $PaymentDetails;
 
 	/**
 	* @var BuyerPaymentMethodCodeType
 	**/
-	protected $PaymentMethods;
+	public $PaymentMethods;
 
 	/**
 	* @var string
 	**/
-	protected $PayPalEmailAddress;
+	public $PayPalEmailAddress;
 
 	/**
 	* @var CategoryType
 	**/
-	protected $PrimaryCategory;
+	public $PrimaryCategory;
 
 	/**
 	* @var boolean
 	**/
-	protected $PrivateListing;
+	public $PrivateListing;
 
 	/**
 	* @var ProductListingDetailsType
 	**/
-	protected $ProductListingDetails;
+	public $ProductListingDetails;
 
 	/**
 	* @var int
 	**/
-	protected $Quantity;
+	public $Quantity;
 
 	/**
 	* @var string
 	**/
-	protected $PrivateNotes;
+	public $PrivateNotes;
 
 	/**
 	* @var string
 	**/
-	protected $RegionID;
+	public $RegionID;
 
 	/**
 	* @var boolean
 	**/
-	protected $RelistLink;
+	public $RelistLink;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ReservePrice;
+	public $ReservePrice;
 
 	/**
 	* @var ReviseStatusType
 	**/
-	protected $ReviseStatus;
+	public $ReviseStatus;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ScheduleTime;
+	public $ScheduleTime;
 
 	/**
 	* @var CategoryType
 	**/
-	protected $SecondaryCategory;
+	public $SecondaryCategory;
 
 	/**
 	* @var CategoryType
 	**/
-	protected $FreeAddedCategory;
+	public $FreeAddedCategory;
 
 	/**
 	* @var UserType
 	**/
-	protected $Seller;
+	public $Seller;
 
 	/**
 	* @var SellingStatusType
 	**/
-	protected $SellingStatus;
+	public $SellingStatus;
 
 	/**
 	* @var ShippingDetailsType
 	**/
-	protected $ShippingDetails;
+	public $ShippingDetails;
 
 	/**
 	* @var string
 	**/
-	protected $ShipToLocations;
+	public $ShipToLocations;
 
 	/**
 	* @var SiteCodeType
 	**/
-	protected $Site;
+	public $Site;
 
 	/**
 	* @var AmountType
 	**/
-	protected $StartPrice;
+	public $StartPrice;
 
 	/**
 	* @var StorefrontType
 	**/
-	protected $Storefront;
+	public $Storefront;
 
 	/**
 	* @var string
 	**/
-	protected $SubTitle;
+	public $SubTitle;
 
 	/**
 	* @var duration
 	**/
-	protected $TimeLeft;
+	public $TimeLeft;
 
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 	/**
 	* @var UUIDType
 	**/
-	protected $UUID;
+	public $UUID;
 
 	/**
 	* @var VATDetailsType
 	**/
-	protected $VATDetails;
+	public $VATDetails;
 
 	/**
 	* @var string
 	**/
-	protected $SellerVacationNote;
+	public $SellerVacationNote;
 
 	/**
 	* @var long
 	**/
-	protected $WatchCount;
+	public $WatchCount;
 
 	/**
 	* @var long
 	**/
-	protected $HitCount;
+	public $HitCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $DisableBuyerRequirements;
+	public $DisableBuyerRequirements;
 
 	/**
 	* @var BestOfferDetailsType
 	**/
-	protected $BestOfferDetails;
+	public $BestOfferDetails;
 
 	/**
 	* @var boolean
 	**/
-	protected $LocationDefaulted;
+	public $LocationDefaulted;
 
 	/**
 	* @var boolean
 	**/
-	protected $UseTaxTable;
+	public $UseTaxTable;
 
 	/**
 	* @var boolean
 	**/
-	protected $GetItFast;
+	public $GetItFast;
 
 	/**
 	* @var boolean
 	**/
-	protected $BuyerResponsibleForShipping;
+	public $BuyerResponsibleForShipping;
 
 	/**
 	* @var boolean
 	**/
-	protected $LimitedWarrantyEligible;
+	public $LimitedWarrantyEligible;
 
 	/**
 	* @var string
 	**/
-	protected $eBayNotes;
+	public $eBayNotes;
 
 	/**
 	* @var long
 	**/
-	protected $QuestionCount;
+	public $QuestionCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $Relisted;
+	public $Relisted;
 
 	/**
 	* @var int
 	**/
-	protected $QuantityAvailable;
+	public $QuantityAvailable;
 
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 	/**
 	* @var SearchDetailsType
 	**/
-	protected $SearchDetails;
+	public $SearchDetails;
 
 	/**
 	* @var string
 	**/
-	protected $PostalCode;
+	public $PostalCode;
 
 	/**
 	* @var string
 	**/
-	protected $SellerInventoryID;
+	public $SellerInventoryID;
 
 	/**
 	* @var PictureDetailsType
 	**/
-	protected $PictureDetails;
+	public $PictureDetails;
 
 	/**
 	* @var int
 	**/
-	protected $DispatchTimeMax;
+	public $DispatchTimeMax;
 
 	/**
 	* @var boolean
 	**/
-	protected $BestOfferEnabled;
+	public $BestOfferEnabled;
 
 	/**
 	* @var boolean
 	**/
-	protected $LocalListing;
+	public $LocalListing;
 
 	/**
 	* @var AddressType
 	**/
-	protected $SellerContactDetails;
+	public $SellerContactDetails;
 
 	/**
 	* @var long
 	**/
-	protected $TotalQuestionCount;
+	public $TotalQuestionCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $ProxyItem;
+	public $ProxyItem;
 
 	/**
 	* @var ExtendedContactDetailsType
 	**/
-	protected $ExtendedSellerContactDetails;
+	public $ExtendedSellerContactDetails;
 
 	/**
 	* @var int
 	**/
-	protected $LeadCount;
+	public $LeadCount;
 
 	/**
 	* @var int
 	**/
-	protected $NewLeadCount;
+	public $NewLeadCount;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $ItemSpecifics;
+	public $ItemSpecifics;
 
 	/**
 	* @var string
 	**/
-	protected $GroupCategoryID;
+	public $GroupCategoryID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ClassifiedAdPayPerLeadFee;
+	public $ClassifiedAdPayPerLeadFee;
 
 	/**
 	* @var boolean
 	**/
-	protected $BidGroupItem;
+	public $BidGroupItem;
 
 	/**
 	* @var BuyerProtectionDetailsType
 	**/
-	protected $ApplyBuyerProtection;
+	public $ApplyBuyerProtection;
 
 	/**
 	* @var ListingSubtypeCodeType
 	**/
-	protected $ListingSubtype2;
+	public $ListingSubtype2;
 
 	/**
 	* @var boolean
 	**/
-	protected $MechanicalCheckAccepted;
+	public $MechanicalCheckAccepted;
 
 	/**
 	* @var boolean
 	**/
-	protected $UpdateSellerInfo;
+	public $UpdateSellerInfo;
 
 	/**
 	* @var boolean
 	**/
-	protected $UpdateReturnPolicy;
+	public $UpdateReturnPolicy;
 
 	/**
 	* @var ItemPolicyViolationType
 	**/
-	protected $ItemPolicyViolation;
+	public $ItemPolicyViolation;
 
 	/**
 	* @var string
 	**/
-	protected $CrossBorderTrade;
+	public $CrossBorderTrade;
 
 	/**
 	* @var BusinessSellerDetailsType
 	**/
-	protected $BusinessSellerDetails;
+	public $BusinessSellerDetails;
 
 	/**
 	* @var AmountType
 	**/
-	protected $BuyerGuaranteePrice;
+	public $BuyerGuaranteePrice;
 
 	/**
 	* @var BuyerRequirementDetailsType
 	**/
-	protected $BuyerRequirementDetails;
+	public $BuyerRequirementDetails;
 
 	/**
 	* @var ReturnPolicyType
 	**/
-	protected $ReturnPolicy;
+	public $ReturnPolicy;
 
 	/**
 	* @var SiteCodeType
 	**/
-	protected $PaymentAllowedSite;
+	public $PaymentAllowedSite;
 
 	/**
 	* @var InventoryTrackingMethodCodeType
 	**/
-	protected $InventoryTrackingMethod;
+	public $InventoryTrackingMethod;
 
 	/**
 	* @var boolean
 	**/
-	protected $IntegratedMerchantCreditCardEnabled;
+	public $IntegratedMerchantCreditCardEnabled;
 
 	/**
 	* @var VariationsType
 	**/
-	protected $Variations;
+	public $Variations;
 
 	/**
 	* @var ItemCompatibilityListType
 	**/
-	protected $ItemCompatibilityList;
+	public $ItemCompatibilityList;
 
 	/**
 	* @var int
 	**/
-	protected $ItemCompatibilityCount;
+	public $ItemCompatibilityCount;
 
 	/**
 	* @var int
 	**/
-	protected $ConditionID;
+	public $ConditionID;
 
 	/**
 	* @var string
 	**/
-	protected $ConditionDescription;
+	public $ConditionDescription;
 
 	/**
 	* @var string
 	**/
-	protected $ConditionDisplayName;
+	public $ConditionDisplayName;
 
 	/**
 	* @var string
 	**/
-	protected $TaxCategory;
+	public $TaxCategory;
 
 	/**
 	* @var QuantityAvailableHintCodeType
 	**/
-	protected $QuantityAvailableHint;
+	public $QuantityAvailableHint;
 
 	/**
 	* @var int
 	**/
-	protected $QuantityThreshold;
+	public $QuantityThreshold;
 
 	/**
 	* @var DiscountPriceInfoType
 	**/
-	protected $DiscountPriceInfo;
+	public $DiscountPriceInfo;
 
 	/**
 	* @var string
 	**/
-	protected $SellerProvidedTitle;
+	public $SellerProvidedTitle;
 
 	/**
 	* @var string
 	**/
-	protected $VIN;
+	public $VIN;
 
 	/**
 	* @var string
 	**/
-	protected $VINLink;
+	public $VINLink;
 
 	/**
 	* @var string
 	**/
-	protected $VRM;
+	public $VRM;
 
 	/**
 	* @var string
 	**/
-	protected $VRMLink;
+	public $VRMLink;
 
 	/**
 	* @var QuantityInfoType
 	**/
-	protected $QuantityInfo;
+	public $QuantityInfo;
 
 	/**
 	* @var SellerProfilesType
 	**/
-	protected $SellerProfiles;
+	public $SellerProfiles;
 
 	/**
 	* @var ShippingServiceCostOverrideListType
 	**/
-	protected $ShippingServiceCostOverrideList;
+	public $ShippingServiceCostOverrideList;
 
 	/**
 	* @var ShippingOverrideType
 	**/
-	protected $ShippingOverride;
+	public $ShippingOverride;
 
 	/**
 	* @var ShipPackageDetailsType
 	**/
-	protected $ShippingPackageDetails;
+	public $ShippingPackageDetails;
 
 	/**
 	* @var boolean
 	**/
-	protected $TopRatedListing;
+	public $TopRatedListing;
 
 	/**
 	* @var QuantityRestrictionPerBuyerInfoType
 	**/
-	protected $QuantityRestrictionPerBuyer;
+	public $QuantityRestrictionPerBuyer;
 
 	/**
 	* @var AmountType
 	**/
-	protected $FloorPrice;
+	public $FloorPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $CeilingPrice;
+	public $CeilingPrice;
 
 	/**
 	* @var boolean
 	**/
-	protected $IsIntermediatedShippingEligible;
+	public $IsIntermediatedShippingEligible;
 
 	/**
 	* @var UnitInfoType
 	**/
-	protected $UnitInfo;
+	public $UnitInfo;
 
 	/**
 	* @var long
 	**/
-	protected $RelistParentID;
+	public $RelistParentID;
 
 	/**
 	* @var string
 	**/
-	protected $ConditionDefinition;
+	public $ConditionDefinition;
 
 	/**
 	* @var boolean
 	**/
-	protected $HideFromSearch;
+	public $HideFromSearch;
 
 	/**
 	* @var ReasonHideFromSearchCodeType
 	**/
-	protected $ReasonHideFromSearch;
+	public $ReasonHideFromSearch;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeRecommendations;
+	public $IncludeRecommendations;
 
 	/**
 	* @var PickupInStoreDetailsType
 	**/
-	protected $PickupInStoreDetails;
+	public $PickupInStoreDetails;
 
 	/**
 	* @var int
 	**/
-	protected $SiteId;
+	public $SiteId;
 
 	/**
 	* @var boolean
 	**/
-	protected $IgnoreQuantity;
+	public $IgnoreQuantity;
 
 	/**
 	* @var boolean
 	**/
-	protected $AvailableForPickupDropOff;
+	public $AvailableForPickupDropOff;
 
 	/**
 	* @var boolean
 	**/
-	protected $EligibleForPickupDropOff;
+	public $EligibleForPickupDropOff;
 
 	/**
 	* @var boolean
 	**/
-	protected $LiveAuction;
+	public $LiveAuction;
 
 	/**
 	* @var DigitalGoodInfoType
 	**/
-	protected $DigitalGoodInfo;
+	public $DigitalGoodInfo;
 
 	/**
 	* @var boolean
 	**/
-	protected $eBayPlus;
+	public $eBayPlus;
 
 	/**
 	* @var boolean
 	**/
-	protected $eBayPlusEligible;
+	public $eBayPlusEligible;
 
 	/**
 	* @var boolean
 	**/
-	protected $eMailDeliveryAvailable;
+	public $eMailDeliveryAvailable;
 
 	/**
 	* @var boolean
 	**/
-	protected $IsSecureDescription;
+	public $IsSecureDescription;
 
 
 	/**

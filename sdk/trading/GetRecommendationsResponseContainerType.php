@@ -23,47 +23,47 @@ class GetRecommendationsResponseContainerType extends EbatNs_ComplexType
 	/**
 	* @var ListingAnalyzerRecommendationsType
 	**/
-	protected $ListingAnalyzerRecommendations;
+	public $ListingAnalyzerRecommendations;
 
 	/**
 	* @var SIFFTASRecommendationsType
 	**/
-	protected $SIFFTASRecommendations;
+	public $SIFFTASRecommendations;
 
 	/**
 	* @var PricingRecommendationsType
 	**/
-	protected $PricingRecommendations;
+	public $PricingRecommendations;
 
 	/**
 	* @var AttributeRecommendationsType
 	**/
-	protected $AttributeRecommendations;
+	public $AttributeRecommendations;
 
 	/**
 	* @var ProductRecommendationsType
 	**/
-	protected $ProductRecommendations;
+	public $ProductRecommendations;
 
 	/**
 	* @var string
 	**/
-	protected $CorrelationID;
+	public $CorrelationID;
 
 	/**
 	* @var RecommendationsType
 	**/
-	protected $Recommendations;
+	public $Recommendations;
 
 	/**
 	* @var ProductListingDetailsType
 	**/
-	protected $ProductListingDetails;
+	public $ProductListingDetails;
 
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 
 	/**

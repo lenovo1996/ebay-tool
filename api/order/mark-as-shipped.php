@@ -1,15 +1,21 @@
 <?php
 
+	$orderId = $_GET['order_id'];
+	$transactionId = $_GET['transaction_id'];
+	$shippedStatus = $_GET['status'];
+
 	$proxy = require_once '../../session.php';
 
 	require_once $sdk_dir . 'CompleteSaleRequestType.php';
 
 	$completesalerequest = new CompleteSaleRequestType();
 
-	$completesalerequest->setOrderID("173862158459-2007827284007");
-	$completesalerequest->setShipped("true");
-	$completesalerequest->setTransactionID("2007827284007");
+	$completesalerequest->setOrderID($orderId);
+	$completesalerequest->setShipped($shippedStatus);
+	$completesalerequest->setTransactionID($transactionId);
 	$completesalerequest->setVersion("1101");
 
 	$response = $proxy->CompleteSale($completesalerequest);
+
+	echo json_encode($response);
 

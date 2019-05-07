@@ -17,17 +17,17 @@ class GetContextualKeywordsRequestType extends AbstractRequestType
 	/**
 	* @var anyURI
 	**/
-	protected $URL;
+	public $URL;
 
 	/**
 	* @var string
 	**/
-	protected $Encoding;
+	public $Encoding;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 
 	/**

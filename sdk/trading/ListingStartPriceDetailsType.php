@@ -26,32 +26,32 @@ class ListingStartPriceDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var ListingTypeCodeType
 	**/
-	protected $ListingType;
+	public $ListingType;
 
 	/**
 	* @var AmountType
 	**/
-	protected $StartPrice;
+	public $StartPrice;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 	/**
 	* @var float
 	**/
-	protected $MinBuyItNowPricePercent;
+	public $MinBuyItNowPricePercent;
 
 
 	/**

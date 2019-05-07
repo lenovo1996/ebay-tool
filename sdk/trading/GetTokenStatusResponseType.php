@@ -17,7 +17,7 @@ class GetTokenStatusResponseType extends AbstractResponseType
 	/**
 	* @var TokenStatusType
 	**/
-	protected $TokenStatus;
+	public $TokenStatus;
 
 
 	/**

@@ -23,22 +23,22 @@ class PaymentOptionDetailsType extends EbatNs_ComplexType
 	/**
 	* @var BuyerPaymentMethodCodeType
 	**/
-	protected $PaymentOption;
+	public $PaymentOption;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

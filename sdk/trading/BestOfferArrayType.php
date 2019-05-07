@@ -17,7 +17,7 @@ class BestOfferArrayType extends EbatNs_ComplexType
 	/**
 	* @var BestOfferType
 	**/
-	protected $BestOffer;
+	public $BestOffer;
 
 
 	/**

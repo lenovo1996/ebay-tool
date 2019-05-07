@@ -17,7 +17,7 @@ class GetStoreCategoryUpdateStatusResponseType extends AbstractResponseType
 	/**
 	* @var TaskStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 
 	/**

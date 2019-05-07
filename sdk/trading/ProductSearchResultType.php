@@ -17,22 +17,22 @@ class ProductSearchResultType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ID;
+	public $ID;
 
 	/**
 	* @var string
 	**/
-	protected $NumProducts;
+	public $NumProducts;
 
 	/**
 	* @var ResponseAttributeSetType
 	**/
-	protected $AttributeSet;
+	public $AttributeSet;
 
 	/**
 	* @var boolean
 	**/
-	protected $DisplayStockPhotos;
+	public $DisplayStockPhotos;
 
 
 	/**

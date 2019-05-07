@@ -16,17 +16,17 @@ class GetChallengeTokenResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $ChallengeToken;
+	public $ChallengeToken;
 
 	/**
 	* @var string
 	**/
-	protected $ImageChallengeURL;
+	public $ImageChallengeURL;
 
 	/**
 	* @var string
 	**/
-	protected $AudioChallengeURL;
+	public $AudioChallengeURL;
 
 
 	/**

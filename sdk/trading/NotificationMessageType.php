@@ -16,12 +16,12 @@ class NotificationMessageType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $MessageBody;
+	public $MessageBody;
 
 	/**
 	* @var string
 	**/
-	protected $EIAS;
+	public $EIAS;
 
 
 	/**

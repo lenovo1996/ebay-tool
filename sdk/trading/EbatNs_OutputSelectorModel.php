@@ -1,7 +1,7 @@
 <?php
 class EbatNs_OutputSelector
 {
-	protected $selectorTagNames = array();
+	public $selectorTagNames = array();
 	public function __construct($selectorTagName)
 	{
 		$this->addTagName($selectorTagName);
@@ -23,9 +23,9 @@ class EbatNs_OutputSelector
 
 class EbatNs_OutputSelectorModel
 {
-	protected $outputSelectors;
-	protected $name;
-	protected $active;
+	public $outputSelectors;
+	public $name;
+	public $active;
 	
 	public function __construct($name = null, $active = true)
 	{

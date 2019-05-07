@@ -20,37 +20,37 @@ class RespondToFeedbackRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $FeedbackID;
+	public $FeedbackID;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $TargetUserID;
+	public $TargetUserID;
 
 	/**
 	* @var FeedbackResponseCodeType
 	**/
-	protected $ResponseType;
+	public $ResponseType;
 
 	/**
 	* @var string
 	**/
-	protected $ResponseText;
+	public $ResponseText;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

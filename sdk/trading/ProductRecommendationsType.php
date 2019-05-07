@@ -17,7 +17,7 @@ class ProductRecommendationsType extends EbatNs_ComplexType
 	/**
 	* @var ProductInfoType
 	**/
-	protected $Product;
+	public $Product;
 
 
 	/**

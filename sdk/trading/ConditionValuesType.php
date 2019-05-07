@@ -17,12 +17,12 @@ class ConditionValuesType extends EbatNs_ComplexType
 	/**
 	* @var ConditionType
 	**/
-	protected $Condition;
+	public $Condition;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ConditionHelpURL;
+	public $ConditionHelpURL;
 
 
 	/**

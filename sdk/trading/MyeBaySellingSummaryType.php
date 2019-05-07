@@ -17,67 +17,67 @@ class MyeBaySellingSummaryType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $ActiveAuctionCount;
+	public $ActiveAuctionCount;
 
 	/**
 	* @var int
 	**/
-	protected $AuctionSellingCount;
+	public $AuctionSellingCount;
 
 	/**
 	* @var int
 	**/
-	protected $AuctionBidCount;
+	public $AuctionBidCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalAuctionSellingValue;
+	public $TotalAuctionSellingValue;
 
 	/**
 	* @var int
 	**/
-	protected $TotalSoldCount;
+	public $TotalSoldCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalSoldValue;
+	public $TotalSoldValue;
 
 	/**
 	* @var int
 	**/
-	protected $SoldDurationInDays;
+	public $SoldDurationInDays;
 
 	/**
 	* @var int
 	**/
-	protected $ClassifiedAdCount;
+	public $ClassifiedAdCount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalLeadCount;
+	public $TotalLeadCount;
 
 	/**
 	* @var int
 	**/
-	protected $ClassifiedAdOfferCount;
+	public $ClassifiedAdOfferCount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalListingsWithLeads;
+	public $TotalListingsWithLeads;
 
 	/**
 	* @var long
 	**/
-	protected $QuantityLimitRemaining;
+	public $QuantityLimitRemaining;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AmountLimitRemaining;
+	public $AmountLimitRemaining;
 
 
 	/**

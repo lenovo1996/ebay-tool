@@ -19,12 +19,12 @@ class RefundDetailsType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $RefundOption;
+	public $RefundOption;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 
 	/**

@@ -16,24 +16,24 @@ class EbatNs_Environment
     /**
      * @var EbatNs_Session
      */
-    protected $session;
+    public $session;
 
     /**
      * @var EbatNs_Logger
      */
-    protected $logger = null;
+    public $logger = null;
     
     /**
      * @var EbatNs_ServiceProxy
      */
-    protected $proxy = null;
+    public $proxy = null;
     
     /**
      * Fullpath to config-file
      *
      * @var string
      */
-    protected $configFile = null;
+    public $configFile = null;
     
     public function __construct($logLevel = 0, $configFile = 'config/ebay.config.php')
     {
@@ -63,7 +63,7 @@ class EbatNs_Environment
      * @param AbstractResponseType $res
      * @return boolean
      */
-    protected function testValid($res)
+    public function testValid($res)
     {
         if ($res->getAck() == AckCodeType::CodeType_Success)
         {
@@ -76,7 +76,7 @@ class EbatNs_Environment
         }
     }
     
-    protected function dumpObject($data)
+    public function dumpObject($data)
     {
         echo  "<br>---------------------<br>"
             . "Object Dump:<br><pre>" . print_r($data, true) . "</pre>";

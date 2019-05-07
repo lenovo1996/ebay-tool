@@ -25,37 +25,37 @@ class RefundTransactionInfoType extends EbatNs_ComplexType
 	/**
 	* @var PaymentTransactionStatusCodeType
 	**/
-	protected $RefundStatus;
+	public $RefundStatus;
 
 	/**
 	* @var RefundSourceTypeCodeType
 	**/
-	protected $RefundType;
+	public $RefundType;
 
 	/**
 	* @var UserIdentityType
 	**/
-	protected $RefundTo;
+	public $RefundTo;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RefundTime;
+	public $RefundTime;
 
 	/**
 	* @var AmountType
 	**/
-	protected $RefundAmount;
+	public $RefundAmount;
 
 	/**
 	* @var TransactionReferenceType
 	**/
-	protected $ReferenceID;
+	public $ReferenceID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $FeeOrCreditAmount;
+	public $FeeOrCreditAmount;
 
 
 	/**

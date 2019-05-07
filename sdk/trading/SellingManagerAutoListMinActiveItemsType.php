@@ -17,27 +17,27 @@ class SellingManagerAutoListMinActiveItemsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MinActiveItemCount;
+	public $MinActiveItemCount;
 
 	/**
 	* @var time
 	**/
-	protected $ListTimeFrom;
+	public $ListTimeFrom;
 
 	/**
 	* @var time
 	**/
-	protected $ListTimeTo;
+	public $ListTimeTo;
 
 	/**
 	* @var int
 	**/
-	protected $SpacingIntervalInMinutes;
+	public $SpacingIntervalInMinutes;
 
 	/**
 	* @var int
 	**/
-	protected $ListingHoldInventoryLevel;
+	public $ListingHoldInventoryLevel;
 
 
 	/**

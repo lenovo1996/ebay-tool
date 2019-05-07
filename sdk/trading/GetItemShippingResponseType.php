@@ -18,12 +18,12 @@ class GetItemShippingResponseType extends AbstractResponseType
 	/**
 	* @var ShippingDetailsType
 	**/
-	protected $ShippingDetails;
+	public $ShippingDetails;
 
 	/**
 	* @var PickupInStoreDetailsType
 	**/
-	protected $PickUpInStoreDetails;
+	public $PickUpInStoreDetails;
 
 
 	/**

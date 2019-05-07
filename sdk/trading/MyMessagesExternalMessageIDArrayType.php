@@ -17,7 +17,7 @@ class MyMessagesExternalMessageIDArrayType extends EbatNs_ComplexType
 	/**
 	* @var MyMessagesExternalMessageIDType
 	**/
-	protected $ExternalMessageID;
+	public $ExternalMessageID;
 
 
 	/**

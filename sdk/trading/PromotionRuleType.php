@@ -19,47 +19,47 @@ class PromotionRuleType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $PromotedStoreCategoryID;
+	public $PromotedStoreCategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $PromotedeBayCategoryID;
+	public $PromotedeBayCategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $PromotedKeywords;
+	public $PromotedKeywords;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ReferringItemID;
+	public $ReferringItemID;
 
 	/**
 	* @var long
 	**/
-	protected $ReferringStoreCategoryID;
+	public $ReferringStoreCategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $ReferringeBayCategoryID;
+	public $ReferringeBayCategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $ReferringKeywords;
+	public $ReferringKeywords;
 
 	/**
 	* @var PromotionSchemeCodeType
 	**/
-	protected $PromotionScheme;
+	public $PromotionScheme;
 
 	/**
 	* @var PromotionMethodCodeType
 	**/
-	protected $PromotionMethod;
+	public $PromotionMethod;
 
 
 	/**

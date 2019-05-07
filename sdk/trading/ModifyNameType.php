@@ -16,12 +16,12 @@ class ModifyNameType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var string
 	**/
-	protected $NewName;
+	public $NewName;
 
 
 	/**

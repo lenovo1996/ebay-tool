@@ -16,7 +16,7 @@ class PurchaseReminderEmailPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $PurchaseReminderEmailPreferences;
+	public $PurchaseReminderEmailPreferences;
 
 
 	/**

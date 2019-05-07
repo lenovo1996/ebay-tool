@@ -19,22 +19,22 @@ class DeleteSellingManagerTemplateAutomationRuleRequestType extends AbstractRequ
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 	/**
 	* @var boolean
 	**/
-	protected $DeleteAutomatedListingRule;
+	public $DeleteAutomatedListingRule;
 
 	/**
 	* @var boolean
 	**/
-	protected $DeleteAutomatedRelistingRule;
+	public $DeleteAutomatedRelistingRule;
 
 	/**
 	* @var boolean
 	**/
-	protected $DeleteAutomatedSecondChanceOfferRule;
+	public $DeleteAutomatedSecondChanceOfferRule;
 
 
 	/**

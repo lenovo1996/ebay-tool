@@ -18,7 +18,7 @@ class GetSellingManagerAlertsResponseType extends AbstractResponseType
 	/**
 	* @var SellingManagerAlertType
 	**/
-	protected $Alert;
+	public $Alert;
 
 
 	/**

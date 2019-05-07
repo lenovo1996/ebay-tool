@@ -17,7 +17,7 @@ class ListingTipArrayType extends EbatNs_ComplexType
 	/**
 	* @var ListingTipType
 	**/
-	protected $ListingTip;
+	public $ListingTip;
 
 
 	/**

@@ -21,7 +21,7 @@ class MarkUpMarkDownHistoryType extends EbatNs_ComplexType
 	/**
 	* @var MarkUpMarkDownEventType
 	**/
-	protected $MarkUpMarkDownEvent;
+	public $MarkUpMarkDownEvent;
 
 
 	/**

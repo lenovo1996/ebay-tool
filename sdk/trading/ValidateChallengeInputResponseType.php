@@ -16,7 +16,7 @@ class ValidateChallengeInputResponseType extends AbstractResponseType
 	/**
 	* @var boolean
 	**/
-	protected $ValidToken;
+	public $ValidToken;
 
 
 	/**

@@ -25,22 +25,22 @@ class VariationsType extends EbatNs_ComplexType
 	/**
 	* @var VariationType
 	**/
-	protected $Variation;
+	public $Variation;
 
 	/**
 	* @var PicturesType
 	**/
-	protected $Pictures;
+	public $Pictures;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $VariationSpecificsSet;
+	public $VariationSpecificsSet;
 
 	/**
 	* @var ModifyNameArrayType
 	**/
-	protected $ModifyNameList;
+	public $ModifyNameList;
 
 
 	/**

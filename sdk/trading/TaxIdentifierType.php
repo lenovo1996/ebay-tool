@@ -18,17 +18,17 @@ class TaxIdentifierType extends EbatNs_ComplexType
 	/**
 	* @var ValueTypeCodeType
 	**/
-	protected $Type;
+	public $Type;
 
 	/**
 	* @var string
 	**/
-	protected $ID;
+	public $ID;
 
 	/**
 	* @var TaxIdentifierAttributeType
 	**/
-	protected $Attribute;
+	public $Attribute;
 
 
 	/**

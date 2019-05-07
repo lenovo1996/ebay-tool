@@ -18,7 +18,7 @@ class SellerFeeDiscountDashboardType extends EbatNs_ComplexType
 	/**
 	* @var float
 	**/
-	protected $Percent;
+	public $Percent;
 
 
 	/**

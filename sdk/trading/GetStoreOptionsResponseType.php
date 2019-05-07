@@ -19,32 +19,32 @@ class GetStoreOptionsResponseType extends AbstractResponseType
 	/**
 	* @var StoreThemeArrayType
 	**/
-	protected $BasicThemeArray;
+	public $BasicThemeArray;
 
 	/**
 	* @var StoreThemeArrayType
 	**/
-	protected $AdvancedThemeArray;
+	public $AdvancedThemeArray;
 
 	/**
 	* @var StoreLogoArrayType
 	**/
-	protected $LogoArray;
+	public $LogoArray;
 
 	/**
 	* @var StoreSubscriptionArrayType
 	**/
-	protected $SubscriptionArray;
+	public $SubscriptionArray;
 
 	/**
 	* @var int
 	**/
-	protected $MaxCategories;
+	public $MaxCategories;
 
 	/**
 	* @var int
 	**/
-	protected $MaxCategoryLevels;
+	public $MaxCategoryLevels;
 
 
 	/**

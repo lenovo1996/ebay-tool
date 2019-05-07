@@ -28,10 +28,10 @@ class EbatNs_ComplexType extends EbatNs_SimpleType
 	// an array of SimpleTypes / ComplexTypes  (child-elements)
 	// now this static array will hold the complete schema information for any
 	// element-class where an object is created !
-	protected static $_elements = array();  
+	public static $_elements = array();  
 	// will define wheather the data is stored in the value-field (as a assoc array)
 	// or either in Members of an object
-	protected $_dataInValueArray = false;
+	public $_dataInValueArray = false;
 
 	function __construct( $name, $nsURI )
 	{

@@ -32,17 +32,17 @@ class SetSellingManagerItemAutomationRuleRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var SellingManagerAutoRelistType
 	**/
-	protected $AutomatedRelistingRule;
+	public $AutomatedRelistingRule;
 
 	/**
 	* @var SellingManagerAutoSecondChanceOfferType
 	**/
-	protected $AutomatedSecondChanceOfferRule;
+	public $AutomatedSecondChanceOfferRule;
 
 
 	/**

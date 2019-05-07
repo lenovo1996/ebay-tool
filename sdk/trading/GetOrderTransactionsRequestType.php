@@ -19,22 +19,22 @@ class GetOrderTransactionsRequestType extends AbstractRequestType
 	/**
 	* @var ItemTransactionIDArrayType
 	**/
-	protected $ItemTransactionIDArray;
+	public $ItemTransactionIDArray;
 
 	/**
 	* @var OrderIDArrayType
 	**/
-	protected $OrderIDArray;
+	public $OrderIDArray;
 
 	/**
 	* @var TransactionPlatformCodeType
 	**/
-	protected $Platform;
+	public $Platform;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeFinalValueFees;
+	public $IncludeFinalValueFees;
 
 
 	/**

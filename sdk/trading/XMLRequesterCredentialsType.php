@@ -15,17 +15,17 @@ class XMLRequesterCredentialsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Username;
+	public $Username;
 
 	/**
 	* @var string
 	**/
-	protected $Password;
+	public $Password;
 
 	/**
 	* @var string
 	**/
-	protected $eBayAuthToken;
+	public $eBayAuthToken;
 
 
 	/**

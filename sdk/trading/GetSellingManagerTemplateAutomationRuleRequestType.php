@@ -16,7 +16,7 @@ class GetSellingManagerTemplateAutomationRuleRequestType extends AbstractRequest
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 
 	/**

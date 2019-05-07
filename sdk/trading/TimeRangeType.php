@@ -16,12 +16,12 @@ class TimeRangeType extends EbatNs_ComplexType
 	/**
 	* @var dateTime
 	**/
-	protected $TimeFrom;
+	public $TimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $TimeTo;
+	public $TimeTo;
 
 
 	/**

@@ -19,7 +19,7 @@ class SearchStandingDashboardType extends EbatNs_ComplexType
 	/**
 	* @var SearchStandingStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 
 	/**

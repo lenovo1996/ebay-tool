@@ -19,12 +19,12 @@ class GetCategoryMappingsResponseType extends AbstractResponseType
 	/**
 	* @var CategoryMappingType
 	**/
-	protected $CategoryMapping;
+	public $CategoryMapping;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryVersion;
+	public $CategoryVersion;
 
 
 	/**

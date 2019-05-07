@@ -16,12 +16,12 @@ class DistanceType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $DistanceMeasurement;
+	public $DistanceMeasurement;
 
 	/**
 	* @var string
 	**/
-	protected $DistanceUnit;
+	public $DistanceUnit;
 
 
 	/**

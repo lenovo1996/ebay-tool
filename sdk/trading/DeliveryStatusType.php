@@ -16,7 +16,7 @@ class DeliveryStatusType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $Email;
+	public $Email;
 
 
 	/**

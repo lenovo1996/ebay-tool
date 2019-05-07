@@ -20,42 +20,42 @@ class PromotedItemType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $PictureURL;
+	public $PictureURL;
 
 	/**
 	* @var int
 	**/
-	protected $Position;
+	public $Position;
 
 	/**
 	* @var PromotionItemSelectionCodeType
 	**/
-	protected $SelectionType;
+	public $SelectionType;
 
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 	/**
 	* @var ListingTypeCodeType
 	**/
-	protected $ListingType;
+	public $ListingType;
 
 	/**
 	* @var PromotionDetailsType
 	**/
-	protected $PromotionDetails;
+	public $PromotionDetails;
 
 	/**
 	* @var duration
 	**/
-	protected $TimeLeft;
+	public $TimeLeft;
 
 
 	/**

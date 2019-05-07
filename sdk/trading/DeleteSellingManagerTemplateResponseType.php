@@ -16,12 +16,12 @@ class DeleteSellingManagerTemplateResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $DeletedSaleTemplateID;
+	public $DeletedSaleTemplateID;
 
 	/**
 	* @var string
 	**/
-	protected $DeletedSaleTemplateName;
+	public $DeletedSaleTemplateName;
 
 
 	/**

@@ -22,32 +22,32 @@ class StorefrontType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $StoreCategoryID;
+	public $StoreCategoryID;
 
 	/**
 	* @var long
 	**/
-	protected $StoreCategory2ID;
+	public $StoreCategory2ID;
 
 	/**
 	* @var string
 	**/
-	protected $StoreCategoryName;
+	public $StoreCategoryName;
 
 	/**
 	* @var string
 	**/
-	protected $StoreCategory2Name;
+	public $StoreCategory2Name;
 
 	/**
 	* @var anyURI
 	**/
-	protected $StoreURL;
+	public $StoreURL;
 
 	/**
 	* @var string
 	**/
-	protected $StoreName;
+	public $StoreName;
 
 
 	/**

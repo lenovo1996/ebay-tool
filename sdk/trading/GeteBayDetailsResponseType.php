@@ -41,137 +41,137 @@ class GeteBayDetailsResponseType extends AbstractResponseType
 	/**
 	* @var CountryDetailsType
 	**/
-	protected $CountryDetails;
+	public $CountryDetails;
 
 	/**
 	* @var CurrencyDetailsType
 	**/
-	protected $CurrencyDetails;
+	public $CurrencyDetails;
 
 	/**
 	* @var DispatchTimeMaxDetailsType
 	**/
-	protected $DispatchTimeMaxDetails;
+	public $DispatchTimeMaxDetails;
 
 	/**
 	* @var PaymentOptionDetailsType
 	**/
-	protected $PaymentOptionDetails;
+	public $PaymentOptionDetails;
 
 	/**
 	* @var RegionDetailsType
 	**/
-	protected $RegionDetails;
+	public $RegionDetails;
 
 	/**
 	* @var ShippingLocationDetailsType
 	**/
-	protected $ShippingLocationDetails;
+	public $ShippingLocationDetails;
 
 	/**
 	* @var ShippingServiceDetailsType
 	**/
-	protected $ShippingServiceDetails;
+	public $ShippingServiceDetails;
 
 	/**
 	* @var SiteDetailsType
 	**/
-	protected $SiteDetails;
+	public $SiteDetails;
 
 	/**
 	* @var TaxJurisdictionType
 	**/
-	protected $TaxJurisdiction;
+	public $TaxJurisdiction;
 
 	/**
 	* @var URLDetailsType
 	**/
-	protected $URLDetails;
+	public $URLDetails;
 
 	/**
 	* @var TimeZoneDetailsType
 	**/
-	protected $TimeZoneDetails;
+	public $TimeZoneDetails;
 
 	/**
 	* @var ItemSpecificDetailsType
 	**/
-	protected $ItemSpecificDetails;
+	public $ItemSpecificDetails;
 
 	/**
 	* @var UnitOfMeasurementDetailsType
 	**/
-	protected $UnitOfMeasurementDetails;
+	public $UnitOfMeasurementDetails;
 
 	/**
 	* @var RegionOfOriginDetailsType
 	**/
-	protected $RegionOfOriginDetails;
+	public $RegionOfOriginDetails;
 
 	/**
 	* @var ShippingPackageDetailsType
 	**/
-	protected $ShippingPackageDetails;
+	public $ShippingPackageDetails;
 
 	/**
 	* @var ShippingCarrierDetailsType
 	**/
-	protected $ShippingCarrierDetails;
+	public $ShippingCarrierDetails;
 
 	/**
 	* @var ReturnPolicyDetailsType
 	**/
-	protected $ReturnPolicyDetails;
+	public $ReturnPolicyDetails;
 
 	/**
 	* @var ReturnPolicyDetailsType
 	**/
-	protected $InternationalReturnPolicyDetails;
+	public $InternationalReturnPolicyDetails;
 
 	/**
 	* @var ListingStartPriceDetailsType
 	**/
-	protected $ListingStartPriceDetails;
+	public $ListingStartPriceDetails;
 
 	/**
 	* @var SiteBuyerRequirementDetailsType
 	**/
-	protected $BuyerRequirementDetails;
+	public $BuyerRequirementDetails;
 
 	/**
 	* @var ListingFeatureDetailsType
 	**/
-	protected $ListingFeatureDetails;
+	public $ListingFeatureDetails;
 
 	/**
 	* @var VariationDetailsType
 	**/
-	protected $VariationDetails;
+	public $VariationDetails;
 
 	/**
 	* @var ExcludeShippingLocationDetailsType
 	**/
-	protected $ExcludeShippingLocationDetails;
+	public $ExcludeShippingLocationDetails;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 	/**
 	* @var RecoupmentPolicyDetailsType
 	**/
-	protected $RecoupmentPolicyDetails;
+	public $RecoupmentPolicyDetails;
 
 	/**
 	* @var ShippingCategoryDetailsType
 	**/
-	protected $ShippingCategoryDetails;
+	public $ShippingCategoryDetails;
 
 	/**
 	* @var ProductDetailsType
 	**/
-	protected $ProductDetails;
+	public $ProductDetails;
 
 
 	/**

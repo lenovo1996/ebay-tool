@@ -17,7 +17,7 @@ class GetItemsAwaitingFeedbackResponseType extends AbstractResponseType
 	/**
 	* @var PaginatedTransactionArrayType
 	**/
-	protected $ItemsAwaitingFeedback;
+	public $ItemsAwaitingFeedback;
 
 
 	/**

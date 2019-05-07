@@ -19,12 +19,12 @@ class ShippingCostPaidByDetailsType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $ShippingCostPaidByOption;
+	public $ShippingCostPaidByOption;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 
 	/**

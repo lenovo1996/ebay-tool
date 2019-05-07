@@ -19,32 +19,32 @@ class ReviseSellingManagerTemplateRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 	/**
 	* @var long
 	**/
-	protected $ProductID;
+	public $ProductID;
 
 	/**
 	* @var string
 	**/
-	protected $SaleTemplateName;
+	public $SaleTemplateName;
 
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 	/**
 	* @var string
 	**/
-	protected $DeletedField;
+	public $DeletedField;
 
 	/**
 	* @var boolean
 	**/
-	protected $VerifyOnly;
+	public $VerifyOnly;
 
 
 	/**

@@ -18,27 +18,27 @@ class RegionOfOriginDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $RegionOfOrigin;
+	public $RegionOfOrigin;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var StatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

@@ -17,7 +17,7 @@ class CategoryArrayType extends EbatNs_ComplexType
 	/**
 	* @var CategoryType
 	**/
-	protected $Category;
+	public $Category;
 
 
 	/**

@@ -19,7 +19,7 @@ class EbatNsCsSetExt_LabelType extends EbatNs_ComplexType
 	/**
 	 * @var string
 	 */
-	protected $Name;
+	public $Name;
 
 	/**
 	 * @return string

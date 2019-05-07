@@ -17,12 +17,12 @@ class DeliveryDetailsType extends EbatNs_ComplexType
 	/**
 	* @var DigitalDeliveryUserType
 	**/
-	protected $Recipient;
+	public $Recipient;
 
 	/**
 	* @var DigitalDeliveryUserType
 	**/
-	protected $Sender;
+	public $Sender;
 
 
 	/**

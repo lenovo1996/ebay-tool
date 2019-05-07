@@ -16,112 +16,112 @@ class GetUserPreferencesRequestType extends AbstractRequestType
 	/**
 	* @var boolean
 	**/
-	protected $ShowBidderNoticePreferences;
+	public $ShowBidderNoticePreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowCombinedPaymentPreferences;
+	public $ShowCombinedPaymentPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowCrossPromotionPreferences;
+	public $ShowCrossPromotionPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowSellerPaymentPreferences;
+	public $ShowSellerPaymentPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowEndOfAuctionEmailPreferences;
+	public $ShowEndOfAuctionEmailPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowSellerFavoriteItemPreferences;
+	public $ShowSellerFavoriteItemPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowProStoresPreferences;
+	public $ShowProStoresPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowEmailShipmentTrackingNumberPreference;
+	public $ShowEmailShipmentTrackingNumberPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowRequiredShipPhoneNumberPreference;
+	public $ShowRequiredShipPhoneNumberPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowSellerExcludeShipToLocationPreference;
+	public $ShowSellerExcludeShipToLocationPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowUnpaidItemAssistancePreference;
+	public $ShowUnpaidItemAssistancePreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowPurchaseReminderEmailPreferences;
+	public $ShowPurchaseReminderEmailPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowUnpaidItemAssistanceExclusionList;
+	public $ShowUnpaidItemAssistanceExclusionList;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowSellerProfilePreferences;
+	public $ShowSellerProfilePreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowSellerReturnPreferences;
+	public $ShowSellerReturnPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowGlobalShippingProgramPreference;
+	public $ShowGlobalShippingProgramPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowDispatchCutoffTimePreferences;
+	public $ShowDispatchCutoffTimePreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowGlobalShippingProgramListingPreference;
+	public $ShowGlobalShippingProgramListingPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowOverrideGSPServiceWithIntlServicePreference;
+	public $ShowOverrideGSPServiceWithIntlServicePreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowPickupDropoffPreferences;
+	public $ShowPickupDropoffPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowOutOfStockControlPreference;
+	public $ShowOutOfStockControlPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShoweBayPLUSPreference;
+	public $ShoweBayPLUSPreference;
 
 
 	/**

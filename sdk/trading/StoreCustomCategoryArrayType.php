@@ -17,7 +17,7 @@ class StoreCustomCategoryArrayType extends EbatNs_ComplexType
 	/**
 	* @var StoreCustomCategoryType
 	**/
-	protected $CustomCategory;
+	public $CustomCategory;
 
 
 	/**

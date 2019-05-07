@@ -18,17 +18,17 @@ class AverageRatingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var FeedbackRatingDetailCodeType
 	**/
-	protected $RatingDetail;
+	public $RatingDetail;
 
 	/**
 	* @var double
 	**/
-	protected $Rating;
+	public $Rating;
 
 	/**
 	* @var int
 	**/
-	protected $RatingCount;
+	public $RatingCount;
 
 
 	/**

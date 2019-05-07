@@ -20,12 +20,12 @@ class OrderTransactionType extends EbatNs_ComplexType
 	/**
 	* @var OrderType
 	**/
-	protected $Order;
+	public $Order;
 
 	/**
 	* @var TransactionType
 	**/
-	protected $Transaction;
+	public $Transaction;
 
 
 	/**

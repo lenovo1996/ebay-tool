@@ -17,27 +17,27 @@ class FeatureEligibilityType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $QualifiesForBuyItNow;
+	public $QualifiesForBuyItNow;
 
 	/**
 	* @var boolean
 	**/
-	protected $QualifiesForBuyItNowMultiple;
+	public $QualifiesForBuyItNowMultiple;
 
 	/**
 	* @var boolean
 	**/
-	protected $QualifiedForFixedPriceOneDayDuration;
+	public $QualifiedForFixedPriceOneDayDuration;
 
 	/**
 	* @var boolean
 	**/
-	protected $QualifiesForVariations;
+	public $QualifiesForVariations;
 
 	/**
 	* @var boolean
 	**/
-	protected $QualifiedForAuctionOneDayDuration;
+	public $QualifiedForAuctionOneDayDuration;
 
 
 	/**

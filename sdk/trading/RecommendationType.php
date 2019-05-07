@@ -16,27 +16,27 @@ class RecommendationType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $FieldGroup;
+	public $FieldGroup;
 
 	/**
 	* @var string
 	**/
-	protected $FieldName;
+	public $FieldName;
 
 	/**
 	* @var string
 	**/
-	protected $RecommendationCode;
+	public $RecommendationCode;
 
 	/**
 	* @var string
 	**/
-	protected $RecommendedValue;
+	public $RecommendedValue;
 
 	/**
 	* @var string
 	**/
-	protected $Message;
+	public $Message;
 
 
 	/**

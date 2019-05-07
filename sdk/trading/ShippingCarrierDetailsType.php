@@ -17,27 +17,27 @@ class ShippingCarrierDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $ShippingCarrierID;
+	public $ShippingCarrierID;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var ShippingCarrierCodeType
 	**/
-	protected $ShippingCarrier;
+	public $ShippingCarrier;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

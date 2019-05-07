@@ -19,22 +19,22 @@ class PaymentDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $HoursToDeposit;
+	public $HoursToDeposit;
 
 	/**
 	* @var int
 	**/
-	protected $DaysToFullPayment;
+	public $DaysToFullPayment;
 
 	/**
 	* @var AmountType
 	**/
-	protected $DepositAmount;
+	public $DepositAmount;
 
 	/**
 	* @var DepositTypeCodeType
 	**/
-	protected $DepositType;
+	public $DepositType;
 
 
 	/**

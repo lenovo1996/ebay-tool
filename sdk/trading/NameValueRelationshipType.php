@@ -17,12 +17,12 @@ class NameValueRelationshipType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ParentName;
+	public $ParentName;
 
 	/**
 	* @var string
 	**/
-	protected $ParentValue;
+	public $ParentValue;
 
 
 	/**

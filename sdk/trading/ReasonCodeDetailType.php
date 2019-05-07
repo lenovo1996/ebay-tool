@@ -16,12 +16,12 @@ class ReasonCodeDetailType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $BriefText;
+	public $BriefText;
 
 	/**
 	* @var string
 	**/
-	protected $DetailedText;
+	public $DetailedText;
 
 
 	/**

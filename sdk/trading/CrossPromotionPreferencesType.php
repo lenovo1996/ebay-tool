@@ -19,37 +19,37 @@ class CrossPromotionPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $CrossPromotionEnabled;
+	public $CrossPromotionEnabled;
 
 	/**
 	* @var ItemFormatSortFilterCodeType
 	**/
-	protected $CrossSellItemFormatSortFilter;
+	public $CrossSellItemFormatSortFilter;
 
 	/**
 	* @var GallerySortFilterCodeType
 	**/
-	protected $CrossSellGallerySortFilter;
+	public $CrossSellGallerySortFilter;
 
 	/**
 	* @var ItemSortFilterCodeType
 	**/
-	protected $CrossSellItemSortFilter;
+	public $CrossSellItemSortFilter;
 
 	/**
 	* @var ItemFormatSortFilterCodeType
 	**/
-	protected $UpSellItemFormatSortFilter;
+	public $UpSellItemFormatSortFilter;
 
 	/**
 	* @var GallerySortFilterCodeType
 	**/
-	protected $UpSellGallerySortFilter;
+	public $UpSellGallerySortFilter;
 
 	/**
 	* @var ItemSortFilterCodeType
 	**/
-	protected $UpSellItemSortFilter;
+	public $UpSellItemSortFilter;
 
 
 	/**

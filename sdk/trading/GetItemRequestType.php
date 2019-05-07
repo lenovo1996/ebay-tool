@@ -19,52 +19,52 @@ class GetItemRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeWatchCount;
+	public $IncludeWatchCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeCrossPromotion;
+	public $IncludeCrossPromotion;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeItemSpecifics;
+	public $IncludeItemSpecifics;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeTaxTable;
+	public $IncludeTaxTable;
 
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 	/**
 	* @var SKUType
 	**/
-	protected $VariationSKU;
+	public $VariationSKU;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $VariationSpecifics;
+	public $VariationSpecifics;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeItemCompatibilityList;
+	public $IncludeItemCompatibilityList;
 
 
 	/**

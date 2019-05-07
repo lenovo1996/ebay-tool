@@ -17,7 +17,7 @@ class SetStoreRequestType extends AbstractRequestType
 	/**
 	* @var StoreType
 	**/
-	protected $Store;
+	public $Store;
 
 
 	/**

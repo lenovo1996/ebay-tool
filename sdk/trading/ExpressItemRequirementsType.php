@@ -16,92 +16,92 @@ class ExpressItemRequirementsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $SellerExpressEligible;
+	public $SellerExpressEligible;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExpressOptOut;
+	public $ExpressOptOut;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExpressApproved;
+	public $ExpressApproved;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExpressEligibleListingType;
+	public $ExpressEligibleListingType;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExpressEnabledCategory;
+	public $ExpressEnabledCategory;
 
 	/**
 	* @var boolean
 	**/
-	protected $EligiblePayPalAccount;
+	public $EligiblePayPalAccount;
 
 	/**
 	* @var boolean
 	**/
-	protected $DomesticShippingCost;
+	public $DomesticShippingCost;
 
 	/**
 	* @var boolean
 	**/
-	protected $EligibleReturnPolicy;
+	public $EligibleReturnPolicy;
 
 	/**
 	* @var boolean
 	**/
-	protected $Picture;
+	public $Picture;
 
 	/**
 	* @var boolean
 	**/
-	protected $EligibleItemCondition;
+	public $EligibleItemCondition;
 
 	/**
 	* @var boolean
 	**/
-	protected $PriceAboveMinimum;
+	public $PriceAboveMinimum;
 
 	/**
 	* @var boolean
 	**/
-	protected $PriceBelowMaximum;
+	public $PriceBelowMaximum;
 
 	/**
 	* @var boolean
 	**/
-	protected $EligibleCheckout;
+	public $EligibleCheckout;
 
 	/**
 	* @var boolean
 	**/
-	protected $NoPreapprovedBidderList;
+	public $NoPreapprovedBidderList;
 
 	/**
 	* @var boolean
 	**/
-	protected $NoCharity;
+	public $NoCharity;
 
 	/**
 	* @var boolean
 	**/
-	protected $CombinedShippingDiscount;
+	public $CombinedShippingDiscount;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShipFromEligibleCountry;
+	public $ShipFromEligibleCountry;
 
 	/**
 	* @var boolean
 	**/
-	protected $PayPalAccountAcceptsUnconfirmedAddress;
+	public $PayPalAccountAcceptsUnconfirmedAddress;
 
 
 	/**

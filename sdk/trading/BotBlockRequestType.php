@@ -16,12 +16,12 @@ class BotBlockRequestType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $BotBlockToken;
+	public $BotBlockToken;
 
 	/**
 	* @var string
 	**/
-	protected $BotBlockUserInput;
+	public $BotBlockUserInput;
 
 
 	/**

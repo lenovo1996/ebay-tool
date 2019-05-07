@@ -22,92 +22,92 @@ class SellingStatusType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $BidCount;
+	public $BidCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $BidIncrement;
+	public $BidIncrement;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ConvertedCurrentPrice;
+	public $ConvertedCurrentPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $CurrentPrice;
+	public $CurrentPrice;
 
 	/**
 	* @var UserType
 	**/
-	protected $HighBidder;
+	public $HighBidder;
 
 	/**
 	* @var int
 	**/
-	protected $LeadCount;
+	public $LeadCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MinimumToBid;
+	public $MinimumToBid;
 
 	/**
 	* @var int
 	**/
-	protected $QuantitySold;
+	public $QuantitySold;
 
 	/**
 	* @var boolean
 	**/
-	protected $ReserveMet;
+	public $ReserveMet;
 
 	/**
 	* @var boolean
 	**/
-	protected $SecondChanceEligible;
+	public $SecondChanceEligible;
 
 	/**
 	* @var long
 	**/
-	protected $BidderCount;
+	public $BidderCount;
 
 	/**
 	* @var ListingStatusCodeType
 	**/
-	protected $ListingStatus;
+	public $ListingStatus;
 
 	/**
 	* @var AmountType
 	**/
-	protected $FinalValueFee;
+	public $FinalValueFee;
 
 	/**
 	* @var PromotionalSaleDetailsType
 	**/
-	protected $PromotionalSaleDetails;
+	public $PromotionalSaleDetails;
 
 	/**
 	* @var boolean
 	**/
-	protected $AdminEnded;
+	public $AdminEnded;
 
 	/**
 	* @var boolean
 	**/
-	protected $SoldAsBin;
+	public $SoldAsBin;
 
 	/**
 	* @var int
 	**/
-	protected $QuantitySoldByPickupInStore;
+	public $QuantitySoldByPickupInStore;
 
 	/**
 	* @var SuggestedBidValueType
 	**/
-	protected $SuggestedBidValues;
+	public $SuggestedBidValues;
 
 
 	/**

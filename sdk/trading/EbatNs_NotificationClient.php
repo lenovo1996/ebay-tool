@@ -14,14 +14,14 @@ require_once 'EbatNs_DataConverter.php';
 
 class EbatNs_NotificationClient
 {
-	protected $_parser = null; 
+	public $_parser = null;
 	// callback-methods/functions for data-handling
-	protected $_hasCallbacks = false;
-	protected $_callbacks = null; 
+	public $_hasCallbacks = false;
+	public $_callbacks = null;
 	// EbatNs_DataConverter object
-	protected $_dataConverter = null;
+	public $_dataConverter = null;
 
-	protected $_logger = null;
+	public $_logger = null;
 
 	function __construct($converter = 'EbatNs_DataConverterIso')
 	{

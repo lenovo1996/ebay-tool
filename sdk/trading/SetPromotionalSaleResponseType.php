@@ -18,12 +18,12 @@ class SetPromotionalSaleResponseType extends AbstractResponseType
 	/**
 	* @var PromotionalSaleStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var long
 	**/
-	protected $PromotionalSaleID;
+	public $PromotionalSaleID;
 
 
 	/**

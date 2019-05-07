@@ -23,72 +23,72 @@ class RefundType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $RefundFromSeller;
+	public $RefundFromSeller;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalRefundToBuyer;
+	public $TotalRefundToBuyer;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RefundTime;
+	public $RefundTime;
 
 	/**
 	* @var string
 	**/
-	protected $RefundID;
+	public $RefundID;
 
 	/**
 	* @var RefundTransactionArrayType
 	**/
-	protected $RefundTransactionArray;
+	public $RefundTransactionArray;
 
 	/**
 	* @var AmountType
 	**/
-	protected $RefundAmount;
+	public $RefundAmount;
 
 	/**
 	* @var RefundStatusCodeType
 	**/
-	protected $RefundStatus;
+	public $RefundStatus;
 
 	/**
 	* @var RefundFailureReasonType
 	**/
-	protected $RefundFailureReason;
+	public $RefundFailureReason;
 
 	/**
 	* @var RefundFundingSourceArrayType
 	**/
-	protected $RefundFundingSourceArray;
+	public $RefundFundingSourceArray;
 
 	/**
 	* @var string
 	**/
-	protected $ExternalReferenceID;
+	public $ExternalReferenceID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RefundRequestedTime;
+	public $RefundRequestedTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RefundCompletionTime;
+	public $RefundCompletionTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EstimatedRefundCompletionTime;
+	public $EstimatedRefundCompletionTime;
 
 	/**
 	* @var string
 	**/
-	protected $SellerNoteToBuyer;
+	public $SellerNoteToBuyer;
 
 
 	/**

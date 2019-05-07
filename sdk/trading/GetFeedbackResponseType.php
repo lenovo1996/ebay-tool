@@ -21,37 +21,37 @@ class GetFeedbackResponseType extends AbstractResponseType
 	/**
 	* @var FeedbackDetailArrayType
 	**/
-	protected $FeedbackDetailArray;
+	public $FeedbackDetailArray;
 
 	/**
 	* @var int
 	**/
-	protected $FeedbackDetailItemTotal;
+	public $FeedbackDetailItemTotal;
 
 	/**
 	* @var FeedbackSummaryType
 	**/
-	protected $FeedbackSummary;
+	public $FeedbackSummary;
 
 	/**
 	* @var int
 	**/
-	protected $FeedbackScore;
+	public $FeedbackScore;
 
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 	/**
 	* @var int
 	**/
-	protected $EntriesPerPage;
+	public $EntriesPerPage;
 
 	/**
 	* @var int
 	**/
-	protected $PageNumber;
+	public $PageNumber;
 
 
 	/**

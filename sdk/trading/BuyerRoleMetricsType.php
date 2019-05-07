@@ -16,22 +16,22 @@ class BuyerRoleMetricsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $PositiveFeedbackLeftCount;
+	public $PositiveFeedbackLeftCount;
 
 	/**
 	* @var int
 	**/
-	protected $NegativeFeedbackLeftCount;
+	public $NegativeFeedbackLeftCount;
 
 	/**
 	* @var int
 	**/
-	protected $NeutralFeedbackLeftCount;
+	public $NeutralFeedbackLeftCount;
 
 	/**
 	* @var float
 	**/
-	protected $FeedbackLeftPercent;
+	public $FeedbackLeftPercent;
 
 
 	/**

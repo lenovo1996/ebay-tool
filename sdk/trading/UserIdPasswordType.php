@@ -15,27 +15,27 @@ class UserIdPasswordType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $AppId;
+	public $AppId;
 
 	/**
 	* @var string
 	**/
-	protected $DevId;
+	public $DevId;
 
 	/**
 	* @var string
 	**/
-	protected $AuthCert;
+	public $AuthCert;
 
 	/**
 	* @var string
 	**/
-	protected $Username;
+	public $Username;
 
 	/**
 	* @var string
 	**/
-	protected $Password;
+	public $Password;
 
 
 	/**

@@ -16,17 +16,17 @@ class StoreLogoType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $LogoID;
+	public $LogoID;
 
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var anyURI
 	**/
-	protected $URL;
+	public $URL;
 
 
 	/**

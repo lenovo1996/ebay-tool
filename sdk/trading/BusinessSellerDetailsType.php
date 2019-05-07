@@ -18,42 +18,42 @@ class BusinessSellerDetailsType extends EbatNs_ComplexType
 	/**
 	* @var AddressType
 	**/
-	protected $Address;
+	public $Address;
 
 	/**
 	* @var string
 	**/
-	protected $Fax;
+	public $Fax;
 
 	/**
 	* @var string
 	**/
-	protected $Email;
+	public $Email;
 
 	/**
 	* @var string
 	**/
-	protected $AdditionalContactInformation;
+	public $AdditionalContactInformation;
 
 	/**
 	* @var string
 	**/
-	protected $TradeRegistrationNumber;
+	public $TradeRegistrationNumber;
 
 	/**
 	* @var boolean
 	**/
-	protected $LegalInvoice;
+	public $LegalInvoice;
 
 	/**
 	* @var string
 	**/
-	protected $TermsAndConditions;
+	public $TermsAndConditions;
 
 	/**
 	* @var VATDetailsType
 	**/
-	protected $VATDetails;
+	public $VATDetails;
 
 
 	/**

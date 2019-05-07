@@ -59,46 +59,46 @@ require_once 'EbatNs_DataConverter.php';
 class EbatNs_Client
 { 
 	// endpoint for call
-	protected $_ep;
-	protected $_session;
-	protected $_currentResult;
-	protected $_parser = null; 
+	public $_ep;
+	public $_session;
+	public $_currentResult;
+	public $_parser = null;
 	// callback-methods/functions for data-handling
-	protected $_hasCallbacks = false;
-	protected $_callbacks = null; 
+	public $_hasCallbacks = false;
+	public $_callbacks = null;
 	// EbatNs_DataConverter object
-	protected $_dataConverter = null;
+	public $_dataConverter = null;
 	
-	protected $_logger = null;
-	protected $_parserOptions = null;
+	public $_logger = null;
+	public $_parserOptions = null;
 	
-	protected $_paginationElementCounter = 0;
-	protected $_paginationMaxElements = -1;
+	public $_paginationElementCounter = 0;
+	public $_paginationMaxElements = -1;
 	
-	protected $_transportOptions = array();
-	protected $_loggingOptions   = array();
-	protected $_callUsage = array();
+	public $_transportOptions = array();
+	public $_loggingOptions   = array();
+	public $_callUsage = array();
 
 	//
 	// timepoint-tracing
 	//
-	protected $_timePoints = null;
-	protected $_timePointsSEQ = null;
+	public $_timePoints = null;
+	public $_timePointsSEQ = null;
 	
-	protected $_selectorModels = array();
-	protected $_activeSelectorModel = null;
+	public $_selectorModels = array();
+	public $_activeSelectorModel = null;
 	
 	/**
 	 * Curl MultiHandle
 	 *
 	 * @var mixed
 	 */
-	protected $mh;
-	protected $useCurlBatch = false;
-	protected $chMultiHandles = array();
-	protected $nextMultiIndex = 0;
-	protected $resultMethods = array();
-	protected $responseData = array();
+	public $mh;
+	public $useCurlBatch = false;
+	public $chMultiHandles = array();
+	public $nextMultiIndex = 0;
+	public $resultMethods = array();
+	public $responseData = array();
 	
 	public function startBatchOperation()
 	{
@@ -120,7 +120,7 @@ class EbatNs_Client
 	 * @param mixed $ch
 	 * @return number
 	 */
-	protected function saveCurlMultiHandle($ch)
+	public function saveCurlMultiHandle($ch)
 	{
 	    $this->chMultiHandles[$this->nextMultiIndex] = $ch;
 	    $ret = $this->nextMultiIndex;
@@ -291,18 +291,18 @@ class EbatNs_Client
 	}
 	
 	
-	protected function _getMicroseconds()
+	public function _getMicroseconds()
 	{
 		list( $ms, $s ) = explode( ' ', microtime() );
 		return floor( $ms * 1000 ) + 1000 * $s;
 	} 
 	
-	protected function _getElapsed( $start )
+	public function _getElapsed( $start )
 	{
 		return $this->_getMicroseconds() - $start;
 	} 
 	
-	protected function _startTp( $key )
+	public function _startTp( $key )
 	{
 		if (!$this->_loggingOptions['LOG_TIMEPOINTS'])
 			return;
@@ -316,7 +316,7 @@ class EbatNs_Client
 		$this->_timePoints[$key] = $tp;
 	} 
 	
-	protected function _stopTp( $key )
+	public function _stopTp( $key )
 	{
 		if (!$this->_loggingOptions['LOG_TIMEPOINTS'])
 			return;
@@ -330,7 +330,7 @@ class EbatNs_Client
 		} 
 	} 
 	
-	protected function _logTp()
+	public function _logTp()
 	{
 		if (!$this->_loggingOptions['LOG_TIMEPOINTS'])
 			return;
@@ -349,7 +349,7 @@ class EbatNs_Client
 	//
 	
 	// callusage
-	protected function _incrementApiUsage($apiCall)
+	public function _incrementApiUsage($apiCall)
 	{
 		if (!$this->_loggingOptions['LOG_API_USAGE'])	
 			return;

@@ -19,17 +19,17 @@ class SaveItemToSellingManagerTemplateRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var long
 	**/
-	protected $ProductID;
+	public $ProductID;
 
 	/**
 	* @var string
 	**/
-	protected $TemplateName;
+	public $TemplateName;
 
 
 	/**

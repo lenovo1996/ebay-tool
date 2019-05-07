@@ -18,12 +18,12 @@ class MaximumUnpaidItemStrikesInfoDetailsType extends EbatNs_ComplexType
 	/**
 	* @var MaximumUnpaidItemStrikesCountDetailsType
 	**/
-	protected $MaximumUnpaidItemStrikesCount;
+	public $MaximumUnpaidItemStrikesCount;
 
 	/**
 	* @var MaximumUnpaidItemStrikesDurationDetailsType
 	**/
-	protected $MaximumUnpaidItemStrikesDuration;
+	public $MaximumUnpaidItemStrikesDuration;
 
 
 	/**

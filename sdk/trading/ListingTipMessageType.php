@@ -16,22 +16,22 @@ class ListingTipMessageType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ListingTipMessageID;
+	public $ListingTipMessageID;
 
 	/**
 	* @var string
 	**/
-	protected $ShortMessage;
+	public $ShortMessage;
 
 	/**
 	* @var string
 	**/
-	protected $LongMessage;
+	public $LongMessage;
 
 	/**
 	* @var string
 	**/
-	protected $HelpURLPath;
+	public $HelpURLPath;
 
 
 	/**

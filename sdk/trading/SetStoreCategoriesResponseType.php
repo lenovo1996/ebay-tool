@@ -18,17 +18,17 @@ class SetStoreCategoriesResponseType extends AbstractResponseType
 	/**
 	* @var long
 	**/
-	protected $TaskID;
+	public $TaskID;
 
 	/**
 	* @var TaskStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var StoreCustomCategoryArrayType
 	**/
-	protected $CustomCategory;
+	public $CustomCategory;
 
 
 	/**

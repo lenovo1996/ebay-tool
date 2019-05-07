@@ -17,7 +17,7 @@ class FeedbackDetailArrayType extends EbatNs_ComplexType
 	/**
 	* @var FeedbackDetailType
 	**/
-	protected $FeedbackDetail;
+	public $FeedbackDetail;
 
 
 	/**

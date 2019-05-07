@@ -22,72 +22,72 @@ class GetSellerListRequestType extends AbstractRequestType
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var UserIDArrayType
 	**/
-	protected $MotorsDealerUsers;
+	public $MotorsDealerUsers;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTimeFrom;
+	public $EndTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTimeTo;
+	public $EndTimeTo;
 
 	/**
 	* @var int
 	**/
-	protected $Sort;
+	public $Sort;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTimeFrom;
+	public $StartTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTimeTo;
+	public $StartTimeTo;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var GranularityLevelCodeType
 	**/
-	protected $GranularityLevel;
+	public $GranularityLevel;
 
 	/**
 	* @var SKUArrayType
 	**/
-	protected $SKUArray;
+	public $SKUArray;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeWatchCount;
+	public $IncludeWatchCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $AdminEndedItemsOnly;
+	public $AdminEndedItemsOnly;
 
 	/**
 	* @var int
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeVariations;
+	public $IncludeVariations;
 
 
 	/**

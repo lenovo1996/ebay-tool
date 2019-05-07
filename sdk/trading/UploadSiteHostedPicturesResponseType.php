@@ -18,12 +18,12 @@ class UploadSiteHostedPicturesResponseType extends AbstractResponseType
 	/**
 	* @var int
 	**/
-	protected $PictureSystemVersion;
+	public $PictureSystemVersion;
 
 	/**
 	* @var SiteHostedPictureDetailsType
 	**/
-	protected $SiteHostedPictureDetails;
+	public $SiteHostedPictureDetails;
 
 
 	/**

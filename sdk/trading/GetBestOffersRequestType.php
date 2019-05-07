@@ -24,22 +24,22 @@ class GetBestOffersRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var BestOfferIDType
 	**/
-	protected $BestOfferID;
+	public $BestOfferID;
 
 	/**
 	* @var BestOfferStatusCodeType
 	**/
-	protected $BestOfferStatus;
+	public $BestOfferStatus;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 
 	/**

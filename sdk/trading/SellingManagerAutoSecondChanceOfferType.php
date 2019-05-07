@@ -20,27 +20,27 @@ class SellingManagerAutoSecondChanceOfferType extends EbatNs_ComplexType
 	/**
 	* @var SellingManagerAutoSecondChanceOfferTypeCodeType
 	**/
-	protected $SecondChanceOfferCondition;
+	public $SecondChanceOfferCondition;
 
 	/**
 	* @var AmountType
 	**/
-	protected $Amount;
+	public $Amount;
 
 	/**
 	* @var float
 	**/
-	protected $ProfitPercent;
+	public $ProfitPercent;
 
 	/**
 	* @var SecondChanceOfferDurationCodeType
 	**/
-	protected $Duration;
+	public $Duration;
 
 	/**
 	* @var int
 	**/
-	protected $ListingHoldInventoryLevel;
+	public $ListingHoldInventoryLevel;
 
 
 	/**

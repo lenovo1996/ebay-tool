@@ -19,7 +19,7 @@ class NotificationDetailsArrayType extends EbatNs_ComplexType
 	/**
 	* @var NotificationDetailsType
 	**/
-	protected $NotificationDetails;
+	public $NotificationDetails;
 
 
 	/**

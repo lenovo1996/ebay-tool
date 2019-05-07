@@ -18,17 +18,17 @@ class DuplicateInvocationDetailsType extends EbatNs_ComplexType
 	/**
 	* @var UUIDType
 	**/
-	protected $DuplicateInvocationID;
+	public $DuplicateInvocationID;
 
 	/**
 	* @var InvocationStatusType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var string
 	**/
-	protected $InvocationTrackingID;
+	public $InvocationTrackingID;
 
 
 	/**

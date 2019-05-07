@@ -19,23 +19,23 @@ class EbatNsCsSetExt_GlobalSettingsType extends EbatNs_ComplexType
 	/**
 	 * @var string
 	 */
-	protected $MonthAscendingLong;
+	public $MonthAscendingLong;
 	/**
 	 * @var string
 	 */
-	protected $MonthDescendingLong;
+	public $MonthDescendingLong;
 	/**
 	 * @var string
 	 */
-	protected $MonthAscendingShort;
+	public $MonthAscendingShort;
 	/**
 	 * @var string
 	 */
-	protected $MonthDescendingShort;
+	public $MonthDescendingShort;
 	/**
 	 * @var string
 	 */
-	protected $BaseHTMLPath;
+	public $BaseHTMLPath;
 
 	/**
 	 * @return string

@@ -17,7 +17,7 @@ class GetSellingManagerSaleRecordResponseType extends AbstractResponseType
 	/**
 	* @var SellingManagerSoldOrderType
 	**/
-	protected $SellingManagerSoldOrder;
+	public $SellingManagerSoldOrder;
 
 
 	/**

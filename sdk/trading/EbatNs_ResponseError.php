@@ -53,7 +53,7 @@ class EbatNs_ResponseError extends AbstractResponseType
             return (count($this->Errors) == 0);
     }
 
-    protected function _reduceElement (& $element)
+    public function _reduceElement (& $element)
     {
         foreach (get_object_vars($element) as $member => $value)
             if ($member[0] == '_' || ($value === null))

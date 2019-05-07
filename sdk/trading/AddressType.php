@@ -24,152 +24,152 @@ class AddressType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var string
 	**/
-	protected $Street;
+	public $Street;
 
 	/**
 	* @var string
 	**/
-	protected $Street1;
+	public $Street1;
 
 	/**
 	* @var string
 	**/
-	protected $Street2;
+	public $Street2;
 
 	/**
 	* @var string
 	**/
-	protected $CityName;
+	public $CityName;
 
 	/**
 	* @var string
 	**/
-	protected $County;
+	public $County;
 
 	/**
 	* @var string
 	**/
-	protected $StateOrProvince;
+	public $StateOrProvince;
 
 	/**
 	* @var CountryCodeType
 	**/
-	protected $Country;
+	public $Country;
 
 	/**
 	* @var string
 	**/
-	protected $CountryName;
+	public $CountryName;
 
 	/**
 	* @var string
 	**/
-	protected $Phone;
+	public $Phone;
 
 	/**
 	* @var CountryCodeType
 	**/
-	protected $PhoneCountryCode;
+	public $PhoneCountryCode;
 
 	/**
 	* @var string
 	**/
-	protected $PhoneCountryPrefix;
+	public $PhoneCountryPrefix;
 
 	/**
 	* @var string
 	**/
-	protected $PhoneAreaOrCityCode;
+	public $PhoneAreaOrCityCode;
 
 	/**
 	* @var string
 	**/
-	protected $PhoneLocalNumber;
+	public $PhoneLocalNumber;
 
 	/**
 	* @var string
 	**/
-	protected $PostalCode;
+	public $PostalCode;
 
 	/**
 	* @var string
 	**/
-	protected $AddressID;
+	public $AddressID;
 
 	/**
 	* @var AddressOwnerCodeType
 	**/
-	protected $AddressOwner;
+	public $AddressOwner;
 
 	/**
 	* @var AddressStatusCodeType
 	**/
-	protected $AddressStatus;
+	public $AddressStatus;
 
 	/**
 	* @var string
 	**/
-	protected $ExternalAddressID;
+	public $ExternalAddressID;
 
 	/**
 	* @var string
 	**/
-	protected $InternationalName;
+	public $InternationalName;
 
 	/**
 	* @var string
 	**/
-	protected $InternationalStateAndCity;
+	public $InternationalStateAndCity;
 
 	/**
 	* @var string
 	**/
-	protected $InternationalStreet;
+	public $InternationalStreet;
 
 	/**
 	* @var string
 	**/
-	protected $CompanyName;
+	public $CompanyName;
 
 	/**
 	* @var AddressRecordTypeCodeType
 	**/
-	protected $AddressRecordType;
+	public $AddressRecordType;
 
 	/**
 	* @var string
 	**/
-	protected $FirstName;
+	public $FirstName;
 
 	/**
 	* @var string
 	**/
-	protected $LastName;
+	public $LastName;
 
 	/**
 	* @var string
 	**/
-	protected $Phone2;
+	public $Phone2;
 
 	/**
 	* @var AddressUsageCodeType
 	**/
-	protected $AddressUsage;
+	public $AddressUsage;
 
 	/**
 	* @var string
 	**/
-	protected $ReferenceID;
+	public $ReferenceID;
 
 	/**
 	* @var AddressAttributeType
 	**/
-	protected $AddressAttribute;
+	public $AddressAttribute;
 
 
 	/**

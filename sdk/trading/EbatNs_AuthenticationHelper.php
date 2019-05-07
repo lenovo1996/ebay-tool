@@ -22,7 +22,7 @@ require_once 'EbatNs_ServiceProxy.php';
 
 class EbatNs_AuthenticationHelper
 {
-	protected $_cs;
+	public $_cs;
 	function EbatNs_AuthenticationHelper($cs)
 	{
 		$this->_cs = $cs;

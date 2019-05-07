@@ -17,17 +17,17 @@ class AddItemFromSellingManagerTemplateRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ScheduleTime;
+	public $ScheduleTime;
 
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 
 	/**

@@ -19,27 +19,27 @@ class VariationDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MaxVariationsPerItem;
+	public $MaxVariationsPerItem;
 
 	/**
 	* @var int
 	**/
-	protected $MaxNamesPerVariationSpecificsSet;
+	public $MaxNamesPerVariationSpecificsSet;
 
 	/**
 	* @var int
 	**/
-	protected $MaxValuesPerVariationSpecificsSetName;
+	public $MaxValuesPerVariationSpecificsSetName;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

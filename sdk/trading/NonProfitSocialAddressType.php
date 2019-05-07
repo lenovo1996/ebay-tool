@@ -20,12 +20,12 @@ class NonProfitSocialAddressType extends EbatNs_ComplexType
 	/**
 	* @var SocialAddressTypeCodeType
 	**/
-	protected $SocialAddressType;
+	public $SocialAddressType;
 
 	/**
 	* @var string
 	**/
-	protected $SocialAddressId;
+	public $SocialAddressId;
 
 
 	/**

@@ -17,7 +17,7 @@ class GetPromotionalSaleDetailsResponseType extends AbstractResponseType
 	/**
 	* @var PromotionalSaleArrayType
 	**/
-	protected $PromotionalSaleDetails;
+	public $PromotionalSaleDetails;
 
 
 	/**

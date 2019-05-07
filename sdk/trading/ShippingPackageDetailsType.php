@@ -17,37 +17,37 @@ class ShippingPackageDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $PackageID;
+	public $PackageID;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var ShippingPackageCodeType
 	**/
-	protected $ShippingPackage;
+	public $ShippingPackage;
 
 	/**
 	* @var boolean
 	**/
-	protected $DefaultValue;
+	public $DefaultValue;
 
 	/**
 	* @var boolean
 	**/
-	protected $DimensionsSupported;
+	public $DimensionsSupported;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

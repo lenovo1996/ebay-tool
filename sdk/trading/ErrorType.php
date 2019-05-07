@@ -21,37 +21,37 @@ class ErrorType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ShortMessage;
+	public $ShortMessage;
 
 	/**
 	* @var string
 	**/
-	protected $LongMessage;
+	public $LongMessage;
 
 	/**
 	* @var token
 	**/
-	protected $ErrorCode;
+	public $ErrorCode;
 
 	/**
 	* @var boolean
 	**/
-	protected $UserDisplayHint;
+	public $UserDisplayHint;
 
 	/**
 	* @var SeverityCodeType
 	**/
-	protected $SeverityCode;
+	public $SeverityCode;
 
 	/**
 	* @var ErrorParameterType
 	**/
-	protected $ErrorParameters;
+	public $ErrorParameters;
 
 	/**
 	* @var ErrorClassificationCodeType
 	**/
-	protected $ErrorClassification;
+	public $ErrorClassification;
 
 
 	/**

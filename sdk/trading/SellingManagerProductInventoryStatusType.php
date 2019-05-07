@@ -15,32 +15,32 @@ class SellingManagerProductInventoryStatusType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $QuantityScheduled;
+	public $QuantityScheduled;
 
 	/**
 	* @var int
 	**/
-	protected $QuantityActive;
+	public $QuantityActive;
 
 	/**
 	* @var int
 	**/
-	protected $QuantitySold;
+	public $QuantitySold;
 
 	/**
 	* @var int
 	**/
-	protected $QuantityUnsold;
+	public $QuantityUnsold;
 
 	/**
 	* @var float
 	**/
-	protected $SuccessPercent;
+	public $SuccessPercent;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AverageSellingPrice;
+	public $AverageSellingPrice;
 
 
 	/**

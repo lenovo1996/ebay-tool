@@ -20,37 +20,37 @@ class MemberMessageExchangeType extends EbatNs_ComplexType
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 	/**
 	* @var MemberMessageType
 	**/
-	protected $Question;
+	public $Question;
 
 	/**
 	* @var string
 	**/
-	protected $Response;
+	public $Response;
 
 	/**
 	* @var MessageStatusTypeCodeType
 	**/
-	protected $MessageStatus;
+	public $MessageStatus;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreationDate;
+	public $CreationDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastModifiedDate;
+	public $LastModifiedDate;
 
 	/**
 	* @var MessageMediaType
 	**/
-	protected $MessageMedia;
+	public $MessageMedia;
 
 
 	/**

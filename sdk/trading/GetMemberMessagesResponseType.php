@@ -18,17 +18,17 @@ class GetMemberMessagesResponseType extends AbstractResponseType
 	/**
 	* @var MemberMessageExchangeArrayType
 	**/
-	protected $MemberMessage;
+	public $MemberMessage;
 
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasMoreItems;
+	public $HasMoreItems;
 
 
 	/**

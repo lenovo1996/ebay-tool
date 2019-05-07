@@ -19,27 +19,27 @@ class GetBidderListRequestType extends AbstractRequestType
 	/**
 	* @var boolean
 	**/
-	protected $ActiveItemsOnly;
+	public $ActiveItemsOnly;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTimeFrom;
+	public $EndTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTimeTo;
+	public $EndTimeTo;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var GranularityLevelCodeType
 	**/
-	protected $GranularityLevel;
+	public $GranularityLevel;
 
 
 	/**

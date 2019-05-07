@@ -17,22 +17,22 @@ class GetStoreRequestType extends AbstractRequestType
 	/**
 	* @var boolean
 	**/
-	protected $CategoryStructureOnly;
+	public $CategoryStructureOnly;
 
 	/**
 	* @var long
 	**/
-	protected $RootCategoryID;
+	public $RootCategoryID;
 
 	/**
 	* @var int
 	**/
-	protected $LevelLimit;
+	public $LevelLimit;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 
 	/**

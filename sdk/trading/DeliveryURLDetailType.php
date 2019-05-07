@@ -17,17 +17,17 @@ class DeliveryURLDetailType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $DeliveryURLName;
+	public $DeliveryURLName;
 
 	/**
 	* @var anyURI
 	**/
-	protected $DeliveryURL;
+	public $DeliveryURL;
 
 	/**
 	* @var EnableCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 
 	/**

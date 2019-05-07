@@ -17,7 +17,7 @@ class RefundFailureReasonType extends EbatNs_ComplexType
 	/**
 	* @var RefundFailureCodeType
 	**/
-	protected $RefundFailureCode;
+	public $RefundFailureCode;
 
 
 	/**

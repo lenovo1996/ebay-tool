@@ -16,12 +16,12 @@ class ExtendedProductFinderIDType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $ProductFinderID;
+	public $ProductFinderID;
 
 	/**
 	* @var boolean
 	**/
-	protected $ProductFinderBuySide;
+	public $ProductFinderBuySide;
 
 
 	/**

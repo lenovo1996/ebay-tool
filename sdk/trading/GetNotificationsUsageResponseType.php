@@ -19,27 +19,27 @@ class GetNotificationsUsageResponseType extends AbstractResponseType
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var NotificationDetailsArrayType
 	**/
-	protected $NotificationDetailsArray;
+	public $NotificationDetailsArray;
 
 	/**
 	* @var MarkUpMarkDownHistoryType
 	**/
-	protected $MarkUpMarkDownHistory;
+	public $MarkUpMarkDownHistory;
 
 	/**
 	* @var NotificationStatisticsType
 	**/
-	protected $NotificationStatistics;
+	public $NotificationStatistics;
 
 
 	/**

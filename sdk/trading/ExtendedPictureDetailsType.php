@@ -18,7 +18,7 @@ class ExtendedPictureDetailsType extends EbatNs_ComplexType
 	/**
 	* @var PictureURLsType
 	**/
-	protected $PictureURLs;
+	public $PictureURLs;
 
 
 	/**

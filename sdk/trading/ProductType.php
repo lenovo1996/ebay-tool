@@ -18,32 +18,32 @@ class ProductType extends EbatNs_ComplexType
 	/**
 	* @var CharacteristicsSetType
 	**/
-	protected $CharacteristicsSet;
+	public $CharacteristicsSet;
 
 	/**
 	* @var anyURI
 	**/
-	protected $DetailsURL;
+	public $DetailsURL;
 
 	/**
 	* @var int
 	**/
-	protected $NumItems;
+	public $NumItems;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MinPrice;
+	public $MinPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MaxPrice;
+	public $MaxPrice;
 
 	/**
 	* @var string
 	**/
-	protected $ProductReferenceID;
+	public $ProductReferenceID;
 
 
 	/**

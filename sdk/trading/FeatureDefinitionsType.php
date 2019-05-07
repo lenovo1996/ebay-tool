@@ -158,722 +158,722 @@ class FeatureDefinitionsType extends EbatNs_ComplexType
 	/**
 	* @var ListingDurationDefinitionsType
 	**/
-	protected $ListingDurations;
+	public $ListingDurations;
 
 	/**
 	* @var ShippingTermRequiredDefinitionType
 	**/
-	protected $ShippingTermsRequired;
+	public $ShippingTermsRequired;
 
 	/**
 	* @var BestOfferEnabledDefinitionType
 	**/
-	protected $BestOfferEnabled;
+	public $BestOfferEnabled;
 
 	/**
 	* @var DutchBINEnabledDefinitionType
 	**/
-	protected $DutchBINEnabled;
+	public $DutchBINEnabled;
 
 	/**
 	* @var UserConsentRequiredDefinitionType
 	**/
-	protected $UserConsentRequired;
+	public $UserConsentRequired;
 
 	/**
 	* @var HomePageFeaturedEnabledDefinitionType
 	**/
-	protected $HomePageFeaturedEnabled;
+	public $HomePageFeaturedEnabled;
 
 	/**
 	* @var ProPackEnabledDefinitionType
 	**/
-	protected $ProPackEnabled;
+	public $ProPackEnabled;
 
 	/**
 	* @var BasicUpgradePackEnabledDefinitionType
 	**/
-	protected $BasicUpgradePackEnabled;
+	public $BasicUpgradePackEnabled;
 
 	/**
 	* @var ValuePackEnabledDefinitionType
 	**/
-	protected $ValuePackEnabled;
+	public $ValuePackEnabled;
 
 	/**
 	* @var ProPackPlusEnabledDefinitionType
 	**/
-	protected $ProPackPlusEnabled;
+	public $ProPackPlusEnabled;
 
 	/**
 	* @var AdFormatEnabledDefinitionType
 	**/
-	protected $AdFormatEnabled;
+	public $AdFormatEnabled;
 
 	/**
 	* @var BestOfferCounterEnabledDefinitionType
 	**/
-	protected $BestOfferCounterEnabled;
+	public $BestOfferCounterEnabled;
 
 	/**
 	* @var BestOfferAutoDeclineEnabledDefinitionType
 	**/
-	protected $BestOfferAutoDeclineEnabled;
+	public $BestOfferAutoDeclineEnabled;
 
 	/**
 	* @var LocalMarketSpecialitySubscriptionDefinitionType
 	**/
-	protected $LocalMarketSpecialitySubscription;
+	public $LocalMarketSpecialitySubscription;
 
 	/**
 	* @var LocalMarketRegularSubscriptionDefinitionType
 	**/
-	protected $LocalMarketRegularSubscription;
+	public $LocalMarketRegularSubscription;
 
 	/**
 	* @var LocalMarketPremiumSubscriptionDefinitionType
 	**/
-	protected $LocalMarketPremiumSubscription;
+	public $LocalMarketPremiumSubscription;
 
 	/**
 	* @var LocalMarketNonSubscriptionDefinitionType
 	**/
-	protected $LocalMarketNonSubscription;
+	public $LocalMarketNonSubscription;
 
 	/**
 	* @var ExpressEnabledDefinitionType
 	**/
-	protected $ExpressEnabled;
+	public $ExpressEnabled;
 
 	/**
 	* @var ExpressPicturesRequiredDefinitionType
 	**/
-	protected $ExpressPicturesRequired;
+	public $ExpressPicturesRequired;
 
 	/**
 	* @var ExpressConditionRequiredDefinitionType
 	**/
-	protected $ExpressConditionRequired;
+	public $ExpressConditionRequired;
 
 	/**
 	* @var MinimumReservePriceDefinitionType
 	**/
-	protected $MinimumReservePrice;
+	public $MinimumReservePrice;
 
 	/**
 	* @var TCREnabledDefinitionType
 	**/
-	protected $TransactionConfirmationRequestEnabled;
+	public $TransactionConfirmationRequestEnabled;
 
 	/**
 	* @var SellerContactDetailsEnabledDefinitionType
 	**/
-	protected $SellerContactDetailsEnabled;
+	public $SellerContactDetailsEnabled;
 
 	/**
 	* @var StoreInventoryEnabledDefinitionType
 	**/
-	protected $StoreInventoryEnabled;
+	public $StoreInventoryEnabled;
 
 	/**
 	* @var SkypeMeTransactionalEnabledDefinitionType
 	**/
-	protected $SkypeMeTransactionalEnabled;
+	public $SkypeMeTransactionalEnabled;
 
 	/**
 	* @var SkypeMeNonTransactionalEnabledDefinitionType
 	**/
-	protected $SkypeMeNonTransactionalEnabled;
+	public $SkypeMeNonTransactionalEnabled;
 
 	/**
 	* @var LocalListingDistancesRegularDefinitionType
 	**/
-	protected $LocalListingDistancesRegular;
+	public $LocalListingDistancesRegular;
 
 	/**
 	* @var LocalListingDistancesSpecialtyDefinitionType
 	**/
-	protected $LocalListingDistancesSpecialty;
+	public $LocalListingDistancesSpecialty;
 
 	/**
 	* @var LocalListingDistancesNonSubscriptionDefinitionType
 	**/
-	protected $LocalListingDistancesNonSubscription;
+	public $LocalListingDistancesNonSubscription;
 
 	/**
 	* @var ClassifiedAdPaymentMethodEnabledDefinitionType
 	**/
-	protected $ClassifiedAdPaymentMethodEnabled;
+	public $ClassifiedAdPaymentMethodEnabled;
 
 	/**
 	* @var ClassifiedAdShippingMethodEnabledDefinitionType
 	**/
-	protected $ClassifiedAdShippingMethodEnabled;
+	public $ClassifiedAdShippingMethodEnabled;
 
 	/**
 	* @var ClassifiedAdBestOfferEnabledDefinitionType
 	**/
-	protected $ClassifiedAdBestOfferEnabled;
+	public $ClassifiedAdBestOfferEnabled;
 
 	/**
 	* @var ClassifiedAdCounterOfferEnabledDefinitionType
 	**/
-	protected $ClassifiedAdCounterOfferEnabled;
+	public $ClassifiedAdCounterOfferEnabled;
 
 	/**
 	* @var ClassifiedAdAutoDeclineEnabledDefinitionType
 	**/
-	protected $ClassifiedAdAutoDeclineEnabled;
+	public $ClassifiedAdAutoDeclineEnabled;
 
 	/**
 	* @var ClassifiedAdContactByPhoneEnabledDefinitionType
 	**/
-	protected $ClassifiedAdContactByPhoneEnabled;
+	public $ClassifiedAdContactByPhoneEnabled;
 
 	/**
 	* @var ClassifiedAdContactByEmailEnabledDefintionType
 	**/
-	protected $ClassifiedAdContactByEmailEnabled;
+	public $ClassifiedAdContactByEmailEnabled;
 
 	/**
 	* @var SafePaymentRequiredDefinitionType
 	**/
-	protected $SafePaymentRequired;
+	public $SafePaymentRequired;
 
 	/**
 	* @var ClassifiedAdPayPerLeadEnabledDefinitionType
 	**/
-	protected $ClassifiedAdPayPerLeadEnabled;
+	public $ClassifiedAdPayPerLeadEnabled;
 
 	/**
 	* @var ItemSpecificsEnabledDefinitionType
 	**/
-	protected $ItemSpecificsEnabled;
+	public $ItemSpecificsEnabled;
 
 	/**
 	* @var PaisaPayFullEscrowEnabledDefinitionType
 	**/
-	protected $PaisaPayFullEscrowEnabled;
+	public $PaisaPayFullEscrowEnabled;
 
 	/**
 	* @var ISBNIdentifierEnabledDefinitionType
 	**/
-	protected $ISBNIdentifierEnabled;
+	public $ISBNIdentifierEnabled;
 
 	/**
 	* @var UPCIdentifierEnabledDefinitionType
 	**/
-	protected $UPCIdentifierEnabled;
+	public $UPCIdentifierEnabled;
 
 	/**
 	* @var EANIdentifierEnabledDefinitionType
 	**/
-	protected $EANIdentifierEnabled;
+	public $EANIdentifierEnabled;
 
 	/**
 	* @var BrandMPNIdentifierEnabledDefinitionType
 	**/
-	protected $BrandMPNIdentifierEnabled;
+	public $BrandMPNIdentifierEnabled;
 
 	/**
 	* @var BestOfferAutoAcceptEnabledDefinitionType
 	**/
-	protected $BestOfferAutoAcceptEnabled;
+	public $BestOfferAutoAcceptEnabled;
 
 	/**
 	* @var ClassifiedAdAutoAcceptEnabledDefinitionType
 	**/
-	protected $ClassifiedAdAutoAcceptEnabled;
+	public $ClassifiedAdAutoAcceptEnabled;
 
 	/**
 	* @var CrossBorderTradeNorthAmericaEnabledDefinitionType
 	**/
-	protected $CrossBorderTradeNorthAmericaEnabled;
+	public $CrossBorderTradeNorthAmericaEnabled;
 
 	/**
 	* @var CrossBorderTradeGBEnabledDefinitionType
 	**/
-	protected $CrossBorderTradeGBEnabled;
+	public $CrossBorderTradeGBEnabled;
 
 	/**
 	* @var CrossBorderTradeAustraliaEnabledDefinitionType
 	**/
-	protected $CrossBorderTradeAustraliaEnabled;
+	public $CrossBorderTradeAustraliaEnabled;
 
 	/**
 	* @var PayPalBuyerProtectionEnabledDefinitionType
 	**/
-	protected $PayPalBuyerProtectionEnabled;
+	public $PayPalBuyerProtectionEnabled;
 
 	/**
 	* @var BuyerGuaranteeEnabledDefinitionType
 	**/
-	protected $BuyerGuaranteeEnabled;
+	public $BuyerGuaranteeEnabled;
 
 	/**
 	* @var CombinedFixedPriceTreatmentEnabledDefinitionType
 	**/
-	protected $CombinedFixedPriceTreatmentEnabled;
+	public $CombinedFixedPriceTreatmentEnabled;
 
 	/**
 	* @var ListingEnhancementDurationDefinitionType
 	**/
-	protected $GalleryFeaturedDurations;
+	public $GalleryFeaturedDurations;
 
 	/**
 	* @var INEscrowWorkflowTimelineDefinitionType
 	**/
-	protected $INEscrowWorkflowTimeline;
+	public $INEscrowWorkflowTimeline;
 
 	/**
 	* @var PayPalRequiredDefinitionType
 	**/
-	protected $PayPalRequired;
+	public $PayPalRequired;
 
 	/**
 	* @var eBayMotorsProAdFormatEnabledDefinitionType
 	**/
-	protected $eBayMotorsProAdFormatEnabled;
+	public $eBayMotorsProAdFormatEnabled;
 
 	/**
 	* @var eBayMotorsProContactByPhoneEnabledDefinitionType
 	**/
-	protected $eBayMotorsProContactByPhoneEnabled;
+	public $eBayMotorsProContactByPhoneEnabled;
 
 	/**
 	* @var eBayMotorsProPhoneCountDefinitionType
 	**/
-	protected $eBayMotorsProPhoneCount;
+	public $eBayMotorsProPhoneCount;
 
 	/**
 	* @var eBayMotorsProContactByAddressEnabledDefinitionType
 	**/
-	protected $eBayMotorsProContactByAddressEnabled;
+	public $eBayMotorsProContactByAddressEnabled;
 
 	/**
 	* @var eBayMotorsProStreetCountDefinitionType
 	**/
-	protected $eBayMotorsProStreetCount;
+	public $eBayMotorsProStreetCount;
 
 	/**
 	* @var eBayMotorsProCompanyNameEnabledDefinitionType
 	**/
-	protected $eBayMotorsProCompanyNameEnabled;
+	public $eBayMotorsProCompanyNameEnabled;
 
 	/**
 	* @var eBayMotorsProContactByEmailEnabledDefinitionType
 	**/
-	protected $eBayMotorsProContactByEmailEnabled;
+	public $eBayMotorsProContactByEmailEnabled;
 
 	/**
 	* @var eBayMotorsProBestOfferEnabledDefinitionType
 	**/
-	protected $eBayMotorsProBestOfferEnabled;
+	public $eBayMotorsProBestOfferEnabled;
 
 	/**
 	* @var eBayMotorsProAutoAcceptEnabledDefinitionType
 	**/
-	protected $eBayMotorsProAutoAcceptEnabled;
+	public $eBayMotorsProAutoAcceptEnabled;
 
 	/**
 	* @var eBayMotorsProAutoDeclineEnabledDefinitionType
 	**/
-	protected $eBayMotorsProAutoDeclineEnabled;
+	public $eBayMotorsProAutoDeclineEnabled;
 
 	/**
 	* @var eBayMotorsProPaymentMethodCheckOutEnabledDefinitionType
 	**/
-	protected $eBayMotorsProPaymentMethodCheckOutEnabled;
+	public $eBayMotorsProPaymentMethodCheckOutEnabled;
 
 	/**
 	* @var eBayMotorsProShippingMethodEnabledDefinitionType
 	**/
-	protected $eBayMotorsProShippingMethodEnabled;
+	public $eBayMotorsProShippingMethodEnabled;
 
 	/**
 	* @var eBayMotorsProCounterOfferEnabledDefinitionType
 	**/
-	protected $eBayMotorsProCounterOfferEnabled;
+	public $eBayMotorsProCounterOfferEnabled;
 
 	/**
 	* @var eBayMotorsProSellerContactDetailsEnabledDefinitionType
 	**/
-	protected $eBayMotorsProSellerContactDetailsEnabled;
+	public $eBayMotorsProSellerContactDetailsEnabled;
 
 	/**
 	* @var LocalMarketAdFormatEnabledDefinitionType
 	**/
-	protected $LocalMarketAdFormatEnabled;
+	public $LocalMarketAdFormatEnabled;
 
 	/**
 	* @var LocalMarketContactByPhoneEnabledDefinitionType
 	**/
-	protected $LocalMarketContactByPhoneEnabled;
+	public $LocalMarketContactByPhoneEnabled;
 
 	/**
 	* @var LocalMarketPhoneCountDefinitionType
 	**/
-	protected $LocalMarketPhoneCount;
+	public $LocalMarketPhoneCount;
 
 	/**
 	* @var LocalMarketContactByAddressEnabledDefinitionType
 	**/
-	protected $LocalMarketContactByAddressEnabled;
+	public $LocalMarketContactByAddressEnabled;
 
 	/**
 	* @var LocalMarketStreetCountDefinitionType
 	**/
-	protected $LocalMarketStreetCount;
+	public $LocalMarketStreetCount;
 
 	/**
 	* @var LocalMarketCompanyNameEnabledDefinitionType
 	**/
-	protected $LocalMarketCompanyNameEnabled;
+	public $LocalMarketCompanyNameEnabled;
 
 	/**
 	* @var LocalMarketContactByEmailEnabledDefinitionType
 	**/
-	protected $LocalMarketContactByEmailEnabled;
+	public $LocalMarketContactByEmailEnabled;
 
 	/**
 	* @var LocalMarketBestOfferEnabledDefinitionType
 	**/
-	protected $LocalMarketBestOfferEnabled;
+	public $LocalMarketBestOfferEnabled;
 
 	/**
 	* @var LocalMarketAutoAcceptEnabledDefinitionType
 	**/
-	protected $LocalMarketAutoAcceptEnabled;
+	public $LocalMarketAutoAcceptEnabled;
 
 	/**
 	* @var LocalMarketAutoDeclineEnabledDefinitionType
 	**/
-	protected $LocalMarketAutoDeclineEnabled;
+	public $LocalMarketAutoDeclineEnabled;
 
 	/**
 	* @var LocalMarketPaymentMethodCheckOutEnabledDefinitionType
 	**/
-	protected $LocalMarketPaymentMethodCheckOutEnabled;
+	public $LocalMarketPaymentMethodCheckOutEnabled;
 
 	/**
 	* @var LocalMarketShippingMethodEnabledDefinitionType
 	**/
-	protected $LocalMarketShippingMethodEnabled;
+	public $LocalMarketShippingMethodEnabled;
 
 	/**
 	* @var LocalMarketCounterOfferEnabledDefinitionType
 	**/
-	protected $LocalMarketCounterOfferEnabled;
+	public $LocalMarketCounterOfferEnabled;
 
 	/**
 	* @var LocalMarketSellerContactDetailsEnabledDefinitionType
 	**/
-	protected $LocalMarketSellerContactDetailsEnabled;
+	public $LocalMarketSellerContactDetailsEnabled;
 
 	/**
 	* @var ClassifiedAdPhoneCountDefinitionType
 	**/
-	protected $ClassifiedAdPhoneCount;
+	public $ClassifiedAdPhoneCount;
 
 	/**
 	* @var ClassifiedAdContactByAddressEnabledDefinitionType
 	**/
-	protected $ClassifiedAdContactByAddressEnabled;
+	public $ClassifiedAdContactByAddressEnabled;
 
 	/**
 	* @var ClassifiedAdStreetCountDefinitionType
 	**/
-	protected $ClassifiedAdStreetCount;
+	public $ClassifiedAdStreetCount;
 
 	/**
 	* @var ClassifiedAdCompanyNameEnabledDefinitionType
 	**/
-	protected $ClassifiedAdCompanyNameEnabled;
+	public $ClassifiedAdCompanyNameEnabled;
 
 	/**
 	* @var SpecialitySubscriptionDefinitionType
 	**/
-	protected $SpecialitySubscription;
+	public $SpecialitySubscription;
 
 	/**
 	* @var RegularSubscriptionDefinitionType
 	**/
-	protected $RegularSubscription;
+	public $RegularSubscription;
 
 	/**
 	* @var PremiumSubscriptionDefinitionType
 	**/
-	protected $PremiumSubscription;
+	public $PremiumSubscription;
 
 	/**
 	* @var NonSubscriptionDefinitionType
 	**/
-	protected $NonSubscription;
+	public $NonSubscription;
 
 	/**
 	* @var ReturnPolicyEnabledDefinitionType
 	**/
-	protected $ReturnPolicyEnabled;
+	public $ReturnPolicyEnabled;
 
 	/**
 	* @var HandlingTimeEnabledDefinitionType
 	**/
-	protected $HandlingTimeEnabled;
+	public $HandlingTimeEnabled;
 
 	/**
 	* @var PayPalRequiredForStoreOwnerDefinitionType
 	**/
-	protected $PayPalRequiredForStoreOwner;
+	public $PayPalRequiredForStoreOwner;
 
 	/**
 	* @var ReviseQuantityAllowedDefinitionType
 	**/
-	protected $ReviseQuantityAllowed;
+	public $ReviseQuantityAllowed;
 
 	/**
 	* @var RevisePriceAllowedDefinitionType
 	**/
-	protected $RevisePriceAllowed;
+	public $RevisePriceAllowed;
 
 	/**
 	* @var StoreOwnerExtendedListingDurationsEnabledDefinitionType
 	**/
-	protected $StoreOwnerExtendedListingDurationsEnabled;
+	public $StoreOwnerExtendedListingDurationsEnabled;
 
 	/**
 	* @var StoreOwnerExtendedListingDurationsDefinitionType
 	**/
-	protected $StoreOwnerExtendedListingDurations;
+	public $StoreOwnerExtendedListingDurations;
 
 	/**
 	* @var PaymentMethodDefinitionType
 	**/
-	protected $PaymentMethod;
+	public $PaymentMethod;
 
 	/**
 	* @var Group1MaxFlatShippingCostDefinitionType
 	**/
-	protected $Group1MaxFlatShippingCost;
+	public $Group1MaxFlatShippingCost;
 
 	/**
 	* @var Group2MaxFlatShippingCostDefinitionType
 	**/
-	protected $Group2MaxFlatShippingCost;
+	public $Group2MaxFlatShippingCost;
 
 	/**
 	* @var Group3MaxFlatShippingCostDefinitionType
 	**/
-	protected $Group3MaxFlatShippingCost;
+	public $Group3MaxFlatShippingCost;
 
 	/**
 	* @var MaxFlatShippingCostCBTExemptDefinitionType
 	**/
-	protected $MaxFlatShippingCostCBTExempt;
+	public $MaxFlatShippingCostCBTExempt;
 
 	/**
 	* @var MaxFlatShippingCostDefinitionType
 	**/
-	protected $MaxFlatShippingCost;
+	public $MaxFlatShippingCost;
 
 	/**
 	* @var VariationsEnabledDefinitionType
 	**/
-	protected $VariationsEnabled;
+	public $VariationsEnabled;
 
 	/**
 	* @var AttributeConversionEnabledFeatureDefinitionType
 	**/
-	protected $AttributeConversionEnabled;
+	public $AttributeConversionEnabled;
 
 	/**
 	* @var FreeGalleryPlusEnabledDefinitionType
 	**/
-	protected $FreeGalleryPlusEnabled;
+	public $FreeGalleryPlusEnabled;
 
 	/**
 	* @var FreePicturePackEnabledDefinitionType
 	**/
-	protected $FreePicturePackEnabled;
+	public $FreePicturePackEnabled;
 
 	/**
 	* @var ItemCompatibilityEnabledDefinitionType
 	**/
-	protected $ItemCompatibilityEnabled;
+	public $ItemCompatibilityEnabled;
 
 	/**
 	* @var MaxItemCompatibilityDefinitionType
 	**/
-	protected $MaxItemCompatibility;
+	public $MaxItemCompatibility;
 
 	/**
 	* @var MinItemCompatibilityDefinitionType
 	**/
-	protected $MinItemCompatibility;
+	public $MinItemCompatibility;
 
 	/**
 	* @var ConditionEnabledDefinitionType
 	**/
-	protected $ConditionEnabled;
+	public $ConditionEnabled;
 
 	/**
 	* @var ConditionValuesDefinitionType
 	**/
-	protected $ConditionValues;
+	public $ConditionValues;
 
 	/**
 	* @var ValueCategoryDefinitionType
 	**/
-	protected $ValueCategory;
+	public $ValueCategory;
 
 	/**
 	* @var ProductCreationEnabledDefinitionType
 	**/
-	protected $ProductCreationEnabled;
+	public $ProductCreationEnabled;
 
 	/**
 	* @var EANEnabledDefinitionType
 	**/
-	protected $EANEnabled;
+	public $EANEnabled;
 
 	/**
 	* @var ISBNEnabledDefinitionType
 	**/
-	protected $ISBNEnabled;
+	public $ISBNEnabled;
 
 	/**
 	* @var UPCEnabledDefinitionType
 	**/
-	protected $UPCEnabled;
+	public $UPCEnabled;
 
 	/**
 	* @var CompatibleVehicleTypeDefinitionType
 	**/
-	protected $CompatibleVehicleType;
+	public $CompatibleVehicleType;
 
 	/**
 	* @var MaxGranularFitmentCountDefinitionType
 	**/
-	protected $MaxGranularFitmentCount;
+	public $MaxGranularFitmentCount;
 
 	/**
 	* @var PaymentOptionsGroupEnabledDefinitionType
 	**/
-	protected $PaymentOptionsGroup;
+	public $PaymentOptionsGroup;
 
 	/**
 	* @var ProfileCategoryGroupDefinitionType
 	**/
-	protected $ShippingProfileCategoryGroup;
+	public $ShippingProfileCategoryGroup;
 
 	/**
 	* @var ProfileCategoryGroupDefinitionType
 	**/
-	protected $PaymentProfileCategoryGroup;
+	public $PaymentProfileCategoryGroup;
 
 	/**
 	* @var ProfileCategoryGroupDefinitionType
 	**/
-	protected $ReturnPolicyProfileCategoryGroup;
+	public $ReturnPolicyProfileCategoryGroup;
 
 	/**
 	* @var VINSupportedDefinitionType
 	**/
-	protected $VINSupported;
+	public $VINSupported;
 
 	/**
 	* @var VRMSupportedDefinitionType
 	**/
-	protected $VRMSupported;
+	public $VRMSupported;
 
 	/**
 	* @var SellerProvidedTitleSupportedDefinitionType
 	**/
-	protected $SellerProvidedTitleSupported;
+	public $SellerProvidedTitleSupported;
 
 	/**
 	* @var DepositSupportedDefinitionType
 	**/
-	protected $DepositSupported;
+	public $DepositSupported;
 
 	/**
 	* @var GlobalShippingEnabledDefinitionType
 	**/
-	protected $GlobalShippingEnabled;
+	public $GlobalShippingEnabled;
 
 	/**
 	* @var AdditionalCompatibilityEnabledDefinitionType
 	**/
-	protected $AdditionalCompatibilityEnabled;
+	public $AdditionalCompatibilityEnabled;
 
 	/**
 	* @var PickupDropOffEnabledDefinitionType
 	**/
-	protected $PickupDropOffEnabled;
+	public $PickupDropOffEnabled;
 
 	/**
 	* @var DigitalGoodDeliveryEnabledDefinitionType
 	**/
-	protected $DigitalGoodDeliveryEnabled;
+	public $DigitalGoodDeliveryEnabled;
 
 	/**
 	* @var EpidSupportedDefinitionType
 	**/
-	protected $EpidSupported;
+	public $EpidSupported;
 
 	/**
 	* @var KTypeSupportedDefinitionType
 	**/
-	protected $KTypeSupported;
+	public $KTypeSupported;
 
 	/**
 	* @var ProductRequiredEnabledDefinitionType
 	**/
-	protected $ProductRequiredEnabled;
+	public $ProductRequiredEnabled;
 
 	/**
 	* @var DomesticReturnsAcceptedDefinitionType
 	**/
-	protected $DomesticReturnsAcceptedValues;
+	public $DomesticReturnsAcceptedValues;
 
 	/**
 	* @var InternationalReturnsAcceptedDefinitionType
 	**/
-	protected $InternationalReturnsAcceptedValues;
+	public $InternationalReturnsAcceptedValues;
 
 	/**
 	* @var DomesticReturnsDurationDefinitionType
 	**/
-	protected $DomesticReturnsDurationValues;
+	public $DomesticReturnsDurationValues;
 
 	/**
 	* @var InternationalReturnsDurationDefinitionType
 	**/
-	protected $InternationalReturnsDurationValues;
+	public $InternationalReturnsDurationValues;
 
 	/**
 	* @var DomesticReturnsShipmentPayeeDefinitionType
 	**/
-	protected $DomesticReturnsShipmentPayeeValues;
+	public $DomesticReturnsShipmentPayeeValues;
 
 	/**
 	* @var InternationalReturnsShipmentPayeeDefinitionType
 	**/
-	protected $InternationalReturnsShipmentPayeeValues;
+	public $InternationalReturnsShipmentPayeeValues;
 
 	/**
 	* @var DomesticRefundMethodCodeType
 	**/
-	protected $DomesticRefundMethodValues;
+	public $DomesticRefundMethodValues;
 
 	/**
 	* @var InternationalRefundMethodCodeType
 	**/
-	protected $InternationalRefundMethodValues;
+	public $InternationalRefundMethodValues;
 
 	/**
 	* @var ReturnPolicyDescriptionEnabledDefinitionType
 	**/
-	protected $ReturnPolicyDescriptionEnabled;
+	public $ReturnPolicyDescriptionEnabled;
 
 
 	/**

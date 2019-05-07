@@ -17,7 +17,7 @@ class BuyerPackageEnclosuresType extends EbatNs_ComplexType
 	/**
 	* @var BuyerPackageEnclosureType
 	**/
-	protected $BuyerPackageEnclosure;
+	public $BuyerPackageEnclosure;
 
 
 	/**

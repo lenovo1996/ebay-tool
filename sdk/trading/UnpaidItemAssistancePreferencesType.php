@@ -22,32 +22,32 @@ class UnpaidItemAssistancePreferencesType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $DelayBeforeOpeningDispute;
+	public $DelayBeforeOpeningDispute;
 
 	/**
 	* @var boolean
 	**/
-	protected $OptInStatus;
+	public $OptInStatus;
 
 	/**
 	* @var boolean
 	**/
-	protected $AutoRelist;
+	public $AutoRelist;
 
 	/**
 	* @var boolean
 	**/
-	protected $RemoveAllExcludedUsers;
+	public $RemoveAllExcludedUsers;
 
 	/**
 	* @var string
 	**/
-	protected $ExcludedUser;
+	public $ExcludedUser;
 
 	/**
 	* @var boolean
 	**/
-	protected $AutoOptDonationRefund;
+	public $AutoOptDonationRefund;
 
 
 	/**

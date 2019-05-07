@@ -21,12 +21,12 @@ class VeROReportItemsRequestType extends AbstractRequestType
 	/**
 	* @var UserIDType
 	**/
-	protected $RightsOwnerID;
+	public $RightsOwnerID;
 
 	/**
 	* @var VeROReportItemsType
 	**/
-	protected $ReportItems;
+	public $ReportItems;
 
 
 	/**

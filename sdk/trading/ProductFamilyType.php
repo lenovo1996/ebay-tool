@@ -17,12 +17,12 @@ class ProductFamilyType extends EbatNs_ComplexType
 	/**
 	* @var ProductType
 	**/
-	protected $ParentProduct;
+	public $ParentProduct;
 
 	/**
 	* @var ProductType
 	**/
-	protected $FamilyMembers;
+	public $FamilyMembers;
 
 
 	/**

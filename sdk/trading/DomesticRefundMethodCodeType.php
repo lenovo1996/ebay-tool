@@ -17,7 +17,7 @@ class DomesticRefundMethodCodeType extends EbatNs_ComplexType
 	/**
 	* @var ReturnsRefundMethodCodeType
 	**/
-	protected $DomesticRefundMethod;
+	public $DomesticRefundMethod;
 
 
 	/**

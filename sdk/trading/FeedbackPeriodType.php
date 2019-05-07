@@ -16,12 +16,12 @@ class FeedbackPeriodType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $PeriodInDays;
+	public $PeriodInDays;
 
 	/**
 	* @var int
 	**/
-	protected $Count;
+	public $Count;
 
 
 	/**

@@ -18,12 +18,12 @@ class PicturesType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $VariationSpecificName;
+	public $VariationSpecificName;
 
 	/**
 	* @var VariationSpecificPictureSetType
 	**/
-	protected $VariationSpecificPictureSet;
+	public $VariationSpecificPictureSet;
 
 
 	/**

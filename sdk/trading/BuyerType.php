@@ -18,12 +18,12 @@ class BuyerType extends EbatNs_ComplexType
 	/**
 	* @var AddressType
 	**/
-	protected $ShippingAddress;
+	public $ShippingAddress;
 
 	/**
 	* @var TaxIdentifierType
 	**/
-	protected $BuyerTaxIdentifier;
+	public $BuyerTaxIdentifier;
 
 
 	/**

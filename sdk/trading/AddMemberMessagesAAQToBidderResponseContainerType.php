@@ -17,12 +17,12 @@ class AddMemberMessagesAAQToBidderResponseContainerType extends EbatNs_ComplexTy
 	/**
 	* @var string
 	**/
-	protected $CorrelationID;
+	public $CorrelationID;
 
 	/**
 	* @var AckCodeType
 	**/
-	protected $Ack;
+	public $Ack;
 
 
 	/**

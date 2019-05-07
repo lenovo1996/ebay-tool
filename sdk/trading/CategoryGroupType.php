@@ -16,12 +16,12 @@ class CategoryGroupType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var boolean
 	**/
-	protected $IsDefault;
+	public $IsDefault;
 
 
 	/**

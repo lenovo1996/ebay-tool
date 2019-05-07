@@ -20,17 +20,17 @@ class EndFixedPriceItemRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var EndReasonCodeType
 	**/
-	protected $EndingReason;
+	public $EndingReason;
 
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 
 	/**

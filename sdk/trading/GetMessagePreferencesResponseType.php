@@ -17,7 +17,7 @@ class GetMessagePreferencesResponseType extends AbstractResponseType
 	/**
 	* @var ASQPreferencesType
 	**/
-	protected $ASQPreferences;
+	public $ASQPreferences;
 
 
 	/**

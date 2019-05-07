@@ -16,52 +16,52 @@ class ShippingPackageInfoType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $StoreID;
+	public $StoreID;
 
 	/**
 	* @var token
 	**/
-	protected $ShippingTrackingEvent;
+	public $ShippingTrackingEvent;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ScheduledDeliveryTimeMin;
+	public $ScheduledDeliveryTimeMin;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ScheduledDeliveryTimeMax;
+	public $ScheduledDeliveryTimeMax;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ActualDeliveryTime;
+	public $ActualDeliveryTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EstimatedDeliveryTimeMin;
+	public $EstimatedDeliveryTimeMin;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EstimatedDeliveryTimeMax;
+	public $EstimatedDeliveryTimeMax;
 
 	/**
 	* @var dateTime
 	**/
-	protected $HandleByTime;
+	public $HandleByTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $MinNativeEstimatedDeliveryTime;
+	public $MinNativeEstimatedDeliveryTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $MaxNativeEstimatedDeliveryTime;
+	public $MaxNativeEstimatedDeliveryTime;
 
 
 	/**

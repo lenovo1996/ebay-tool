@@ -22,27 +22,27 @@ class GetSellingManagerEmailLogRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var long
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var OrderIDType
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 	/**
 	* @var TimeRangeType
 	**/
-	protected $EmailDateRange;
+	public $EmailDateRange;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

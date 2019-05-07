@@ -20,12 +20,12 @@ class ShippingInsuranceType extends EbatNs_ComplexType
 	/**
 	* @var InsuranceOptionCodeType
 	**/
-	protected $InsuranceOption;
+	public $InsuranceOption;
 
 	/**
 	* @var FlatRateInsuranceRangeCostType
 	**/
-	protected $FlatRateInsuranceRangeCost;
+	public $FlatRateInsuranceRangeCost;
 
 
 	/**

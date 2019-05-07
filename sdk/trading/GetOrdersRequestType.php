@@ -22,62 +22,62 @@ class GetOrdersRequestType extends AbstractRequestType
 	/**
 	* @var OrderIDArrayType
 	**/
-	protected $OrderIDArray;
+	public $OrderIDArray;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreateTimeFrom;
+	public $CreateTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreateTimeTo;
+	public $CreateTimeTo;
 
 	/**
 	* @var TradingRoleCodeType
 	**/
-	protected $OrderRole;
+	public $OrderRole;
 
 	/**
 	* @var OrderStatusCodeType
 	**/
-	protected $OrderStatus;
+	public $OrderStatus;
 
 	/**
 	* @var ListingTypeCodeType
 	**/
-	protected $ListingType;
+	public $ListingType;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeFrom;
+	public $ModTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeTo;
+	public $ModTimeTo;
 
 	/**
 	* @var int
 	**/
-	protected $NumberOfDays;
+	public $NumberOfDays;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeFinalValueFee;
+	public $IncludeFinalValueFee;
 
 	/**
 	* @var SortOrderCodeType
 	**/
-	protected $SortingOrder;
+	public $SortingOrder;
 
 
 	/**

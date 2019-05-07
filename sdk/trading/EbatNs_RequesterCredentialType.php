@@ -22,17 +22,17 @@ class EbatNs_RequesterCredentialType extends EbatNs_ComplexType
     /**
      * @var string
      */
-    protected $eBayAuthToken;
+    public $eBayAuthToken;
 
     /**
      * @var CredentialType
      */
-    protected $Credentials;
+    public $Credentials;
 
     /**
      * @var array
      */
-    protected $_attributeValues;
+    public $_attributeValues;
 
     function __construct ()
     {

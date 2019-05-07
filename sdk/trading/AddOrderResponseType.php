@@ -17,12 +17,12 @@ class AddOrderResponseType extends AbstractResponseType
 	/**
 	* @var OrderIDType
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreatedTime;
+	public $CreatedTime;
 
 
 	/**

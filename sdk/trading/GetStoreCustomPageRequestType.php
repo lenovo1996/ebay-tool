@@ -16,7 +16,7 @@ class GetStoreCustomPageRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $PageID;
+	public $PageID;
 
 
 	/**

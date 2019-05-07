@@ -20,17 +20,17 @@ class SellingManagerProductSpecificsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $PrimaryCategoryID;
+	public $PrimaryCategoryID;
 
 	/**
 	* @var VariationsType
 	**/
-	protected $Variations;
+	public $Variations;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $ItemSpecifics;
+	public $ItemSpecifics;
 
 
 	/**

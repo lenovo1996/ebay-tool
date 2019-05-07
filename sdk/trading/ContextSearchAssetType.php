@@ -17,17 +17,17 @@ class ContextSearchAssetType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Keyword;
+	public $Keyword;
 
 	/**
 	* @var CategoryType
 	**/
-	protected $Category;
+	public $Category;
 
 	/**
 	* @var int
 	**/
-	protected $Ranking;
+	public $Ranking;
 
 
 	/**

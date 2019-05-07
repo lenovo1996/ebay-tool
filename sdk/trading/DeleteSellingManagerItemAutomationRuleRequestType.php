@@ -21,17 +21,17 @@ class DeleteSellingManagerItemAutomationRuleRequestType extends AbstractRequestT
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var boolean
 	**/
-	protected $DeleteAutomatedRelistingRule;
+	public $DeleteAutomatedRelistingRule;
 
 	/**
 	* @var boolean
 	**/
-	protected $DeleteAutomatedSecondChanceOfferRule;
+	public $DeleteAutomatedSecondChanceOfferRule;
 
 
 	/**

@@ -24,62 +24,62 @@ class RecommendationValidationRulesType extends EbatNs_ComplexType
 	/**
 	* @var ValueTypeCodeType
 	**/
-	protected $ValueType;
+	public $ValueType;
 
 	/**
 	* @var int
 	**/
-	protected $MinValues;
+	public $MinValues;
 
 	/**
 	* @var int
 	**/
-	protected $MaxValues;
+	public $MaxValues;
 
 	/**
 	* @var SelectionModeCodeType
 	**/
-	protected $SelectionMode;
+	public $SelectionMode;
 
 	/**
 	* @var AspectUsageCodeType
 	**/
-	protected $AspectUsage;
+	public $AspectUsage;
 
 	/**
 	* @var int
 	**/
-	protected $MaxValueLength;
+	public $MaxValueLength;
 
 	/**
 	* @var ProductRequiredCodeType
 	**/
-	protected $ProductRequired;
+	public $ProductRequired;
 
 	/**
 	* @var int
 	**/
-	protected $Confidence;
+	public $Confidence;
 
 	/**
 	* @var NameValueRelationshipType
 	**/
-	protected $Relationship;
+	public $Relationship;
 
 	/**
 	* @var VariationPictureRuleCodeType
 	**/
-	protected $VariationPicture;
+	public $VariationPicture;
 
 	/**
 	* @var VariationSpecificsRuleCodeType
 	**/
-	protected $VariationSpecifics;
+	public $VariationSpecifics;
 
 	/**
 	* @var ValueFormatCodeType
 	**/
-	protected $ValueFormat;
+	public $ValueFormat;
 
 
 	/**

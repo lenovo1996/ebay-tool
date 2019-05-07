@@ -20,12 +20,12 @@ class PowerSellerDashboardType extends EbatNs_ComplexType
 	/**
 	* @var SellerLevelCodeType
 	**/
-	protected $Level;
+	public $Level;
 
 	/**
 	* @var SellerDashboardAlertType
 	**/
-	protected $Alert;
+	public $Alert;
 
 
 	/**

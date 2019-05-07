@@ -18,17 +18,17 @@ class GetAllBiddersRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var GetAllBiddersModeCodeType
 	**/
-	protected $CallMode;
+	public $CallMode;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeBiddingSummary;
+	public $IncludeBiddingSummary;
 
 
 	/**

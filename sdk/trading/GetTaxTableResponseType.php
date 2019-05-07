@@ -17,12 +17,12 @@ class GetTaxTableResponseType extends AbstractResponseType
 	/**
 	* @var dateTime
 	**/
-	protected $LastUpdateTime;
+	public $LastUpdateTime;
 
 	/**
 	* @var TaxTableType
 	**/
-	protected $TaxTable;
+	public $TaxTable;
 
 
 	/**

@@ -18,27 +18,27 @@ class GetCategoryFeaturesRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var int
 	**/
-	protected $LevelLimit;
+	public $LevelLimit;
 
 	/**
 	* @var boolean
 	**/
-	protected $ViewAllNodes;
+	public $ViewAllNodes;
 
 	/**
 	* @var FeatureIDCodeType
 	**/
-	protected $FeatureID;
+	public $FeatureID;
 
 	/**
 	* @var boolean
 	**/
-	protected $AllFeaturesForCategory;
+	public $AllFeaturesForCategory;
 
 
 	/**

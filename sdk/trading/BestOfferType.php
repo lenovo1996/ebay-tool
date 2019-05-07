@@ -21,62 +21,62 @@ class BestOfferType extends EbatNs_ComplexType
 	/**
 	* @var BestOfferIDType
 	**/
-	protected $BestOfferID;
+	public $BestOfferID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ExpirationTime;
+	public $ExpirationTime;
 
 	/**
 	* @var UserType
 	**/
-	protected $Buyer;
+	public $Buyer;
 
 	/**
 	* @var AmountType
 	**/
-	protected $Price;
+	public $Price;
 
 	/**
 	* @var BestOfferStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var int
 	**/
-	protected $Quantity;
+	public $Quantity;
 
 	/**
 	* @var string
 	**/
-	protected $BuyerMessage;
+	public $BuyerMessage;
 
 	/**
 	* @var string
 	**/
-	protected $SellerMessage;
+	public $SellerMessage;
 
 	/**
 	* @var BestOfferTypeCodeType
 	**/
-	protected $BestOfferCodeType;
+	public $BestOfferCodeType;
 
 	/**
 	* @var string
 	**/
-	protected $CallStatus;
+	public $CallStatus;
 
 	/**
 	* @var boolean
 	**/
-	protected $NewBestOffer;
+	public $NewBestOffer;
 
 	/**
 	* @var boolean
 	**/
-	protected $ImmediatePayEligible;
+	public $ImmediatePayEligible;
 
 
 	/**

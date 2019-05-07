@@ -18,17 +18,17 @@ class DigitalDeliverySelectedType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $DeliveryMethod;
+	public $DeliveryMethod;
 
 	/**
 	* @var DeliveryStatusType
 	**/
-	protected $DeliveryStatus;
+	public $DeliveryStatus;
 
 	/**
 	* @var DeliveryDetailsType
 	**/
-	protected $DeliveryDetails;
+	public $DeliveryDetails;
 
 
 	/**

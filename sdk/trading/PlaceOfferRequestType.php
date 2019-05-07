@@ -20,27 +20,27 @@ class PlaceOfferRequestType extends AbstractRequestType
 	/**
 	* @var OfferType
 	**/
-	protected $Offer;
+	public $Offer;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var boolean
 	**/
-	protected $BlockOnWarning;
+	public $BlockOnWarning;
 
 	/**
 	* @var AffiliateTrackingDetailsType
 	**/
-	protected $AffiliateTrackingDetails;
+	public $AffiliateTrackingDetails;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $VariationSpecifics;
+	public $VariationSpecifics;
 
 
 	/**

@@ -17,47 +17,47 @@ class GetMyeBaySellingRequestType extends AbstractRequestType
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $ScheduledList;
+	public $ScheduledList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $ActiveList;
+	public $ActiveList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $SoldList;
+	public $SoldList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $UnsoldList;
+	public $UnsoldList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $BidList;
+	public $BidList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $DeletedFromSoldList;
+	public $DeletedFromSoldList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $DeletedFromUnsoldList;
+	public $DeletedFromUnsoldList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $SellingSummary;
+	public $SellingSummary;
 
 	/**
 	* @var boolean
 	**/
-	protected $HideVariations;
+	public $HideVariations;
 
 
 	/**

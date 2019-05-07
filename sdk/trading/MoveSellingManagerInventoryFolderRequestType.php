@@ -19,12 +19,12 @@ class MoveSellingManagerInventoryFolderRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var long
 	**/
-	protected $NewParentFolderID;
+	public $NewParentFolderID;
 
 
 	/**

@@ -23,12 +23,12 @@ class ProductIdentifiersType extends EbatNs_ComplexType
 	/**
 	* @var GroupValidationRulesType
 	**/
-	protected $ValidationRules;
+	public $ValidationRules;
 
 	/**
 	* @var NameRecommendationType
 	**/
-	protected $NameRecommendation;
+	public $NameRecommendation;
 
 
 	/**

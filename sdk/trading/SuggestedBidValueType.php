@@ -17,7 +17,7 @@ class SuggestedBidValueType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $BidValue;
+	public $BidValue;
 
 
 	/**

@@ -20,55 +20,55 @@ class EbatNsCsSetExt_PresentationInstructionType extends EbatNs_ComplexType
 	/**
 	 * @var string
 	 */
-	protected $DomainName;
+	public $DomainName;
 	/**
 	 * @var string
 	 */
-	protected $Day;
+	public $Day;
 	/**
 	 * @var string
 	 */
-	protected $Month;
+	public $Month;
 	/**
 	 * @var string
 	 */
-	protected $InitialValue;
+	public $InitialValue;
 	/**
 	 * @var string
 	 */
-	protected $Glossary;
+	public $Glossary;
 	/**
 	 * @var string
 	 */
-	protected $Label;
+	public $Label;
 	/**
 	 * @var string
 	 */
-	protected $MessageBottom;
+	public $MessageBottom;
 	/**
 	 * @var string
 	 */
-	protected $NoJS;
+	public $NoJS;
 	/**
 	 * @var string
 	 */
-	protected $Year;
+	public $Year;
 	/**
 	 * @var string
 	 */
-	protected $YearInitialValue;
+	public $YearInitialValue;
 	/**
 	 * @var string
 	 */
-	protected $Message;
+	public $Message;
 	/**
 	 * @var string
 	 */
-	protected $TextMessage;
+	public $TextMessage;
 	/**
 	 * @var EbatNsCsSetExt_InitialType
 	 */
-	protected $Initial;
+	public $Initial;
 
 	/**
 	 * @return string

@@ -18,37 +18,37 @@ class AddSellingManagerTemplateResponseType extends AbstractResponseType
 	/**
 	* @var long
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var long
 	**/
-	protected $Category2ID;
+	public $Category2ID;
 
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateGroupID;
+	public $SaleTemplateGroupID;
 
 	/**
 	* @var string
 	**/
-	protected $SaleTemplateName;
+	public $SaleTemplateName;
 
 	/**
 	* @var SellingManagerProductDetailsType
 	**/
-	protected $SellingManagerProductDetails;
+	public $SellingManagerProductDetails;
 
 	/**
 	* @var FeesType
 	**/
-	protected $Fees;
+	public $Fees;
 
 
 	/**

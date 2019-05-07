@@ -18,7 +18,7 @@ class SiteLocationType extends EbatNs_ComplexType
 	/**
 	* @var SiteIDFilterCodeType
 	**/
-	protected $SiteID;
+	public $SiteID;
 
 
 	/**

@@ -17,12 +17,12 @@ class AddToItemDescriptionRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 
 	/**

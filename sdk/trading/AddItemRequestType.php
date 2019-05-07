@@ -17,7 +17,7 @@ class AddItemRequestType extends AbstractRequestType
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 
 	/**

@@ -17,7 +17,7 @@ class GetNotificationPreferencesRequestType extends AbstractRequestType
 	/**
 	* @var NotificationRoleCodeType
 	**/
-	protected $PreferenceLevel;
+	public $PreferenceLevel;
 
 
 	/**

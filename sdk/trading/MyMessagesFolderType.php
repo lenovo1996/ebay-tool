@@ -16,12 +16,12 @@ class MyMessagesFolderType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var string
 	**/
-	protected $FolderName;
+	public $FolderName;
 
 
 	/**

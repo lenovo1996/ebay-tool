@@ -20,7 +20,7 @@ class EbatNsCsSetExt_CharacteristicsSetArrayType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_CharacteristicsSetType
 	 */
-	protected $CharacteristicsSet;
+	public $CharacteristicsSet;
 
 	/**
 	 * @return EbatNsCsSetExt_CharacteristicsSetType

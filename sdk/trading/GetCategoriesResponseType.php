@@ -22,37 +22,37 @@ class GetCategoriesResponseType extends AbstractResponseType
 	/**
 	* @var CategoryArrayType
 	**/
-	protected $CategoryArray;
+	public $CategoryArray;
 
 	/**
 	* @var int
 	**/
-	protected $CategoryCount;
+	public $CategoryCount;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryVersion;
+	public $CategoryVersion;
 
 	/**
 	* @var boolean
 	**/
-	protected $ReservePriceAllowed;
+	public $ReservePriceAllowed;
 
 	/**
 	* @var double
 	**/
-	protected $MinimumReservePrice;
+	public $MinimumReservePrice;
 
 	/**
 	* @var boolean
 	**/
-	protected $ReduceReserveAllowed;
+	public $ReduceReserveAllowed;
 
 
 	/**

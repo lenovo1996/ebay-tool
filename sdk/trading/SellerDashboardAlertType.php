@@ -18,12 +18,12 @@ class SellerDashboardAlertType extends EbatNs_ComplexType
 	/**
 	* @var SellerDashboardAlertSeverityCodeType
 	**/
-	protected $Severity;
+	public $Severity;
 
 	/**
 	* @var string
 	**/
-	protected $Text;
+	public $Text;
 
 
 	/**

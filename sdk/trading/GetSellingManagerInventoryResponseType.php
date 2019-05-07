@@ -18,17 +18,17 @@ class GetSellingManagerInventoryResponseType extends AbstractResponseType
 	/**
 	* @var dateTime
 	**/
-	protected $InventoryCountLastCalculatedDate;
+	public $InventoryCountLastCalculatedDate;
 
 	/**
 	* @var SellingManagerProductType
 	**/
-	protected $SellingManagerProduct;
+	public $SellingManagerProduct;
 
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 
 	/**

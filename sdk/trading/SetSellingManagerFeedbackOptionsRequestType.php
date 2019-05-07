@@ -20,12 +20,12 @@ class SetSellingManagerFeedbackOptionsRequestType extends AbstractRequestType
 	/**
 	* @var AutomatedLeaveFeedbackEventCodeType
 	**/
-	protected $AutomatedLeaveFeedbackEvent;
+	public $AutomatedLeaveFeedbackEvent;
 
 	/**
 	* @var FeedbackCommentArrayType
 	**/
-	protected $StoredComments;
+	public $StoredComments;
 
 
 	/**

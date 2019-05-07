@@ -17,7 +17,7 @@ class AccountEntriesType extends EbatNs_ComplexType
 	/**
 	* @var AccountEntryType
 	**/
-	protected $AccountEntry;
+	public $AccountEntry;
 
 
 	/**

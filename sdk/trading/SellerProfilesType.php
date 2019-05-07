@@ -19,17 +19,17 @@ class SellerProfilesType extends EbatNs_ComplexType
 	/**
 	* @var SellerShippingProfileType
 	**/
-	protected $SellerShippingProfile;
+	public $SellerShippingProfile;
 
 	/**
 	* @var SellerReturnProfileType
 	**/
-	protected $SellerReturnProfile;
+	public $SellerReturnProfile;
 
 	/**
 	* @var SellerPaymentProfileType
 	**/
-	protected $SellerPaymentProfile;
+	public $SellerPaymentProfile;
 
 
 	/**

@@ -23,17 +23,17 @@ class AdditionalAccountType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $Balance;
+	public $Balance;
 
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $Currency;
+	public $Currency;
 
 	/**
 	* @var string
 	**/
-	protected $AccountCode;
+	public $AccountCode;
 
 
 	/**

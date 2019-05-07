@@ -20,47 +20,47 @@ class PromotionalSaleType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $PromotionalSaleID;
+	public $PromotionalSaleID;
 
 	/**
 	* @var string
 	**/
-	protected $PromotionalSaleName;
+	public $PromotionalSaleName;
 
 	/**
 	* @var ItemIDArrayType
 	**/
-	protected $PromotionalSaleItemIDArray;
+	public $PromotionalSaleItemIDArray;
 
 	/**
 	* @var PromotionalSaleStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var DiscountCodeType
 	**/
-	protected $DiscountType;
+	public $DiscountType;
 
 	/**
 	* @var double
 	**/
-	protected $DiscountValue;
+	public $DiscountValue;
 
 	/**
 	* @var dateTime
 	**/
-	protected $PromotionalSaleStartTime;
+	public $PromotionalSaleStartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $PromotionalSaleEndTime;
+	public $PromotionalSaleEndTime;
 
 	/**
 	* @var PromotionalSaleTypeCodeType
 	**/
-	protected $PromotionalSaleType;
+	public $PromotionalSaleType;
 
 
 	/**

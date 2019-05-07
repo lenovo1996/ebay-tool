@@ -18,12 +18,12 @@ class PaginatedOrderTransactionArrayType extends EbatNs_ComplexType
 	/**
 	* @var OrderTransactionArrayType
 	**/
-	protected $OrderTransactionArray;
+	public $OrderTransactionArray;
 
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 
 	/**

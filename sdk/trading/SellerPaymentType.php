@@ -21,67 +21,67 @@ class SellerPaymentType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var OrderIDType
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 	/**
 	* @var string
 	**/
-	protected $SellerInventoryID;
+	public $SellerInventoryID;
 
 	/**
 	* @var string
 	**/
-	protected $PrivateNotes;
+	public $PrivateNotes;
 
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 	/**
 	* @var PaymentTypeCodeType
 	**/
-	protected $PaymentType;
+	public $PaymentType;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TransactionPrice;
+	public $TransactionPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingReimbursement;
+	public $ShippingReimbursement;
 
 	/**
 	* @var AmountType
 	**/
-	protected $Commission;
+	public $Commission;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AmountPaid;
+	public $AmountPaid;
 
 	/**
 	* @var dateTime
 	**/
-	protected $PaidTime;
+	public $PaidTime;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

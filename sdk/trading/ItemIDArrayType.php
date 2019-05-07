@@ -18,7 +18,7 @@ class ItemIDArrayType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 
 	/**

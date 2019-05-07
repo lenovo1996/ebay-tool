@@ -18,27 +18,27 @@ class ReviseMyMessagesRequestType extends AbstractRequestType
 	/**
 	* @var MyMessagesMessageIDArrayType
 	**/
-	protected $MessageIDs;
+	public $MessageIDs;
 
 	/**
 	* @var MyMessagesAlertIDArrayType
 	**/
-	protected $AlertIDs;
+	public $AlertIDs;
 
 	/**
 	* @var boolean
 	**/
-	protected $Read;
+	public $Read;
 
 	/**
 	* @var boolean
 	**/
-	protected $Flagged;
+	public $Flagged;
 
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 
 	/**

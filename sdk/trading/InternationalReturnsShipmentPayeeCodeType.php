@@ -17,7 +17,7 @@ class InternationalReturnsShipmentPayeeCodeType extends EbatNs_ComplexType
 	/**
 	* @var ReturnsShipmentPayeeCodeType
 	**/
-	protected $InternationalReturnsShipmentPayee;
+	public $InternationalReturnsShipmentPayee;
 
 
 	/**

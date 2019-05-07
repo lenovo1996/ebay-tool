@@ -33,167 +33,167 @@ class SellerType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $PaisaPayStatus;
+	public $PaisaPayStatus;
 
 	/**
 	* @var boolean
 	**/
-	protected $AllowPaymentEdit;
+	public $AllowPaymentEdit;
 
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $BillingCurrency;
+	public $BillingCurrency;
 
 	/**
 	* @var boolean
 	**/
-	protected $CheckoutEnabled;
+	public $CheckoutEnabled;
 
 	/**
 	* @var boolean
 	**/
-	protected $CIPBankAccountStored;
+	public $CIPBankAccountStored;
 
 	/**
 	* @var boolean
 	**/
-	protected $GoodStanding;
+	public $GoodStanding;
 
 	/**
 	* @var MerchandizingPrefCodeType
 	**/
-	protected $MerchandizingPref;
+	public $MerchandizingPref;
 
 	/**
 	* @var boolean
 	**/
-	protected $QualifiesForB2BVAT;
+	public $QualifiesForB2BVAT;
 
 	/**
 	* @var SellerGuaranteeLevelCodeType
 	**/
-	protected $SellerGuaranteeLevel;
+	public $SellerGuaranteeLevel;
 
 	/**
 	* @var SellerLevelCodeType
 	**/
-	protected $SellerLevel;
+	public $SellerLevel;
 
 	/**
 	* @var AddressType
 	**/
-	protected $SellerPaymentAddress;
+	public $SellerPaymentAddress;
 
 	/**
 	* @var SchedulingInfoType
 	**/
-	protected $SchedulingInfo;
+	public $SchedulingInfo;
 
 	/**
 	* @var boolean
 	**/
-	protected $StoreOwner;
+	public $StoreOwner;
 
 	/**
 	* @var anyURI
 	**/
-	protected $StoreURL;
+	public $StoreURL;
 
 	/**
 	* @var SellerBusinessCodeType
 	**/
-	protected $SellerBusinessType;
+	public $SellerBusinessType;
 
 	/**
 	* @var boolean
 	**/
-	protected $RegisteredBusinessSeller;
+	public $RegisteredBusinessSeller;
 
 	/**
 	* @var SiteCodeType
 	**/
-	protected $StoreSite;
+	public $StoreSite;
 
 	/**
 	* @var SellerPaymentMethodCodeType
 	**/
-	protected $PaymentMethod;
+	public $PaymentMethod;
 
 	/**
 	* @var ProStoresCheckoutPreferenceType
 	**/
-	protected $ProStoresPreference;
+	public $ProStoresPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $CharityRegistered;
+	public $CharityRegistered;
 
 	/**
 	* @var boolean
 	**/
-	protected $SafePaymentExempt;
+	public $SafePaymentExempt;
 
 	/**
 	* @var int
 	**/
-	protected $PaisaPayEscrowEMIStatus;
+	public $PaisaPayEscrowEMIStatus;
 
 	/**
 	* @var CharityAffiliationDetailsType
 	**/
-	protected $CharityAffiliationDetails;
+	public $CharityAffiliationDetails;
 
 	/**
 	* @var float
 	**/
-	protected $TransactionPercent;
+	public $TransactionPercent;
 
 	/**
 	* @var IntegratedMerchantCreditCardInfoType
 	**/
-	protected $IntegratedMerchantCreditCardInfo;
+	public $IntegratedMerchantCreditCardInfo;
 
 	/**
 	* @var FeatureEligibilityType
 	**/
-	protected $FeatureEligibility;
+	public $FeatureEligibility;
 
 	/**
 	* @var boolean
 	**/
-	protected $TopRatedSeller;
+	public $TopRatedSeller;
 
 	/**
 	* @var TopRatedSellerDetailsType
 	**/
-	protected $TopRatedSellerDetails;
+	public $TopRatedSellerDetails;
 
 	/**
 	* @var RecoupmentPolicyConsentType
 	**/
-	protected $RecoupmentPolicyConsent;
+	public $RecoupmentPolicyConsent;
 
 	/**
 	* @var boolean
 	**/
-	protected $DomesticRateTable;
+	public $DomesticRateTable;
 
 	/**
 	* @var boolean
 	**/
-	protected $InternationalRateTable;
+	public $InternationalRateTable;
 
 	/**
 	* @var SellereBayPaymentProcessStatusCodeType
 	**/
-	protected $SellereBayPaymentProcessStatus;
+	public $SellereBayPaymentProcessStatus;
 
 	/**
 	* @var SellereBayPaymentProcessConsentCodeType
 	**/
-	protected $SellereBayPaymentProcessConsent;
+	public $SellereBayPaymentProcessConsent;
 
 
 	/**

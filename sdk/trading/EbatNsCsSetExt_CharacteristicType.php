@@ -22,27 +22,27 @@ class EbatNsCsSetExt_CharacteristicType extends EbatNs_ComplexType
 	/**
 	 * @var int
 	 */
-	protected $AttributeID;
+	public $AttributeID;
 	/**
 	 * @var string
 	 */
-	protected $DisplaySequence;
+	public $DisplaySequence;
 	/**
 	 * @var string
 	 */
-	protected $DisplayUOM;
+	public $DisplayUOM;
 	/**
 	 * @var EbatNsCsSetExt_LabelType
 	 */
-	protected $Label;
+	public $Label;
 	/**
 	 * @var EbatNsCsSetExt_SortOrderCodeType
 	 */
-	protected $SortOrder;
+	public $SortOrder;
 	/**
 	 * @var EbatNsCsSetExt_ValType
 	 */
-	protected $ValueList;
+	public $ValueList;
 
 	/**
 	 * @return int

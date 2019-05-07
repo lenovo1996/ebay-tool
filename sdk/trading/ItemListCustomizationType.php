@@ -20,37 +20,37 @@ class ItemListCustomizationType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $Include;
+	public $Include;
 
 	/**
 	* @var ListingTypeCodeType
 	**/
-	protected $ListingType;
+	public $ListingType;
 
 	/**
 	* @var ItemSortTypeCodeType
 	**/
-	protected $Sort;
+	public $Sort;
 
 	/**
 	* @var int
 	**/
-	protected $DurationInDays;
+	public $DurationInDays;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeNotes;
+	public $IncludeNotes;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var OrderStatusFilterCodeType
 	**/
-	protected $OrderStatusFilter;
+	public $OrderStatusFilter;
 
 
 	/**

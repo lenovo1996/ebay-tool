@@ -17,7 +17,7 @@ class MyMessagesAlertArrayType extends EbatNs_ComplexType
 	/**
 	* @var MyMessagesAlertType
 	**/
-	protected $Alert;
+	public $Alert;
 
 
 	/**

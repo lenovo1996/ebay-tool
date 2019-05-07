@@ -21,12 +21,12 @@ class BuyerSatisfactionDashboardType extends EbatNs_ComplexType
 	/**
 	* @var BuyerSatisfactionStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var SellerDashboardAlertType
 	**/
-	protected $Alert;
+	public $Alert;
 
 
 	/**

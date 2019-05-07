@@ -19,57 +19,57 @@ class GetItemTransactionsRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeFrom;
+	public $ModTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeTo;
+	public $ModTimeTo;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeFinalValueFee;
+	public $IncludeFinalValueFee;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeContainingOrder;
+	public $IncludeContainingOrder;
 
 	/**
 	* @var TransactionPlatformCodeType
 	**/
-	protected $Platform;
+	public $Platform;
 
 	/**
 	* @var int
 	**/
-	protected $NumberOfDays;
+	public $NumberOfDays;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeVariations;
+	public $IncludeVariations;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

@@ -16,12 +16,12 @@ class VerifyAddSecondChanceItemResponseType extends AbstractResponseType
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 
 	/**

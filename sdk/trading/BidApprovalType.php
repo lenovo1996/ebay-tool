@@ -19,22 +19,22 @@ class BidApprovalType extends EbatNs_ComplexType
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ApprovedBiddingLimit;
+	public $ApprovedBiddingLimit;
 
 	/**
 	* @var string
 	**/
-	protected $DeclinedComment;
+	public $DeclinedComment;
 
 	/**
 	* @var BidderStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 
 	/**

@@ -17,7 +17,7 @@ class OrderArrayType extends EbatNs_ComplexType
 	/**
 	* @var OrderType
 	**/
-	protected $Order;
+	public $Order;
 
 
 	/**

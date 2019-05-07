@@ -24,11 +24,11 @@ class EbatNsCsSetExt_AttributeSetType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_AttributeType
 	 */
-	protected $Attribute;
+	public $Attribute;
 	/**
 	 * @var string
 	 */
-	protected $DomainName;
+	public $DomainName;
 
 	/**
 	 * @return EbatNsCsSetExt_AttributeType

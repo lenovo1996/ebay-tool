@@ -19,22 +19,22 @@ class SearchAttributesType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $AttributeID;
+	public $AttributeID;
 
 	/**
 	* @var DateSpecifierCodeType
 	**/
-	protected $DateSpecifier;
+	public $DateSpecifier;
 
 	/**
 	* @var RangeCodeType
 	**/
-	protected $RangeSpecifier;
+	public $RangeSpecifier;
 
 	/**
 	* @var ValType
 	**/
-	protected $ValueList;
+	public $ValueList;
 
 
 	/**

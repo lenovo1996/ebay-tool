@@ -20,27 +20,27 @@ class EbatNsCsSetExt_ValType extends EbatNs_ComplexType
 	/**
 	 * @var string
 	 */
-	protected $ValueLiteral;
+	public $ValueLiteral;
 	/**
 	 * @var string
 	 */
-	protected $SuggestedValueLiteral;
+	public $SuggestedValueLiteral;
 	/**
 	 * @var int
 	 */
-	protected $ValueID;
+	public $ValueID;
 	/**
 	 * @var string
 	 */
-	protected $Name;
+	public $Name;
 	/**
 	 * @var string
 	 */
-	protected $IsDefault;
+	public $IsDefault;
 	/**
 	 * @var EbatNsCsSetExt_AttributeType
 	 */
-	protected $DependencyList;
+	public $DependencyList;
 
 	/**
 	 * @return string

@@ -20,112 +20,112 @@ class CharityInfoType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var boolean
 	**/
-	protected $ListingNPEmailNotifPref;
+	public $ListingNPEmailNotifPref;
 
 	/**
 	* @var string
 	**/
-	protected $ListingNPEmail;
+	public $ListingNPEmail;
 
 	/**
 	* @var string
 	**/
-	protected $ListingNPContactName;
+	public $ListingNPContactName;
 
 	/**
 	* @var string
 	**/
-	protected $Mission;
+	public $Mission;
 
 	/**
 	* @var anyURI
 	**/
-	protected $LogoURL;
+	public $LogoURL;
 
 	/**
 	* @var CharityStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var string
 	**/
-	protected $SearchableString;
+	public $SearchableString;
 
 	/**
 	* @var int
 	**/
-	protected $CharityRegion;
+	public $CharityRegion;
 
 	/**
 	* @var int
 	**/
-	protected $CharityDomain;
+	public $CharityDomain;
 
 	/**
 	* @var string
 	**/
-	protected $CharityID;
+	public $CharityID;
 
 	/**
 	* @var anyURI
 	**/
-	protected $LogoURLSelling;
+	public $LogoURLSelling;
 
 	/**
 	* @var boolean
 	**/
-	protected $DisplayLogoSelling;
+	public $DisplayLogoSelling;
 
 	/**
 	* @var boolean
 	**/
-	protected $DisplayNameInCheckout;
+	public $DisplayNameInCheckout;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShowMultipleDonationAmountInCheckout;
+	public $ShowMultipleDonationAmountInCheckout;
 
 	/**
 	* @var string
 	**/
-	protected $ExternalID;
+	public $ExternalID;
 
 	/**
 	* @var int
 	**/
-	protected $PopularityIndex;
+	public $PopularityIndex;
 
 	/**
 	* @var string
 	**/
-	protected $EIN;
+	public $EIN;
 
 	/**
 	* @var string
 	**/
-	protected $NonProfitSecondName;
+	public $NonProfitSecondName;
 
 	/**
 	* @var NonProfitAddressType
 	**/
-	protected $NonProfitAddress;
+	public $NonProfitAddress;
 
 	/**
 	* @var NonProfitSocialAddressType
 	**/
-	protected $NonProfitSocialAddress;
+	public $NonProfitSocialAddress;
 
 
 	/**

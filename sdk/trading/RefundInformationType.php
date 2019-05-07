@@ -21,7 +21,7 @@ class RefundInformationType extends EbatNs_ComplexType
 	/**
 	* @var RefundTransactionInfoType
 	**/
-	protected $Refund;
+	public $Refund;
 
 
 	/**

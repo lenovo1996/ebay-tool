@@ -18,12 +18,12 @@ class GetAdFormatLeadsResponseType extends AbstractResponseType
 	/**
 	* @var AdFormatLeadType
 	**/
-	protected $AdFormatLead;
+	public $AdFormatLead;
 
 	/**
 	* @var int
 	**/
-	protected $AdFormatLeadCount;
+	public $AdFormatLeadCount;
 
 
 	/**

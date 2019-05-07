@@ -18,17 +18,17 @@ class DateType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $Year;
+	public $Year;
 
 	/**
 	* @var int
 	**/
-	protected $Month;
+	public $Month;
 
 	/**
 	* @var int
 	**/
-	protected $Day;
+	public $Day;
 
 
 	/**

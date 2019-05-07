@@ -22,47 +22,47 @@ class LeaveFeedbackRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $CommentText;
+	public $CommentText;
 
 	/**
 	* @var CommentTypeCodeType
 	**/
-	protected $CommentType;
+	public $CommentType;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $TargetUser;
+	public $TargetUser;
 
 	/**
 	* @var ItemRatingDetailArrayType
 	**/
-	protected $SellerItemRatingDetailArray;
+	public $SellerItemRatingDetailArray;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 	/**
 	* @var ItemArrivedWithinEDDCodeType
 	**/
-	protected $ItemArrivedWithinEDDType;
+	public $ItemArrivedWithinEDDType;
 
 	/**
 	* @var boolean
 	**/
-	protected $ItemDeliveredWithinEDD;
+	public $ItemDeliveredWithinEDD;
 
 
 	/**

@@ -17,7 +17,7 @@ class GetCharitiesResponseType extends AbstractResponseType
 	/**
 	* @var CharityInfoType
 	**/
-	protected $Charity;
+	public $Charity;
 
 
 	/**

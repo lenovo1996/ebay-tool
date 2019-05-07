@@ -17,22 +17,22 @@ class AffiliateTrackingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $TrackingID;
+	public $TrackingID;
 
 	/**
 	* @var string
 	**/
-	protected $TrackingPartnerCode;
+	public $TrackingPartnerCode;
 
 	/**
 	* @var ApplicationDeviceTypeCodeType
 	**/
-	protected $ApplicationDeviceType;
+	public $ApplicationDeviceType;
 
 	/**
 	* @var string
 	**/
-	protected $AffiliateUserID;
+	public $AffiliateUserID;
 
 
 	/**

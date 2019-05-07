@@ -18,17 +18,17 @@ class CharitySellerType extends EbatNs_ComplexType
 	/**
 	* @var CharitySellerStatusCodeType
 	**/
-	protected $CharitySellerStatus;
+	public $CharitySellerStatus;
 
 	/**
 	* @var CharityAffiliationType
 	**/
-	protected $CharityAffiliation;
+	public $CharityAffiliation;
 
 	/**
 	* @var boolean
 	**/
-	protected $TermsAndConditionsAccepted;
+	public $TermsAndConditionsAccepted;
 
 
 	/**

@@ -17,7 +17,7 @@ class MemberMessageExchangeArrayType extends EbatNs_ComplexType
 	/**
 	* @var MemberMessageExchangeType
 	**/
-	protected $MemberMessageExchange;
+	public $MemberMessageExchange;
 
 
 	/**

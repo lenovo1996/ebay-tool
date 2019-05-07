@@ -16,12 +16,12 @@ class AddToWatchListResponseType extends AbstractResponseType
 	/**
 	* @var int
 	**/
-	protected $WatchListCount;
+	public $WatchListCount;
 
 	/**
 	* @var int
 	**/
-	protected $WatchListMaximum;
+	public $WatchListMaximum;
 
 
 	/**

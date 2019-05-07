@@ -26,27 +26,27 @@ class AddDisputeRequestType extends AbstractRequestType
 	/**
 	* @var DisputeExplanationCodeType
 	**/
-	protected $DisputeExplanation;
+	public $DisputeExplanation;
 
 	/**
 	* @var DisputeReasonCodeType
 	**/
-	protected $DisputeReason;
+	public $DisputeReason;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

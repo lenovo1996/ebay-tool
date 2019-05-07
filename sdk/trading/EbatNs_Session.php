@@ -29,7 +29,7 @@
 		}
 
 		// this array holds all attribute data of the object
-		protected $_props = array();
+		public $_props = array();
 
 		/**
 		 * sets a property by name and value

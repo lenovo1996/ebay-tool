@@ -22,37 +22,37 @@ class GetSellerListResponseType extends AbstractResponseType
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasMoreItems;
+	public $HasMoreItems;
 
 	/**
 	* @var ItemArrayType
 	**/
-	protected $ItemArray;
+	public $ItemArray;
 
 	/**
 	* @var int
 	**/
-	protected $ItemsPerPage;
+	public $ItemsPerPage;
 
 	/**
 	* @var int
 	**/
-	protected $PageNumber;
+	public $PageNumber;
 
 	/**
 	* @var int
 	**/
-	protected $ReturnedItemCountActual;
+	public $ReturnedItemCountActual;
 
 	/**
 	* @var UserType
 	**/
-	protected $Seller;
+	public $Seller;
 
 
 	/**

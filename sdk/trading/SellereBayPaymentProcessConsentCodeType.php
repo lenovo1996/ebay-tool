@@ -18,17 +18,17 @@ class SellereBayPaymentProcessConsentCodeType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $PayoutMethodSet;
+	public $PayoutMethodSet;
 
 	/**
 	* @var PayoutMethodType
 	**/
-	protected $PayoutMethod;
+	public $PayoutMethod;
 
 	/**
 	* @var UserAgreementInfoType
 	**/
-	protected $UserAgreementInfo;
+	public $UserAgreementInfo;
 
 
 	/**

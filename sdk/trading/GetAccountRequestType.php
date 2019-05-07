@@ -22,57 +22,57 @@ class GetAccountRequestType extends AbstractRequestType
 	/**
 	* @var AccountHistorySelectionCodeType
 	**/
-	protected $AccountHistorySelection;
+	public $AccountHistorySelection;
 
 	/**
 	* @var dateTime
 	**/
-	protected $InvoiceDate;
+	public $InvoiceDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $BeginDate;
+	public $BeginDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndDate;
+	public $EndDate;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExcludeBalance;
+	public $ExcludeBalance;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExcludeSummary;
+	public $ExcludeSummary;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeConversionRate;
+	public $IncludeConversionRate;
 
 	/**
 	* @var AccountEntrySortTypeCodeType
 	**/
-	protected $AccountEntrySortType;
+	public $AccountEntrySortType;
 
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $Currency;
+	public $Currency;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 
 	/**

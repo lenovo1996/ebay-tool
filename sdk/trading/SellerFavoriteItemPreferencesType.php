@@ -20,37 +20,37 @@ class SellerFavoriteItemPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $SearchKeywords;
+	public $SearchKeywords;
 
 	/**
 	* @var long
 	**/
-	protected $StoreCategoryID;
+	public $StoreCategoryID;
 
 	/**
 	* @var ListingTypeCodeType
 	**/
-	protected $ListingType;
+	public $ListingType;
 
 	/**
 	* @var StoreItemListSortOrderCodeType
 	**/
-	protected $SearchSortOrder;
+	public $SearchSortOrder;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MinPrice;
+	public $MinPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MaxPrice;
+	public $MaxPrice;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $FavoriteItemID;
+	public $FavoriteItemID;
 
 
 	/**

@@ -20,17 +20,17 @@ class RemoveFromWatchListRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var boolean
 	**/
-	protected $RemoveAllItems;
+	public $RemoveAllItems;
 
 	/**
 	* @var VariationKeyType
 	**/
-	protected $VariationKey;
+	public $VariationKey;
 
 
 	/**

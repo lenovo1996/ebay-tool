@@ -18,27 +18,27 @@ class GetAdFormatLeadsRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var MessageStatusTypeCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeMemberMessages;
+	public $IncludeMemberMessages;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartCreationTime;
+	public $StartCreationTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndCreationTime;
+	public $EndCreationTime;
 
 
 	/**

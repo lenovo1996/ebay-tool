@@ -17,7 +17,7 @@ class StoreLogoArrayType extends EbatNs_ComplexType
 	/**
 	* @var StoreLogoType
 	**/
-	protected $Logo;
+	public $Logo;
 
 
 	/**

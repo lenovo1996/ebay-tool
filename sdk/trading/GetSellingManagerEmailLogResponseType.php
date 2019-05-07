@@ -17,7 +17,7 @@ class GetSellingManagerEmailLogResponseType extends AbstractResponseType
 	/**
 	* @var SellingManagerEmailLogType
 	**/
-	protected $EmailLog;
+	public $EmailLog;
 
 
 	/**

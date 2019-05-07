@@ -17,7 +17,7 @@ class GetSellingManagerItemAutomationRuleRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 
 	/**

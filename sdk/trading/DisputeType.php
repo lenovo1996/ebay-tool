@@ -32,107 +32,107 @@ class DisputeType extends EbatNs_ComplexType
 	/**
 	* @var DisputeIDType
 	**/
-	protected $DisputeID;
+	public $DisputeID;
 
 	/**
 	* @var DisputeRecordTypeCodeType
 	**/
-	protected $DisputeRecordType;
+	public $DisputeRecordType;
 
 	/**
 	* @var DisputeStateCodeType
 	**/
-	protected $DisputeState;
+	public $DisputeState;
 
 	/**
 	* @var DisputeStatusCodeType
 	**/
-	protected $DisputeStatus;
+	public $DisputeStatus;
 
 	/**
 	* @var TradingRoleCodeType
 	**/
-	protected $OtherPartyRole;
+	public $OtherPartyRole;
 
 	/**
 	* @var string
 	**/
-	protected $OtherPartyName;
+	public $OtherPartyName;
 
 	/**
 	* @var TradingRoleCodeType
 	**/
-	protected $UserRole;
+	public $UserRole;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $BuyerUserID;
+	public $BuyerUserID;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $SellerUserID;
+	public $SellerUserID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 	/**
 	* @var DisputeReasonCodeType
 	**/
-	protected $DisputeReason;
+	public $DisputeReason;
 
 	/**
 	* @var DisputeExplanationCodeType
 	**/
-	protected $DisputeExplanation;
+	public $DisputeExplanation;
 
 	/**
 	* @var DisputeCreditEligibilityCodeType
 	**/
-	protected $DisputeCreditEligibility;
+	public $DisputeCreditEligibility;
 
 	/**
 	* @var dateTime
 	**/
-	protected $DisputeCreatedTime;
+	public $DisputeCreatedTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $DisputeModifiedTime;
+	public $DisputeModifiedTime;
 
 	/**
 	* @var DisputeResolutionType
 	**/
-	protected $DisputeResolution;
+	public $DisputeResolution;
 
 	/**
 	* @var DisputeMessageType
 	**/
-	protected $DisputeMessage;
+	public $DisputeMessage;
 
 	/**
 	* @var boolean
 	**/
-	protected $Escalation;
+	public $Escalation;
 
 	/**
 	* @var boolean
 	**/
-	protected $PurchaseProtection;
+	public $PurchaseProtection;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

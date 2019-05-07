@@ -18,7 +18,7 @@ class NameValueListArrayType extends EbatNs_ComplexType
 	/**
 	* @var NameValueListType
 	**/
-	protected $NameValueList;
+	public $NameValueList;
 
 
 	/**

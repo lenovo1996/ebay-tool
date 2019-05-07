@@ -19,42 +19,42 @@ class InternationalShippingServiceOptionsType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $ShippingService;
+	public $ShippingService;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingServiceCost;
+	public $ShippingServiceCost;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingServiceAdditionalCost;
+	public $ShippingServiceAdditionalCost;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingServicePriority;
+	public $ShippingServicePriority;
 
 	/**
 	* @var string
 	**/
-	protected $ShipToLocation;
+	public $ShipToLocation;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingInsuranceCost;
+	public $ShippingInsuranceCost;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ImportCharge;
+	public $ImportCharge;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ShippingServiceCutOffTime;
+	public $ShippingServiceCutOffTime;
 
 
 	/**

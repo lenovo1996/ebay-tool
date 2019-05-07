@@ -22,17 +22,17 @@ class PerformanceDashboardType extends EbatNs_ComplexType
 	/**
 	* @var SiteCodeType
 	**/
-	protected $Site;
+	public $Site;
 
 	/**
 	* @var PerformanceStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var SellerDashboardAlertType
 	**/
-	protected $Alert;
+	public $Alert;
 
 
 	/**

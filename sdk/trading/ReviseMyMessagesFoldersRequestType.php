@@ -19,17 +19,17 @@ class ReviseMyMessagesFoldersRequestType extends AbstractRequestType
 	/**
 	* @var MyMessagesFolderOperationCodeType
 	**/
-	protected $Operation;
+	public $Operation;
 
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var string
 	**/
-	protected $FolderName;
+	public $FolderName;
 
 
 	/**

@@ -18,17 +18,17 @@ class FeeType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var AmountType
 	**/
-	protected $Fee;
+	public $Fee;
 
 	/**
 	* @var AmountType
 	**/
-	protected $PromotionalDiscount;
+	public $PromotionalDiscount;
 
 
 	/**

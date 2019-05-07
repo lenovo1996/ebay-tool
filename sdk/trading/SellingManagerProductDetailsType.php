@@ -18,52 +18,52 @@ class SellingManagerProductDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ProductName;
+	public $ProductName;
 
 	/**
 	* @var long
 	**/
-	protected $ProductID;
+	public $ProductID;
 
 	/**
 	* @var string
 	**/
-	protected $CustomLabel;
+	public $CustomLabel;
 
 	/**
 	* @var int
 	**/
-	protected $QuantityAvailable;
+	public $QuantityAvailable;
 
 	/**
 	* @var AmountType
 	**/
-	protected $UnitCost;
+	public $UnitCost;
 
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var boolean
 	**/
-	protected $RestockAlert;
+	public $RestockAlert;
 
 	/**
 	* @var int
 	**/
-	protected $RestockThreshold;
+	public $RestockThreshold;
 
 	/**
 	* @var SellingManagerVendorDetailsType
 	**/
-	protected $VendorInfo;
+	public $VendorInfo;
 
 	/**
 	* @var string
 	**/
-	protected $Note;
+	public $Note;
 
 
 	/**

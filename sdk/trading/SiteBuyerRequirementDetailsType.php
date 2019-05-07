@@ -26,47 +26,47 @@ class SiteBuyerRequirementDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $LinkedPayPalAccount;
+	public $LinkedPayPalAccount;
 
 	/**
 	* @var MaximumBuyerPolicyViolationsDetailsType
 	**/
-	protected $MaximumBuyerPolicyViolations;
+	public $MaximumBuyerPolicyViolations;
 
 	/**
 	* @var MaximumItemRequirementsDetailsType
 	**/
-	protected $MaximumItemRequirements;
+	public $MaximumItemRequirements;
 
 	/**
 	* @var MaximumUnpaidItemStrikesInfoDetailsType
 	**/
-	protected $MaximumUnpaidItemStrikesInfo;
+	public $MaximumUnpaidItemStrikesInfo;
 
 	/**
 	* @var MinimumFeedbackScoreDetailsType
 	**/
-	protected $MinimumFeedbackScore;
+	public $MinimumFeedbackScore;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShipToRegistrationCountry;
+	public $ShipToRegistrationCountry;
 
 	/**
 	* @var VerifiedUserRequirementsDetailsType
 	**/
-	protected $VerifiedUserRequirements;
+	public $VerifiedUserRequirements;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

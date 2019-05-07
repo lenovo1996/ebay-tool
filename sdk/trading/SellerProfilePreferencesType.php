@@ -20,12 +20,12 @@ class SellerProfilePreferencesType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $SellerProfileOptedIn;
+	public $SellerProfileOptedIn;
 
 	/**
 	* @var SupportedSellerProfilesType
 	**/
-	protected $SupportedSellerProfiles;
+	public $SupportedSellerProfiles;
 
 
 	/**

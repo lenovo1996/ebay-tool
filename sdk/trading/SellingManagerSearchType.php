@@ -18,12 +18,12 @@ class SellingManagerSearchType extends EbatNs_ComplexType
 	/**
 	* @var SellingManagerSearchTypeCodeType
 	**/
-	protected $SearchType;
+	public $SearchType;
 
 	/**
 	* @var string
 	**/
-	protected $SearchValue;
+	public $SearchValue;
 
 
 	/**

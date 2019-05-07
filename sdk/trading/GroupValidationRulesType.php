@@ -16,7 +16,7 @@ class GroupValidationRulesType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MinRequired;
+	public $MinRequired;
 
 
 	/**

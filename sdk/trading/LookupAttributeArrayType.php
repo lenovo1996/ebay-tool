@@ -17,7 +17,7 @@ class LookupAttributeArrayType extends EbatNs_ComplexType
 	/**
 	* @var LookupAttributeType
 	**/
-	protected $LookupAttribute;
+	public $LookupAttribute;
 
 
 	/**

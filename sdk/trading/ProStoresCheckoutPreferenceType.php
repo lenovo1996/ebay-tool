@@ -17,12 +17,12 @@ class ProStoresCheckoutPreferenceType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $CheckoutRedirectProStores;
+	public $CheckoutRedirectProStores;
 
 	/**
 	* @var ProStoresDetailsType
 	**/
-	protected $ProStoresDetails;
+	public $ProStoresDetails;
 
 
 	/**

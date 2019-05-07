@@ -17,7 +17,7 @@ class NotificationEnableArrayType extends EbatNs_ComplexType
 	/**
 	* @var NotificationEnableType
 	**/
-	protected $NotificationEnable;
+	public $NotificationEnable;
 
 
 	/**

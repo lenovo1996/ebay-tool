@@ -17,7 +17,7 @@ class StoreSubscriptionArrayType extends EbatNs_ComplexType
 	/**
 	* @var StoreSubscriptionType
 	**/
-	protected $Subscription;
+	public $Subscription;
 
 
 	/**

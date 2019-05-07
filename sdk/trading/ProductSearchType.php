@@ -19,62 +19,62 @@ class ProductSearchType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ProductSearchID;
+	public $ProductSearchID;
 
 	/**
 	* @var int
 	**/
-	protected $AttributeSetID;
+	public $AttributeSetID;
 
 	/**
 	* @var int
 	**/
-	protected $ProductFinderID;
+	public $ProductFinderID;
 
 	/**
 	* @var string
 	**/
-	protected $ProductID;
+	public $ProductID;
 
 	/**
 	* @var int
 	**/
-	protected $SortAttributeID;
+	public $SortAttributeID;
 
 	/**
 	* @var int
 	**/
-	protected $MaxChildrenPerFamily;
+	public $MaxChildrenPerFamily;
 
 	/**
 	* @var SearchAttributesType
 	**/
-	protected $SearchAttributes;
+	public $SearchAttributes;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var boolean
 	**/
-	protected $AvailableItemsOnly;
+	public $AvailableItemsOnly;
 
 	/**
 	* @var string
 	**/
-	protected $QueryKeywords;
+	public $QueryKeywords;
 
 	/**
 	* @var CharacteristicSetIDsType
 	**/
-	protected $CharacteristicSetIDs;
+	public $CharacteristicSetIDs;
 
 	/**
 	* @var string
 	**/
-	protected $ProductReferenceID;
+	public $ProductReferenceID;
 
 
 	/**

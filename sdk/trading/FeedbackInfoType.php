@@ -19,17 +19,17 @@ class FeedbackInfoType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $CommentText;
+	public $CommentText;
 
 	/**
 	* @var CommentTypeCodeType
 	**/
-	protected $CommentType;
+	public $CommentType;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $TargetUser;
+	public $TargetUser;
 
 
 	/**

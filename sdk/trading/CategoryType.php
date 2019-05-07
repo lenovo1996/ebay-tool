@@ -18,112 +18,112 @@ class CategoryType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $BestOfferEnabled;
+	public $BestOfferEnabled;
 
 	/**
 	* @var boolean
 	**/
-	protected $AutoPayEnabled;
+	public $AutoPayEnabled;
 
 	/**
 	* @var boolean
 	**/
-	protected $B2BVATEnabled;
+	public $B2BVATEnabled;
 
 	/**
 	* @var boolean
 	**/
-	protected $CatalogEnabled;
+	public $CatalogEnabled;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var int
 	**/
-	protected $CategoryLevel;
+	public $CategoryLevel;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryName;
+	public $CategoryName;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryParentID;
+	public $CategoryParentID;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryParentName;
+	public $CategoryParentName;
 
 	/**
 	* @var boolean
 	**/
-	protected $ProductSearchPageAvailable;
+	public $ProductSearchPageAvailable;
 
 	/**
 	* @var ExtendedProductFinderIDType
 	**/
-	protected $ProductFinderIDs;
+	public $ProductFinderIDs;
 
 	/**
 	* @var CharacteristicsSetType
 	**/
-	protected $CharacteristicsSets;
+	public $CharacteristicsSets;
 
 	/**
 	* @var boolean
 	**/
-	protected $Expired;
+	public $Expired;
 
 	/**
 	* @var boolean
 	**/
-	protected $IntlAutosFixedCat;
+	public $IntlAutosFixedCat;
 
 	/**
 	* @var boolean
 	**/
-	protected $LeafCategory;
+	public $LeafCategory;
 
 	/**
 	* @var boolean
 	**/
-	protected $Virtual;
+	public $Virtual;
 
 	/**
 	* @var int
 	**/
-	protected $NumOfItems;
+	public $NumOfItems;
 
 	/**
 	* @var boolean
 	**/
-	protected $SellerGuaranteeEligible;
+	public $SellerGuaranteeEligible;
 
 	/**
 	* @var boolean
 	**/
-	protected $ORPA;
+	public $ORPA;
 
 	/**
 	* @var boolean
 	**/
-	protected $ORRA;
+	public $ORRA;
 
 	/**
 	* @var boolean
 	**/
-	protected $LSD;
+	public $LSD;
 
 	/**
 	* @var string
 	**/
-	protected $Keywords;
+	public $Keywords;
 
 
 	/**

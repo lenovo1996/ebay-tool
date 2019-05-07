@@ -16,52 +16,52 @@ class SellerRoleMetricsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $PositiveFeedbackLeftCount;
+	public $PositiveFeedbackLeftCount;
 
 	/**
 	* @var int
 	**/
-	protected $NegativeFeedbackLeftCount;
+	public $NegativeFeedbackLeftCount;
 
 	/**
 	* @var int
 	**/
-	protected $NeutralFeedbackLeftCount;
+	public $NeutralFeedbackLeftCount;
 
 	/**
 	* @var float
 	**/
-	protected $FeedbackLeftPercent;
+	public $FeedbackLeftPercent;
 
 	/**
 	* @var int
 	**/
-	protected $RepeatBuyerCount;
+	public $RepeatBuyerCount;
 
 	/**
 	* @var float
 	**/
-	protected $RepeatBuyerPercent;
+	public $RepeatBuyerPercent;
 
 	/**
 	* @var int
 	**/
-	protected $UniqueBuyerCount;
+	public $UniqueBuyerCount;
 
 	/**
 	* @var float
 	**/
-	protected $TransactionPercent;
+	public $TransactionPercent;
 
 	/**
 	* @var int
 	**/
-	protected $CrossBorderTransactionCount;
+	public $CrossBorderTransactionCount;
 
 	/**
 	* @var float
 	**/
-	protected $CrossBorderTransactionPercent;
+	public $CrossBorderTransactionPercent;
 
 
 	/**

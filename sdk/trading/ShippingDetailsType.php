@@ -34,172 +34,172 @@ class ShippingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $AllowPaymentEdit;
+	public $AllowPaymentEdit;
 
 	/**
 	* @var boolean
 	**/
-	protected $ApplyShippingDiscount;
+	public $ApplyShippingDiscount;
 
 	/**
 	* @var boolean
 	**/
-	protected $GlobalShipping;
+	public $GlobalShipping;
 
 	/**
 	* @var CalculatedShippingRateType
 	**/
-	protected $CalculatedShippingRate;
+	public $CalculatedShippingRate;
 
 	/**
 	* @var boolean
 	**/
-	protected $ChangePaymentInstructions;
+	public $ChangePaymentInstructions;
 
 	/**
 	* @var boolean
 	**/
-	protected $InsuranceWanted;
+	public $InsuranceWanted;
 
 	/**
 	* @var boolean
 	**/
-	protected $PaymentEdited;
+	public $PaymentEdited;
 
 	/**
 	* @var string
 	**/
-	protected $PaymentInstructions;
+	public $PaymentInstructions;
 
 	/**
 	* @var SalesTaxType
 	**/
-	protected $SalesTax;
+	public $SalesTax;
 
 	/**
 	* @var string
 	**/
-	protected $ShippingRateErrorMessage;
+	public $ShippingRateErrorMessage;
 
 	/**
 	* @var ShippingRateTypeCodeType
 	**/
-	protected $ShippingRateType;
+	public $ShippingRateType;
 
 	/**
 	* @var ShippingServiceOptionsType
 	**/
-	protected $ShippingServiceOptions;
+	public $ShippingServiceOptions;
 
 	/**
 	* @var InternationalShippingServiceOptionsType
 	**/
-	protected $InternationalShippingServiceOption;
+	public $InternationalShippingServiceOption;
 
 	/**
 	* @var ShippingTypeCodeType
 	**/
-	protected $ShippingType;
+	public $ShippingType;
 
 	/**
 	* @var int
 	**/
-	protected $SellingManagerSalesRecordNumber;
+	public $SellingManagerSalesRecordNumber;
 
 	/**
 	* @var boolean
 	**/
-	protected $ThirdPartyCheckout;
+	public $ThirdPartyCheckout;
 
 	/**
 	* @var TaxTableType
 	**/
-	protected $TaxTable;
+	public $TaxTable;
 
 	/**
 	* @var boolean
 	**/
-	protected $GetItFast;
+	public $GetItFast;
 
 	/**
 	* @var token
 	**/
-	protected $ShippingServiceUsed;
+	public $ShippingServiceUsed;
 
 	/**
 	* @var AmountType
 	**/
-	protected $DefaultShippingCost;
+	public $DefaultShippingCost;
 
 	/**
 	* @var string
 	**/
-	protected $ShippingDiscountProfileID;
+	public $ShippingDiscountProfileID;
 
 	/**
 	* @var FlatShippingDiscountType
 	**/
-	protected $FlatShippingDiscount;
+	public $FlatShippingDiscount;
 
 	/**
 	* @var CalculatedShippingDiscountType
 	**/
-	protected $CalculatedShippingDiscount;
+	public $CalculatedShippingDiscount;
 
 	/**
 	* @var boolean
 	**/
-	protected $PromotionalShippingDiscount;
+	public $PromotionalShippingDiscount;
 
 	/**
 	* @var string
 	**/
-	protected $InternationalShippingDiscountProfileID;
+	public $InternationalShippingDiscountProfileID;
 
 	/**
 	* @var FlatShippingDiscountType
 	**/
-	protected $InternationalFlatShippingDiscount;
+	public $InternationalFlatShippingDiscount;
 
 	/**
 	* @var CalculatedShippingDiscountType
 	**/
-	protected $InternationalCalculatedShippingDiscount;
+	public $InternationalCalculatedShippingDiscount;
 
 	/**
 	* @var boolean
 	**/
-	protected $InternationalPromotionalShippingDiscount;
+	public $InternationalPromotionalShippingDiscount;
 
 	/**
 	* @var PromotionalShippingDiscountDetailsType
 	**/
-	protected $PromotionalShippingDiscountDetails;
+	public $PromotionalShippingDiscountDetails;
 
 	/**
 	* @var AmountType
 	**/
-	protected $CODCost;
+	public $CODCost;
 
 	/**
 	* @var string
 	**/
-	protected $ExcludeShipToLocation;
+	public $ExcludeShipToLocation;
 
 	/**
 	* @var boolean
 	**/
-	protected $SellerExcludeShipToLocationsPreference;
+	public $SellerExcludeShipToLocationsPreference;
 
 	/**
 	* @var ShipmentTrackingDetailsType
 	**/
-	protected $ShipmentTrackingDetails;
+	public $ShipmentTrackingDetails;
 
 	/**
 	* @var RateTableDetailsType
 	**/
-	protected $RateTableDetails;
+	public $RateTableDetails;
 
 
 	/**

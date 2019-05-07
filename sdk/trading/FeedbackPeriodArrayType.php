@@ -19,7 +19,7 @@ class FeedbackPeriodArrayType extends EbatNs_ComplexType
 	/**
 	* @var FeedbackPeriodType
 	**/
-	protected $FeedbackPeriod;
+	public $FeedbackPeriod;
 
 
 	/**

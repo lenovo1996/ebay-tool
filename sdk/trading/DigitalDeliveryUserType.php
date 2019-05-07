@@ -16,12 +16,12 @@ class DigitalDeliveryUserType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var string
 	**/
-	protected $Email;
+	public $Email;
 
 
 	/**

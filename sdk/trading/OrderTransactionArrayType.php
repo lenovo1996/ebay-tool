@@ -17,7 +17,7 @@ class OrderTransactionArrayType extends EbatNs_ComplexType
 	/**
 	* @var OrderTransactionType
 	**/
-	protected $OrderTransaction;
+	public $OrderTransaction;
 
 
 	/**

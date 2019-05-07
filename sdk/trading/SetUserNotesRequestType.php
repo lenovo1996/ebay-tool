@@ -20,37 +20,37 @@ class SetUserNotesRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var SetUserNotesActionCodeType
 	**/
-	protected $Action;
+	public $Action;
 
 	/**
 	* @var string
 	**/
-	protected $NoteText;
+	public $NoteText;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $VariationSpecifics;
+	public $VariationSpecifics;
 
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

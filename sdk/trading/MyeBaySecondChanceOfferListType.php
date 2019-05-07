@@ -17,12 +17,12 @@ class MyeBaySecondChanceOfferListType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $TotalAvailable;
+	public $TotalAvailable;
 
 	/**
 	* @var ItemType
 	**/
-	protected $SecondChanceOffer;
+	public $SecondChanceOffer;
 
 
 	/**

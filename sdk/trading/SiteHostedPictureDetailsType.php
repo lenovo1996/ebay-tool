@@ -20,42 +20,42 @@ class SiteHostedPictureDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $PictureName;
+	public $PictureName;
 
 	/**
 	* @var PictureSetCodeType
 	**/
-	protected $PictureSet;
+	public $PictureSet;
 
 	/**
 	* @var PictureFormatCodeType
 	**/
-	protected $PictureFormat;
+	public $PictureFormat;
 
 	/**
 	* @var anyURI
 	**/
-	protected $FullURL;
+	public $FullURL;
 
 	/**
 	* @var anyURI
 	**/
-	protected $BaseURL;
+	public $BaseURL;
 
 	/**
 	* @var PictureSetMemberType
 	**/
-	protected $PictureSetMember;
+	public $PictureSetMember;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ExternalPictureURL;
+	public $ExternalPictureURL;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UseByDate;
+	public $UseByDate;
 
 
 	/**

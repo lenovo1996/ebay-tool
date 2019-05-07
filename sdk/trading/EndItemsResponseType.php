@@ -17,7 +17,7 @@ class EndItemsResponseType extends AbstractResponseType
 	/**
 	* @var EndItemResponseContainerType
 	**/
-	protected $EndItemResponseContainer;
+	public $EndItemResponseContainer;
 
 
 	/**

@@ -19,7 +19,7 @@ class SuggestedCategoryArrayType extends EbatNs_ComplexType
 	/**
 	* @var SuggestedCategoryType
 	**/
-	protected $SuggestedCategory;
+	public $SuggestedCategory;
 
 
 	/**

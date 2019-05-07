@@ -18,12 +18,12 @@ class PolicyComplianceDashboardType extends EbatNs_ComplexType
 	/**
 	* @var PolicyComplianceStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var SellerDashboardAlertType
 	**/
-	protected $Alert;
+	public $Alert;
 
 
 	/**

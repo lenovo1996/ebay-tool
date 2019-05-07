@@ -19,7 +19,7 @@ class MinimumFeedbackScoreDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $FeedbackScore;
+	public $FeedbackScore;
 
 
 	/**

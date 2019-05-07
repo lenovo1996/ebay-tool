@@ -18,32 +18,32 @@ class BiddingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $ConvertedMaxBid;
+	public $ConvertedMaxBid;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MaxBid;
+	public $MaxBid;
 
 	/**
 	* @var int
 	**/
-	protected $QuantityBid;
+	public $QuantityBid;
 
 	/**
 	* @var int
 	**/
-	protected $QuantityWon;
+	public $QuantityWon;
 
 	/**
 	* @var boolean
 	**/
-	protected $Winning;
+	public $Winning;
 
 	/**
 	* @var boolean
 	**/
-	protected $BidAssistant;
+	public $BidAssistant;
 
 
 	/**

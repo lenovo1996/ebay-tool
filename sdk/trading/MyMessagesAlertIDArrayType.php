@@ -17,7 +17,7 @@ class MyMessagesAlertIDArrayType extends EbatNs_ComplexType
 	/**
 	* @var MyMessagesAlertIDType
 	**/
-	protected $AlertID;
+	public $AlertID;
 
 
 	/**

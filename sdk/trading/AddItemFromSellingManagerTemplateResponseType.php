@@ -18,32 +18,32 @@ class AddItemFromSellingManagerTemplateResponseType extends AbstractResponseType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var FeesType
 	**/
-	protected $Fees;
+	public $Fees;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $Category2ID;
+	public $Category2ID;
 
 
 	/**

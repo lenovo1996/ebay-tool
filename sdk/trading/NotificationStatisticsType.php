@@ -17,27 +17,27 @@ class NotificationStatisticsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $DeliveredCount;
+	public $DeliveredCount;
 
 	/**
 	* @var int
 	**/
-	protected $QueuedNewCount;
+	public $QueuedNewCount;
 
 	/**
 	* @var int
 	**/
-	protected $QueuedPendingCount;
+	public $QueuedPendingCount;
 
 	/**
 	* @var int
 	**/
-	protected $ExpiredCount;
+	public $ExpiredCount;
 
 	/**
 	* @var int
 	**/
-	protected $ErrorCount;
+	public $ErrorCount;
 
 
 	/**

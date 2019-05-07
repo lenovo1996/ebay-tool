@@ -24,47 +24,47 @@ class SellerPaymentPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $AlwaysUseThisPaymentAddress;
+	public $AlwaysUseThisPaymentAddress;
 
 	/**
 	* @var DisplayPayNowButtonCodeType
 	**/
-	protected $DisplayPayNowButton;
+	public $DisplayPayNowButton;
 
 	/**
 	* @var boolean
 	**/
-	protected $PayPalPreferred;
+	public $PayPalPreferred;
 
 	/**
 	* @var string
 	**/
-	protected $DefaultPayPalEmailAddress;
+	public $DefaultPayPalEmailAddress;
 
 	/**
 	* @var boolean
 	**/
-	protected $PayPalAlwaysOn;
+	public $PayPalAlwaysOn;
 
 	/**
 	* @var AddressType
 	**/
-	protected $SellerPaymentAddress;
+	public $SellerPaymentAddress;
 
 	/**
 	* @var UPSRateOptionCodeType
 	**/
-	protected $UPSRateOption;
+	public $UPSRateOption;
 
 	/**
 	* @var FedExRateOptionCodeType
 	**/
-	protected $FedExRateOption;
+	public $FedExRateOption;
 
 	/**
 	* @var USPSRateOptionCodeType
 	**/
-	protected $USPSRateOption;
+	public $USPSRateOption;
 
 
 	/**

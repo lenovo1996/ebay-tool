@@ -29,62 +29,62 @@ class ReturnPolicyDetailsType extends EbatNs_ComplexType
 	/**
 	* @var RefundDetailsType
 	**/
-	protected $Refund;
+	public $Refund;
 
 	/**
 	* @var ReturnsWithinDetailsType
 	**/
-	protected $ReturnsWithin;
+	public $ReturnsWithin;
 
 	/**
 	* @var ReturnsAcceptedDetailsType
 	**/
-	protected $ReturnsAccepted;
+	public $ReturnsAccepted;
 
 	/**
 	* @var boolean
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var WarrantyOfferedDetailsType
 	**/
-	protected $WarrantyOffered;
+	public $WarrantyOffered;
 
 	/**
 	* @var WarrantyTypeDetailsType
 	**/
-	protected $WarrantyType;
+	public $WarrantyType;
 
 	/**
 	* @var WarrantyDurationDetailsType
 	**/
-	protected $WarrantyDuration;
+	public $WarrantyDuration;
 
 	/**
 	* @var boolean
 	**/
-	protected $EAN;
+	public $EAN;
 
 	/**
 	* @var ShippingCostPaidByDetailsType
 	**/
-	protected $ShippingCostPaidBy;
+	public $ShippingCostPaidBy;
 
 	/**
 	* @var RestockingFeeValueDetailsType
 	**/
-	protected $RestockingFeeValue;
+	public $RestockingFeeValue;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

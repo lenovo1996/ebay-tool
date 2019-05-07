@@ -18,12 +18,12 @@ class MaximumBuyerPolicyViolationsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $Count;
+	public $Count;
 
 	/**
 	* @var PeriodCodeType
 	**/
-	protected $Period;
+	public $Period;
 
 
 	/**

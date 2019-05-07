@@ -16,12 +16,12 @@ class UnitOfMeasurementType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $AlternateText;
+	public $AlternateText;
 
 	/**
 	* @var string
 	**/
-	protected $SuggestedText;
+	public $SuggestedText;
 
 
 	/**

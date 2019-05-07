@@ -17,22 +17,22 @@ class CheckoutOrderDetailType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $TotalCartMerchandiseCost;
+	public $TotalCartMerchandiseCost;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalCartShippingCost;
+	public $TotalCartShippingCost;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalTaxAmount;
+	public $TotalTaxAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalAmount;
+	public $TotalAmount;
 
 
 	/**

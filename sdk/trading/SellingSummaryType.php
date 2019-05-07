@@ -17,37 +17,37 @@ class SellingSummaryType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $ActiveAuctionCount;
+	public $ActiveAuctionCount;
 
 	/**
 	* @var int
 	**/
-	protected $AuctionSellingCount;
+	public $AuctionSellingCount;
 
 	/**
 	* @var int
 	**/
-	protected $AuctionBidCount;
+	public $AuctionBidCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalAuctionSellingValue;
+	public $TotalAuctionSellingValue;
 
 	/**
 	* @var int
 	**/
-	protected $TotalSoldCount;
+	public $TotalSoldCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalSoldValue;
+	public $TotalSoldValue;
 
 	/**
 	* @var int
 	**/
-	protected $SoldDurationInDays;
+	public $SoldDurationInDays;
 
 
 	/**

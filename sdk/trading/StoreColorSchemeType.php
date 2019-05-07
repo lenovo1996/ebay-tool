@@ -18,22 +18,22 @@ class StoreColorSchemeType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $ColorSchemeID;
+	public $ColorSchemeID;
 
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var StoreColorType
 	**/
-	protected $Color;
+	public $Color;
 
 	/**
 	* @var StoreFontType
 	**/
-	protected $Font;
+	public $Font;
 
 
 	/**

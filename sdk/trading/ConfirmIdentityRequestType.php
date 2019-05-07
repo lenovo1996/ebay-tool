@@ -17,7 +17,7 @@ class ConfirmIdentityRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $SessionID;
+	public $SessionID;
 
 
 	/**

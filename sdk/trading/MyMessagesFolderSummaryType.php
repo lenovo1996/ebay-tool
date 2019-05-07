@@ -16,42 +16,42 @@ class MyMessagesFolderSummaryType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var string
 	**/
-	protected $FolderName;
+	public $FolderName;
 
 	/**
 	* @var int
 	**/
-	protected $NewAlertCount;
+	public $NewAlertCount;
 
 	/**
 	* @var int
 	**/
-	protected $NewMessageCount;
+	public $NewMessageCount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalAlertCount;
+	public $TotalAlertCount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalMessageCount;
+	public $TotalMessageCount;
 
 	/**
 	* @var int
 	**/
-	protected $NewHighPriorityCount;
+	public $NewHighPriorityCount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalHighPriorityCount;
+	public $TotalHighPriorityCount;
 
 
 	/**

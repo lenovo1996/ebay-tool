@@ -17,7 +17,7 @@ class AttributeRecommendationsType extends EbatNs_ComplexType
 	/**
 	* @var AttributeSetArrayType
 	**/
-	protected $AttributeSetArray;
+	public $AttributeSetArray;
 
 
 	/**

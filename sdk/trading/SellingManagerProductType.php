@@ -18,22 +18,22 @@ class SellingManagerProductType extends EbatNs_ComplexType
 	/**
 	* @var SellingManagerProductDetailsType
 	**/
-	protected $SellingManagerProductDetails;
+	public $SellingManagerProductDetails;
 
 	/**
 	* @var SellingManagerTemplateDetailsArrayType
 	**/
-	protected $SellingManagerTemplateDetailsArray;
+	public $SellingManagerTemplateDetailsArray;
 
 	/**
 	* @var SellingManagerProductInventoryStatusType
 	**/
-	protected $SellingManagerProductInventoryStatus;
+	public $SellingManagerProductInventoryStatus;
 
 	/**
 	* @var SellingManagerProductSpecificsType
 	**/
-	protected $SellingManagerProductSpecifics;
+	public $SellingManagerProductSpecifics;
 
 
 	/**

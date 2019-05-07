@@ -23,102 +23,102 @@ class FeedbackDetailType extends EbatNs_ComplexType
 	/**
 	* @var UserIDType
 	**/
-	protected $CommentingUser;
+	public $CommentingUser;
 
 	/**
 	* @var FeedbackRatingStarCodeType
 	**/
-	protected $FeedbackRatingStar;
+	public $FeedbackRatingStar;
 
 	/**
 	* @var int
 	**/
-	protected $CommentingUserScore;
+	public $CommentingUserScore;
 
 	/**
 	* @var string
 	**/
-	protected $CommentText;
+	public $CommentText;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CommentTime;
+	public $CommentTime;
 
 	/**
 	* @var CommentTypeCodeType
 	**/
-	protected $CommentType;
+	public $CommentType;
 
 	/**
 	* @var string
 	**/
-	protected $FeedbackResponse;
+	public $FeedbackResponse;
 
 	/**
 	* @var string
 	**/
-	protected $Followup;
+	public $Followup;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var TradingRoleCodeType
 	**/
-	protected $Role;
+	public $Role;
 
 	/**
 	* @var string
 	**/
-	protected $ItemTitle;
+	public $ItemTitle;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ItemPrice;
+	public $ItemPrice;
 
 	/**
 	* @var string
 	**/
-	protected $FeedbackID;
+	public $FeedbackID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var boolean
 	**/
-	protected $CommentReplaced;
+	public $CommentReplaced;
 
 	/**
 	* @var boolean
 	**/
-	protected $ResponseReplaced;
+	public $ResponseReplaced;
 
 	/**
 	* @var boolean
 	**/
-	protected $FollowUpReplaced;
+	public $FollowUpReplaced;
 
 	/**
 	* @var boolean
 	**/
-	protected $Countable;
+	public $Countable;
 
 	/**
 	* @var boolean
 	**/
-	protected $FeedbackRevised;
+	public $FeedbackRevised;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

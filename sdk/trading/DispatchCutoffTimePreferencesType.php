@@ -16,7 +16,7 @@ class DispatchCutoffTimePreferencesType extends EbatNs_ComplexType
 	/**
 	* @var time
 	**/
-	protected $CutoffTime;
+	public $CutoffTime;
 
 
 	/**

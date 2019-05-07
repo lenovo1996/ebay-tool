@@ -19,11 +19,11 @@ class EbatNsCsSetExt_CurrentTimeType extends EbatNs_ComplexType
 	/**
 	 * @var string
 	 */
-	protected $DateMedium;
+	public $DateMedium;
 	/**
 	 * @var string
 	 */
-	protected $TimeLong;
+	public $TimeLong;
 
 	/**
 	 * @return string

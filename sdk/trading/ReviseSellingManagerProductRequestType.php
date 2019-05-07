@@ -22,22 +22,22 @@ class ReviseSellingManagerProductRequestType extends AbstractRequestType
 	/**
 	* @var SellingManagerProductDetailsType
 	**/
-	protected $SellingManagerProductDetails;
+	public $SellingManagerProductDetails;
 
 	/**
 	* @var SellingManagerFolderDetailsType
 	**/
-	protected $SellingManagerFolderDetails;
+	public $SellingManagerFolderDetails;
 
 	/**
 	* @var string
 	**/
-	protected $DeletedField;
+	public $DeletedField;
 
 	/**
 	* @var SellingManagerProductSpecificsType
 	**/
-	protected $SellingManagerProductSpecifics;
+	public $SellingManagerProductSpecifics;
 
 
 	/**

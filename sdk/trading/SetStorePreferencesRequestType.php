@@ -17,7 +17,7 @@ class SetStorePreferencesRequestType extends AbstractRequestType
 	/**
 	* @var StorePreferencesType
 	**/
-	protected $StorePreferences;
+	public $StorePreferences;
 
 
 	/**

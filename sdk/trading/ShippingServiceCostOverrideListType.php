@@ -19,7 +19,7 @@ class ShippingServiceCostOverrideListType extends EbatNs_ComplexType
 	/**
 	* @var ShippingServiceCostOverrideType
 	**/
-	protected $ShippingServiceCostOverride;
+	public $ShippingServiceCostOverride;
 
 
 	/**

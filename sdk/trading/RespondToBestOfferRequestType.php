@@ -24,32 +24,32 @@ class RespondToBestOfferRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var BestOfferIDType
 	**/
-	protected $BestOfferID;
+	public $BestOfferID;
 
 	/**
 	* @var BestOfferActionCodeType
 	**/
-	protected $Action;
+	public $Action;
 
 	/**
 	* @var string
 	**/
-	protected $SellerResponse;
+	public $SellerResponse;
 
 	/**
 	* @var AmountType
 	**/
-	protected $CounterOfferPrice;
+	public $CounterOfferPrice;
 
 	/**
 	* @var int
 	**/
-	protected $CounterOfferQuantity;
+	public $CounterOfferQuantity;
 
 
 	/**

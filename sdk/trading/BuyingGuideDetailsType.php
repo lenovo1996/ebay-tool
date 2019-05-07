@@ -17,12 +17,12 @@ class BuyingGuideDetailsType extends EbatNs_ComplexType
 	/**
 	* @var BuyingGuideType
 	**/
-	protected $BuyingGuide;
+	public $BuyingGuide;
 
 	/**
 	* @var anyURI
 	**/
-	protected $BuyingGuideHub;
+	public $BuyingGuideHub;
 
 
 	/**

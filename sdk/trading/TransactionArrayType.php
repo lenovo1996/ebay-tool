@@ -19,7 +19,7 @@ class TransactionArrayType extends EbatNs_ComplexType
 	/**
 	* @var TransactionType
 	**/
-	protected $Transaction;
+	public $Transaction;
 
 
 	/**

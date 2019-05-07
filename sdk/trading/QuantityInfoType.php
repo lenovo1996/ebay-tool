@@ -16,7 +16,7 @@ class QuantityInfoType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MinimumRemnantSet;
+	public $MinimumRemnantSet;
 
 
 	/**

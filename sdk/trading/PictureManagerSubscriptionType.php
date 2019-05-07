@@ -18,17 +18,17 @@ class PictureManagerSubscriptionType extends EbatNs_ComplexType
 	/**
 	* @var PictureManagerSubscriptionLevelCodeType
 	**/
-	protected $SubscriptionLevel;
+	public $SubscriptionLevel;
 
 	/**
 	* @var AmountType
 	**/
-	protected $Fee;
+	public $Fee;
 
 	/**
 	* @var int
 	**/
-	protected $StorageSize;
+	public $StorageSize;
 
 
 	/**

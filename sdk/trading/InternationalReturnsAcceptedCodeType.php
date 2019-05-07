@@ -17,7 +17,7 @@ class InternationalReturnsAcceptedCodeType extends EbatNs_ComplexType
 	/**
 	* @var ReturnsAcceptedCodeType
 	**/
-	protected $InternationalReturnsAccepted;
+	public $InternationalReturnsAccepted;
 
 
 	/**

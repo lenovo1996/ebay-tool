@@ -19,42 +19,42 @@ class GetRecommendationsRequestContainerType extends EbatNs_ComplexType
 	/**
 	* @var ListingFlowCodeType
 	**/
-	protected $ListingFlow;
+	public $ListingFlow;
 
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 	/**
 	* @var RecommendationEngineCodeType
 	**/
-	protected $RecommendationEngine;
+	public $RecommendationEngine;
 
 	/**
 	* @var string
 	**/
-	protected $Query;
+	public $Query;
 
 	/**
 	* @var string
 	**/
-	protected $CorrelationID;
+	public $CorrelationID;
 
 	/**
 	* @var string
 	**/
-	protected $DeletedField;
+	public $DeletedField;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExcludeRelationships;
+	public $ExcludeRelationships;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeConfidence;
+	public $IncludeConfidence;
 
 
 	/**

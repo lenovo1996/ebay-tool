@@ -17,7 +17,7 @@ class RefundFundingSourceArrayType extends EbatNs_ComplexType
 	/**
 	* @var RefundFundingSourceType
 	**/
-	protected $RefundFundingSource;
+	public $RefundFundingSource;
 
 
 	/**

@@ -17,12 +17,12 @@ class ItemPolicyViolationType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $PolicyID;
+	public $PolicyID;
 
 	/**
 	* @var string
 	**/
-	protected $PolicyText;
+	public $PolicyText;
 
 
 	/**

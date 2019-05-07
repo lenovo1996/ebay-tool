@@ -19,12 +19,12 @@ class SetPromotionalSaleRequestType extends AbstractRequestType
 	/**
 	* @var ModifyActionCodeType
 	**/
-	protected $Action;
+	public $Action;
 
 	/**
 	* @var PromotionalSaleType
 	**/
-	protected $PromotionalSaleDetails;
+	public $PromotionalSaleDetails;
 
 
 	/**

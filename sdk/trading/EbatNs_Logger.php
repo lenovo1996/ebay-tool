@@ -11,10 +11,10 @@
 class EbatNs_Logger
 {
 	// debugging options
-	protected $debugXmlBeautify = true;
-	protected $debugLogDestination = 'stdout';
-	protected $debugSecureLogging = true;
-	protected $debugHtml = true;
+	public $debugXmlBeautify = true;
+	public $debugLogDestination = 'stdout';
+	public $debugSecureLogging = true;
+	public $debugHtml = true;
 	
 	function __construct($beautfyXml = false, $destination = 'stdout', $asHtml = true, $SecureLogging = true)
 	{
@@ -84,8 +84,8 @@ class EbatNs_Logger
 
 class EbatNs_LoggerWire extends EbatNs_Logger
 {
-	protected $Request = '';
-	protected $Response = '';
+	public $Request = '';
+	public $Response = '';
 	function __construct()
 	{
 		parent::__construct(false, '', false, false);

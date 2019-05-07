@@ -16,12 +16,12 @@ class ASQPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $ResetDefaultSubjects;
+	public $ResetDefaultSubjects;
 
 	/**
 	* @var string
 	**/
-	protected $Subject;
+	public $Subject;
 
 
 	/**

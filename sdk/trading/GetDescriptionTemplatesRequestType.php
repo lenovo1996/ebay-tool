@@ -16,17 +16,17 @@ class GetDescriptionTemplatesRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastModifiedTime;
+	public $LastModifiedTime;
 
 	/**
 	* @var boolean
 	**/
-	protected $MotorVehicles;
+	public $MotorVehicles;
 
 
 	/**

@@ -23,107 +23,107 @@ class SellingManagerSoldTransactionType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $InvoiceNumber;
+	public $InvoiceNumber;
 
 	/**
 	* @var long
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var long
 	**/
-	protected $SaleRecordID;
+	public $SaleRecordID;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var int
 	**/
-	protected $QuantitySold;
+	public $QuantitySold;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ItemPrice;
+	public $ItemPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $SubtotalAmount;
+	public $SubtotalAmount;
 
 	/**
 	* @var string
 	**/
-	protected $ItemTitle;
+	public $ItemTitle;
 
 	/**
 	* @var ListingTypeCodeType
 	**/
-	protected $ListingType;
+	public $ListingType;
 
 	/**
 	* @var boolean
 	**/
-	protected $Relisted;
+	public $Relisted;
 
 	/**
 	* @var int
 	**/
-	protected $WatchCount;
+	public $WatchCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $StartPrice;
+	public $StartPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ReservePrice;
+	public $ReservePrice;
 
 	/**
 	* @var boolean
 	**/
-	protected $SecondChanceOfferSent;
+	public $SecondChanceOfferSent;
 
 	/**
 	* @var string
 	**/
-	protected $CustomLabel;
+	public $CustomLabel;
 
 	/**
 	* @var TransactionPlatformCodeType
 	**/
-	protected $SoldOn;
+	public $SoldOn;
 
 	/**
 	* @var TransactionPlatformCodeType
 	**/
-	protected $ListedOn;
+	public $ListedOn;
 
 	/**
 	* @var ShipmentType
 	**/
-	protected $Shipment;
+	public $Shipment;
 
 	/**
 	* @var boolean
 	**/
-	protected $CharityListing;
+	public $CharityListing;
 
 	/**
 	* @var VariationType
 	**/
-	protected $Variation;
+	public $Variation;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

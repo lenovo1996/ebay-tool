@@ -17,7 +17,7 @@ class SKUArrayType extends EbatNs_ComplexType
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 
 	/**

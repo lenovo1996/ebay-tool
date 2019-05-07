@@ -16,17 +16,17 @@ class AddSellingManagerInventoryFolderRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $FolderName;
+	public $FolderName;
 
 	/**
 	* @var long
 	**/
-	protected $ParentFolderID;
+	public $ParentFolderID;
 
 	/**
 	* @var string
 	**/
-	protected $Comment;
+	public $Comment;
 
 
 	/**

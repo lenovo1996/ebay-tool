@@ -25,7 +25,7 @@ class AddFixedPriceItemRequestType extends AbstractRequestType
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 
 	/**

@@ -16,12 +16,12 @@ class WarrantyDurationDetailsType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $WarrantyDurationOption;
+	public $WarrantyDurationOption;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 
 	/**

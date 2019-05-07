@@ -19,77 +19,77 @@ class AccountEntryType extends EbatNs_ComplexType
 	/**
 	* @var AccountDetailEntryCodeType
 	**/
-	protected $AccountDetailsEntryType;
+	public $AccountDetailsEntryType;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var AmountType
 	**/
-	protected $Balance;
+	public $Balance;
 
 	/**
 	* @var dateTime
 	**/
-	protected $Date;
+	public $Date;
 
 	/**
 	* @var AmountType
 	**/
-	protected $GrossDetailAmount;
+	public $GrossDetailAmount;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $Memo;
+	public $Memo;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ConversionRate;
+	public $ConversionRate;
 
 	/**
 	* @var AmountType
 	**/
-	protected $NetDetailAmount;
+	public $NetDetailAmount;
 
 	/**
 	* @var string
 	**/
-	protected $RefNumber;
+	public $RefNumber;
 
 	/**
 	* @var decimal
 	**/
-	protected $VATPercent;
+	public $VATPercent;
 
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var boolean
 	**/
-	protected $ReceivedTopRatedDiscount;
+	public $ReceivedTopRatedDiscount;
 
 
 	/**

@@ -16,7 +16,7 @@ class GetSessionIDResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $SessionID;
+	public $SessionID;
 
 
 	/**

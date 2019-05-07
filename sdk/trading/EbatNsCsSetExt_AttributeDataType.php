@@ -22,15 +22,15 @@ class EbatNsCsSetExt_AttributeDataType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_AttributeSetArrayType
 	 */
-	protected $Attributes;
+	public $Attributes;
 	/**
 	 * @var EbatNsCsSetExt_CharacteristicsSetArrayType
 	 */
-	protected $Characteristics;
+	public $Characteristics;
 	/**
 	 * @var EbatNsCsSetExt_GlobalSettingsType
 	 */
-	protected $GlobalSettings;
+	public $GlobalSettings;
 
 	/**
 	 * @return EbatNsCsSetExt_AttributeSetArrayType

@@ -20,42 +20,42 @@ class GetMyMessagesRequestType extends AbstractRequestType
 	/**
 	* @var MyMessagesAlertIDArrayType
 	**/
-	protected $AlertIDs;
+	public $AlertIDs;
 
 	/**
 	* @var MyMessagesMessageIDArrayType
 	**/
-	protected $MessageIDs;
+	public $MessageIDs;
 
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var MyMessagesExternalMessageIDArrayType
 	**/
-	protected $ExternalMessageIDs;
+	public $ExternalMessageIDs;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeHighPriorityMessageOnly;
+	public $IncludeHighPriorityMessageOnly;
 
 
 	/**

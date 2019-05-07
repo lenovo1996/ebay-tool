@@ -19,27 +19,27 @@ class GetUserDisputesRequestType extends AbstractRequestType
 	/**
 	* @var DisputeFilterTypeCodeType
 	**/
-	protected $DisputeFilterType;
+	public $DisputeFilterType;
 
 	/**
 	* @var DisputeSortTypeCodeType
 	**/
-	protected $DisputeSortType;
+	public $DisputeSortType;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeFrom;
+	public $ModTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeTo;
+	public $ModTimeTo;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 
 	/**

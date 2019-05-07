@@ -26,7 +26,7 @@ class ListingRecommendationsType extends EbatNs_ComplexType
 	/**
 	* @var ListingRecommendationType
 	**/
-	protected $Recommendation;
+	public $Recommendation;
 
 
 	/**

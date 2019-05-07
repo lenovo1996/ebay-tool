@@ -17,7 +17,7 @@ class PromotionRuleArrayType extends EbatNs_ComplexType
 	/**
 	* @var PromotionRuleType
 	**/
-	protected $PromotionRule;
+	public $PromotionRule;
 
 
 	/**

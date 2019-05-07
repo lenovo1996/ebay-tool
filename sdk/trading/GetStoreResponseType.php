@@ -17,7 +17,7 @@ class GetStoreResponseType extends AbstractResponseType
 	/**
 	* @var StoreType
 	**/
-	protected $Store;
+	public $Store;
 
 
 	/**

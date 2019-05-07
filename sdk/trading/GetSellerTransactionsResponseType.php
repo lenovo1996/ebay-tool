@@ -19,42 +19,42 @@ class GetSellerTransactionsResponseType extends AbstractResponseType
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasMoreTransactions;
+	public $HasMoreTransactions;
 
 	/**
 	* @var int
 	**/
-	protected $TransactionsPerPage;
+	public $TransactionsPerPage;
 
 	/**
 	* @var int
 	**/
-	protected $PageNumber;
+	public $PageNumber;
 
 	/**
 	* @var int
 	**/
-	protected $ReturnedTransactionCountActual;
+	public $ReturnedTransactionCountActual;
 
 	/**
 	* @var UserType
 	**/
-	protected $Seller;
+	public $Seller;
 
 	/**
 	* @var TransactionArrayType
 	**/
-	protected $TransactionArray;
+	public $TransactionArray;
 
 	/**
 	* @var boolean
 	**/
-	protected $PayPalPreferred;
+	public $PayPalPreferred;
 
 
 	/**

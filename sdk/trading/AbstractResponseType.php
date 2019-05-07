@@ -26,77 +26,77 @@ class AbstractResponseType extends EbatNs_ComplexType
 	/**
 	* @var dateTime
 	**/
-	protected $Timestamp;
+	public $Timestamp;
 
 	/**
 	* @var AckCodeType
 	**/
-	protected $Ack;
+	public $Ack;
 
 	/**
 	* @var string
 	**/
-	protected $CorrelationID;
+	public $CorrelationID;
 
 	/**
 	* @var ErrorType
 	**/
-	protected $Errors;
+	public $Errors;
 
 	/**
 	* @var string
 	**/
-	protected $Message;
+	public $Message;
 
 	/**
 	* @var string
 	**/
-	protected $Version;
+	public $Version;
 
 	/**
 	* @var string
 	**/
-	protected $Build;
+	public $Build;
 
 	/**
 	* @var string
 	**/
-	protected $NotificationEventName;
+	public $NotificationEventName;
 
 	/**
 	* @var DuplicateInvocationDetailsType
 	**/
-	protected $DuplicateInvocationDetails;
+	public $DuplicateInvocationDetails;
 
 	/**
 	* @var string
 	**/
-	protected $RecipientUserID;
+	public $RecipientUserID;
 
 	/**
 	* @var string
 	**/
-	protected $EIASToken;
+	public $EIASToken;
 
 	/**
 	* @var string
 	**/
-	protected $NotificationSignature;
+	public $NotificationSignature;
 
 	/**
 	* @var string
 	**/
-	protected $HardExpirationWarning;
+	public $HardExpirationWarning;
 
 	/**
 	* @var BotBlockResponseType
 	**/
-	protected $BotBlock;
+	public $BotBlock;
 
 	/**
 	* @var string
 	**/
-	protected $ExternalUserData;
+	public $ExternalUserData;
 
 
 	/**

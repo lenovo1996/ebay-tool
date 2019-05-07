@@ -17,22 +17,22 @@ class TokenStatusType extends EbatNs_ComplexType
 	/**
 	* @var TokenStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var string
 	**/
-	protected $EIASToken;
+	public $EIASToken;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ExpirationTime;
+	public $ExpirationTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RevocationTime;
+	public $RevocationTime;
 
 
 	/**

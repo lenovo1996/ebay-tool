@@ -20,112 +20,112 @@ class ReturnPolicyType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $RefundOption;
+	public $RefundOption;
 
 	/**
 	* @var string
 	**/
-	protected $Refund;
+	public $Refund;
 
 	/**
 	* @var token
 	**/
-	protected $ReturnsWithinOption;
+	public $ReturnsWithinOption;
 
 	/**
 	* @var string
 	**/
-	protected $ReturnsWithin;
+	public $ReturnsWithin;
 
 	/**
 	* @var token
 	**/
-	protected $ReturnsAcceptedOption;
+	public $ReturnsAcceptedOption;
 
 	/**
 	* @var string
 	**/
-	protected $ReturnsAccepted;
+	public $ReturnsAccepted;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var token
 	**/
-	protected $WarrantyOfferedOption;
+	public $WarrantyOfferedOption;
 
 	/**
 	* @var string
 	**/
-	protected $WarrantyOffered;
+	public $WarrantyOffered;
 
 	/**
 	* @var token
 	**/
-	protected $WarrantyTypeOption;
+	public $WarrantyTypeOption;
 
 	/**
 	* @var string
 	**/
-	protected $WarrantyType;
+	public $WarrantyType;
 
 	/**
 	* @var token
 	**/
-	protected $WarrantyDurationOption;
+	public $WarrantyDurationOption;
 
 	/**
 	* @var string
 	**/
-	protected $WarrantyDuration;
+	public $WarrantyDuration;
 
 	/**
 	* @var token
 	**/
-	protected $ShippingCostPaidByOption;
+	public $ShippingCostPaidByOption;
 
 	/**
 	* @var string
 	**/
-	protected $ShippingCostPaidBy;
+	public $ShippingCostPaidBy;
 
 	/**
 	* @var token
 	**/
-	protected $RestockingFeeValue;
+	public $RestockingFeeValue;
 
 	/**
 	* @var token
 	**/
-	protected $RestockingFeeValueOption;
+	public $RestockingFeeValueOption;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExtendedHolidayReturns;
+	public $ExtendedHolidayReturns;
 
 	/**
 	* @var token
 	**/
-	protected $InternationalRefundOption;
+	public $InternationalRefundOption;
 
 	/**
 	* @var token
 	**/
-	protected $InternationalReturnsAcceptedOption;
+	public $InternationalReturnsAcceptedOption;
 
 	/**
 	* @var token
 	**/
-	protected $InternationalReturnsWithinOption;
+	public $InternationalReturnsWithinOption;
 
 	/**
 	* @var token
 	**/
-	protected $InternationalShippingCostPaidByOption;
+	public $InternationalShippingCostPaidByOption;
 
 
 	/**

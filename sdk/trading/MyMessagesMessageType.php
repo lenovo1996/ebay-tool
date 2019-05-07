@@ -27,132 +27,132 @@ class MyMessagesMessageType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Sender;
+	public $Sender;
 
 	/**
 	* @var string
 	**/
-	protected $RecipientUserID;
+	public $RecipientUserID;
 
 	/**
 	* @var string
 	**/
-	protected $SendToName;
+	public $SendToName;
 
 	/**
 	* @var string
 	**/
-	protected $Subject;
+	public $Subject;
 
 	/**
 	* @var MyMessagesMessageIDType
 	**/
-	protected $MessageID;
+	public $MessageID;
 
 	/**
 	* @var string
 	**/
-	protected $ExternalMessageID;
+	public $ExternalMessageID;
 
 	/**
 	* @var string
 	**/
-	protected $ContentType;
+	public $ContentType;
 
 	/**
 	* @var string
 	**/
-	protected $Text;
+	public $Text;
 
 	/**
 	* @var boolean
 	**/
-	protected $Flagged;
+	public $Flagged;
 
 	/**
 	* @var boolean
 	**/
-	protected $Read;
+	public $Read;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreationDate;
+	public $CreationDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ReceiveDate;
+	public $ReceiveDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ExpirationDate;
+	public $ExpirationDate;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var MyMessagesResponseDetailsType
 	**/
-	protected $ResponseDetails;
+	public $ResponseDetails;
 
 	/**
 	* @var MyMessagesForwardDetailsType
 	**/
-	protected $ForwardDetails;
+	public $ForwardDetails;
 
 	/**
 	* @var MyMessagesFolderType
 	**/
-	protected $Folder;
+	public $Folder;
 
 	/**
 	* @var string
 	**/
-	protected $Content;
+	public $Content;
 
 	/**
 	* @var MessageTypeCodeType
 	**/
-	protected $MessageType;
+	public $MessageType;
 
 	/**
 	* @var ListingStatusCodeType
 	**/
-	protected $ListingStatus;
+	public $ListingStatus;
 
 	/**
 	* @var QuestionTypeCodeType
 	**/
-	protected $QuestionType;
+	public $QuestionType;
 
 	/**
 	* @var boolean
 	**/
-	protected $Replied;
+	public $Replied;
 
 	/**
 	* @var boolean
 	**/
-	protected $HighPriority;
+	public $HighPriority;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ItemEndTime;
+	public $ItemEndTime;
 
 	/**
 	* @var string
 	**/
-	protected $ItemTitle;
+	public $ItemTitle;
 
 	/**
 	* @var MessageMediaType
 	**/
-	protected $MessageMedia;
+	public $MessageMedia;
 
 
 	/**

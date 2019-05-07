@@ -23,37 +23,37 @@ class CheckoutStatusType extends EbatNs_ComplexType
 	/**
 	* @var PaymentStatusCodeType
 	**/
-	protected $eBayPaymentStatus;
+	public $eBayPaymentStatus;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastModifiedTime;
+	public $LastModifiedTime;
 
 	/**
 	* @var BuyerPaymentMethodCodeType
 	**/
-	protected $PaymentMethod;
+	public $PaymentMethod;
 
 	/**
 	* @var CompleteStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var boolean
 	**/
-	protected $IntegratedMerchantCreditCardEnabled;
+	public $IntegratedMerchantCreditCardEnabled;
 
 	/**
 	* @var eBayPaymentMismatchDetailsType
 	**/
-	protected $eBayPaymentMismatchDetails;
+	public $eBayPaymentMismatchDetails;
 
 	/**
 	* @var BuyerPaymentInstrumentCodeType
 	**/
-	protected $PaymentInstrument;
+	public $PaymentInstrument;
 
 
 	/**

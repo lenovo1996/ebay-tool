@@ -20,7 +20,7 @@ class EbatNsCsSetExt_RowType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_WidgetType
 	 */
-	protected $Widget;
+	public $Widget;
 
 	/**
 	 * @return EbatNsCsSetExt_WidgetType

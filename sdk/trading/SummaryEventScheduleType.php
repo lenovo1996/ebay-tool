@@ -19,17 +19,17 @@ class SummaryEventScheduleType extends EbatNs_ComplexType
 	/**
 	* @var NotificationEventTypeCodeType
 	**/
-	protected $EventType;
+	public $EventType;
 
 	/**
 	* @var SummaryWindowPeriodCodeType
 	**/
-	protected $SummaryPeriod;
+	public $SummaryPeriod;
 
 	/**
 	* @var SummaryFrequencyCodeType
 	**/
-	protected $Frequency;
+	public $Frequency;
 
 
 	/**

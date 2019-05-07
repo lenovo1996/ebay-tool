@@ -17,12 +17,12 @@ class ValueRecommendationType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Value;
+	public $Value;
 
 	/**
 	* @var RecommendationValidationRulesType
 	**/
-	protected $ValidationRules;
+	public $ValidationRules;
 
 
 	/**

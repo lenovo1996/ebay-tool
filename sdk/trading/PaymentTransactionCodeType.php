@@ -20,42 +20,42 @@ class PaymentTransactionCodeType extends EbatNs_ComplexType
 	/**
 	* @var PaymentTransactionStatusCodeType
 	**/
-	protected $PaymentStatus;
+	public $PaymentStatus;
 
 	/**
 	* @var UserIdentityType
 	**/
-	protected $Payer;
+	public $Payer;
 
 	/**
 	* @var UserIdentityType
 	**/
-	protected $Payee;
+	public $Payee;
 
 	/**
 	* @var dateTime
 	**/
-	protected $PaymentTime;
+	public $PaymentTime;
 
 	/**
 	* @var AmountType
 	**/
-	protected $PaymentAmount;
+	public $PaymentAmount;
 
 	/**
 	* @var TransactionReferenceType
 	**/
-	protected $ReferenceID;
+	public $ReferenceID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $FeeOrCreditAmount;
+	public $FeeOrCreditAmount;
 
 	/**
 	* @var TransactionReferenceType
 	**/
-	protected $PaymentReferenceID;
+	public $PaymentReferenceID;
 
 
 	/**

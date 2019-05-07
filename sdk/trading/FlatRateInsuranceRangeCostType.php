@@ -18,12 +18,12 @@ class FlatRateInsuranceRangeCostType extends EbatNs_ComplexType
 	/**
 	* @var FlatRateInsuranceRangeCodeType
 	**/
-	protected $FlatRateInsuranceRange;
+	public $FlatRateInsuranceRange;
 
 	/**
 	* @var AmountType
 	**/
-	protected $InsuranceCost;
+	public $InsuranceCost;
 
 
 	/**

@@ -17,7 +17,7 @@ class StorePreferencesType extends EbatNs_ComplexType
 	/**
 	* @var StoreVacationPreferencesType
 	**/
-	protected $VacationPreferences;
+	public $VacationPreferences;
 
 
 	/**

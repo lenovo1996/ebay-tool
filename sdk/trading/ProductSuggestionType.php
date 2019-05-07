@@ -17,22 +17,22 @@ class ProductSuggestionType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 	/**
 	* @var string
 	**/
-	protected $EPID;
+	public $EPID;
 
 	/**
 	* @var string
 	**/
-	protected $StockPhoto;
+	public $StockPhoto;
 
 	/**
 	* @var boolean
 	**/
-	protected $Recommended;
+	public $Recommended;
 
 
 	/**

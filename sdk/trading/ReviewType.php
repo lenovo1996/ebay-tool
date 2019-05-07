@@ -17,32 +17,32 @@ class ReviewType extends EbatNs_ComplexType
 	/**
 	* @var anyURI
 	**/
-	protected $URL;
+	public $URL;
 
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 	/**
 	* @var int
 	**/
-	protected $Rating;
+	public $Rating;
 
 	/**
 	* @var string
 	**/
-	protected $Text;
+	public $Text;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreationTime;
+	public $CreationTime;
 
 
 	/**

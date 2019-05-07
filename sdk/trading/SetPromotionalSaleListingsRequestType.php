@@ -18,42 +18,42 @@ class SetPromotionalSaleListingsRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $PromotionalSaleID;
+	public $PromotionalSaleID;
 
 	/**
 	* @var ModifyActionCodeType
 	**/
-	protected $Action;
+	public $Action;
 
 	/**
 	* @var ItemIDArrayType
 	**/
-	protected $PromotionalSaleItemIDArray;
+	public $PromotionalSaleItemIDArray;
 
 	/**
 	* @var long
 	**/
-	protected $StoreCategoryID;
+	public $StoreCategoryID;
 
 	/**
 	* @var long
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var boolean
 	**/
-	protected $AllFixedPriceItems;
+	public $AllFixedPriceItems;
 
 	/**
 	* @var boolean
 	**/
-	protected $AllStoreInventoryItems;
+	public $AllStoreInventoryItems;
 
 	/**
 	* @var boolean
 	**/
-	protected $AllAuctionItems;
+	public $AllAuctionItems;
 
 
 	/**

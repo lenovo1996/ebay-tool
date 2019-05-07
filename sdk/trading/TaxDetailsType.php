@@ -23,37 +23,37 @@ class TaxDetailsType extends EbatNs_ComplexType
 	/**
 	* @var TaxTypeCodeType
 	**/
-	protected $Imposition;
+	public $Imposition;
 
 	/**
 	* @var TaxDescriptionCodeType
 	**/
-	protected $TaxDescription;
+	public $TaxDescription;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TaxAmount;
+	public $TaxAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TaxOnSubtotalAmount;
+	public $TaxOnSubtotalAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TaxOnShippingAmount;
+	public $TaxOnShippingAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TaxOnHandlingAmount;
+	public $TaxOnHandlingAmount;
 
 	/**
 	* @var string
 	**/
-	protected $TaxCode;
+	public $TaxCode;
 
 
 	/**

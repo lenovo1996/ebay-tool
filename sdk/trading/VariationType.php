@@ -23,77 +23,77 @@ class VariationType extends EbatNs_ComplexType
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 	/**
 	* @var AmountType
 	**/
-	protected $StartPrice;
+	public $StartPrice;
 
 	/**
 	* @var int
 	**/
-	protected $Quantity;
+	public $Quantity;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $VariationSpecifics;
+	public $VariationSpecifics;
 
 	/**
 	* @var int
 	**/
-	protected $UnitsAvailable;
+	public $UnitsAvailable;
 
 	/**
 	* @var AmountType
 	**/
-	protected $UnitCost;
+	public $UnitCost;
 
 	/**
 	* @var SellingStatusType
 	**/
-	protected $SellingStatus;
+	public $SellingStatus;
 
 	/**
 	* @var string
 	**/
-	protected $VariationTitle;
+	public $VariationTitle;
 
 	/**
 	* @var anyURI
 	**/
-	protected $VariationViewItemURL;
+	public $VariationViewItemURL;
 
 	/**
 	* @var boolean
 	**/
-	protected $Delete;
+	public $Delete;
 
 	/**
 	* @var SellingManagerProductInventoryStatusType
 	**/
-	protected $SellingManagerProductInventoryStatus;
+	public $SellingManagerProductInventoryStatus;
 
 	/**
 	* @var long
 	**/
-	protected $WatchCount;
+	public $WatchCount;
 
 	/**
 	* @var string
 	**/
-	protected $PrivateNotes;
+	public $PrivateNotes;
 
 	/**
 	* @var DiscountPriceInfoType
 	**/
-	protected $DiscountPriceInfo;
+	public $DiscountPriceInfo;
 
 	/**
 	* @var VariationProductListingDetailsType
 	**/
-	protected $VariationProductListingDetails;
+	public $VariationProductListingDetails;
 
 
 	/**

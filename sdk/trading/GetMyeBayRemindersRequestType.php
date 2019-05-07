@@ -17,12 +17,12 @@ class GetMyeBayRemindersRequestType extends AbstractRequestType
 	/**
 	* @var ReminderCustomizationType
 	**/
-	protected $BuyingReminders;
+	public $BuyingReminders;
 
 	/**
 	* @var ReminderCustomizationType
 	**/
-	protected $SellingReminders;
+	public $SellingReminders;
 
 
 	/**

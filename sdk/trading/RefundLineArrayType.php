@@ -17,7 +17,7 @@ class RefundLineArrayType extends EbatNs_ComplexType
 	/**
 	* @var RefundLineType
 	**/
-	protected $RefundLine;
+	public $RefundLine;
 
 
 	/**

@@ -17,7 +17,7 @@ class GetContextualKeywordsResponseType extends AbstractResponseType
 	/**
 	* @var ContextSearchAssetType
 	**/
-	protected $ContextSearchAsset;
+	public $ContextSearchAsset;
 
 
 	/**

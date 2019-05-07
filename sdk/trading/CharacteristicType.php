@@ -19,37 +19,37 @@ class CharacteristicType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $AttributeID;
+	public $AttributeID;
 
 	/**
 	* @var string
 	**/
-	protected $DateFormat;
+	public $DateFormat;
 
 	/**
 	* @var string
 	**/
-	protected $DisplaySequence;
+	public $DisplaySequence;
 
 	/**
 	* @var string
 	**/
-	protected $DisplayUOM;
+	public $DisplayUOM;
 
 	/**
 	* @var LabelType
 	**/
-	protected $Label;
+	public $Label;
 
 	/**
 	* @var SortOrderCodeType
 	**/
-	protected $SortOrder;
+	public $SortOrder;
 
 	/**
 	* @var ValType
 	**/
-	protected $ValueList;
+	public $ValueList;
 
 
 	/**

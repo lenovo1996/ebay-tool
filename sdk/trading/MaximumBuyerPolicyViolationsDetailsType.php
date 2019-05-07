@@ -18,12 +18,12 @@ class MaximumBuyerPolicyViolationsDetailsType extends EbatNs_ComplexType
 	/**
 	* @var NumberOfPolicyViolationsDetailsType
 	**/
-	protected $NumberOfPolicyViolations;
+	public $NumberOfPolicyViolations;
 
 	/**
 	* @var PolicyViolationDurationDetailsType
 	**/
-	protected $PolicyViolationDuration;
+	public $PolicyViolationDuration;
 
 
 	/**

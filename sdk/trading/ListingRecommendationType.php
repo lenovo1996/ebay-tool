@@ -23,37 +23,37 @@ class ListingRecommendationType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Type;
+	public $Type;
 
 	/**
 	* @var string
 	**/
-	protected $Group;
+	public $Group;
 
 	/**
 	* @var string
 	**/
-	protected $FieldName;
+	public $FieldName;
 
 	/**
 	* @var string
 	**/
-	protected $Code;
+	public $Code;
 
 	/**
 	* @var string
 	**/
-	protected $Value;
+	public $Value;
 
 	/**
 	* @var string
 	**/
-	protected $Message;
+	public $Message;
 
 	/**
 	* @var MetadataType
 	**/
-	protected $Metadata;
+	public $Metadata;
 
 
 	/**

@@ -16,22 +16,22 @@ class ShippingLocationDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ShippingLocation;
+	public $ShippingLocation;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

@@ -18,17 +18,17 @@ class GetSellingManagerInventoryFolderRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var int
 	**/
-	protected $MaxDepth;
+	public $MaxDepth;
 
 	/**
 	* @var boolean
 	**/
-	protected $FullRecursion;
+	public $FullRecursion;
 
 
 	/**

@@ -22,52 +22,52 @@ class RelistFixedPriceItemResponseType extends AbstractResponseType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 	/**
 	* @var FeesType
 	**/
-	protected $Fees;
+	public $Fees;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var string
 	**/
-	protected $Category2ID;
+	public $Category2ID;
 
 	/**
 	* @var DiscountReasonCodeType
 	**/
-	protected $DiscountReason;
+	public $DiscountReason;
 
 	/**
 	* @var ProductSuggestionsType
 	**/
-	protected $ProductSuggestions;
+	public $ProductSuggestions;
 
 	/**
 	* @var ListingRecommendationsType
 	**/
-	protected $ListingRecommendations;
+	public $ListingRecommendations;
 
 
 	/**

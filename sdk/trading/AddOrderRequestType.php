@@ -17,7 +17,7 @@ class AddOrderRequestType extends AbstractRequestType
 	/**
 	* @var OrderType
 	**/
-	protected $Order;
+	public $Order;
 
 
 	/**

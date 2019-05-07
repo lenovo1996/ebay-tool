@@ -17,12 +17,12 @@ class ReviewDetailsType extends EbatNs_ComplexType
 	/**
 	* @var float
 	**/
-	protected $AverageRating;
+	public $AverageRating;
 
 	/**
 	* @var ReviewType
 	**/
-	protected $Review;
+	public $Review;
 
 
 	/**

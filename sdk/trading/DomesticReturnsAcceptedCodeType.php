@@ -17,7 +17,7 @@ class DomesticReturnsAcceptedCodeType extends EbatNs_ComplexType
 	/**
 	* @var ReturnsAcceptedCodeType
 	**/
-	protected $DomesticReturnsAccepted;
+	public $DomesticReturnsAccepted;
 
 
 	/**

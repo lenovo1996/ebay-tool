@@ -21,42 +21,42 @@ class UploadSiteHostedPicturesRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $PictureName;
+	public $PictureName;
 
 	/**
 	* @var int
 	**/
-	protected $PictureSystemVersion;
+	public $PictureSystemVersion;
 
 	/**
 	* @var PictureSetCodeType
 	**/
-	protected $PictureSet;
+	public $PictureSet;
 
 	/**
 	* @var Base64BinaryType
 	**/
-	protected $PictureData;
+	public $PictureData;
 
 	/**
 	* @var PictureUploadPolicyCodeType
 	**/
-	protected $PictureUploadPolicy;
+	public $PictureUploadPolicy;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ExternalPictureURL;
+	public $ExternalPictureURL;
 
 	/**
 	* @var PictureWatermarkCodeType
 	**/
-	protected $PictureWatermark;
+	public $PictureWatermark;
 
 	/**
 	* @var int
 	**/
-	protected $ExtensionInDays;
+	public $ExtensionInDays;
 
 
 	/**

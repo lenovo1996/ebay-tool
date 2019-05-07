@@ -23,37 +23,37 @@ class BuyingSummaryType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $BiddingCount;
+	public $BiddingCount;
 
 	/**
 	* @var int
 	**/
-	protected $WinningCount;
+	public $WinningCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalWinningCost;
+	public $TotalWinningCost;
 
 	/**
 	* @var int
 	**/
-	protected $WonCount;
+	public $WonCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalWonCost;
+	public $TotalWonCost;
 
 	/**
 	* @var int
 	**/
-	protected $WonDurationInDays;
+	public $WonDurationInDays;
 
 	/**
 	* @var int
 	**/
-	protected $BestOfferCount;
+	public $BestOfferCount;
 
 
 	/**

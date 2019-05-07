@@ -36,227 +36,227 @@ class UserType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $AboutMePage;
+	public $AboutMePage;
 
 	/**
 	* @var string
 	**/
-	protected $EIASToken;
+	public $EIASToken;
 
 	/**
 	* @var string
 	**/
-	protected $Email;
+	public $Email;
 
 	/**
 	* @var int
 	**/
-	protected $FeedbackScore;
+	public $FeedbackScore;
 
 	/**
 	* @var int
 	**/
-	protected $UniqueNegativeFeedbackCount;
+	public $UniqueNegativeFeedbackCount;
 
 	/**
 	* @var int
 	**/
-	protected $UniquePositiveFeedbackCount;
+	public $UniquePositiveFeedbackCount;
 
 	/**
 	* @var float
 	**/
-	protected $PositiveFeedbackPercent;
+	public $PositiveFeedbackPercent;
 
 	/**
 	* @var boolean
 	**/
-	protected $FeedbackPrivate;
+	public $FeedbackPrivate;
 
 	/**
 	* @var FeedbackRatingStarCodeType
 	**/
-	protected $FeedbackRatingStar;
+	public $FeedbackRatingStar;
 
 	/**
 	* @var boolean
 	**/
-	protected $IDVerified;
+	public $IDVerified;
 
 	/**
 	* @var boolean
 	**/
-	protected $eBayGoodStanding;
+	public $eBayGoodStanding;
 
 	/**
 	* @var boolean
 	**/
-	protected $NewUser;
+	public $NewUser;
 
 	/**
 	* @var AddressType
 	**/
-	protected $RegistrationAddress;
+	public $RegistrationAddress;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RegistrationDate;
+	public $RegistrationDate;
 
 	/**
 	* @var SiteCodeType
 	**/
-	protected $Site;
+	public $Site;
 
 	/**
 	* @var UserStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var boolean
 	**/
-	protected $UserIDChanged;
+	public $UserIDChanged;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UserIDLastChanged;
+	public $UserIDLastChanged;
 
 	/**
 	* @var VATStatusCodeType
 	**/
-	protected $VATStatus;
+	public $VATStatus;
 
 	/**
 	* @var BuyerType
 	**/
-	protected $BuyerInfo;
+	public $BuyerInfo;
 
 	/**
 	* @var SellerType
 	**/
-	protected $SellerInfo;
+	public $SellerInfo;
 
 	/**
 	* @var BusinessRoleType
 	**/
-	protected $BusinessRole;
+	public $BusinessRole;
 
 	/**
 	* @var CharityAffiliationsType
 	**/
-	protected $CharityAffiliations;
+	public $CharityAffiliations;
 
 	/**
 	* @var PayPalAccountLevelCodeType
 	**/
-	protected $PayPalAccountLevel;
+	public $PayPalAccountLevel;
 
 	/**
 	* @var PayPalAccountTypeCodeType
 	**/
-	protected $PayPalAccountType;
+	public $PayPalAccountType;
 
 	/**
 	* @var PayPalAccountStatusCodeType
 	**/
-	protected $PayPalAccountStatus;
+	public $PayPalAccountStatus;
 
 	/**
 	* @var EBaySubscriptionTypeCodeType
 	**/
-	protected $UserSubscription;
+	public $UserSubscription;
 
 	/**
 	* @var boolean
 	**/
-	protected $SiteVerified;
+	public $SiteVerified;
 
 	/**
 	* @var string
 	**/
-	protected $SkypeID;
+	public $SkypeID;
 
 	/**
 	* @var boolean
 	**/
-	protected $eBayWikiReadOnly;
+	public $eBayWikiReadOnly;
 
 	/**
 	* @var int
 	**/
-	protected $TUVLevel;
+	public $TUVLevel;
 
 	/**
 	* @var string
 	**/
-	protected $VATID;
+	public $VATID;
 
 	/**
 	* @var SellerPaymentMethodCodeType
 	**/
-	protected $SellerPaymentMethod;
+	public $SellerPaymentMethod;
 
 	/**
 	* @var BiddingSummaryType
 	**/
-	protected $BiddingSummary;
+	public $BiddingSummary;
 
 	/**
 	* @var boolean
 	**/
-	protected $UserAnonymized;
+	public $UserAnonymized;
 
 	/**
 	* @var int
 	**/
-	protected $UniqueNeutralFeedbackCount;
+	public $UniqueNeutralFeedbackCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $EnterpriseSeller;
+	public $EnterpriseSeller;
 
 	/**
 	* @var string
 	**/
-	protected $BillingEmail;
+	public $BillingEmail;
 
 	/**
 	* @var boolean
 	**/
-	protected $QualifiesForSelling;
+	public $QualifiesForSelling;
 
 	/**
 	* @var string
 	**/
-	protected $StaticAlias;
+	public $StaticAlias;
 
 	/**
 	* @var AddressType
 	**/
-	protected $ShippingAddress;
+	public $ShippingAddress;
 
 	/**
 	* @var MembershipDetailsType
 	**/
-	protected $Membership;
+	public $Membership;
 
 	/**
 	* @var string
 	**/
-	protected $UserFirstName;
+	public $UserFirstName;
 
 	/**
 	* @var string
 	**/
-	protected $UserLastName;
+	public $UserLastName;
 
 
 	/**

@@ -16,12 +16,12 @@ class MyeBayFavoriteSellerType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var string
 	**/
-	protected $StoreName;
+	public $StoreName;
 
 
 	/**

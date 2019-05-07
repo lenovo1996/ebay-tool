@@ -17,22 +17,22 @@ class GetUserRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeExpressRequirements;
+	public $IncludeExpressRequirements;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeFeatureEligibility;
+	public $IncludeFeatureEligibility;
 
 
 	/**

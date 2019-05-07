@@ -19,12 +19,12 @@ class ReturnsAcceptedDetailsType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $ReturnsAcceptedOption;
+	public $ReturnsAcceptedOption;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 
 	/**

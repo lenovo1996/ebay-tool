@@ -17,17 +17,17 @@ class EndItemResponseContainerType extends EbatNs_ComplexType
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var string
 	**/
-	protected $CorrelationID;
+	public $CorrelationID;
 
 	/**
 	* @var ErrorType
 	**/
-	protected $Errors;
+	public $Errors;
 
 
 	/**

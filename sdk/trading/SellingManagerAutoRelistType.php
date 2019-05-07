@@ -21,37 +21,37 @@ class SellingManagerAutoRelistType extends EbatNs_ComplexType
 	/**
 	* @var SellingManagerAutoRelistTypeCodeType
 	**/
-	protected $Type;
+	public $Type;
 
 	/**
 	* @var SellingManagerAutoRelistOptionCodeType
 	**/
-	protected $RelistCondition;
+	public $RelistCondition;
 
 	/**
 	* @var int
 	**/
-	protected $RelistAfterDays;
+	public $RelistAfterDays;
 
 	/**
 	* @var int
 	**/
-	protected $RelistAfterHours;
+	public $RelistAfterHours;
 
 	/**
 	* @var time
 	**/
-	protected $RelistAtSpecificTimeOfDay;
+	public $RelistAtSpecificTimeOfDay;
 
 	/**
 	* @var BestOfferDetailsType
 	**/
-	protected $BestOfferDetails;
+	public $BestOfferDetails;
 
 	/**
 	* @var int
 	**/
-	protected $ListingHoldInventoryLevel;
+	public $ListingHoldInventoryLevel;
 
 
 	/**

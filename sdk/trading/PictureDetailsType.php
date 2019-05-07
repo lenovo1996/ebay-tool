@@ -21,47 +21,47 @@ class PictureDetailsType extends EbatNs_ComplexType
 	/**
 	* @var GalleryTypeCodeType
 	**/
-	protected $GalleryType;
+	public $GalleryType;
 
 	/**
 	* @var PhotoDisplayCodeType
 	**/
-	protected $PhotoDisplay;
+	public $PhotoDisplay;
 
 	/**
 	* @var anyURI
 	**/
-	protected $PictureURL;
+	public $PictureURL;
 
 	/**
 	* @var PictureSourceCodeType
 	**/
-	protected $PictureSource;
+	public $PictureSource;
 
 	/**
 	* @var token
 	**/
-	protected $GalleryDuration;
+	public $GalleryDuration;
 
 	/**
 	* @var GalleryStatusCodeType
 	**/
-	protected $GalleryStatus;
+	public $GalleryStatus;
 
 	/**
 	* @var string
 	**/
-	protected $GalleryErrorInfo;
+	public $GalleryErrorInfo;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ExternalPictureURL;
+	public $ExternalPictureURL;
 
 	/**
 	* @var ExtendedPictureDetailsType
 	**/
-	protected $ExtendedPictureDetails;
+	public $ExtendedPictureDetails;
 
 
 	/**

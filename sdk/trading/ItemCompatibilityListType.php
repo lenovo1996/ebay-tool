@@ -21,12 +21,12 @@ class ItemCompatibilityListType extends EbatNs_ComplexType
 	/**
 	* @var ItemCompatibilityType
 	**/
-	protected $Compatibility;
+	public $Compatibility;
 
 	/**
 	* @var boolean
 	**/
-	protected $ReplaceAll;
+	public $ReplaceAll;
 
 
 	/**

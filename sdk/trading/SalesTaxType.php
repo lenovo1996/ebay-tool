@@ -17,22 +17,22 @@ class SalesTaxType extends EbatNs_ComplexType
 	/**
 	* @var float
 	**/
-	protected $SalesTaxPercent;
+	public $SalesTaxPercent;
 
 	/**
 	* @var string
 	**/
-	protected $SalesTaxState;
+	public $SalesTaxState;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShippingIncludedInTax;
+	public $ShippingIncludedInTax;
 
 	/**
 	* @var AmountType
 	**/
-	protected $SalesTaxAmount;
+	public $SalesTaxAmount;
 
 
 	/**

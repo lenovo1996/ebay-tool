@@ -17,7 +17,7 @@ class SetStoreCustomPageRequestType extends AbstractRequestType
 	/**
 	* @var StoreCustomPageType
 	**/
-	protected $CustomPage;
+	public $CustomPage;
 
 
 	/**

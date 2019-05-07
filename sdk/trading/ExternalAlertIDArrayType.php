@@ -16,7 +16,7 @@ class ExternalAlertIDArrayType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ExternalAlertID;
+	public $ExternalAlertID;
 
 
 	/**

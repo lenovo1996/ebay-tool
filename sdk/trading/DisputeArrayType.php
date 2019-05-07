@@ -21,7 +21,7 @@ class DisputeArrayType extends EbatNs_ComplexType
 	/**
 	* @var DisputeType
 	**/
-	protected $Dispute;
+	public $Dispute;
 
 
 	/**

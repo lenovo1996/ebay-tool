@@ -16,7 +16,7 @@ class AddSellingManagerInventoryFolderResponseType extends AbstractResponseType
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 
 	/**

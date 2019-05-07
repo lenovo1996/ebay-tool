@@ -21,7 +21,7 @@ class GetDisputeResponseType extends AbstractResponseType
 	/**
 	* @var DisputeType
 	**/
-	protected $Dispute;
+	public $Dispute;
 
 
 	/**

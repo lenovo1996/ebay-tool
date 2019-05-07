@@ -18,12 +18,12 @@ class GetItemsAwaitingFeedbackRequestType extends AbstractRequestType
 	/**
 	* @var ItemSortTypeCodeType
 	**/
-	protected $Sort;
+	public $Sort;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 
 	/**

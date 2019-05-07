@@ -19,17 +19,17 @@ class PromotionalSaleDetailsType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $OriginalPrice;
+	public $OriginalPrice;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 
 	/**

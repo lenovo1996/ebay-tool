@@ -18,37 +18,37 @@ class DiscountProfileType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $DiscountProfileID;
+	public $DiscountProfileID;
 
 	/**
 	* @var string
 	**/
-	protected $DiscountProfileName;
+	public $DiscountProfileName;
 
 	/**
 	* @var AmountType
 	**/
-	protected $EachAdditionalAmount;
+	public $EachAdditionalAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $EachAdditionalAmountOff;
+	public $EachAdditionalAmountOff;
 
 	/**
 	* @var float
 	**/
-	protected $EachAdditionalPercentOff;
+	public $EachAdditionalPercentOff;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $WeightOff;
+	public $WeightOff;
 
 	/**
 	* @var string
 	**/
-	protected $MappedDiscountProfileID;
+	public $MappedDiscountProfileID;
 
 
 	/**

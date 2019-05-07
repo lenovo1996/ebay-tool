@@ -17,27 +17,27 @@ class PictureManagerPictureDisplayType extends EbatNs_ComplexType
 	/**
 	* @var PictureManagerPictureDisplayTypeCodeType
 	**/
-	protected $DisplayType;
+	public $DisplayType;
 
 	/**
 	* @var anyURI
 	**/
-	protected $URL;
+	public $URL;
 
 	/**
 	* @var int
 	**/
-	protected $Size;
+	public $Size;
 
 	/**
 	* @var int
 	**/
-	protected $Height;
+	public $Height;
 
 	/**
 	* @var int
 	**/
-	protected $Width;
+	public $Width;
 
 
 	/**

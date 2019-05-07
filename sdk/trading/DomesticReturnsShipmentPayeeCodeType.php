@@ -17,7 +17,7 @@ class DomesticReturnsShipmentPayeeCodeType extends EbatNs_ComplexType
 	/**
 	* @var ReturnsShipmentPayeeCodeType
 	**/
-	protected $DomesticReturnsShipmentPayee;
+	public $DomesticReturnsShipmentPayee;
 
 
 	/**

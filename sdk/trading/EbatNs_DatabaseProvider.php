@@ -10,13 +10,13 @@
 //
 class EbatNs_DatabaseConfig
 {
-    protected $host;
+    public $host;
 
-    protected $database;
+    public $database;
 
-    protected $user;
+    public $user;
 
-    protected $password;
+    public $password;
 
     function setConfig ($host, $db, $user, $password)
     {
@@ -29,7 +29,7 @@ class EbatNs_DatabaseConfig
 
 class EbatNs_DatabaseProvider extends EbatNs_DatabaseConfig
 {
-    protected $dbHandle;
+    public $dbHandle;
 
     function __construct()
     {

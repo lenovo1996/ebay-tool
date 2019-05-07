@@ -19,12 +19,12 @@ class GetSuggestedCategoriesResponseType extends AbstractResponseType
 	/**
 	* @var SuggestedCategoryArrayType
 	**/
-	protected $SuggestedCategoryArray;
+	public $SuggestedCategoryArray;
 
 	/**
 	* @var int
 	**/
-	protected $CategoryCount;
+	public $CategoryCount;
 
 
 	/**

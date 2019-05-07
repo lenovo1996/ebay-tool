@@ -16,12 +16,12 @@ class MaximumItemRequirementsDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MaximumItemCount;
+	public $MaximumItemCount;
 
 	/**
 	* @var int
 	**/
-	protected $MinimumFeedbackScore;
+	public $MinimumFeedbackScore;
 
 
 	/**

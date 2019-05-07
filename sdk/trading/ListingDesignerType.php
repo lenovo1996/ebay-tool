@@ -18,17 +18,17 @@ class ListingDesignerType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $LayoutID;
+	public $LayoutID;
 
 	/**
 	* @var boolean
 	**/
-	protected $OptimalPictureSize;
+	public $OptimalPictureSize;
 
 	/**
 	* @var int
 	**/
-	protected $ThemeID;
+	public $ThemeID;
 
 
 	/**

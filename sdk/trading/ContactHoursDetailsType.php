@@ -17,47 +17,47 @@ class ContactHoursDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $TimeZoneID;
+	public $TimeZoneID;
 
 	/**
 	* @var DaysCodeType
 	**/
-	protected $Hours1Days;
+	public $Hours1Days;
 
 	/**
 	* @var boolean
 	**/
-	protected $Hours1AnyTime;
+	public $Hours1AnyTime;
 
 	/**
 	* @var time
 	**/
-	protected $Hours1From;
+	public $Hours1From;
 
 	/**
 	* @var time
 	**/
-	protected $Hours1To;
+	public $Hours1To;
 
 	/**
 	* @var DaysCodeType
 	**/
-	protected $Hours2Days;
+	public $Hours2Days;
 
 	/**
 	* @var boolean
 	**/
-	protected $Hours2AnyTime;
+	public $Hours2AnyTime;
 
 	/**
 	* @var time
 	**/
-	protected $Hours2From;
+	public $Hours2From;
 
 	/**
 	* @var time
 	**/
-	protected $Hours2To;
+	public $Hours2To;
 
 
 	/**

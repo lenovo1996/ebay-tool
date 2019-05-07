@@ -16,7 +16,7 @@ require_once 'EbatNs_Defines.php';
  */
 class EbatNs_Result {
   // this array holds all attribute data of the object
-  protected $_props = array();
+  public $_props = array();
   /**
    * sets a property by name and value
    */
@@ -36,43 +36,43 @@ class EbatNs_Result {
    * @access private 
    * @var array 
    */
-  protected $_errors = array();
+  public $_errors = array();
   /**
    * 
    * @access private 
    * @var define 
    */
-  protected $_errorSeverity = EBAY_ERR_SUCCESS;
+  public $_errorSeverity = EBAY_ERR_SUCCESS;
   /**
    * 
    * @access private 
    * @var number 
    */
-  protected $_actualPage = 0;
+  public $_actualPage = 0;
   /**
    * 
    * @access private 
    * @var number 
    */
-  protected $_numberPages = 1;
+  public $_numberPages = 1;
   /**
    * 
    * @access private 
    * @var boolean 
    */
-  protected $_userBreak = false;
+  public $_userBreak = false;
   /**
    * 
    * @access private 
    * @var array 
    */
-  protected $_xmlValues = null;
+  public $_xmlValues = null;
   /**
    * 
    * @access private 
    * @var array 
    */
-  protected $_xmlTags = null;
+  public $_xmlTags = null;
   /**
    * Read accessor to the ResultMessages.
    * Holds any additional message from the eBay system (e.g. Item->Add() will return a message, or Item->End() will return the end-time here)

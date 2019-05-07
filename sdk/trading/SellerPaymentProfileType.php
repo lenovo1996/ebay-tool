@@ -16,12 +16,12 @@ class SellerPaymentProfileType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $PaymentProfileID;
+	public $PaymentProfileID;
 
 	/**
 	* @var string
 	**/
-	protected $PaymentProfileName;
+	public $PaymentProfileName;
 
 
 	/**

@@ -28,12 +28,12 @@ class SellerReverseDisputeRequestType extends AbstractRequestType
 	/**
 	* @var DisputeIDType
 	**/
-	protected $DisputeID;
+	public $DisputeID;
 
 	/**
 	* @var DisputeResolutionReasonCodeType
 	**/
-	protected $DisputeResolutionReason;
+	public $DisputeResolutionReason;
 
 
 	/**

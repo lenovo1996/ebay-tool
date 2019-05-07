@@ -16,27 +16,27 @@ class DispatchTimeMaxDetailsType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $DispatchTimeMax;
+	public $DispatchTimeMax;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExtendedHandling;
+	public $ExtendedHandling;
 
 
 	/**

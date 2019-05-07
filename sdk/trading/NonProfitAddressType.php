@@ -17,42 +17,42 @@ class NonProfitAddressType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $AddressLine1;
+	public $AddressLine1;
 
 	/**
 	* @var string
 	**/
-	protected $AddressLine2;
+	public $AddressLine2;
 
 	/**
 	* @var string
 	**/
-	protected $City;
+	public $City;
 
 	/**
 	* @var string
 	**/
-	protected $State;
+	public $State;
 
 	/**
 	* @var string
 	**/
-	protected $ZipCode;
+	public $ZipCode;
 
 	/**
 	* @var decimal
 	**/
-	protected $Latitude;
+	public $Latitude;
 
 	/**
 	* @var decimal
 	**/
-	protected $Longitude;
+	public $Longitude;
 
 	/**
 	* @var AddressTypeCodeType
 	**/
-	protected $AddressType;
+	public $AddressType;
 
 
 	/**

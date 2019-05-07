@@ -19,7 +19,7 @@ class ReviseSellingManagerInventoryFolderRequestType extends AbstractRequestType
 	/**
 	* @var SellingManagerFolderDetailsType
 	**/
-	protected $Folder;
+	public $Folder;
 
 
 	/**

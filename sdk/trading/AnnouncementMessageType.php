@@ -17,17 +17,17 @@ class AnnouncementMessageType extends EbatNs_ComplexType
 	/**
 	* @var dateTime
 	**/
-	protected $AnnouncementStartTime;
+	public $AnnouncementStartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EventTime;
+	public $EventTime;
 
 	/**
 	* @var AnnouncementMessageCodeType
 	**/
-	protected $MessageType;
+	public $MessageType;
 
 
 	/**

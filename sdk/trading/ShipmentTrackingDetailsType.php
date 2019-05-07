@@ -18,17 +18,17 @@ class ShipmentTrackingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ShippingCarrierUsed;
+	public $ShippingCarrierUsed;
 
 	/**
 	* @var string
 	**/
-	protected $ShipmentTrackingNumber;
+	public $ShipmentTrackingNumber;
 
 	/**
 	* @var ShipmentLineItemType
 	**/
-	protected $ShipmentLineItem;
+	public $ShipmentLineItem;
 
 
 	/**

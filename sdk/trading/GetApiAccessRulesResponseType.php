@@ -17,7 +17,7 @@ class GetApiAccessRulesResponseType extends AbstractResponseType
 	/**
 	* @var ApiAccessRuleType
 	**/
-	protected $ApiAccessRule;
+	public $ApiAccessRule;
 
 
 	/**

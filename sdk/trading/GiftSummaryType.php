@@ -16,7 +16,7 @@ class GiftSummaryType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Message;
+	public $Message;
 
 
 	/**

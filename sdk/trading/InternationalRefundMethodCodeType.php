@@ -17,7 +17,7 @@ class InternationalRefundMethodCodeType extends EbatNs_ComplexType
 	/**
 	* @var ReturnsRefundMethodCodeType
 	**/
-	protected $InternationalRefundMethod;
+	public $InternationalRefundMethod;
 
 
 	/**

@@ -18,12 +18,12 @@ class VariationKeyType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $VariationSpecifics;
+	public $VariationSpecifics;
 
 
 	/**

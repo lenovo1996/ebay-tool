@@ -17,17 +17,17 @@ class AddMemberMessagesAAQToBidderRequestContainerType extends EbatNs_ComplexTyp
 	/**
 	* @var string
 	**/
-	protected $CorrelationID;
+	public $CorrelationID;
 
 	/**
 	* @var string
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var MemberMessageType
 	**/
-	protected $MemberMessage;
+	public $MemberMessage;
 
 
 	/**

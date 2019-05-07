@@ -18,17 +18,17 @@ class AddSellingManagerProductRequestType extends AbstractRequestType
 	/**
 	* @var SellingManagerProductDetailsType
 	**/
-	protected $SellingManagerProductDetails;
+	public $SellingManagerProductDetails;
 
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var SellingManagerProductSpecificsType
 	**/
-	protected $SellingManagerProductSpecifics;
+	public $SellingManagerProductSpecifics;
 
 
 	/**

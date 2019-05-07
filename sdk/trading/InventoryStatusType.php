@@ -19,22 +19,22 @@ class InventoryStatusType extends EbatNs_ComplexType
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $StartPrice;
+	public $StartPrice;
 
 	/**
 	* @var int
 	**/
-	protected $Quantity;
+	public $Quantity;
 
 
 	/**

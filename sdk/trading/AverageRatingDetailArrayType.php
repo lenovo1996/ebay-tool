@@ -17,7 +17,7 @@ class AverageRatingDetailArrayType extends EbatNs_ComplexType
 	/**
 	* @var AverageRatingDetailsType
 	**/
-	protected $AverageRatingDetails;
+	public $AverageRatingDetails;
 
 
 	/**

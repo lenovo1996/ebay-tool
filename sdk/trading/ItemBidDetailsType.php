@@ -18,27 +18,27 @@ class ItemBidDetailsType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var int
 	**/
-	protected $BidCount;
+	public $BidCount;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $SellerID;
+	public $SellerID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastBidTime;
+	public $LastBidTime;
 
 
 	/**

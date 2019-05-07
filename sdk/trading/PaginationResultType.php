@@ -20,12 +20,12 @@ class PaginationResultType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $TotalNumberOfPages;
+	public $TotalNumberOfPages;
 
 	/**
 	* @var int
 	**/
-	protected $TotalNumberOfEntries;
+	public $TotalNumberOfEntries;
 
 
 	/**

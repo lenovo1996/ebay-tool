@@ -18,27 +18,27 @@ class RefundFundingSourceType extends EbatNs_ComplexType
 	/**
 	* @var RefundingSourceTypeCodeType
 	**/
-	protected $RefundingSourceType;
+	public $RefundingSourceType;
 
 	/**
 	* @var string
 	**/
-	protected $AccountNumber;
+	public $AccountNumber;
 
 	/**
 	* @var AmountType
 	**/
-	protected $RefundAmount;
+	public $RefundAmount;
 
 	/**
 	* @var string
 	**/
-	protected $SellerExternalTransactionID;
+	public $SellerExternalTransactionID;
 
 	/**
 	* @var string
 	**/
-	protected $BuyerExternalTransactionID;
+	public $BuyerExternalTransactionID;
 
 
 	/**

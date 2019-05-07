@@ -18,22 +18,22 @@ class SellingManagerEmailLogType extends EbatNs_ComplexType
 	/**
 	* @var SellingManagerEmailTypeCodeType
 	**/
-	protected $EmailType;
+	public $EmailType;
 
 	/**
 	* @var string
 	**/
-	protected $CustomEmailName;
+	public $CustomEmailName;
 
 	/**
 	* @var SellingManagerEmailSentStatusCodeType
 	**/
-	protected $EmailState;
+	public $EmailState;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EventTime;
+	public $EventTime;
 
 
 	/**

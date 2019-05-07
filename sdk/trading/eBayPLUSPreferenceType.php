@@ -24,17 +24,17 @@ class eBayPLUSPreferenceType extends EbatNs_ComplexType
 	/**
 	* @var CountryCodeType
 	**/
-	protected $Country;
+	public $Country;
 
 	/**
 	* @var boolean
 	**/
-	protected $OptInStatus;
+	public $OptInStatus;
 
 	/**
 	* @var boolean
 	**/
-	protected $ListingPreference;
+	public $ListingPreference;
 
 
 	/**

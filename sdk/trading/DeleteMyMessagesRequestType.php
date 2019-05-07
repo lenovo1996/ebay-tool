@@ -18,12 +18,12 @@ class DeleteMyMessagesRequestType extends AbstractRequestType
 	/**
 	* @var MyMessagesAlertIDArrayType
 	**/
-	protected $AlertIDs;
+	public $AlertIDs;
 
 	/**
 	* @var MyMessagesMessageIDArrayType
 	**/
-	protected $MessageIDs;
+	public $MessageIDs;
 
 
 	/**

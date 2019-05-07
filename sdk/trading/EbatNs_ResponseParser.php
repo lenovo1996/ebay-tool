@@ -22,41 +22,41 @@ define('EBATNS_PSTATENOT_IN_RESPONSE', 3);
 
 class EbatNs_ResponseParser
 {
-    protected $_client;
+    public $_client;
 
-    protected $_options;
+    public $_options;
 
-    protected $_responseObject = null;
+    public $_responseObject = null;
 
-    protected $_waitForResponseTag = null;
+    public $_waitForResponseTag = null;
 
-    protected $_responseTypeName = null;
+    public $_responseTypeName = null;
 
-    protected $_inResponse = false;
+    public $_inResponse = false;
 
-    protected $_stData = array();
+    public $_stData = array();
 
-    protected $_stValue = array();
+    public $_stValue = array();
 
-    protected $_stMap = array();
+    public $_stMap = array();
 
-    protected $_depth = 0;
+    public $_depth = 0;
 
-    protected $_typeNs = null;
+    public $_typeNs = null;
 
-    protected $_typeMap = array();
+    public $_typeMap = array();
 
-    protected $_hasFault = false;
+    public $_hasFault = false;
 
-    protected $_hasError = false;
+    public $_hasError = false;
 
-    protected $_parseMode = EBATNS_PARSEMODE_CALL;
+    public $_parseMode = EBATNS_PARSEMODE_CALL;
 
-    protected $_tmpNotificationSignature = null;
+    public $_tmpNotificationSignature = null;
 
-    protected $_notificationParseState = EBATNS_PSTATENOT_INITIAL;
+    public $_notificationParseState = EBATNS_PSTATENOT_INITIAL;
 
-    protected $_extensionPrefix = null;
+    public $_extensionPrefix = null;
 
     function __construct ($client, $typeNs, $options = null)
     {
@@ -117,7 +117,7 @@ class EbatNs_ResponseParser
         return (class_exists($typeName));
     }
 
-    protected function _makeValue ($typeName)
+    public function _makeValue ($typeName)
     {
         if ($this->_includeType($typeName))
         {

@@ -20,7 +20,7 @@ class EbatNsCsSetExt_AttributeSetArrayType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_AttributeSetType
 	 */
-	protected $AttributeSet;
+	public $AttributeSet;
 
 	/**
 	 * @return EbatNsCsSetExt_AttributeSetType

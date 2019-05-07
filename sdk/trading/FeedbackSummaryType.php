@@ -23,62 +23,62 @@ class FeedbackSummaryType extends EbatNs_ComplexType
 	/**
 	* @var FeedbackPeriodArrayType
 	**/
-	protected $BidRetractionFeedbackPeriodArray;
+	public $BidRetractionFeedbackPeriodArray;
 
 	/**
 	* @var FeedbackPeriodArrayType
 	**/
-	protected $NegativeFeedbackPeriodArray;
+	public $NegativeFeedbackPeriodArray;
 
 	/**
 	* @var FeedbackPeriodArrayType
 	**/
-	protected $NeutralFeedbackPeriodArray;
+	public $NeutralFeedbackPeriodArray;
 
 	/**
 	* @var FeedbackPeriodArrayType
 	**/
-	protected $PositiveFeedbackPeriodArray;
+	public $PositiveFeedbackPeriodArray;
 
 	/**
 	* @var FeedbackPeriodArrayType
 	**/
-	protected $TotalFeedbackPeriodArray;
+	public $TotalFeedbackPeriodArray;
 
 	/**
 	* @var int
 	**/
-	protected $NeutralCommentCountFromSuspendedUsers;
+	public $NeutralCommentCountFromSuspendedUsers;
 
 	/**
 	* @var int
 	**/
-	protected $UniqueNegativeFeedbackCount;
+	public $UniqueNegativeFeedbackCount;
 
 	/**
 	* @var int
 	**/
-	protected $UniquePositiveFeedbackCount;
+	public $UniquePositiveFeedbackCount;
 
 	/**
 	* @var int
 	**/
-	protected $UniqueNeutralFeedbackCount;
+	public $UniqueNeutralFeedbackCount;
 
 	/**
 	* @var SellerRatingSummaryArrayType
 	**/
-	protected $SellerRatingSummaryArray;
+	public $SellerRatingSummaryArray;
 
 	/**
 	* @var SellerRoleMetricsType
 	**/
-	protected $SellerRoleMetrics;
+	public $SellerRoleMetrics;
 
 	/**
 	* @var BuyerRoleMetricsType
 	**/
-	protected $BuyerRoleMetrics;
+	public $BuyerRoleMetrics;
 
 
 	/**

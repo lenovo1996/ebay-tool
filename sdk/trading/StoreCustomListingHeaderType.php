@@ -18,32 +18,32 @@ class StoreCustomListingHeaderType extends EbatNs_ComplexType
 	/**
 	* @var StoreCustomListingHeaderDisplayCodeType
 	**/
-	protected $DisplayType;
+	public $DisplayType;
 
 	/**
 	* @var boolean
 	**/
-	protected $Logo;
+	public $Logo;
 
 	/**
 	* @var boolean
 	**/
-	protected $SearchBox;
+	public $SearchBox;
 
 	/**
 	* @var StoreCustomListingHeaderLinkType
 	**/
-	protected $LinkToInclude;
+	public $LinkToInclude;
 
 	/**
 	* @var boolean
 	**/
-	protected $AddToFavoriteStores;
+	public $AddToFavoriteStores;
 
 	/**
 	* @var boolean
 	**/
-	protected $SignUpForStoreNewsletter;
+	public $SignUpForStoreNewsletter;
 
 
 	/**

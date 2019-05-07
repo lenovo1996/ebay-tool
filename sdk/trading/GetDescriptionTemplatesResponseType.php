@@ -18,32 +18,32 @@ class GetDescriptionTemplatesResponseType extends AbstractResponseType
 	/**
 	* @var DescriptionTemplateType
 	**/
-	protected $DescriptionTemplate;
+	public $DescriptionTemplate;
 
 	/**
 	* @var int
 	**/
-	protected $LayoutTotal;
+	public $LayoutTotal;
 
 	/**
 	* @var int
 	**/
-	protected $ObsoleteLayoutID;
+	public $ObsoleteLayoutID;
 
 	/**
 	* @var int
 	**/
-	protected $ObsoleteThemeID;
+	public $ObsoleteThemeID;
 
 	/**
 	* @var ThemeGroupType
 	**/
-	protected $ThemeGroup;
+	public $ThemeGroup;
 
 	/**
 	* @var int
 	**/
-	protected $ThemeTotal;
+	public $ThemeTotal;
 
 
 	/**

@@ -17,27 +17,27 @@ class ExcludeShippingLocationDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var string
 	**/
-	protected $Location;
+	public $Location;
 
 	/**
 	* @var string
 	**/
-	protected $Region;
+	public $Region;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

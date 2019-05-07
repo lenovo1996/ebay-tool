@@ -17,27 +17,27 @@ class SellingManagerTemplateDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 	/**
 	* @var string
 	**/
-	protected $SaleTemplateName;
+	public $SaleTemplateName;
 
 	/**
 	* @var float
 	**/
-	protected $SuccessPercent;
+	public $SuccessPercent;
 
 	/**
 	* @var SellingManagerProductDetailsType
 	**/
-	protected $SellingManagerProductDetails;
+	public $SellingManagerProductDetails;
 
 	/**
 	* @var ItemType
 	**/
-	protected $Template;
+	public $Template;
 
 
 	/**

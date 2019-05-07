@@ -18,7 +18,7 @@ class ProductDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ProductIdentifierUnavailableText;
+	public $ProductIdentifierUnavailableText;
 
 
 	/**

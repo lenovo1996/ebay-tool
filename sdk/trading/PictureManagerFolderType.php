@@ -17,17 +17,17 @@ class PictureManagerFolderType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var PictureManagerPictureType
 	**/
-	protected $Picture;
+	public $Picture;
 
 
 	/**

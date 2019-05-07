@@ -17,7 +17,7 @@ class CharityAffiliationDetailsType extends EbatNs_ComplexType
 	/**
 	* @var CharityAffiliationDetailType
 	**/
-	protected $CharityAffiliationDetail;
+	public $CharityAffiliationDetail;
 
 
 	/**

@@ -20,7 +20,7 @@ class EbatNsCsSetExt_InitialType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_RowType
 	 */
-	protected $Row;
+	public $Row;
 
 	/**
 	 * @return EbatNsCsSetExt_RowType

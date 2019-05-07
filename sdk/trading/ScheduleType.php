@@ -16,12 +16,12 @@ class ScheduleType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $ScheduleID;
+	public $ScheduleID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ScheduleTime;
+	public $ScheduleTime;
 
 
 	/**

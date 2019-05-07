@@ -20,17 +20,17 @@ class SellingManagerAutoListType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $SourceSaleTemplateID;
+	public $SourceSaleTemplateID;
 
 	/**
 	* @var SellingManagerAutoListMinActiveItemsType
 	**/
-	protected $KeepMinActive;
+	public $KeepMinActive;
 
 	/**
 	* @var SellingManagerAutoListAccordingToScheduleType
 	**/
-	protected $ListAccordingToSchedule;
+	public $ListAccordingToSchedule;
 
 
 	/**

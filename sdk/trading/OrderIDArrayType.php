@@ -17,7 +17,7 @@ class OrderIDArrayType extends EbatNs_ComplexType
 	/**
 	* @var OrderIDType
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 
 	/**

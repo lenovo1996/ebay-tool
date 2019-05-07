@@ -19,12 +19,12 @@ class UnpaidItemType extends EbatNs_ComplexType
 	/**
 	* @var UnpaidItemCaseStatusTypeCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var UnpaidItemCaseOpenTypeCodeType
 	**/
-	protected $Type;
+	public $Type;
 
 
 	/**

@@ -17,12 +17,12 @@ class ShippingServicePackageDetailsType extends EbatNs_ComplexType
 	/**
 	* @var ShippingPackageCodeType
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var boolean
 	**/
-	protected $DimensionsRequired;
+	public $DimensionsRequired;
 
 
 	/**

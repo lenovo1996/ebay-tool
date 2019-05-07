@@ -53,8 +53,8 @@
  */
 class EbatNs_MapExpression
 {
-	protected $_expression;
-	protected $_mapper;
+	public $_expression;
+	public $_mapper;
 
 	/**
 	 * EbatNs_MapExpression::EbatNs_MapExpression()
@@ -279,16 +279,16 @@ class EbatNs_MapExpression
  */
 class EbatNs_MapTarget
 {
-	protected $_mapper;
+	public $_mapper;
 
-	protected $_targetObject;
+	public $_targetObject;
 
-	protected $_targetName;
-	protected $_targetIsArray;
-	protected $_targetIndex;
+	public $_targetName;
+	public $_targetIsArray;
+	public $_targetIndex;
 
-	protected $_targetIsLocal;
-	protected $_localName;
+	public $_targetIsLocal;
+	public $_localName;
 
 	/**
 	 * EbatNs_MapTarget::EbatNs_MapTarget()
@@ -460,9 +460,9 @@ class EbatNs_MapTarget
  */
 class EbatNs_MapMapping
 {
-	protected $_EbatNs_MapTarget;
-	protected $_EbatNs_MapExpression;
-	protected $_mapper;
+	public $_EbatNs_MapTarget;
+	public $_EbatNs_MapExpression;
+	public $_mapper;
 
 	/**
 	 * EbatNs_MapMapping::EbatNs_MapMapping()
@@ -519,15 +519,15 @@ class EbatNs_MapMapping
  */
 class EbatNs_LegacyMapper
 {
-	protected $_mappings;
-	protected $_src;
-	protected $_data;
+	public $_mappings;
+	public $_src;
+	public $_data;
 
-	protected $_destObject;
+	public $_destObject;
 
-	protected $_locals = null;
-	protected $_valueMap;
-	protected $_isValid = false;
+	public $_locals = null;
+	public $_valueMap;
+	public $_isValid = false;
 	
 
 	/**

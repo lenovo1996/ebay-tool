@@ -16,12 +16,12 @@ class GetClientAlertsAuthTokenResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $ClientAlertsAuthToken;
+	public $ClientAlertsAuthToken;
 
 	/**
 	* @var dateTime
 	**/
-	protected $HardExpirationTime;
+	public $HardExpirationTime;
 
 
 	/**

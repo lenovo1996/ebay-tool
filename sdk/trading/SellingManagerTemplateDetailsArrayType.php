@@ -17,7 +17,7 @@ class SellingManagerTemplateDetailsArrayType extends EbatNs_ComplexType
 	/**
 	* @var SellingManagerTemplateDetailsType
 	**/
-	protected $SellingManagerTemplateDetails;
+	public $SellingManagerTemplateDetails;
 
 
 	/**

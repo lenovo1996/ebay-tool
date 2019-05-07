@@ -16,12 +16,12 @@ class ProductFinderConstraintType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $DisplayName;
+	public $DisplayName;
 
 	/**
 	* @var string
 	**/
-	protected $DisplayValue;
+	public $DisplayValue;
 
 
 	/**

@@ -21,12 +21,12 @@ class DisputeFilterCountType extends EbatNs_ComplexType
 	/**
 	* @var DisputeFilterTypeCodeType
 	**/
-	protected $DisputeFilterType;
+	public $DisputeFilterType;
 
 	/**
 	* @var int
 	**/
-	protected $TotalAvailable;
+	public $TotalAvailable;
 
 
 	/**

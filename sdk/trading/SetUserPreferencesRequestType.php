@@ -25,77 +25,77 @@ class SetUserPreferencesRequestType extends AbstractRequestType
 	/**
 	* @var BidderNoticePreferencesType
 	**/
-	protected $BidderNoticePreferences;
+	public $BidderNoticePreferences;
 
 	/**
 	* @var CombinedPaymentPreferencesType
 	**/
-	protected $CombinedPaymentPreferences;
+	public $CombinedPaymentPreferences;
 
 	/**
 	* @var CrossPromotionPreferencesType
 	**/
-	protected $CrossPromotionPreferences;
+	public $CrossPromotionPreferences;
 
 	/**
 	* @var SellerPaymentPreferencesType
 	**/
-	protected $SellerPaymentPreferences;
+	public $SellerPaymentPreferences;
 
 	/**
 	* @var SellerFavoriteItemPreferencesType
 	**/
-	protected $SellerFavoriteItemPreferences;
+	public $SellerFavoriteItemPreferences;
 
 	/**
 	* @var EndOfAuctionEmailPreferencesType
 	**/
-	protected $EndOfAuctionEmailPreferences;
+	public $EndOfAuctionEmailPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $EmailShipmentTrackingNumberPreference;
+	public $EmailShipmentTrackingNumberPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $RequiredShipPhoneNumberPreference;
+	public $RequiredShipPhoneNumberPreference;
 
 	/**
 	* @var UnpaidItemAssistancePreferencesType
 	**/
-	protected $UnpaidItemAssistancePreferences;
+	public $UnpaidItemAssistancePreferences;
 
 	/**
 	* @var PurchaseReminderEmailPreferencesType
 	**/
-	protected $PurchaseReminderEmailPreferences;
+	public $PurchaseReminderEmailPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $SellerThirdPartyCheckoutDisabled;
+	public $SellerThirdPartyCheckoutDisabled;
 
 	/**
 	* @var DispatchCutoffTimePreferencesType
 	**/
-	protected $DispatchCutoffTimePreference;
+	public $DispatchCutoffTimePreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $GlobalShippingProgramListingPreference;
+	public $GlobalShippingProgramListingPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $OverrideGSPserviceWithIntlService;
+	public $OverrideGSPserviceWithIntlService;
 
 	/**
 	* @var boolean
 	**/
-	protected $OutOfStockControlPreference;
+	public $OutOfStockControlPreference;
 
 
 	/**

@@ -16,17 +16,17 @@ class XSLFileType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $FileName;
+	public $FileName;
 
 	/**
 	* @var string
 	**/
-	protected $FileVersion;
+	public $FileVersion;
 
 	/**
 	* @var string
 	**/
-	protected $FileContent;
+	public $FileContent;
 
 
 	/**

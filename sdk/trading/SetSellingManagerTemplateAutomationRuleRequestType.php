@@ -31,22 +31,22 @@ class SetSellingManagerTemplateAutomationRuleRequestType extends AbstractRequest
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 	/**
 	* @var SellingManagerAutoListType
 	**/
-	protected $AutomatedListingRule;
+	public $AutomatedListingRule;
 
 	/**
 	* @var SellingManagerAutoRelistType
 	**/
-	protected $AutomatedRelistingRule;
+	public $AutomatedRelistingRule;
 
 	/**
 	* @var SellingManagerAutoSecondChanceOfferType
 	**/
-	protected $AutomatedSecondChanceOfferRule;
+	public $AutomatedSecondChanceOfferRule;
 
 
 	/**

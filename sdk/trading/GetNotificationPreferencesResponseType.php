@@ -20,27 +20,27 @@ class GetNotificationPreferencesResponseType extends AbstractResponseType
 	/**
 	* @var ApplicationDeliveryPreferencesType
 	**/
-	protected $ApplicationDeliveryPreferences;
+	public $ApplicationDeliveryPreferences;
 
 	/**
 	* @var string
 	**/
-	protected $DeliveryURLName;
+	public $DeliveryURLName;
 
 	/**
 	* @var NotificationEnableArrayType
 	**/
-	protected $UserDeliveryPreferenceArray;
+	public $UserDeliveryPreferenceArray;
 
 	/**
 	* @var NotificationUserDataType
 	**/
-	protected $UserData;
+	public $UserData;
 
 	/**
 	* @var NotificationEventPropertyType
 	**/
-	protected $EventProperty;
+	public $EventProperty;
 
 
 	/**

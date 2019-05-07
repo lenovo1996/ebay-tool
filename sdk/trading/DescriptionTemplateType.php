@@ -17,32 +17,32 @@ class DescriptionTemplateType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $GroupID;
+	public $GroupID;
 
 	/**
 	* @var int
 	**/
-	protected $ID;
+	public $ID;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ImageURL;
+	public $ImageURL;
 
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var string
 	**/
-	protected $TemplateXML;
+	public $TemplateXML;
 
 	/**
 	* @var DescriptionTemplateCodeType
 	**/
-	protected $Type;
+	public $Type;
 
 
 	/**

@@ -16,17 +16,17 @@ class BotBlockResponseType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $BotBlockToken;
+	public $BotBlockToken;
 
 	/**
 	* @var string
 	**/
-	protected $BotBlockUrl;
+	public $BotBlockUrl;
 
 	/**
 	* @var string
 	**/
-	protected $BotBlockAudioUrl;
+	public $BotBlockAudioUrl;
 
 
 	/**

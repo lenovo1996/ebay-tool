@@ -22,31 +22,31 @@ class EbatNsCsSetExt_CharacteristicsSetType extends EbatNs_ComplexType
 	/**
 	 * @var string
 	 */
-	protected $Name;
+	public $Name;
 	/**
 	 * @var int
 	 */
-	protected $AttributeSetID;
+	public $AttributeSetID;
 	/**
 	 * @var string
 	 */
-	protected $AttributeSetVersion;
+	public $AttributeSetVersion;
 	/**
 	 * @var EbatNsCsSetExt_CharacteristicType
 	 */
-	protected $Characteristics;
+	public $Characteristics;
 	/**
 	 * @var string
 	 */
-	protected $DomainName;
+	public $DomainName;
 	/**
 	 * @var EbatNsCsSetExt_CharacteristicsListType
 	 */
-	protected $CharacteristicsList;
+	public $CharacteristicsList;
 	/**
 	 * @var EbatNsCsSetExt_PresentationInstructionType
 	 */
-	protected $PresentationInstruction;
+	public $PresentationInstruction;
 
 	/**
 	 * @return string

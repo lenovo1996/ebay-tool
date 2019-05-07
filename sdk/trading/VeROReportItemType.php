@@ -19,42 +19,42 @@ class VeROReportItemType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var long
 	**/
-	protected $VeROReasonCodeID;
+	public $VeROReasonCodeID;
 
 	/**
 	* @var string
 	**/
-	protected $MessageToSeller;
+	public $MessageToSeller;
 
 	/**
 	* @var boolean
 	**/
-	protected $CopyEmailToRightsOwner;
+	public $CopyEmailToRightsOwner;
 
 	/**
 	* @var ShippingRegionCodeType
 	**/
-	protected $Region;
+	public $Region;
 
 	/**
 	* @var CountryCodeType
 	**/
-	protected $Country;
+	public $Country;
 
 	/**
 	* @var string
 	**/
-	protected $Patent;
+	public $Patent;
 
 	/**
 	* @var string
 	**/
-	protected $DetailedMessage;
+	public $DetailedMessage;
 
 
 	/**

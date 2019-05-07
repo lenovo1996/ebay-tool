@@ -19,32 +19,32 @@ class NameRecommendationType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var RecommendationValidationRulesType
 	**/
-	protected $ValidationRules;
+	public $ValidationRules;
 
 	/**
 	* @var ValueRecommendationType
 	**/
-	protected $ValueRecommendation;
+	public $ValueRecommendation;
 
 	/**
 	* @var anyURI
 	**/
-	protected $HelpURL;
+	public $HelpURL;
 
 	/**
 	* @var ItemSpecificSourceCodeType
 	**/
-	protected $Source;
+	public $Source;
 
 	/**
 	* @var string
 	**/
-	protected $HelpText;
+	public $HelpText;
 
 
 	/**

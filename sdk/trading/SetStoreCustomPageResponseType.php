@@ -18,7 +18,7 @@ class SetStoreCustomPageResponseType extends AbstractResponseType
 	/**
 	* @var StoreCustomPageType
 	**/
-	protected $CustomPage;
+	public $CustomPage;
 
 
 	/**

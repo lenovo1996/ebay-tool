@@ -21,42 +21,42 @@ class AddTransactionConfirmationItemRequestType extends AbstractRequestType
 	/**
 	* @var UserIDType
 	**/
-	protected $RecipientUserID;
+	public $RecipientUserID;
 
 	/**
 	* @var string
 	**/
-	protected $VerifyEligibilityOnly;
+	public $VerifyEligibilityOnly;
 
 	/**
 	* @var string
 	**/
-	protected $RecipientPostalCode;
+	public $RecipientPostalCode;
 
 	/**
 	* @var RecipientRelationCodeType
 	**/
-	protected $RecipientRelationType;
+	public $RecipientRelationType;
 
 	/**
 	* @var AmountType
 	**/
-	protected $NegotiatedPrice;
+	public $NegotiatedPrice;
 
 	/**
 	* @var SecondChanceOfferDurationCodeType
 	**/
-	protected $ListingDuration;
+	public $ListingDuration;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $Comments;
+	public $Comments;
 
 
 	/**

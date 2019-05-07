@@ -23,82 +23,82 @@ class SellingManagerOrderStatusType extends EbatNs_ComplexType
 	/**
 	* @var CheckoutStatusCodeType
 	**/
-	protected $CheckoutStatus;
+	public $CheckoutStatus;
 
 	/**
 	* @var SellingManagerPaidStatusCodeType
 	**/
-	protected $PaidStatus;
+	public $PaidStatus;
 
 	/**
 	* @var SellingManagerShippedStatusCodeType
 	**/
-	protected $ShippedStatus;
+	public $ShippedStatus;
 
 	/**
 	* @var PaymentStatusCodeType
 	**/
-	protected $eBayPaymentStatus;
+	public $eBayPaymentStatus;
 
 	/**
 	* @var string
 	**/
-	protected $PayPalTransactionID;
+	public $PayPalTransactionID;
 
 	/**
 	* @var BuyerPaymentMethodCodeType
 	**/
-	protected $PaymentMethodUsed;
+	public $PaymentMethodUsed;
 
 	/**
 	* @var CommentTypeCodeType
 	**/
-	protected $FeedbackReceived;
+	public $FeedbackReceived;
 
 	/**
 	* @var boolean
 	**/
-	protected $FeedbackSent;
+	public $FeedbackSent;
 
 	/**
 	* @var int
 	**/
-	protected $TotalEmailsSent;
+	public $TotalEmailsSent;
 
 	/**
 	* @var PaymentHoldStatusCodeType
 	**/
-	protected $PaymentHoldStatus;
+	public $PaymentHoldStatus;
 
 	/**
 	* @var string
 	**/
-	protected $SellerInvoiceNumber;
+	public $SellerInvoiceNumber;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ShippedTime;
+	public $ShippedTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $PaidTime;
+	public $PaidTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastEmailSentTime;
+	public $LastEmailSentTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $SellerInvoiceTime;
+	public $SellerInvoiceTime;
 
 	/**
 	* @var boolean
 	**/
-	protected $IntegratedMerchantCreditCardEnabled;
+	public $IntegratedMerchantCreditCardEnabled;
 
 
 	/**

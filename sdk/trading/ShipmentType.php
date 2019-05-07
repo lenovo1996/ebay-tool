@@ -29,142 +29,142 @@ class ShipmentType extends EbatNs_ComplexType
 	/**
 	* @var dateTime
 	**/
-	protected $EstimatedDeliveryDate;
+	public $EstimatedDeliveryDate;
 
 	/**
 	* @var AmountType
 	**/
-	protected $InsuredValue;
+	public $InsuredValue;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $PackageDepth;
+	public $PackageDepth;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $PackageLength;
+	public $PackageLength;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $PackageWidth;
+	public $PackageWidth;
 
 	/**
 	* @var string
 	**/
-	protected $PayPalShipmentID;
+	public $PayPalShipmentID;
 
 	/**
 	* @var long
 	**/
-	protected $ShipmentID;
+	public $ShipmentID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $PostageTotal;
+	public $PostageTotal;
 
 	/**
 	* @var dateTime
 	**/
-	protected $PrintedTime;
+	public $PrintedTime;
 
 	/**
 	* @var AddressType
 	**/
-	protected $ShipFromAddress;
+	public $ShipFromAddress;
 
 	/**
 	* @var AddressType
 	**/
-	protected $ShippingAddress;
+	public $ShippingAddress;
 
 	/**
 	* @var string
 	**/
-	protected $ShippingCarrierUsed;
+	public $ShippingCarrierUsed;
 
 	/**
 	* @var ShippingFeatureCodeType
 	**/
-	protected $ShippingFeature;
+	public $ShippingFeature;
 
 	/**
 	* @var ShippingPackageCodeType
 	**/
-	protected $ShippingPackage;
+	public $ShippingPackage;
 
 	/**
 	* @var token
 	**/
-	protected $ShippingServiceUsed;
+	public $ShippingServiceUsed;
 
 	/**
 	* @var string
 	**/
-	protected $ShipmentTrackingNumber;
+	public $ShipmentTrackingNumber;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $WeightMajor;
+	public $WeightMajor;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $WeightMinor;
+	public $WeightMinor;
 
 	/**
 	* @var ItemTransactionIDType
 	**/
-	protected $ItemTransactionID;
+	public $ItemTransactionID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $DeliveryDate;
+	public $DeliveryDate;
 
 	/**
 	* @var ShipmentDeliveryStatusCodeType
 	**/
-	protected $DeliveryStatus;
+	public $DeliveryStatus;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RefundGrantedTime;
+	public $RefundGrantedTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RefundRequestedTime;
+	public $RefundRequestedTime;
 
 	/**
 	* @var ShipmentStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ShippedTime;
+	public $ShippedTime;
 
 	/**
 	* @var string
 	**/
-	protected $Notes;
+	public $Notes;
 
 	/**
 	* @var ShipmentTrackingDetailsType
 	**/
-	protected $ShipmentTrackingDetails;
+	public $ShipmentTrackingDetails;
 
 	/**
 	* @var ShipmentLineItemType
 	**/
-	protected $ShipmentLineItem;
+	public $ShipmentLineItem;
 
 
 	/**

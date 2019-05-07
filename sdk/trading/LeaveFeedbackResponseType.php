@@ -16,7 +16,7 @@ class LeaveFeedbackResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $FeedbackID;
+	public $FeedbackID;
 
 
 	/**

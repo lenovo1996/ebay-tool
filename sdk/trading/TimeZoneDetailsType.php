@@ -17,42 +17,42 @@ class TimeZoneDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $TimeZoneID;
+	public $TimeZoneID;
 
 	/**
 	* @var string
 	**/
-	protected $StandardLabel;
+	public $StandardLabel;
 
 	/**
 	* @var string
 	**/
-	protected $StandardOffset;
+	public $StandardOffset;
 
 	/**
 	* @var string
 	**/
-	protected $DaylightSavingsLabel;
+	public $DaylightSavingsLabel;
 
 	/**
 	* @var string
 	**/
-	protected $DaylightSavingsOffset;
+	public $DaylightSavingsOffset;
 
 	/**
 	* @var boolean
 	**/
-	protected $DaylightSavingsInEffect;
+	public $DaylightSavingsInEffect;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

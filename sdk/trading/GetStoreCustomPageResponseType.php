@@ -17,7 +17,7 @@ class GetStoreCustomPageResponseType extends AbstractResponseType
 	/**
 	* @var StoreCustomPageArrayType
 	**/
-	protected $CustomPageArray;
+	public $CustomPageArray;
 
 
 	/**

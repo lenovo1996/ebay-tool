@@ -17,17 +17,17 @@ class GetCategorySpecificsResponseType extends AbstractResponseType
 	/**
 	* @var RecommendationsType
 	**/
-	protected $Recommendations;
+	public $Recommendations;
 
 	/**
 	* @var string
 	**/
-	protected $TaskReferenceID;
+	public $TaskReferenceID;
 
 	/**
 	* @var string
 	**/
-	protected $FileReferenceID;
+	public $FileReferenceID;
 
 
 	/**

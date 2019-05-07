@@ -22,47 +22,47 @@ class GetMemberMessagesRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var MessageTypeCodeType
 	**/
-	protected $MailMessageType;
+	public $MailMessageType;
 
 	/**
 	* @var MessageStatusTypeCodeType
 	**/
-	protected $MessageStatus;
+	public $MessageStatus;
 
 	/**
 	* @var boolean
 	**/
-	protected $DisplayToPublic;
+	public $DisplayToPublic;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartCreationTime;
+	public $StartCreationTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndCreationTime;
+	public $EndCreationTime;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var string
 	**/
-	protected $MemberMessageID;
+	public $MemberMessageID;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $SenderID;
+	public $SenderID;
 
 
 	/**

@@ -17,7 +17,7 @@ class PaymentsInformationCodeType extends EbatNs_ComplexType
 	/**
 	* @var PaymentInformationCodeType
 	**/
-	protected $Payments;
+	public $Payments;
 
 
 	/**

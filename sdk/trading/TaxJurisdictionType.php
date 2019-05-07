@@ -16,32 +16,32 @@ class TaxJurisdictionType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $JurisdictionID;
+	public $JurisdictionID;
 
 	/**
 	* @var float
 	**/
-	protected $SalesTaxPercent;
+	public $SalesTaxPercent;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShippingIncludedInTax;
+	public $ShippingIncludedInTax;
 
 	/**
 	* @var string
 	**/
-	protected $JurisdictionName;
+	public $JurisdictionName;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

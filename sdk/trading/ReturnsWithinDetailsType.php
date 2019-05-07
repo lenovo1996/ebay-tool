@@ -19,12 +19,12 @@ class ReturnsWithinDetailsType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $ReturnsWithinOption;
+	public $ReturnsWithinOption;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 
 	/**

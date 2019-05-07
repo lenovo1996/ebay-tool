@@ -19,57 +19,57 @@ class CatalogProductType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Title;
+	public $Title;
 
 	/**
 	* @var anyURI
 	**/
-	protected $DetailsURL;
+	public $DetailsURL;
 
 	/**
 	* @var anyURI
 	**/
-	protected $StockPhotoURL;
+	public $StockPhotoURL;
 
 	/**
 	* @var boolean
 	**/
-	protected $DisplayStockPhotos;
+	public $DisplayStockPhotos;
 
 	/**
 	* @var int
 	**/
-	protected $ItemCount;
+	public $ItemCount;
 
 	/**
 	* @var long
 	**/
-	protected $ProductReferenceID;
+	public $ProductReferenceID;
 
 	/**
 	* @var int
 	**/
-	protected $AttributeSetID;
+	public $AttributeSetID;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $ItemSpecifics;
+	public $ItemSpecifics;
 
 	/**
 	* @var int
 	**/
-	protected $ReviewCount;
+	public $ReviewCount;
 
 	/**
 	* @var ReviewDetailsType
 	**/
-	protected $ReviewDetails;
+	public $ReviewDetails;
 
 	/**
 	* @var ProductStateCodeType
 	**/
-	protected $ProductState;
+	public $ProductState;
 
 
 	/**

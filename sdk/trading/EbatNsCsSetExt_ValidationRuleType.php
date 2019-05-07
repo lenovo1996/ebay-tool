@@ -20,23 +20,23 @@ class EbatNsCsSetExt_ValidationRuleType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_ValType
 	 */
-	protected $Value;
+	public $Value;
 	/**
 	 * @var int
 	 */
-	protected $Length;
+	public $Length;
 	/**
 	 * @var string
 	 */
-	protected $Name;
+	public $Name;
 	/**
 	 * @var int
 	 */
-	protected $Max;
+	public $Max;
 	/**
 	 * @var int
 	 */
-	protected $Min;
+	public $Min;
 
 	/**
 	 * @return EbatNsCsSetExt_ValType

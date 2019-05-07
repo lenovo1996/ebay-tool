@@ -19,57 +19,57 @@ class GetSellerEventsRequestType extends AbstractRequestType
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTimeFrom;
+	public $StartTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTimeTo;
+	public $StartTimeTo;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTimeFrom;
+	public $EndTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTimeTo;
+	public $EndTimeTo;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeFrom;
+	public $ModTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeTo;
+	public $ModTimeTo;
 
 	/**
 	* @var boolean
 	**/
-	protected $NewItemFilter;
+	public $NewItemFilter;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeWatchCount;
+	public $IncludeWatchCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeVariationSpecifics;
+	public $IncludeVariationSpecifics;
 
 	/**
 	* @var boolean
 	**/
-	protected $HideVariations;
+	public $HideVariations;
 
 
 	/**

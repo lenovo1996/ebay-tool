@@ -19,7 +19,7 @@ class PromotionalSaleArrayType extends EbatNs_ComplexType
 	/**
 	* @var PromotionalSaleType
 	**/
-	protected $PromotionalSale;
+	public $PromotionalSale;
 
 
 	/**

@@ -18,12 +18,12 @@ class AddToWatchListRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var VariationKeyType
 	**/
-	protected $VariationKey;
+	public $VariationKey;
 
 
 	/**

@@ -18,17 +18,17 @@ class NotificationEventPropertyType extends EbatNs_ComplexType
 	/**
 	* @var NotificationEventTypeCodeType
 	**/
-	protected $EventType;
+	public $EventType;
 
 	/**
 	* @var NotificationEventPropertyNameCodeType
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var string
 	**/
-	protected $Value;
+	public $Value;
 
 
 	/**

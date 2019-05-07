@@ -17,7 +17,7 @@ class EndItemsRequestType extends AbstractRequestType
 	/**
 	* @var EndItemRequestContainerType
 	**/
-	protected $EndItemRequestContainer;
+	public $EndItemRequestContainer;
 
 
 	/**

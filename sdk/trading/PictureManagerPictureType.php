@@ -17,22 +17,22 @@ class PictureManagerPictureType extends EbatNs_ComplexType
 	/**
 	* @var anyURI
 	**/
-	protected $PictureURL;
+	public $PictureURL;
 
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var dateTime
 	**/
-	protected $Date;
+	public $Date;
 
 	/**
 	* @var PictureManagerPictureDisplayType
 	**/
-	protected $DisplayFormat;
+	public $DisplayFormat;
 
 
 	/**

@@ -16,17 +16,17 @@ class SearchDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $BuyItNowEnabled;
+	public $BuyItNowEnabled;
 
 	/**
 	* @var boolean
 	**/
-	protected $Picture;
+	public $Picture;
 
 	/**
 	* @var boolean
 	**/
-	protected $RecentListing;
+	public $RecentListing;
 
 
 	/**

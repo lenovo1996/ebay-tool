@@ -16,32 +16,32 @@ class ValidateTestUserRegistrationRequestType extends AbstractRequestType
 	/**
 	* @var int
 	**/
-	protected $FeedbackScore;
+	public $FeedbackScore;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RegistrationDate;
+	public $RegistrationDate;
 
 	/**
 	* @var boolean
 	**/
-	protected $SubscribeSA;
+	public $SubscribeSA;
 
 	/**
 	* @var boolean
 	**/
-	protected $SubscribeSAPro;
+	public $SubscribeSAPro;
 
 	/**
 	* @var boolean
 	**/
-	protected $SubscribeSM;
+	public $SubscribeSM;
 
 	/**
 	* @var boolean
 	**/
-	protected $SubscribeSMPro;
+	public $SubscribeSMPro;
 
 
 	/**

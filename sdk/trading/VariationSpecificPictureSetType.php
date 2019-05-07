@@ -20,27 +20,27 @@ class VariationSpecificPictureSetType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $VariationSpecificValue;
+	public $VariationSpecificValue;
 
 	/**
 	* @var anyURI
 	**/
-	protected $PictureURL;
+	public $PictureURL;
 
 	/**
 	* @var anyURI
 	**/
-	protected $GalleryURL;
+	public $GalleryURL;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ExternalPictureURL;
+	public $ExternalPictureURL;
 
 	/**
 	* @var ExtendedPictureDetailsType
 	**/
-	protected $ExtendedPictureDetails;
+	public $ExtendedPictureDetails;
 
 
 	/**

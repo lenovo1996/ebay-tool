@@ -21,27 +21,27 @@ class VATDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $BusinessSeller;
+	public $BusinessSeller;
 
 	/**
 	* @var boolean
 	**/
-	protected $RestrictedToBusiness;
+	public $RestrictedToBusiness;
 
 	/**
 	* @var float
 	**/
-	protected $VATPercent;
+	public $VATPercent;
 
 	/**
 	* @var string
 	**/
-	protected $VATSite;
+	public $VATSite;
 
 	/**
 	* @var string
 	**/
-	protected $VATID;
+	public $VATID;
 
 
 	/**

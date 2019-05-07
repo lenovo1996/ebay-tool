@@ -18,22 +18,22 @@ class SellerDiscountType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $CampaignID;
+	public $CampaignID;
 
 	/**
 	* @var string
 	**/
-	protected $CampaignDisplayName;
+	public $CampaignDisplayName;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ItemDiscountAmount;
+	public $ItemDiscountAmount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingDiscountAmount;
+	public $ShippingDiscountAmount;
 
 
 	/**

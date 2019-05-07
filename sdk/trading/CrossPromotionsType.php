@@ -20,37 +20,37 @@ class CrossPromotionsType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var PromotionSchemeCodeType
 	**/
-	protected $PrimaryScheme;
+	public $PrimaryScheme;
 
 	/**
 	* @var PromotionMethodCodeType
 	**/
-	protected $PromotionMethod;
+	public $PromotionMethod;
 
 	/**
 	* @var string
 	**/
-	protected $SellerID;
+	public $SellerID;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShippingDiscount;
+	public $ShippingDiscount;
 
 	/**
 	* @var string
 	**/
-	protected $StoreName;
+	public $StoreName;
 
 	/**
 	* @var PromotedItemType
 	**/
-	protected $PromotedItem;
+	public $PromotedItem;
 
 
 	/**

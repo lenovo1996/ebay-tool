@@ -16,12 +16,12 @@ class BidAssistantListType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $BidGroupID;
+	public $BidGroupID;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeNotes;
+	public $IncludeNotes;
 
 
 	/**

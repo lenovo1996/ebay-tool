@@ -17,12 +17,12 @@ class ItemTotalsType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $TotalQuantity;
+	public $TotalQuantity;
 
 	/**
 	* @var AmountType
 	**/
-	protected $TotalValue;
+	public $TotalValue;
 
 
 	/**

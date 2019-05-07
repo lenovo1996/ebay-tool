@@ -19,15 +19,15 @@ class EbatNsCsSetExt_RuleType extends EbatNs_ComplexType
 	/**
 	 * @var string
 	 */
-	protected $Name;
+	public $Name;
 	/**
 	 * @var string
 	 */
-	protected $Length;
+	public $Length;
 	/**
 	 * @var string
 	 */
-	protected $Required;
+	public $Required;
 
 	/**
 	 * @return string

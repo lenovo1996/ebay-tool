@@ -18,27 +18,27 @@ class ReviseStatusType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $ItemRevised;
+	public $ItemRevised;
 
 	/**
 	* @var boolean
 	**/
-	protected $BuyItNowAdded;
+	public $BuyItNowAdded;
 
 	/**
 	* @var boolean
 	**/
-	protected $BuyItNowLowered;
+	public $BuyItNowLowered;
 
 	/**
 	* @var boolean
 	**/
-	protected $ReserveLowered;
+	public $ReserveLowered;
 
 	/**
 	* @var boolean
 	**/
-	protected $ReserveRemoved;
+	public $ReserveRemoved;
 
 
 	/**

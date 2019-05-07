@@ -19,12 +19,12 @@ class GetBidderListResponseType extends AbstractResponseType
 	/**
 	* @var UserType
 	**/
-	protected $Bidder;
+	public $Bidder;
 
 	/**
 	* @var ItemArrayType
 	**/
-	protected $BidItemArray;
+	public $BidItemArray;
 
 
 	/**

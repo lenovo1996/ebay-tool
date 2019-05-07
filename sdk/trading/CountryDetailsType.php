@@ -17,22 +17,22 @@ class CountryDetailsType extends EbatNs_ComplexType
 	/**
 	* @var CountryCodeType
 	**/
-	protected $Country;
+	public $Country;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

@@ -17,17 +17,17 @@ class StoreThemeType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $ThemeID;
+	public $ThemeID;
 
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var StoreColorSchemeType
 	**/
-	protected $ColorScheme;
+	public $ColorScheme;
 
 
 	/**

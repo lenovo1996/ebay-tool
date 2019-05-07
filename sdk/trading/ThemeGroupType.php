@@ -17,22 +17,22 @@ class ThemeGroupType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $GroupID;
+	public $GroupID;
 
 	/**
 	* @var string
 	**/
-	protected $GroupName;
+	public $GroupName;
 
 	/**
 	* @var int
 	**/
-	protected $ThemeID;
+	public $ThemeID;
 
 	/**
 	* @var int
 	**/
-	protected $ThemeTotal;
+	public $ThemeTotal;
 
 
 	/**

@@ -26,112 +26,112 @@ class ReviseCheckoutStatusRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var string
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AmountPaid;
+	public $AmountPaid;
 
 	/**
 	* @var BuyerPaymentMethodCodeType
 	**/
-	protected $PaymentMethodUsed;
+	public $PaymentMethodUsed;
 
 	/**
 	* @var CompleteStatusCodeType
 	**/
-	protected $CheckoutStatus;
+	public $CheckoutStatus;
 
 	/**
 	* @var token
 	**/
-	protected $ShippingService;
+	public $ShippingService;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShippingIncludedInTax;
+	public $ShippingIncludedInTax;
 
 	/**
 	* @var CheckoutMethodCodeType
 	**/
-	protected $CheckoutMethod;
+	public $CheckoutMethod;
 
 	/**
 	* @var InsuranceSelectedCodeType
 	**/
-	protected $InsuranceType;
+	public $InsuranceType;
 
 	/**
 	* @var RCSPaymentStatusCodeType
 	**/
-	protected $PaymentStatus;
+	public $PaymentStatus;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AdjustmentAmount;
+	public $AdjustmentAmount;
 
 	/**
 	* @var AddressType
 	**/
-	protected $ShippingAddress;
+	public $ShippingAddress;
 
 	/**
 	* @var string
 	**/
-	protected $BuyerID;
+	public $BuyerID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingInsuranceCost;
+	public $ShippingInsuranceCost;
 
 	/**
 	* @var AmountType
 	**/
-	protected $SalesTax;
+	public $SalesTax;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingCost;
+	public $ShippingCost;
 
 	/**
 	* @var string
 	**/
-	protected $EncryptedID;
+	public $EncryptedID;
 
 	/**
 	* @var ExternalTransactionType
 	**/
-	protected $ExternalTransaction;
+	public $ExternalTransaction;
 
 	/**
 	* @var string
 	**/
-	protected $MultipleSellerPaymentID;
+	public $MultipleSellerPaymentID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $CODCost;
+	public $CODCost;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

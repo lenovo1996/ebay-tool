@@ -17,12 +17,12 @@ class SiteWideCharacteristicsType extends EbatNs_ComplexType
 	/**
 	* @var CharacteristicsSetType
 	**/
-	protected $CharacteristicsSet;
+	public $CharacteristicsSet;
 
 	/**
 	* @var string
 	**/
-	protected $ExcludeCategoryID;
+	public $ExcludeCategoryID;
 
 
 	/**

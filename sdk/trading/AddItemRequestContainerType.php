@@ -17,12 +17,12 @@ class AddItemRequestContainerType extends EbatNs_ComplexType
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 	/**
 	* @var string
 	**/
-	protected $MessageID;
+	public $MessageID;
 
 
 	/**

@@ -17,7 +17,7 @@ class GetUserResponseType extends AbstractResponseType
 	/**
 	* @var UserType
 	**/
-	protected $User;
+	public $User;
 
 
 	/**

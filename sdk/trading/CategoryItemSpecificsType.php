@@ -17,12 +17,12 @@ class CategoryItemSpecificsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var NameValueListArrayType
 	**/
-	protected $ItemSpecifics;
+	public $ItemSpecifics;
 
 
 	/**

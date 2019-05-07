@@ -17,7 +17,7 @@ class CharacteristicsSetProductHistogramType extends EbatNs_ComplexType
 	/**
 	* @var HistogramEntryType
 	**/
-	protected $HistogramEntry;
+	public $HistogramEntry;
 
 
 	/**

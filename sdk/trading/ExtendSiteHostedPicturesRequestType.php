@@ -16,12 +16,12 @@ class ExtendSiteHostedPicturesRequestType extends AbstractRequestType
 	/**
 	* @var anyURI
 	**/
-	protected $PictureURL;
+	public $PictureURL;
 
 	/**
 	* @var int
 	**/
-	protected $ExtensionInDays;
+	public $ExtensionInDays;
 
 
 	/**

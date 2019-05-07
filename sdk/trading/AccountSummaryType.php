@@ -23,102 +23,102 @@ class AccountSummaryType extends EbatNs_ComplexType
 	/**
 	* @var AccountStateCodeType
 	**/
-	protected $AccountState;
+	public $AccountState;
 
 	/**
 	* @var AmountType
 	**/
-	protected $InvoicePayment;
+	public $InvoicePayment;
 
 	/**
 	* @var AmountType
 	**/
-	protected $InvoiceCredit;
+	public $InvoiceCredit;
 
 	/**
 	* @var AmountType
 	**/
-	protected $InvoiceNewFee;
+	public $InvoiceNewFee;
 
 	/**
 	* @var AdditionalAccountType
 	**/
-	protected $AdditionalAccount;
+	public $AdditionalAccount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AmountPastDue;
+	public $AmountPastDue;
 
 	/**
 	* @var string
 	**/
-	protected $BankAccountInfo;
+	public $BankAccountInfo;
 
 	/**
 	* @var dateTime
 	**/
-	protected $BankModifyDate;
+	public $BankModifyDate;
 
 	/**
 	* @var int
 	**/
-	protected $BillingCycleDate;
+	public $BillingCycleDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreditCardExpiration;
+	public $CreditCardExpiration;
 
 	/**
 	* @var string
 	**/
-	protected $CreditCardInfo;
+	public $CreditCardInfo;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreditCardModifyDate;
+	public $CreditCardModifyDate;
 
 	/**
 	* @var AmountType
 	**/
-	protected $CurrentBalance;
+	public $CurrentBalance;
 
 	/**
 	* @var string
 	**/
-	protected $Email;
+	public $Email;
 
 	/**
 	* @var AmountType
 	**/
-	protected $InvoiceBalance;
+	public $InvoiceBalance;
 
 	/**
 	* @var dateTime
 	**/
-	protected $InvoiceDate;
+	public $InvoiceDate;
 
 	/**
 	* @var AmountType
 	**/
-	protected $LastAmountPaid;
+	public $LastAmountPaid;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastPaymentDate;
+	public $LastPaymentDate;
 
 	/**
 	* @var boolean
 	**/
-	protected $PastDue;
+	public $PastDue;
 
 	/**
 	* @var SellerPaymentMethodCodeType
 	**/
-	protected $PaymentMethod;
+	public $PaymentMethod;
 
 
 	/**

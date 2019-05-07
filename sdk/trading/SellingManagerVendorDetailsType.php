@@ -14,12 +14,12 @@ class SellingManagerVendorDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $VendorName;
+	public $VendorName;
 
 	/**
 	* @var string
 	**/
-	protected $VendorContactInfo;
+	public $VendorContactInfo;
 
 
 	/**

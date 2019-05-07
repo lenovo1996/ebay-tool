@@ -19,72 +19,72 @@ class GetMyeBayBuyingRequestType extends AbstractRequestType
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $WatchList;
+	public $WatchList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $BidList;
+	public $BidList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $BestOfferList;
+	public $BestOfferList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $WonList;
+	public $WonList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $LostList;
+	public $LostList;
 
 	/**
 	* @var MyeBaySelectionType
 	**/
-	protected $FavoriteSearches;
+	public $FavoriteSearches;
 
 	/**
 	* @var MyeBaySelectionType
 	**/
-	protected $FavoriteSellers;
+	public $FavoriteSellers;
 
 	/**
 	* @var MyeBaySelectionType
 	**/
-	protected $SecondChanceOffer;
+	public $SecondChanceOffer;
 
 	/**
 	* @var BidAssistantListType
 	**/
-	protected $BidAssistantList;
+	public $BidAssistantList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $DeletedFromWonList;
+	public $DeletedFromWonList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $DeletedFromLostList;
+	public $DeletedFromLostList;
 
 	/**
 	* @var ItemListCustomizationType
 	**/
-	protected $BuyingSummary;
+	public $BuyingSummary;
 
 	/**
 	* @var MyeBaySelectionType
 	**/
-	protected $UserDefinedLists;
+	public $UserDefinedLists;
 
 	/**
 	* @var boolean
 	**/
-	protected $HideVariations;
+	public $HideVariations;
 
 
 	/**

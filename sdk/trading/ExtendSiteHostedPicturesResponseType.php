@@ -17,7 +17,7 @@ class ExtendSiteHostedPicturesResponseType extends AbstractResponseType
 	/**
 	* @var anyURI
 	**/
-	protected $PictureURL;
+	public $PictureURL;
 
 
 	/**

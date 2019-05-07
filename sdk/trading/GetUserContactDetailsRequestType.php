@@ -16,17 +16,17 @@ class GetUserContactDetailsRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $ContactID;
+	public $ContactID;
 
 	/**
 	* @var string
 	**/
-	protected $RequesterID;
+	public $RequesterID;
 
 
 	/**

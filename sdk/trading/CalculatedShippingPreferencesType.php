@@ -20,22 +20,22 @@ class CalculatedShippingPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $CalculatedShippingAmountForEntireOrder;
+	public $CalculatedShippingAmountForEntireOrder;
 
 	/**
 	* @var CalculatedShippingChargeOptionCodeType
 	**/
-	protected $CalculatedShippingChargeOption;
+	public $CalculatedShippingChargeOption;
 
 	/**
 	* @var CalculatedShippingRateOptionCodeType
 	**/
-	protected $CalculatedShippingRateOption;
+	public $CalculatedShippingRateOption;
 
 	/**
 	* @var InsuranceOptionCodeType
 	**/
-	protected $InsuranceOption;
+	public $InsuranceOption;
 
 
 	/**

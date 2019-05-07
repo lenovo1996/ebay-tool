@@ -17,7 +17,7 @@ class MyMessagesMessageIDArrayType extends EbatNs_ComplexType
 	/**
 	* @var MyMessagesMessageIDType
 	**/
-	protected $MessageID;
+	public $MessageID;
 
 
 	/**

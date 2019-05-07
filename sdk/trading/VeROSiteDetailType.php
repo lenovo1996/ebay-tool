@@ -18,12 +18,12 @@ class VeROSiteDetailType extends EbatNs_ComplexType
 	/**
 	* @var SiteCodeType
 	**/
-	protected $Site;
+	public $Site;
 
 	/**
 	* @var ReasonCodeDetailType
 	**/
-	protected $ReasonCodeDetail;
+	public $ReasonCodeDetail;
 
 
 	/**

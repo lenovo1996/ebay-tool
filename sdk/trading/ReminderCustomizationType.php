@@ -16,12 +16,12 @@ class ReminderCustomizationType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $DurationInDays;
+	public $DurationInDays;
 
 	/**
 	* @var boolean
 	**/
-	protected $Include;
+	public $Include;
 
 
 	/**

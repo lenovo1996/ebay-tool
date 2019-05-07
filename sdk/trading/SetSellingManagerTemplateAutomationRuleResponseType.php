@@ -20,22 +20,22 @@ class SetSellingManagerTemplateAutomationRuleResponseType extends AbstractRespon
 	/**
 	* @var SellingManagerAutoListType
 	**/
-	protected $AutomatedListingRule;
+	public $AutomatedListingRule;
 
 	/**
 	* @var SellingManagerAutoRelistType
 	**/
-	protected $AutomatedRelistingRule;
+	public $AutomatedRelistingRule;
 
 	/**
 	* @var SellingManagerAutoSecondChanceOfferType
 	**/
-	protected $AutomatedSecondChanceOfferRule;
+	public $AutomatedSecondChanceOfferRule;
 
 	/**
 	* @var FeesType
 	**/
-	protected $Fees;
+	public $Fees;
 
 
 	/**

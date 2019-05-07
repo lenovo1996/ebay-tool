@@ -25,47 +25,47 @@ class CompleteSaleRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var FeedbackInfoType
 	**/
-	protected $FeedbackInfo;
+	public $FeedbackInfo;
 
 	/**
 	* @var boolean
 	**/
-	protected $Shipped;
+	public $Shipped;
 
 	/**
 	* @var boolean
 	**/
-	protected $Paid;
+	public $Paid;
 
 	/**
 	* @var ListingTypeCodeType
 	**/
-	protected $ListingType;
+	public $ListingType;
 
 	/**
 	* @var ShipmentType
 	**/
-	protected $Shipment;
+	public $Shipment;
 
 	/**
 	* @var string
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

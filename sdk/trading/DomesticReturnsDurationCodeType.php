@@ -17,7 +17,7 @@ class DomesticReturnsDurationCodeType extends EbatNs_ComplexType
 	/**
 	* @var ReturnsDurationCodeType
 	**/
-	protected $DomesticReturnsDuration;
+	public $DomesticReturnsDuration;
 
 
 	/**

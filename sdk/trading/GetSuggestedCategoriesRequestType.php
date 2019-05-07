@@ -16,7 +16,7 @@ class GetSuggestedCategoriesRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $Query;
+	public $Query;
 
 
 	/**

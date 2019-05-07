@@ -16,12 +16,12 @@ class ListingCheckoutRedirectPreferenceType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ProStoresStoreName;
+	public $ProStoresStoreName;
 
 	/**
 	* @var string
 	**/
-	protected $SellerThirdPartyUsername;
+	public $SellerThirdPartyUsername;
 
 
 	/**

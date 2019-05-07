@@ -17,7 +17,7 @@ class AddItemsResponseType extends AbstractResponseType
 	/**
 	* @var AddItemResponseContainerType
 	**/
-	protected $AddItemResponseContainer;
+	public $AddItemResponseContainer;
 
 
 	/**

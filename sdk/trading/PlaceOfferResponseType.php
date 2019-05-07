@@ -19,22 +19,22 @@ class PlaceOfferResponseType extends AbstractResponseType
 	/**
 	* @var SellingStatusType
 	**/
-	protected $SellingStatus;
+	public $SellingStatus;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var BestOfferType
 	**/
-	protected $BestOffer;
+	public $BestOffer;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

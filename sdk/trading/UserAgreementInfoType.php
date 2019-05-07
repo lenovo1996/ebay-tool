@@ -18,27 +18,27 @@ class UserAgreementInfoType extends EbatNs_ComplexType
 	/**
 	* @var SiteCodeType
 	**/
-	protected $Site;
+	public $Site;
 
 	/**
 	* @var SellereBayPaymentProcessStatusCodeType
 	**/
-	protected $SellereBayPaymentProcessStatus;
+	public $SellereBayPaymentProcessStatus;
 
 	/**
 	* @var dateTime
 	**/
-	protected $AcceptedTime;
+	public $AcceptedTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $SellereBayPaymentProcessEnableTime;
+	public $SellereBayPaymentProcessEnableTime;
 
 	/**
 	* @var anyURI
 	**/
-	protected $UserAgreementURL;
+	public $UserAgreementURL;
 
 
 	/**

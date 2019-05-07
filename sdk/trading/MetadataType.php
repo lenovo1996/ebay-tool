@@ -16,12 +16,12 @@ class MetadataType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var string
 	**/
-	protected $Value;
+	public $Value;
 
 
 	/**

@@ -18,17 +18,17 @@ class NotificationUserDataType extends EbatNs_ComplexType
 	/**
 	* @var SMSSubscriptionType
 	**/
-	protected $SMSSubscription;
+	public $SMSSubscription;
 
 	/**
 	* @var SummaryEventScheduleType
 	**/
-	protected $SummarySchedule;
+	public $SummarySchedule;
 
 	/**
 	* @var string
 	**/
-	protected $ExternalUserData;
+	public $ExternalUserData;
 
 
 	/**

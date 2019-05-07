@@ -16,7 +16,7 @@ class SupportedEventTypesArrayType extends EbatNs_ComplexType
 	/**
 	* @var NotificationEventTypeCodeType
 	**/
-	protected $EventType;
+	public $EventType;
 
 
 	/**

@@ -28,72 +28,72 @@ class TransactionStatusType extends EbatNs_ComplexType
 	/**
 	* @var PaymentStatusCodeType
 	**/
-	protected $eBayPaymentStatus;
+	public $eBayPaymentStatus;
 
 	/**
 	* @var CheckoutStatusCodeType
 	**/
-	protected $CheckoutStatus;
+	public $CheckoutStatus;
 
 	/**
 	* @var dateTime
 	**/
-	protected $LastTimeModified;
+	public $LastTimeModified;
 
 	/**
 	* @var BuyerPaymentMethodCodeType
 	**/
-	protected $PaymentMethodUsed;
+	public $PaymentMethodUsed;
 
 	/**
 	* @var CompleteStatusCodeType
 	**/
-	protected $CompleteStatus;
+	public $CompleteStatus;
 
 	/**
 	* @var boolean
 	**/
-	protected $BuyerSelectedShipping;
+	public $BuyerSelectedShipping;
 
 	/**
 	* @var PaymentHoldStatusCodeType
 	**/
-	protected $PaymentHoldStatus;
+	public $PaymentHoldStatus;
 
 	/**
 	* @var boolean
 	**/
-	protected $IntegratedMerchantCreditCardEnabled;
+	public $IntegratedMerchantCreditCardEnabled;
 
 	/**
 	* @var eBayPaymentMismatchDetailsType
 	**/
-	protected $eBayPaymentMismatchDetails;
+	public $eBayPaymentMismatchDetails;
 
 	/**
 	* @var InquiryStatusCodeType
 	**/
-	protected $InquiryStatus;
+	public $InquiryStatus;
 
 	/**
 	* @var ReturnStatusCodeType
 	**/
-	protected $ReturnStatus;
+	public $ReturnStatus;
 
 	/**
 	* @var BuyerPaymentInstrumentCodeType
 	**/
-	protected $PaymentInstrument;
+	public $PaymentInstrument;
 
 	/**
 	* @var DigitalStatusCodeType
 	**/
-	protected $DigitalStatus;
+	public $DigitalStatus;
 
 	/**
 	* @var CancelStatusCodeType
 	**/
-	protected $CancelStatus;
+	public $CancelStatus;
 
 
 	/**

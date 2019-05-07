@@ -18,17 +18,17 @@ class FaultDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ErrorCode;
+	public $ErrorCode;
 
 	/**
 	* @var string
 	**/
-	protected $Severity;
+	public $Severity;
 
 	/**
 	* @var string
 	**/
-	protected $DetailedMessage;
+	public $DetailedMessage;
 
 
 	/**

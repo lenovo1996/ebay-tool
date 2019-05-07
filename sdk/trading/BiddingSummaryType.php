@@ -17,37 +17,37 @@ class BiddingSummaryType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $SummaryDays;
+	public $SummaryDays;
 
 	/**
 	* @var int
 	**/
-	protected $TotalBids;
+	public $TotalBids;
 
 	/**
 	* @var int
 	**/
-	protected $BidActivityWithSeller;
+	public $BidActivityWithSeller;
 
 	/**
 	* @var int
 	**/
-	protected $BidsToUniqueSellers;
+	public $BidsToUniqueSellers;
 
 	/**
 	* @var int
 	**/
-	protected $BidsToUniqueCategories;
+	public $BidsToUniqueCategories;
 
 	/**
 	* @var int
 	**/
-	protected $BidRetractions;
+	public $BidRetractions;
 
 	/**
 	* @var ItemBidDetailsType
 	**/
-	protected $ItemBidDetails;
+	public $ItemBidDetails;
 
 
 	/**

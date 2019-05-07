@@ -22,97 +22,97 @@ class AdFormatLeadType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $AdditionalInformation;
+	public $AdditionalInformation;
 
 	/**
 	* @var AddressType
 	**/
-	protected $Address;
+	public $Address;
 
 	/**
 	* @var string
 	**/
-	protected $BestTimeToCall;
+	public $BestTimeToCall;
 
 	/**
 	* @var string
 	**/
-	protected $Email;
+	public $Email;
 
 	/**
 	* @var dateTime
 	**/
-	protected $SubmittedTime;
+	public $SubmittedTime;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $ItemTitle;
+	public $ItemTitle;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var MemberMessageExchangeArrayType
 	**/
-	protected $MemberMessage;
+	public $MemberMessage;
 
 	/**
 	* @var AdFormatLeadStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var AmountType
 	**/
-	protected $LeadFee;
+	public $LeadFee;
 
 	/**
 	* @var string
 	**/
-	protected $ExternalEmail;
+	public $ExternalEmail;
 
 	/**
 	* @var string
 	**/
-	protected $PurchaseTimeFrame;
+	public $PurchaseTimeFrame;
 
 	/**
 	* @var string
 	**/
-	protected $TradeInYear;
+	public $TradeInYear;
 
 	/**
 	* @var string
 	**/
-	protected $TradeInMake;
+	public $TradeInMake;
 
 	/**
 	* @var string
 	**/
-	protected $TradeInModel;
+	public $TradeInModel;
 
 	/**
 	* @var boolean
 	**/
-	protected $FinancingAnswer;
+	public $FinancingAnswer;
 
 	/**
 	* @var boolean
 	**/
-	protected $Answer1;
+	public $Answer1;
 
 	/**
 	* @var boolean
 	**/
-	protected $Answer2;
+	public $Answer2;
 
 
 	/**

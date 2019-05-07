@@ -19,27 +19,27 @@ class SupportedSellerProfileType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $ProfileID;
+	public $ProfileID;
 
 	/**
 	* @var string
 	**/
-	protected $ProfileType;
+	public $ProfileType;
 
 	/**
 	* @var string
 	**/
-	protected $ProfileName;
+	public $ProfileName;
 
 	/**
 	* @var string
 	**/
-	protected $ShortSummary;
+	public $ShortSummary;
 
 	/**
 	* @var CategoryGroupType
 	**/
-	protected $CategoryGroup;
+	public $CategoryGroup;
 
 
 	/**

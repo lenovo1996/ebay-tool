@@ -16,37 +16,37 @@ class StoreVacationPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $OnVacation;
+	public $OnVacation;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ReturnDate;
+	public $ReturnDate;
 
 	/**
 	* @var boolean
 	**/
-	protected $HideFixedPriceStoreItems;
+	public $HideFixedPriceStoreItems;
 
 	/**
 	* @var boolean
 	**/
-	protected $MessageItem;
+	public $MessageItem;
 
 	/**
 	* @var boolean
 	**/
-	protected $MessageStore;
+	public $MessageStore;
 
 	/**
 	* @var boolean
 	**/
-	protected $DisplayMessageStoreCustomText;
+	public $DisplayMessageStoreCustomText;
 
 	/**
 	* @var string
 	**/
-	protected $MessageStoreCustomText;
+	public $MessageStoreCustomText;
 
 
 	/**

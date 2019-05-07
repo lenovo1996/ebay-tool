@@ -18,12 +18,12 @@ class ShippingOverrideType extends EbatNs_ComplexType
 	/**
 	* @var ShippingServiceCostOverrideListType
 	**/
-	protected $ShippingServiceCostOverrideList;
+	public $ShippingServiceCostOverrideList;
 
 	/**
 	* @var int
 	**/
-	protected $DispatchTimeMaxOverride;
+	public $DispatchTimeMaxOverride;
 
 
 	/**

@@ -21,7 +21,7 @@ class PickupDetailsType extends EbatNs_ComplexType
 	/**
 	* @var PickupOptionsType
 	**/
-	protected $PickupOptions;
+	public $PickupOptions;
 
 
 	/**

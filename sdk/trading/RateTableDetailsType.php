@@ -24,22 +24,22 @@ class RateTableDetailsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $DomesticRateTable;
+	public $DomesticRateTable;
 
 	/**
 	* @var string
 	**/
-	protected $InternationalRateTable;
+	public $InternationalRateTable;
 
 	/**
 	* @var string
 	**/
-	protected $DomesticRateTableId;
+	public $DomesticRateTableId;
 
 	/**
 	* @var string
 	**/
-	protected $InternationalRateTableId;
+	public $InternationalRateTableId;
 
 
 	/**

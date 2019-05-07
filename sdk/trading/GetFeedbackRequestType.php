@@ -21,42 +21,42 @@ class GetFeedbackRequestType extends AbstractRequestType
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var string
 	**/
-	protected $FeedbackID;
+	public $FeedbackID;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var CommentTypeCodeType
 	**/
-	protected $CommentType;
+	public $CommentType;
 
 	/**
 	* @var FeedbackTypeCodeType
 	**/
-	protected $FeedbackType;
+	public $FeedbackType;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 
 	/**

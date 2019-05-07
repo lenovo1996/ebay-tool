@@ -18,12 +18,12 @@ class CalculatedShippingDiscountType extends EbatNs_ComplexType
 	/**
 	* @var DiscountNameCodeType
 	**/
-	protected $DiscountName;
+	public $DiscountName;
 
 	/**
 	* @var DiscountProfileType
 	**/
-	protected $DiscountProfile;
+	public $DiscountProfile;
 
 
 	/**

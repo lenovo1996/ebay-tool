@@ -20,7 +20,7 @@ class EbatNsCsSetExt_DependencyType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_ValType
 	 */
-	protected $Value;
+	public $Value;
 
 	/**
 	 * @return EbatNsCsSetExt_ValType

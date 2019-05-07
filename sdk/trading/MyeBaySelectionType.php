@@ -18,42 +18,42 @@ class MyeBaySelectionType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $Include;
+	public $Include;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeItemCount;
+	public $IncludeItemCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeFavoriteSearcheCount;
+	public $IncludeFavoriteSearcheCount;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeFavoriteSellerCount;
+	public $IncludeFavoriteSellerCount;
 
 	/**
 	* @var SortOrderCodeType
 	**/
-	protected $Sort;
+	public $Sort;
 
 	/**
 	* @var int
 	**/
-	protected $MaxResults;
+	public $MaxResults;
 
 	/**
 	* @var string
 	**/
-	protected $UserDefinedListName;
+	public $UserDefinedListName;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeListContents;
+	public $IncludeListContents;
 
 
 	/**

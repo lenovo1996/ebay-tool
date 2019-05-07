@@ -16,7 +16,7 @@ class SellerExcludeShipToLocationPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ExcludeShipToLocation;
+	public $ExcludeShipToLocation;
 
 
 	/**

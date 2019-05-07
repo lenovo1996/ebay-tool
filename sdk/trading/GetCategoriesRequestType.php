@@ -19,22 +19,22 @@ class GetCategoriesRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $CategorySiteID;
+	public $CategorySiteID;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryParent;
+	public $CategoryParent;
 
 	/**
 	* @var int
 	**/
-	protected $LevelLimit;
+	public $LevelLimit;
 
 	/**
 	* @var boolean
 	**/
-	protected $ViewAllNodes;
+	public $ViewAllNodes;
 
 
 	/**

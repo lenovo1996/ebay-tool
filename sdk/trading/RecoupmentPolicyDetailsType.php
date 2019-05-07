@@ -17,22 +17,22 @@ class RecoupmentPolicyDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $EnforcedOnListingSite;
+	public $EnforcedOnListingSite;
 
 	/**
 	* @var boolean
 	**/
-	protected $EnforcedOnRegistrationSite;
+	public $EnforcedOnRegistrationSite;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

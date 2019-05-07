@@ -24,67 +24,67 @@ class GetMyeBayBuyingResponseType extends AbstractResponseType
 	/**
 	* @var BuyingSummaryType
 	**/
-	protected $BuyingSummary;
+	public $BuyingSummary;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $WatchList;
+	public $WatchList;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $BidList;
+	public $BidList;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $BestOfferList;
+	public $BestOfferList;
 
 	/**
 	* @var PaginatedOrderTransactionArrayType
 	**/
-	protected $WonList;
+	public $WonList;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $LostList;
+	public $LostList;
 
 	/**
 	* @var MyeBayFavoriteSearchListType
 	**/
-	protected $FavoriteSearches;
+	public $FavoriteSearches;
 
 	/**
 	* @var MyeBayFavoriteSellerListType
 	**/
-	protected $FavoriteSellers;
+	public $FavoriteSellers;
 
 	/**
 	* @var ItemType
 	**/
-	protected $SecondChanceOffer;
+	public $SecondChanceOffer;
 
 	/**
 	* @var BidGroupArrayType
 	**/
-	protected $BidAssistantList;
+	public $BidAssistantList;
 
 	/**
 	* @var PaginatedOrderTransactionArrayType
 	**/
-	protected $DeletedFromWonList;
+	public $DeletedFromWonList;
 
 	/**
 	* @var PaginatedItemArrayType
 	**/
-	protected $DeletedFromLostList;
+	public $DeletedFromLostList;
 
 	/**
 	* @var UserDefinedListType
 	**/
-	protected $UserDefinedList;
+	public $UserDefinedList;
 
 
 	/**

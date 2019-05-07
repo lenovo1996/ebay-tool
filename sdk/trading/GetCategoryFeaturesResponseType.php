@@ -17,27 +17,27 @@ class GetCategoryFeaturesResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $CategoryVersion;
+	public $CategoryVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 	/**
 	* @var CategoryFeatureType
 	**/
-	protected $Category;
+	public $Category;
 
 	/**
 	* @var SiteDefaultsType
 	**/
-	protected $SiteDefaults;
+	public $SiteDefaults;
 
 	/**
 	* @var FeatureDefinitionsType
 	**/
-	protected $FeatureDefinitions;
+	public $FeatureDefinitions;
 
 
 	/**

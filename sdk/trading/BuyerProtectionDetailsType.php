@@ -20,12 +20,12 @@ class BuyerProtectionDetailsType extends EbatNs_ComplexType
 	/**
 	* @var BuyerProtectionSourceCodeType
 	**/
-	protected $BuyerProtectionSource;
+	public $BuyerProtectionSource;
 
 	/**
 	* @var BuyerProtectionCodeType
 	**/
-	protected $BuyerProtectionStatus;
+	public $BuyerProtectionStatus;
 
 
 	/**

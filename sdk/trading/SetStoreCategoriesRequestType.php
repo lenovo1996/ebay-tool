@@ -18,22 +18,22 @@ class SetStoreCategoriesRequestType extends AbstractRequestType
 	/**
 	* @var StoreCategoryUpdateActionCodeType
 	**/
-	protected $Action;
+	public $Action;
 
 	/**
 	* @var long
 	**/
-	protected $ItemDestinationCategoryID;
+	public $ItemDestinationCategoryID;
 
 	/**
 	* @var long
 	**/
-	protected $DestinationParentCategoryID;
+	public $DestinationParentCategoryID;
 
 	/**
 	* @var StoreCustomCategoryArrayType
 	**/
-	protected $StoreCategories;
+	public $StoreCategories;
 
 
 	/**

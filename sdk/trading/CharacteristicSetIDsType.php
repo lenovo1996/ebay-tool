@@ -16,7 +16,7 @@ class CharacteristicSetIDsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ID;
+	public $ID;
 
 
 	/**

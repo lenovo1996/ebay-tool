@@ -17,22 +17,22 @@ class CustomSecurityHeaderType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $eBayAuthToken;
+	public $eBayAuthToken;
 
 	/**
 	* @var string
 	**/
-	protected $HardExpirationWarning;
+	public $HardExpirationWarning;
 
 	/**
 	* @var UserIdPasswordType
 	**/
-	protected $Credentials;
+	public $Credentials;
 
 	/**
 	* @var string
 	**/
-	protected $NotificationSignature;
+	public $NotificationSignature;
 
 
 	/**

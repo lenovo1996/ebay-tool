@@ -17,7 +17,7 @@ class AddMemberMessagesAAQToBidderRequestType extends AbstractRequestType
 	/**
 	* @var AddMemberMessagesAAQToBidderRequestContainerType
 	**/
-	protected $AddMemberMessagesAAQToBidderRequestContainer;
+	public $AddMemberMessagesAAQToBidderRequestContainer;
 
 
 	/**

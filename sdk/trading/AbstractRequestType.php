@@ -26,52 +26,52 @@ class AbstractRequestType extends EbatNs_ComplexType
 	/**
 	* @var DetailLevelCodeType
 	**/
-	protected $DetailLevel;
+	public $DetailLevel;
 
 	/**
 	* @var string
 	**/
-	protected $ErrorLanguage;
+	public $ErrorLanguage;
 
 	/**
 	* @var string
 	**/
-	protected $MessageID;
+	public $MessageID;
 
 	/**
 	* @var string
 	**/
-	protected $Version;
+	public $Version;
 
 	/**
 	* @var string
 	**/
-	protected $EndUserIP;
+	public $EndUserIP;
 
 	/**
 	* @var ErrorHandlingCodeType
 	**/
-	protected $ErrorHandling;
+	public $ErrorHandling;
 
 	/**
 	* @var UUIDType
 	**/
-	protected $InvocationID;
+	public $InvocationID;
 
 	/**
 	* @var string
 	**/
-	protected $OutputSelector;
+	public $OutputSelector;
 
 	/**
 	* @var WarningLevelCodeType
 	**/
-	protected $WarningLevel;
+	public $WarningLevel;
 
 	/**
 	* @var BotBlockRequestType
 	**/
-	protected $BotBlock;
+	public $BotBlock;
 
 
 	/**

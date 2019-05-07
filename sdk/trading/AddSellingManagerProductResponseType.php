@@ -17,7 +17,7 @@ class AddSellingManagerProductResponseType extends AbstractResponseType
 	/**
 	* @var SellingManagerProductDetailsType
 	**/
-	protected $SellingManagerProductDetails;
+	public $SellingManagerProductDetails;
 
 
 	/**

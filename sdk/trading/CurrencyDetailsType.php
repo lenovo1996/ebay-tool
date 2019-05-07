@@ -17,22 +17,22 @@ class CurrencyDetailsType extends EbatNs_ComplexType
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $Currency;
+	public $Currency;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

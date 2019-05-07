@@ -16,27 +16,27 @@ class CancelDetailType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $CancelReason;
+	public $CancelReason;
 
 	/**
 	* @var string
 	**/
-	protected $CancelReasonDetails;
+	public $CancelReasonDetails;
 
 	/**
 	* @var token
 	**/
-	protected $CancelIntiator;
+	public $CancelIntiator;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CancelIntiationDate;
+	public $CancelIntiationDate;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CancelCompleteDate;
+	public $CancelCompleteDate;
 
 
 	/**

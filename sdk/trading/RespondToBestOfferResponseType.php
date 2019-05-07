@@ -17,7 +17,7 @@ class RespondToBestOfferResponseType extends AbstractResponseType
 	/**
 	* @var BestOfferArrayType
 	**/
-	protected $RespondToBestOffer;
+	public $RespondToBestOffer;
 
 
 	/**

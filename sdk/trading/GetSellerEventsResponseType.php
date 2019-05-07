@@ -17,12 +17,12 @@ class GetSellerEventsResponseType extends AbstractResponseType
 	/**
 	* @var dateTime
 	**/
-	protected $TimeTo;
+	public $TimeTo;
 
 	/**
 	* @var ItemArrayType
 	**/
-	protected $ItemArray;
+	public $ItemArray;
 
 
 	/**

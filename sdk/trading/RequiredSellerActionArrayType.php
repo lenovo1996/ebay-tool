@@ -18,7 +18,7 @@ class RequiredSellerActionArrayType extends EbatNs_ComplexType
 	/**
 	* @var RequiredSellerActionCodeType
 	**/
-	protected $RequiredSellerAction;
+	public $RequiredSellerAction;
 
 
 	/**

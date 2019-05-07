@@ -19,17 +19,17 @@ class GetUserContactDetailsResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var AddressType
 	**/
-	protected $ContactAddress;
+	public $ContactAddress;
 
 	/**
 	* @var dateTime
 	**/
-	protected $RegistrationDate;
+	public $RegistrationDate;
 
 
 	/**

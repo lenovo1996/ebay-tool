@@ -17,12 +17,12 @@ class MyeBayFavoriteSellerListType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $TotalAvailable;
+	public $TotalAvailable;
 
 	/**
 	* @var MyeBayFavoriteSellerType
 	**/
-	protected $FavoriteSeller;
+	public $FavoriteSeller;
 
 
 	/**

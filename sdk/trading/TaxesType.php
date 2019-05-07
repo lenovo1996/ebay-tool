@@ -21,12 +21,12 @@ class TaxesType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $TotalTaxAmount;
+	public $TotalTaxAmount;
 
 	/**
 	* @var TaxDetailsType
 	**/
-	protected $TaxDetails;
+	public $TaxDetails;
 
 
 	/**

@@ -20,12 +20,12 @@ class PickupInStoreDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $EligibleForPickupInStore;
+	public $EligibleForPickupInStore;
 
 	/**
 	* @var boolean
 	**/
-	protected $EligibleForPickupDropOff;
+	public $EligibleForPickupDropOff;
 
 
 	/**

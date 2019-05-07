@@ -20,7 +20,7 @@ class EbatNs_RequestHeaderType extends EbatNs_ComplexType
     /**
      * @var EbatNs_RequesterCredentialType
      */
-    protected $RequesterCredentials;
+    public $RequesterCredentials;
 
     function __construct ()
     {

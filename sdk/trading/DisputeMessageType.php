@@ -22,22 +22,22 @@ class DisputeMessageType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MessageID;
+	public $MessageID;
 
 	/**
 	* @var DisputeMessageSourceCodeType
 	**/
-	protected $MessageSource;
+	public $MessageSource;
 
 	/**
 	* @var dateTime
 	**/
-	protected $MessageCreationTime;
+	public $MessageCreationTime;
 
 	/**
 	* @var string
 	**/
-	protected $MessageText;
+	public $MessageText;
 
 
 	/**

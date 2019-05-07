@@ -21,27 +21,27 @@ class EbatNsCsSetExt_WidgetType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_PIAttributeType
 	 */
-	protected $Attribute;
+	public $Attribute;
 	/**
 	 * @var EbatNsCsSetExt_MessageType
 	 */
-	protected $MessageRight;
+	public $MessageRight;
 	/**
 	 * @var EbatNsCsSetExt_MessageType
 	 */
-	protected $MessageBottom;
+	public $MessageBottom;
 	/**
 	 * @var EbatNsCsSetExt_MessageType
 	 */
-	protected $MessageLeft;
+	public $MessageLeft;
 	/**
 	 * @var EbatNsCsSetExt_MessageType
 	 */
-	protected $MessageTop;
+	public $MessageTop;
 	/**
 	 * @var EbatNsCsSetExt_MessageType
 	 */
-	protected $TextMessage;
+	public $TextMessage;
 
 	/**
 	 * @return EbatNsCsSetExt_PIAttributeType

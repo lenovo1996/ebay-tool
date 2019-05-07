@@ -16,7 +16,7 @@ class ErrorParameterType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Value;
+	public $Value;
 
 
 	/**

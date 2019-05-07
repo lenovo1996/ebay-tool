@@ -1,8 +1,12 @@
 <?php
-
+	session_start();
 	$token = '';
-	$buyerPaid = $_POST['buyerPaid'];
-	$buyerPaidDate = $_POST['buyerPaidDate'];
+	if (isset($_SESSION['token'])) {
+		$token = $_SESSION['token'];
+	}
+
+	$buyerPaid = true;
+	$buyerPaidDate = date('Y-m-d');
 	$cancelReason = $_POST['cancelReason'];
 	$orderId = $_POST['orderId'];
 
@@ -14,15 +18,16 @@
 	$postData = [
 		'buyerPaid' => $buyerPaid,
 		'buyerPaidDate' => [
-			'value' => $buyerPaidDate . 'T19:00:00.768Z'
+			'value' => $buyerPaidDate . 'T00:00:00.768Z'
 		],
 		'cancelReason' => $cancelReason,
 		'legacyOrderId' => $orderId
 	];
 
+	$payload = json_encode($postData);
+
 	$ch = curl_init($url);
 	# Setup request to send json via POST.
-	$payload = json_encode($postData);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 	# Return response instead of printing.

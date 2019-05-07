@@ -33,137 +33,137 @@ class MyeBayFavoriteSearchType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $SearchName;
+	public $SearchName;
 
 	/**
 	* @var string
 	**/
-	protected $SearchQuery;
+	public $SearchQuery;
 
 	/**
 	* @var string
 	**/
-	protected $QueryKeywords;
+	public $QueryKeywords;
 
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var SimpleItemSortCodeType
 	**/
-	protected $ItemSort;
+	public $ItemSort;
 
 	/**
 	* @var SortOrderCodeType
 	**/
-	protected $SortOrder;
+	public $SortOrder;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTimeFrom;
+	public $EndTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTimeTo;
+	public $EndTimeTo;
 
 	/**
 	* @var int
 	**/
-	protected $MaxDistance;
+	public $MaxDistance;
 
 	/**
 	* @var string
 	**/
-	protected $PostalCode;
+	public $PostalCode;
 
 	/**
 	* @var ItemTypeCodeType
 	**/
-	protected $ItemType;
+	public $ItemType;
 
 	/**
 	* @var AmountType
 	**/
-	protected $PriceMax;
+	public $PriceMax;
 
 	/**
 	* @var AmountType
 	**/
-	protected $PriceMin;
+	public $PriceMin;
 
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $Currency;
+	public $Currency;
 
 	/**
 	* @var int
 	**/
-	protected $BidCountMax;
+	public $BidCountMax;
 
 	/**
 	* @var int
 	**/
-	protected $BidCountMin;
+	public $BidCountMin;
 
 	/**
 	* @var SearchFlagCodeType
 	**/
-	protected $SearchFlag;
+	public $SearchFlag;
 
 	/**
 	* @var PaymentMethodSearchCodeType
 	**/
-	protected $PaymentMethod;
+	public $PaymentMethod;
 
 	/**
 	* @var PreferredLocationCodeType
 	**/
-	protected $PreferredLocation;
+	public $PreferredLocation;
 
 	/**
 	* @var string
 	**/
-	protected $SellerID;
+	public $SellerID;
 
 	/**
 	* @var string
 	**/
-	protected $SellerIDExclude;
+	public $SellerIDExclude;
 
 	/**
 	* @var CountryCodeType
 	**/
-	protected $ItemsAvailableTo;
+	public $ItemsAvailableTo;
 
 	/**
 	* @var CountryCodeType
 	**/
-	protected $ItemsLocatedIn;
+	public $ItemsLocatedIn;
 
 	/**
 	* @var SellerBusinessCodeType
 	**/
-	protected $SellerBusinessType;
+	public $SellerBusinessType;
 
 	/**
 	* @var ItemConditionCodeType
 	**/
-	protected $Condition;
+	public $Condition;
 
 	/**
 	* @var int
 	**/
-	protected $Quantity;
+	public $Quantity;
 
 	/**
 	* @var QuantityOperatorCodeType
 	**/
-	protected $QuantityOperator;
+	public $QuantityOperator;
 
 
 	/**

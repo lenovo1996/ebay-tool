@@ -18,22 +18,22 @@ class ListingTipType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ListingTipID;
+	public $ListingTipID;
 
 	/**
 	* @var int
 	**/
-	protected $Priority;
+	public $Priority;
 
 	/**
 	* @var ListingTipMessageType
 	**/
-	protected $Message;
+	public $Message;
 
 	/**
 	* @var ListingTipFieldType
 	**/
-	protected $Field;
+	public $Field;
 
 
 	/**

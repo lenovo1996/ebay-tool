@@ -28,42 +28,42 @@ class ShipPackageDetailsType extends EbatNs_ComplexType
 	/**
 	* @var MeasurementSystemCodeType
 	**/
-	protected $MeasurementUnit;
+	public $MeasurementUnit;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $PackageDepth;
+	public $PackageDepth;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $PackageLength;
+	public $PackageLength;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $PackageWidth;
+	public $PackageWidth;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShippingIrregular;
+	public $ShippingIrregular;
 
 	/**
 	* @var ShippingPackageCodeType
 	**/
-	protected $ShippingPackage;
+	public $ShippingPackage;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $WeightMajor;
+	public $WeightMajor;
 
 	/**
 	* @var MeasureType
 	**/
-	protected $WeightMinor;
+	public $WeightMinor;
 
 
 	/**

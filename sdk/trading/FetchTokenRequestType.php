@@ -16,12 +16,12 @@ class FetchTokenRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $SecretID;
+	public $SecretID;
 
 	/**
 	* @var string
 	**/
-	protected $SessionID;
+	public $SessionID;
 
 
 	/**

@@ -19,67 +19,67 @@ class MemberMessageType extends EbatNs_ComplexType
 	/**
 	* @var MessageTypeCodeType
 	**/
-	protected $MessageType;
+	public $MessageType;
 
 	/**
 	* @var QuestionTypeCodeType
 	**/
-	protected $QuestionType;
+	public $QuestionType;
 
 	/**
 	* @var boolean
 	**/
-	protected $EmailCopyToSender;
+	public $EmailCopyToSender;
 
 	/**
 	* @var boolean
 	**/
-	protected $HideSendersEmailAddress;
+	public $HideSendersEmailAddress;
 
 	/**
 	* @var boolean
 	**/
-	protected $DisplayToPublic;
+	public $DisplayToPublic;
 
 	/**
 	* @var string
 	**/
-	protected $SenderID;
+	public $SenderID;
 
 	/**
 	* @var string
 	**/
-	protected $SenderEmail;
+	public $SenderEmail;
 
 	/**
 	* @var string
 	**/
-	protected $RecipientID;
+	public $RecipientID;
 
 	/**
 	* @var string
 	**/
-	protected $Subject;
+	public $Subject;
 
 	/**
 	* @var string
 	**/
-	protected $Body;
+	public $Body;
 
 	/**
 	* @var string
 	**/
-	protected $MessageID;
+	public $MessageID;
 
 	/**
 	* @var string
 	**/
-	protected $ParentMessageID;
+	public $ParentMessageID;
 
 	/**
 	* @var MessageMediaType
 	**/
-	protected $MessageMedia;
+	public $MessageMedia;
 
 
 	/**

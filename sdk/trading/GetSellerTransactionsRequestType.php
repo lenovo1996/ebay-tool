@@ -20,52 +20,52 @@ class GetSellerTransactionsRequestType extends AbstractRequestType
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeFrom;
+	public $ModTimeFrom;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ModTimeTo;
+	public $ModTimeTo;
 
 	/**
 	* @var PaginationType
 	**/
-	protected $Pagination;
+	public $Pagination;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeFinalValueFee;
+	public $IncludeFinalValueFee;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeContainingOrder;
+	public $IncludeContainingOrder;
 
 	/**
 	* @var SKUArrayType
 	**/
-	protected $SKUArray;
+	public $SKUArray;
 
 	/**
 	* @var TransactionPlatformCodeType
 	**/
-	protected $Platform;
+	public $Platform;
 
 	/**
 	* @var int
 	**/
-	protected $NumberOfDays;
+	public $NumberOfDays;
 
 	/**
 	* @var InventoryTrackingMethodCodeType
 	**/
-	protected $InventoryTrackingMethod;
+	public $InventoryTrackingMethod;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeCodiceFiscale;
+	public $IncludeCodiceFiscale;
 
 
 	/**

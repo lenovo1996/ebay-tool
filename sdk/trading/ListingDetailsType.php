@@ -25,122 +25,122 @@ class ListingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $Adult;
+	public $Adult;
 
 	/**
 	* @var boolean
 	**/
-	protected $BindingAuction;
+	public $BindingAuction;
 
 	/**
 	* @var boolean
 	**/
-	protected $CheckoutEnabled;
+	public $CheckoutEnabled;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ConvertedBuyItNowPrice;
+	public $ConvertedBuyItNowPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ConvertedStartPrice;
+	public $ConvertedStartPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ConvertedReservePrice;
+	public $ConvertedReservePrice;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasReservePrice;
+	public $HasReservePrice;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $RelistedItemID;
+	public $RelistedItemID;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $SecondChanceOriginalItemID;
+	public $SecondChanceOriginalItemID;
 
 	/**
 	* @var dateTime
 	**/
-	protected $StartTime;
+	public $StartTime;
 
 	/**
 	* @var dateTime
 	**/
-	protected $EndTime;
+	public $EndTime;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ViewItemURL;
+	public $ViewItemURL;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasUnansweredQuestions;
+	public $HasUnansweredQuestions;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasPublicMessages;
+	public $HasPublicMessages;
 
 	/**
 	* @var boolean
 	**/
-	protected $BuyItNowAvailable;
+	public $BuyItNowAvailable;
 
 	/**
 	* @var SellerBusinessCodeType
 	**/
-	protected $SellerBusinessType;
+	public $SellerBusinessType;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MinimumBestOfferPrice;
+	public $MinimumBestOfferPrice;
 
 	/**
 	* @var string
 	**/
-	protected $MinimumBestOfferMessage;
+	public $MinimumBestOfferMessage;
 
 	/**
 	* @var string
 	**/
-	protected $LocalListingDistance;
+	public $LocalListingDistance;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $TCROriginalItemID;
+	public $TCROriginalItemID;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ViewItemURLForNaturalSearch;
+	public $ViewItemURLForNaturalSearch;
 
 	/**
 	* @var boolean
 	**/
-	protected $PayPerLeadEnabled;
+	public $PayPerLeadEnabled;
 
 	/**
 	* @var AmountType
 	**/
-	protected $BestOfferAutoAcceptPrice;
+	public $BestOfferAutoAcceptPrice;
 
 	/**
 	* @var EndReasonCodeType
 	**/
-	protected $EndingReason;
+	public $EndingReason;
 
 
 	/**

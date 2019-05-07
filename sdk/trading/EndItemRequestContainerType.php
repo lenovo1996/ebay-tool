@@ -18,22 +18,22 @@ class EndItemRequestContainerType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var EndReasonCodeType
 	**/
-	protected $EndingReason;
+	public $EndingReason;
 
 	/**
 	* @var string
 	**/
-	protected $MessageID;
+	public $MessageID;
 
 	/**
 	* @var string
 	**/
-	protected $SellerInventoryID;
+	public $SellerInventoryID;
 
 
 	/**

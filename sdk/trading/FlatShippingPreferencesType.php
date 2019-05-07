@@ -20,27 +20,27 @@ class FlatShippingPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $AmountPerAdditionalItem;
+	public $AmountPerAdditionalItem;
 
 	/**
 	* @var AmountType
 	**/
-	protected $DeductionAmountPerAdditionalItem;
+	public $DeductionAmountPerAdditionalItem;
 
 	/**
 	* @var FlatRateInsuranceRangeCostType
 	**/
-	protected $FlatRateInsuranceRangeCost;
+	public $FlatRateInsuranceRangeCost;
 
 	/**
 	* @var FlatShippingRateOptionCodeType
 	**/
-	protected $FlatShippingRateOption;
+	public $FlatShippingRateOption;
 
 	/**
 	* @var InsuranceOptionCodeType
 	**/
-	protected $InsuranceOption;
+	public $InsuranceOption;
 
 
 	/**

@@ -10,7 +10,7 @@
 //
 class EbatNs_DebugWindowLogger extends EbatNs_Logger
 {
-	protected $_out;
+	public $_out;
 	function __construct($proxy)
 	{
 		parent::__construct(true, 'stdout');

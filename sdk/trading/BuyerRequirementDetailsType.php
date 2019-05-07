@@ -18,22 +18,22 @@ class BuyerRequirementDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $ShipToRegistrationCountry;
+	public $ShipToRegistrationCountry;
 
 	/**
 	* @var boolean
 	**/
-	protected $ZeroFeedbackScore;
+	public $ZeroFeedbackScore;
 
 	/**
 	* @var MaximumItemRequirementsType
 	**/
-	protected $MaximumItemRequirements;
+	public $MaximumItemRequirements;
 
 	/**
 	* @var MaximumUnpaidItemStrikesInfoType
 	**/
-	protected $MaximumUnpaidItemStrikesInfo;
+	public $MaximumUnpaidItemStrikesInfo;
 
 
 	/**

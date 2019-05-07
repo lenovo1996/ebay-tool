@@ -20,22 +20,22 @@ class SellerDiscountsType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $OriginalItemPrice;
+	public $OriginalItemPrice;
 
 	/**
 	* @var AmountType
 	**/
-	protected $OriginalItemShippingCost;
+	public $OriginalItemShippingCost;
 
 	/**
 	* @var token
 	**/
-	protected $OriginalShippingService;
+	public $OriginalShippingService;
 
 	/**
 	* @var SellerDiscountType
 	**/
-	protected $SellerDiscount;
+	public $SellerDiscount;
 
 
 	/**

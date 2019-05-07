@@ -17,22 +17,22 @@ class CharacteristicsSetType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var int
 	**/
-	protected $AttributeSetID;
+	public $AttributeSetID;
 
 	/**
 	* @var string
 	**/
-	protected $AttributeSetVersion;
+	public $AttributeSetVersion;
 
 	/**
 	* @var CharacteristicType
 	**/
-	protected $Characteristics;
+	public $Characteristics;
 
 
 	/**

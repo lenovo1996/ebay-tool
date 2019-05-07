@@ -16,12 +16,12 @@ class UnitInfoType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $UnitType;
+	public $UnitType;
 
 	/**
 	* @var double
 	**/
-	protected $UnitQuantity;
+	public $UnitQuantity;
 
 
 	/**

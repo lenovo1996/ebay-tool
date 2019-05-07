@@ -25,17 +25,17 @@ class DisputeResolutionType extends EbatNs_ComplexType
 	/**
 	* @var DisputeResolutionRecordTypeCodeType
 	**/
-	protected $DisputeResolutionRecordType;
+	public $DisputeResolutionRecordType;
 
 	/**
 	* @var DisputeResolutionReasonCodeType
 	**/
-	protected $DisputeResolutionReason;
+	public $DisputeResolutionReason;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ResolutionTime;
+	public $ResolutionTime;
 
 
 	/**

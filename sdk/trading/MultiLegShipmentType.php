@@ -18,22 +18,22 @@ class MultiLegShipmentType extends EbatNs_ComplexType
 	/**
 	* @var MultiLegShippingServiceType
 	**/
-	protected $ShippingServiceDetails;
+	public $ShippingServiceDetails;
 
 	/**
 	* @var AddressType
 	**/
-	protected $ShipToAddress;
+	public $ShipToAddress;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingTimeMin;
+	public $ShippingTimeMin;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingTimeMax;
+	public $ShippingTimeMax;
 
 
 	/**

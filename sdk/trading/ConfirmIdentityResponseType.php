@@ -16,7 +16,7 @@ class ConfirmIdentityResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $UserID;
+	public $UserID;
 
 
 	/**

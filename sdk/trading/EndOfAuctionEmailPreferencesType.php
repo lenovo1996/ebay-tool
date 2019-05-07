@@ -17,37 +17,37 @@ class EndOfAuctionEmailPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $TemplateText;
+	public $TemplateText;
 
 	/**
 	* @var anyURI
 	**/
-	protected $LogoURL;
+	public $LogoURL;
 
 	/**
 	* @var EndOfAuctionLogoTypeCodeType
 	**/
-	protected $LogoType;
+	public $LogoType;
 
 	/**
 	* @var boolean
 	**/
-	protected $EmailCustomized;
+	public $EmailCustomized;
 
 	/**
 	* @var boolean
 	**/
-	protected $TextCustomized;
+	public $TextCustomized;
 
 	/**
 	* @var boolean
 	**/
-	protected $LogoCustomized;
+	public $LogoCustomized;
 
 	/**
 	* @var boolean
 	**/
-	protected $CopyEmail;
+	public $CopyEmail;
 
 
 	/**

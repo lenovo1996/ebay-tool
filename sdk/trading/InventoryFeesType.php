@@ -18,12 +18,12 @@ class InventoryFeesType extends EbatNs_ComplexType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var FeeType
 	**/
-	protected $Fee;
+	public $Fee;
 
 
 	/**

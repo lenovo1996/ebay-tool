@@ -20,7 +20,7 @@ class EbatNsCsSetExt_ValidationRuleArrayType extends EbatNs_ComplexType
 	/**
 	 * @var EbatNsCsSetExt_ValidationRuleType
 	 */
-	protected $Rule;
+	public $Rule;
 
 	/**
 	 * @return EbatNsCsSetExt_ValidationRuleType

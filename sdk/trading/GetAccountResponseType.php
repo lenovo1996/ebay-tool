@@ -20,42 +20,42 @@ class GetAccountResponseType extends AbstractResponseType
 	/**
 	* @var string
 	**/
-	protected $AccountID;
+	public $AccountID;
 
 	/**
 	* @var AccountSummaryType
 	**/
-	protected $AccountSummary;
+	public $AccountSummary;
 
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $Currency;
+	public $Currency;
 
 	/**
 	* @var AccountEntriesType
 	**/
-	protected $AccountEntries;
+	public $AccountEntries;
 
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasMoreEntries;
+	public $HasMoreEntries;
 
 	/**
 	* @var int
 	**/
-	protected $EntriesPerPage;
+	public $EntriesPerPage;
 
 	/**
 	* @var int
 	**/
-	protected $PageNumber;
+	public $PageNumber;
 
 
 	/**

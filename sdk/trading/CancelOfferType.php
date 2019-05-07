@@ -17,12 +17,12 @@ class CancelOfferType extends EbatNs_ComplexType
 	/**
 	* @var OfferType
 	**/
-	protected $Offer;
+	public $Offer;
 
 	/**
 	* @var string
 	**/
-	protected $Explanation;
+	public $Explanation;
 
 
 	/**

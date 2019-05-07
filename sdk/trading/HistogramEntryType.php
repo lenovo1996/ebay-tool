@@ -16,7 +16,7 @@ class HistogramEntryType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $Count;
+	public $Count;
 
 
 	/**

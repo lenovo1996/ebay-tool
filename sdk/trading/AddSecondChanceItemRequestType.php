@@ -26,27 +26,27 @@ class AddSecondChanceItemRequestType extends AbstractRequestType
 	/**
 	* @var UserIDType
 	**/
-	protected $RecipientBidderUserID;
+	public $RecipientBidderUserID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $BuyItNowPrice;
+	public $BuyItNowPrice;
 
 	/**
 	* @var SecondChanceOfferDurationCodeType
 	**/
-	protected $Duration;
+	public $Duration;
 
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $SellerMessage;
+	public $SellerMessage;
 
 
 	/**

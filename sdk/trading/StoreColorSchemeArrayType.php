@@ -17,7 +17,7 @@ class StoreColorSchemeArrayType extends EbatNs_ComplexType
 	/**
 	* @var StoreColorSchemeType
 	**/
-	protected $ColorScheme;
+	public $ColorScheme;
 
 
 	/**

@@ -20,12 +20,12 @@ class PickupOptionsType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $PickupMethod;
+	public $PickupMethod;
 
 	/**
 	* @var int
 	**/
-	protected $PickupPriority;
+	public $PickupPriority;
 
 
 	/**

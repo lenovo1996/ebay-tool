@@ -26,27 +26,27 @@ class CalculatedShippingRateType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $OriginatingPostalCode;
+	public $OriginatingPostalCode;
 
 	/**
 	* @var MeasurementSystemCodeType
 	**/
-	protected $MeasurementUnit;
+	public $MeasurementUnit;
 
 	/**
 	* @var AmountType
 	**/
-	protected $PackagingHandlingCosts;
+	public $PackagingHandlingCosts;
 
 	/**
 	* @var boolean
 	**/
-	protected $ShippingIrregular;
+	public $ShippingIrregular;
 
 	/**
 	* @var AmountType
 	**/
-	protected $InternationalPackagingHandlingCosts;
+	public $InternationalPackagingHandlingCosts;
 
 
 	/**

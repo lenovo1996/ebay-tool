@@ -28,82 +28,82 @@ class SendInvoiceRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var OrderIDType
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 	/**
 	* @var InternationalShippingServiceOptionsType
 	**/
-	protected $InternationalShippingServiceOptions;
+	public $InternationalShippingServiceOptions;
 
 	/**
 	* @var ShippingServiceOptionsType
 	**/
-	protected $ShippingServiceOptions;
+	public $ShippingServiceOptions;
 
 	/**
 	* @var SalesTaxType
 	**/
-	protected $SalesTax;
+	public $SalesTax;
 
 	/**
 	* @var InsuranceOptionCodeType
 	**/
-	protected $InsuranceOption;
+	public $InsuranceOption;
 
 	/**
 	* @var AmountType
 	**/
-	protected $InsuranceFee;
+	public $InsuranceFee;
 
 	/**
 	* @var BuyerPaymentMethodCodeType
 	**/
-	protected $PaymentMethods;
+	public $PaymentMethods;
 
 	/**
 	* @var string
 	**/
-	protected $PayPalEmailAddress;
+	public $PayPalEmailAddress;
 
 	/**
 	* @var string
 	**/
-	protected $CheckoutInstructions;
+	public $CheckoutInstructions;
 
 	/**
 	* @var boolean
 	**/
-	protected $EmailCopyToSeller;
+	public $EmailCopyToSeller;
 
 	/**
 	* @var AmountType
 	**/
-	protected $CODCost;
+	public $CODCost;
 
 	/**
 	* @var SKUType
 	**/
-	protected $SKU;
+	public $SKU;
 
 	/**
 	* @var string
 	**/
-	protected $OrderLineItemID;
+	public $OrderLineItemID;
 
 	/**
 	* @var AmountType
 	**/
-	protected $AdjustmentAmount;
+	public $AdjustmentAmount;
 
 
 	/**

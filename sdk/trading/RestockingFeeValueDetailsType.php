@@ -18,12 +18,12 @@ class RestockingFeeValueDetailsType extends EbatNs_ComplexType
 	/**
 	* @var token
 	**/
-	protected $RestockingFeeValueOption;
+	public $RestockingFeeValueOption;
 
 	/**
 	* @var string
 	**/
-	protected $Description;
+	public $Description;
 
 
 	/**

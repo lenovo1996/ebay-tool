@@ -17,12 +17,12 @@ class GetMyeBayRemindersResponseType extends AbstractResponseType
 	/**
 	* @var RemindersType
 	**/
-	protected $BuyingReminders;
+	public $BuyingReminders;
 
 	/**
 	* @var RemindersType
 	**/
-	protected $SellingReminders;
+	public $SellingReminders;
 
 
 	/**

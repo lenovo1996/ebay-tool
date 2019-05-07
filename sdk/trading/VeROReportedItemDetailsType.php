@@ -18,7 +18,7 @@ class VeROReportedItemDetailsType extends EbatNs_ComplexType
 	/**
 	* @var VeROReportedItemType
 	**/
-	protected $ReportedItem;
+	public $ReportedItem;
 
 
 	/**

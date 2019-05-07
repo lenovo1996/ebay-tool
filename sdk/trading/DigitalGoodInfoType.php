@@ -16,7 +16,7 @@ class DigitalGoodInfoType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $DigitalDelivery;
+	public $DigitalDelivery;
 
 
 	/**

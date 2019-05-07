@@ -17,17 +17,17 @@ class UnitOfMeasurementDetailsType extends EbatNs_ComplexType
 	/**
 	* @var UnitOfMeasurementType
 	**/
-	protected $UnitOfMeasurement;
+	public $UnitOfMeasurement;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

@@ -16,12 +16,12 @@ class PictureURLsType extends EbatNs_ComplexType
 	/**
 	* @var anyURI
 	**/
-	protected $eBayPictureURL;
+	public $eBayPictureURL;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ExternalPictureURL;
+	public $ExternalPictureURL;
 
 
 	/**

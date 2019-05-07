@@ -17,7 +17,7 @@ class GetSellingManagerTemplatesResponseType extends AbstractResponseType
 	/**
 	* @var SellingManagerTemplateDetailsArrayType
 	**/
-	protected $SellingManagerTemplateDetailsArray;
+	public $SellingManagerTemplateDetailsArray;
 
 
 	/**

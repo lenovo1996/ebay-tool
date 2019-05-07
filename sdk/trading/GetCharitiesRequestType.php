@@ -17,47 +17,47 @@ class GetCharitiesRequestType extends AbstractRequestType
 	/**
 	* @var string
 	**/
-	protected $CharityID;
+	public $CharityID;
 
 	/**
 	* @var string
 	**/
-	protected $CharityName;
+	public $CharityName;
 
 	/**
 	* @var string
 	**/
-	protected $Query;
+	public $Query;
 
 	/**
 	* @var int
 	**/
-	protected $CharityRegion;
+	public $CharityRegion;
 
 	/**
 	* @var int
 	**/
-	protected $CharityDomain;
+	public $CharityDomain;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeDescription;
+	public $IncludeDescription;
 
 	/**
 	* @var StringMatchCodeType
 	**/
-	protected $MatchType;
+	public $MatchType;
 
 	/**
 	* @var boolean
 	**/
-	protected $Featured;
+	public $Featured;
 
 	/**
 	* @var long
 	**/
-	protected $CampaignID;
+	public $CampaignID;
 
 
 	/**

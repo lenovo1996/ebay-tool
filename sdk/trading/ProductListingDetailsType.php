@@ -24,82 +24,82 @@ class ProductListingDetailsType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $IncludeStockPhotoURL;
+	public $IncludeStockPhotoURL;
 
 	/**
 	* @var boolean
 	**/
-	protected $UseStockPhotoURLAsGallery;
+	public $UseStockPhotoURLAsGallery;
 
 	/**
 	* @var anyURI
 	**/
-	protected $StockPhotoURL;
+	public $StockPhotoURL;
 
 	/**
 	* @var string
 	**/
-	protected $Copyright;
+	public $Copyright;
 
 	/**
 	* @var string
 	**/
-	protected $ProductReferenceID;
+	public $ProductReferenceID;
 
 	/**
 	* @var anyURI
 	**/
-	protected $DetailsURL;
+	public $DetailsURL;
 
 	/**
 	* @var anyURI
 	**/
-	protected $ProductDetailsURL;
+	public $ProductDetailsURL;
 
 	/**
 	* @var boolean
 	**/
-	protected $ReturnSearchResultOnDuplicates;
+	public $ReturnSearchResultOnDuplicates;
 
 	/**
 	* @var string
 	**/
-	protected $ISBN;
+	public $ISBN;
 
 	/**
 	* @var string
 	**/
-	protected $UPC;
+	public $UPC;
 
 	/**
 	* @var string
 	**/
-	protected $EAN;
+	public $EAN;
 
 	/**
 	* @var BrandMPNType
 	**/
-	protected $BrandMPN;
+	public $BrandMPN;
 
 	/**
 	* @var TicketListingDetailsType
 	**/
-	protected $TicketListingDetails;
+	public $TicketListingDetails;
 
 	/**
 	* @var boolean
 	**/
-	protected $UseFirstProduct;
+	public $UseFirstProduct;
 
 	/**
 	* @var boolean
 	**/
-	protected $IncludeeBayProductDetails;
+	public $IncludeeBayProductDetails;
 
 	/**
 	* @var NameValueListType
 	**/
-	protected $NameValueList;
+	public $NameValueList;
 
 
 	/**

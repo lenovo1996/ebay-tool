@@ -19,12 +19,12 @@ class SellerAccountDashboardType extends EbatNs_ComplexType
 	/**
 	* @var SellerAccountStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var SellerDashboardAlertType
 	**/
-	protected $Alert;
+	public $Alert;
 
 
 	/**

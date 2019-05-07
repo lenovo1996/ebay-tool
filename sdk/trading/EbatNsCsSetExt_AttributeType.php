@@ -25,67 +25,67 @@ class EbatNsCsSetExt_AttributeType extends EbatNs_ComplexType
 	/**
 	 * @var string
 	 */
-	protected $Day;
+	public $Day;
 	/**
 	 * @var string
 	 */
-	protected $Month;
+	public $Month;
 	/**
 	 * @var string
 	 */
-	protected $Year;
+	public $Year;
 	/**
 	 * @var EbatNsCsSetExt_CurrentTimeType
 	 */
-	protected $CurrentTime;
+	public $CurrentTime;
 	/**
 	 * @var EbatNsCsSetExt_ValType
 	 */
-	protected $Value;
+	public $Value;
 	/**
 	 * @var string
 	 */
-	protected $SellingDisplayLabel;
+	public $SellingDisplayLabel;
 	/**
 	 * @var int
 	 */
-	protected $Type;
+	public $Type;
 	/**
 	 * @var string
 	 */
-	protected $MessageRight;
+	public $MessageRight;
 	/**
 	 * @var int
 	 */
-	protected $EditType;
+	public $EditType;
 	/**
 	 * @var EbatNsCsSetExt_ValueListType
 	 */
-	protected $ValueList;
+	public $ValueList;
 	/**
 	 * @var EbatNsCsSetExt_DependencyType
 	 */
-	protected $Dependency;
+	public $Dependency;
 	/**
 	 * @var EbatNsCsSetExt_ValidationRuleArrayType
 	 */
-	protected $ValidationRules;
+	public $ValidationRules;
 	/**
 	 * @var string
 	 */
-	protected $MessageBottom;
+	public $MessageBottom;
 	/**
 	 * @var string
 	 */
-	protected $DefaultUnitOfMeasureFormatString;
+	public $DefaultUnitOfMeasureFormatString;
 	/**
 	 * @var string
 	 */
-	protected $Label;
+	public $Label;
 	/**
 	 * @var EbatNsCsSetExt_InputType
 	 */
-	protected $Input;
+	public $Input;
 
 	/**
 	 * @return string

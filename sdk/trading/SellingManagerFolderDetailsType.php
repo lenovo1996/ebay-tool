@@ -17,37 +17,37 @@ class SellingManagerFolderDetailsType extends EbatNs_ComplexType
 	/**
 	* @var long
 	**/
-	protected $FolderID;
+	public $FolderID;
 
 	/**
 	* @var long
 	**/
-	protected $ParentFolderID;
+	public $ParentFolderID;
 
 	/**
 	* @var long
 	**/
-	protected $FolderLevel;
+	public $FolderLevel;
 
 	/**
 	* @var string
 	**/
-	protected $FolderName;
+	public $FolderName;
 
 	/**
 	* @var string
 	**/
-	protected $FolderComment;
+	public $FolderComment;
 
 	/**
 	* @var SellingManagerFolderDetailsType
 	**/
-	protected $ChildFolder;
+	public $ChildFolder;
 
 	/**
 	* @var dateTime
 	**/
-	protected $CreationTime;
+	public $CreationTime;
 
 
 	/**

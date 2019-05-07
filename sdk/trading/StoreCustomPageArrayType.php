@@ -17,7 +17,7 @@ class StoreCustomPageArrayType extends EbatNs_ComplexType
 	/**
 	* @var StoreCustomPageType
 	**/
-	protected $CustomPage;
+	public $CustomPage;
 
 
 	/**

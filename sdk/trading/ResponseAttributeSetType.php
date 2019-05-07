@@ -18,37 +18,37 @@ class ResponseAttributeSetType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $ApproximatePages;
+	public $ApproximatePages;
 
 	/**
 	* @var int
 	**/
-	protected $AttributeSetID;
+	public $AttributeSetID;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasMore;
+	public $HasMore;
 
 	/**
 	* @var ProductFamilyType
 	**/
-	protected $ProductFamilies;
+	public $ProductFamilies;
 
 	/**
 	* @var ProductFinderConstraintType
 	**/
-	protected $ProductFinderConstraints;
+	public $ProductFinderConstraints;
 
 	/**
 	* @var boolean
 	**/
-	protected $TooManyMatchesFound;
+	public $TooManyMatchesFound;
 
 	/**
 	* @var int
 	**/
-	protected $TotalProducts;
+	public $TotalProducts;
 
 
 	/**

@@ -18,22 +18,22 @@ class RecommendationsType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $CategoryID;
+	public $CategoryID;
 
 	/**
 	* @var ProductIdentifiersType
 	**/
-	protected $ProductIdentifiers;
+	public $ProductIdentifiers;
 
 	/**
 	* @var NameRecommendationType
 	**/
-	protected $NameRecommendation;
+	public $NameRecommendation;
 
 	/**
 	* @var boolean
 	**/
-	protected $Updated;
+	public $Updated;
 
 
 	/**

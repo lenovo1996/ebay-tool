@@ -19,7 +19,7 @@ class SetTaxTableRequestType extends AbstractRequestType
 	/**
 	* @var TaxTableType
 	**/
-	protected $TaxTable;
+	public $TaxTable;
 
 
 	/**

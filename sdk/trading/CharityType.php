@@ -17,42 +17,42 @@ class CharityType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $CharityName;
+	public $CharityName;
 
 	/**
 	* @var int
 	**/
-	protected $CharityNumber;
+	public $CharityNumber;
 
 	/**
 	* @var float
 	**/
-	protected $DonationPercent;
+	public $DonationPercent;
 
 	/**
 	* @var string
 	**/
-	protected $CharityID;
+	public $CharityID;
 
 	/**
 	* @var string
 	**/
-	protected $Mission;
+	public $Mission;
 
 	/**
 	* @var string
 	**/
-	protected $LogoURL;
+	public $LogoURL;
 
 	/**
 	* @var CharityStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var boolean
 	**/
-	protected $CharityListing;
+	public $CharityListing;
 
 
 	/**

@@ -18,22 +18,22 @@ class PromotionDetailsType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $PromotionPrice;
+	public $PromotionPrice;
 
 	/**
 	* @var PromotionItemPriceTypeCodeType
 	**/
-	protected $PromotionPriceType;
+	public $PromotionPriceType;
 
 	/**
 	* @var int
 	**/
-	protected $BidCount;
+	public $BidCount;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ConvertedPromotionPrice;
+	public $ConvertedPromotionPrice;
 
 
 	/**

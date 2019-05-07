@@ -17,17 +17,17 @@ class ItemCompatibilityType extends EbatNs_ComplexType
 	/**
 	* @var boolean
 	**/
-	protected $Delete;
+	public $Delete;
 
 	/**
 	* @var NameValueListType
 	**/
-	protected $NameValueList;
+	public $NameValueList;
 
 	/**
 	* @var string
 	**/
-	protected $CompatibilityNotes;
+	public $CompatibilityNotes;
 
 
 	/**

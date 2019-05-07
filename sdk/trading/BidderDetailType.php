@@ -17,32 +17,32 @@ class BidderDetailType extends EbatNs_ComplexType
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 	/**
 	* @var string
 	**/
-	protected $Email;
+	public $Email;
 
 	/**
 	* @var int
 	**/
-	protected $FeedbackScore;
+	public $FeedbackScore;
 
 	/**
 	* @var int
 	**/
-	protected $UniqueNegativeFeedbackCount;
+	public $UniqueNegativeFeedbackCount;
 
 	/**
 	* @var int
 	**/
-	protected $UniquePositiveFeedbackCount;
+	public $UniquePositiveFeedbackCount;
 
 	/**
 	* @var int
 	**/
-	protected $UniqueNeutralFeedbackCount;
+	public $UniqueNeutralFeedbackCount;
 
 
 	/**

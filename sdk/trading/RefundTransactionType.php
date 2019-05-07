@@ -17,22 +17,22 @@ class RefundTransactionType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $OrderID;
+	public $OrderID;
 
 	/**
 	* @var string
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var string
 	**/
-	protected $TransactionID;
+	public $TransactionID;
 
 	/**
 	* @var RefundLineArrayType
 	**/
-	protected $RefundLineArray;
+	public $RefundLineArray;
 
 
 	/**

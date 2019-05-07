@@ -16,7 +16,7 @@ class FeedbackCommentArrayType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $StoredCommentText;
+	public $StoredCommentText;
 
 
 	/**

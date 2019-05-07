@@ -17,7 +17,7 @@ class GetItemResponseType extends AbstractResponseType
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 
 	/**

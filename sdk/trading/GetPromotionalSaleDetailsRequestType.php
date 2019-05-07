@@ -17,12 +17,12 @@ class GetPromotionalSaleDetailsRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $PromotionalSaleID;
+	public $PromotionalSaleID;
 
 	/**
 	* @var PromotionalSaleStatusCodeType
 	**/
-	protected $PromotionalSaleStatus;
+	public $PromotionalSaleStatus;
 
 
 	/**

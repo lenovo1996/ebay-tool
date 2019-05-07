@@ -23,22 +23,22 @@ class CombinedPaymentPreferencesType extends EbatNs_ComplexType
 	/**
 	* @var CalculatedShippingPreferencesType
 	**/
-	protected $CalculatedShippingPreferences;
+	public $CalculatedShippingPreferences;
 
 	/**
 	* @var CombinedPaymentOptionCodeType
 	**/
-	protected $CombinedPaymentOption;
+	public $CombinedPaymentOption;
 
 	/**
 	* @var CombinedPaymentPeriodCodeType
 	**/
-	protected $CombinedPaymentPeriod;
+	public $CombinedPaymentPeriod;
 
 	/**
 	* @var FlatShippingPreferencesType
 	**/
-	protected $FlatShippingPreferences;
+	public $FlatShippingPreferences;
 
 
 	/**

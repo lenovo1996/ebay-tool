@@ -22,17 +22,17 @@ class ItemBestOffersType extends EbatNs_ComplexType
 	/**
 	* @var TradingRoleCodeType
 	**/
-	protected $Role;
+	public $Role;
 
 	/**
 	* @var BestOfferArrayType
 	**/
-	protected $BestOfferArray;
+	public $BestOfferArray;
 
 	/**
 	* @var ItemType
 	**/
-	protected $Item;
+	public $Item;
 
 
 	/**

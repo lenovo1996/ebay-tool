@@ -17,7 +17,7 @@ class CancelOfferArrayType extends EbatNs_ComplexType
 	/**
 	* @var CancelOfferType
 	**/
-	protected $CancelOffer;
+	public $CancelOffer;
 
 
 	/**

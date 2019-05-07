@@ -31,77 +31,77 @@ class ShippingServiceOptionsType extends EbatNs_ComplexType
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingInsuranceCost;
+	public $ShippingInsuranceCost;
 
 	/**
 	* @var token
 	**/
-	protected $ShippingService;
+	public $ShippingService;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingServiceCost;
+	public $ShippingServiceCost;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingServiceAdditionalCost;
+	public $ShippingServiceAdditionalCost;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingServicePriority;
+	public $ShippingServicePriority;
 
 	/**
 	* @var boolean
 	**/
-	protected $ExpeditedService;
+	public $ExpeditedService;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingTimeMin;
+	public $ShippingTimeMin;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingTimeMax;
+	public $ShippingTimeMax;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ShippingSurcharge;
+	public $ShippingSurcharge;
 
 	/**
 	* @var boolean
 	**/
-	protected $FreeShipping;
+	public $FreeShipping;
 
 	/**
 	* @var boolean
 	**/
-	protected $LocalPickup;
+	public $LocalPickup;
 
 	/**
 	* @var AmountType
 	**/
-	protected $ImportCharge;
+	public $ImportCharge;
 
 	/**
 	* @var ShippingPackageInfoType
 	**/
-	protected $ShippingPackageInfo;
+	public $ShippingPackageInfo;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ShippingServiceCutOffTime;
+	public $ShippingServiceCutOffTime;
 
 	/**
 	* @var string
 	**/
-	protected $LogisticPlanType;
+	public $LogisticPlanType;
 
 
 	/**

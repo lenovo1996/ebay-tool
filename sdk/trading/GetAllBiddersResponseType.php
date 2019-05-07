@@ -20,22 +20,22 @@ class GetAllBiddersResponseType extends AbstractResponseType
 	/**
 	* @var OfferArrayType
 	**/
-	protected $BidArray;
+	public $BidArray;
 
 	/**
 	* @var UserIDType
 	**/
-	protected $HighBidder;
+	public $HighBidder;
 
 	/**
 	* @var AmountType
 	**/
-	protected $HighestBid;
+	public $HighestBid;
 
 	/**
 	* @var ListingStatusCodeType
 	**/
-	protected $ListingStatus;
+	public $ListingStatus;
 
 
 	/**

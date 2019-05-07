@@ -18,12 +18,12 @@ class StoreSubscriptionType extends EbatNs_ComplexType
 	/**
 	* @var StoreSubscriptionLevelCodeType
 	**/
-	protected $Level;
+	public $Level;
 
 	/**
 	* @var AmountType
 	**/
-	protected $Fee;
+	public $Fee;
 
 
 	/**

@@ -17,7 +17,7 @@ class VeROReasonCodeDetailsType extends EbatNs_ComplexType
 	/**
 	* @var VeROSiteDetailType
 	**/
-	protected $VeROSiteDetail;
+	public $VeROSiteDetail;
 
 
 	/**

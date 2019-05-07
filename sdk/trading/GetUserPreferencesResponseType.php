@@ -31,112 +31,112 @@ class GetUserPreferencesResponseType extends AbstractResponseType
 	/**
 	* @var BidderNoticePreferencesType
 	**/
-	protected $BidderNoticePreferences;
+	public $BidderNoticePreferences;
 
 	/**
 	* @var CombinedPaymentPreferencesType
 	**/
-	protected $CombinedPaymentPreferences;
+	public $CombinedPaymentPreferences;
 
 	/**
 	* @var CrossPromotionPreferencesType
 	**/
-	protected $CrossPromotionPreferences;
+	public $CrossPromotionPreferences;
 
 	/**
 	* @var SellerPaymentPreferencesType
 	**/
-	protected $SellerPaymentPreferences;
+	public $SellerPaymentPreferences;
 
 	/**
 	* @var SellerFavoriteItemPreferencesType
 	**/
-	protected $SellerFavoriteItemPreferences;
+	public $SellerFavoriteItemPreferences;
 
 	/**
 	* @var EndOfAuctionEmailPreferencesType
 	**/
-	protected $EndOfAuctionEmailPreferences;
+	public $EndOfAuctionEmailPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $EmailShipmentTrackingNumberPreference;
+	public $EmailShipmentTrackingNumberPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $RequiredShipPhoneNumberPreference;
+	public $RequiredShipPhoneNumberPreference;
 
 	/**
 	* @var ProStoresCheckoutPreferenceType
 	**/
-	protected $ProStoresPreference;
+	public $ProStoresPreference;
 
 	/**
 	* @var UnpaidItemAssistancePreferencesType
 	**/
-	protected $UnpaidItemAssistancePreferences;
+	public $UnpaidItemAssistancePreferences;
 
 	/**
 	* @var SellerExcludeShipToLocationPreferencesType
 	**/
-	protected $SellerExcludeShipToLocationPreferences;
+	public $SellerExcludeShipToLocationPreferences;
 
 	/**
 	* @var PurchaseReminderEmailPreferencesType
 	**/
-	protected $PurchaseReminderEmailPreferences;
+	public $PurchaseReminderEmailPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $SellerThirdPartyCheckoutDisabled;
+	public $SellerThirdPartyCheckoutDisabled;
 
 	/**
 	* @var SellerProfilePreferencesType
 	**/
-	protected $SellerProfilePreferences;
+	public $SellerProfilePreferences;
 
 	/**
 	* @var SellerReturnPreferencesType
 	**/
-	protected $SellerReturnPreferences;
+	public $SellerReturnPreferences;
 
 	/**
 	* @var boolean
 	**/
-	protected $OfferGlobalShippingProgramPreference;
+	public $OfferGlobalShippingProgramPreference;
 
 	/**
 	* @var DispatchCutoffTimePreferencesType
 	**/
-	protected $DispatchCutoffTimePreference;
+	public $DispatchCutoffTimePreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $GlobalShippingProgramListingPreference;
+	public $GlobalShippingProgramListingPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $OverrideGSPServiceWithIntlServicePreference;
+	public $OverrideGSPServiceWithIntlServicePreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $PickupDropoffSellerPreference;
+	public $PickupDropoffSellerPreference;
 
 	/**
 	* @var boolean
 	**/
-	protected $OutOfStockControlPreference;
+	public $OutOfStockControlPreference;
 
 	/**
 	* @var eBayPLUSPreferenceType
 	**/
-	protected $eBayPLUSPreference;
+	public $eBayPLUSPreference;
 
 
 	/**

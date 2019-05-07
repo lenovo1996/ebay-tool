@@ -16,22 +16,22 @@ class ListingTipFieldType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $ListingTipFieldID;
+	public $ListingTipFieldID;
 
 	/**
 	* @var string
 	**/
-	protected $FieldTip;
+	public $FieldTip;
 
 	/**
 	* @var string
 	**/
-	protected $CurrentFieldText;
+	public $CurrentFieldText;
 
 	/**
 	* @var string
 	**/
-	protected $CurrentFieldValue;
+	public $CurrentFieldValue;
 
 
 	/**

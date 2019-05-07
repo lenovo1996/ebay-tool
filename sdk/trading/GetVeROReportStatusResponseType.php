@@ -19,37 +19,37 @@ class GetVeROReportStatusResponseType extends AbstractResponseType
 	/**
 	* @var PaginationResultType
 	**/
-	protected $PaginationResult;
+	public $PaginationResult;
 
 	/**
 	* @var boolean
 	**/
-	protected $HasMoreItems;
+	public $HasMoreItems;
 
 	/**
 	* @var int
 	**/
-	protected $ItemsPerPage;
+	public $ItemsPerPage;
 
 	/**
 	* @var int
 	**/
-	protected $PageNumber;
+	public $PageNumber;
 
 	/**
 	* @var long
 	**/
-	protected $VeROReportPacketID;
+	public $VeROReportPacketID;
 
 	/**
 	* @var VeROReportPacketStatusCodeType
 	**/
-	protected $VeROReportPacketStatus;
+	public $VeROReportPacketStatus;
 
 	/**
 	* @var VeROReportedItemDetailsType
 	**/
-	protected $ReportedItemDetails;
+	public $ReportedItemDetails;
 
 
 	/**

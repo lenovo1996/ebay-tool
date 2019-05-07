@@ -18,32 +18,32 @@ class AddDisputeResponseRequestType extends AbstractRequestType
 	/**
 	* @var DisputeIDType
 	**/
-	protected $DisputeID;
+	public $DisputeID;
 
 	/**
 	* @var string
 	**/
-	protected $MessageText;
+	public $MessageText;
 
 	/**
 	* @var DisputeActivityCodeType
 	**/
-	protected $DisputeActivity;
+	public $DisputeActivity;
 
 	/**
 	* @var string
 	**/
-	protected $ShippingCarrierUsed;
+	public $ShippingCarrierUsed;
 
 	/**
 	* @var string
 	**/
-	protected $ShipmentTrackNumber;
+	public $ShipmentTrackNumber;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ShippingTime;
+	public $ShippingTime;
 
 
 	/**

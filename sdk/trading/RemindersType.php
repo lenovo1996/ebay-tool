@@ -16,97 +16,97 @@ class RemindersType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $PaymentToSendCount;
+	public $PaymentToSendCount;
 
 	/**
 	* @var int
 	**/
-	protected $FeedbackToReceiveCount;
+	public $FeedbackToReceiveCount;
 
 	/**
 	* @var int
 	**/
-	protected $FeedbackToSendCount;
+	public $FeedbackToSendCount;
 
 	/**
 	* @var int
 	**/
-	protected $OutbidCount;
+	public $OutbidCount;
 
 	/**
 	* @var int
 	**/
-	protected $PaymentToReceiveCount;
+	public $PaymentToReceiveCount;
 
 	/**
 	* @var int
 	**/
-	protected $SecondChanceOfferCount;
+	public $SecondChanceOfferCount;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingNeededCount;
+	public $ShippingNeededCount;
 
 	/**
 	* @var int
 	**/
-	protected $RelistingNeededCount;
+	public $RelistingNeededCount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalNewLeadsCount;
+	public $TotalNewLeadsCount;
 
 	/**
 	* @var int
 	**/
-	protected $DocsForCCProcessingToSendCount;
+	public $DocsForCCProcessingToSendCount;
 
 	/**
 	* @var int
 	**/
-	protected $RTEToProcessCount;
+	public $RTEToProcessCount;
 
 	/**
 	* @var int
 	**/
-	protected $ItemReceiptToConfirmCount;
+	public $ItemReceiptToConfirmCount;
 
 	/**
 	* @var int
 	**/
-	protected $RefundOnHoldCount;
+	public $RefundOnHoldCount;
 
 	/**
 	* @var int
 	**/
-	protected $RefundCancelledCount;
+	public $RefundCancelledCount;
 
 	/**
 	* @var int
 	**/
-	protected $ShippingDetailsToBeProvidedCount;
+	public $ShippingDetailsToBeProvidedCount;
 
 	/**
 	* @var int
 	**/
-	protected $ItemReceiptConfirmationToReceiveCount;
+	public $ItemReceiptConfirmationToReceiveCount;
 
 	/**
 	* @var int
 	**/
-	protected $RefundInitiatedCount;
+	public $RefundInitiatedCount;
 
 	/**
 	* @var int
 	**/
-	protected $PendingRTERequestCount;
+	public $PendingRTERequestCount;
 
 	/**
 	* @var int
 	**/
-	protected $DeclinedRTERequestCount;
+	public $DeclinedRTERequestCount;
 
 
 	/**

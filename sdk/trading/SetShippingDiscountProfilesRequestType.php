@@ -28,47 +28,47 @@ class SetShippingDiscountProfilesRequestType extends AbstractRequestType
 	/**
 	* @var CurrencyCodeType
 	**/
-	protected $CurrencyID;
+	public $CurrencyID;
 
 	/**
 	* @var CombinedPaymentPeriodCodeType
 	**/
-	protected $CombinedDuration;
+	public $CombinedDuration;
 
 	/**
 	* @var ModifyActionCodeType
 	**/
-	protected $ModifyActionCode;
+	public $ModifyActionCode;
 
 	/**
 	* @var FlatShippingDiscountType
 	**/
-	protected $FlatShippingDiscount;
+	public $FlatShippingDiscount;
 
 	/**
 	* @var CalculatedShippingDiscountType
 	**/
-	protected $CalculatedShippingDiscount;
+	public $CalculatedShippingDiscount;
 
 	/**
 	* @var CalculatedHandlingDiscountType
 	**/
-	protected $CalculatedHandlingDiscount;
+	public $CalculatedHandlingDiscount;
 
 	/**
 	* @var PromotionalShippingDiscountDetailsType
 	**/
-	protected $PromotionalShippingDiscountDetails;
+	public $PromotionalShippingDiscountDetails;
 
 	/**
 	* @var ShippingInsuranceType
 	**/
-	protected $ShippingInsurance;
+	public $ShippingInsurance;
 
 	/**
 	* @var ShippingInsuranceType
 	**/
-	protected $InternationalShippingInsurance;
+	public $InternationalShippingInsurance;
 
 
 	/**

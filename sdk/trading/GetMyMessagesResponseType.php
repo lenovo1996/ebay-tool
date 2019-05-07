@@ -21,17 +21,17 @@ class GetMyMessagesResponseType extends AbstractResponseType
 	/**
 	* @var MyMessagesSummaryType
 	**/
-	protected $Summary;
+	public $Summary;
 
 	/**
 	* @var MyMessagesAlertArrayType
 	**/
-	protected $Alerts;
+	public $Alerts;
 
 	/**
 	* @var MyMessagesMessageArrayType
 	**/
-	protected $Messages;
+	public $Messages;
 
 
 	/**

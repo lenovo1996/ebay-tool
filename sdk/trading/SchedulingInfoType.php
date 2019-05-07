@@ -16,17 +16,17 @@ class SchedulingInfoType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $MaxScheduledMinutes;
+	public $MaxScheduledMinutes;
 
 	/**
 	* @var int
 	**/
-	protected $MinScheduledMinutes;
+	public $MinScheduledMinutes;
 
 	/**
 	* @var int
 	**/
-	protected $MaxScheduledItems;
+	public $MaxScheduledItems;
 
 
 	/**

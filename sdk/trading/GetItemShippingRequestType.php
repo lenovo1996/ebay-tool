@@ -18,22 +18,22 @@ class GetItemShippingRequestType extends AbstractRequestType
 	/**
 	* @var ItemIDType
 	**/
-	protected $ItemID;
+	public $ItemID;
 
 	/**
 	* @var int
 	**/
-	protected $QuantitySold;
+	public $QuantitySold;
 
 	/**
 	* @var string
 	**/
-	protected $DestinationPostalCode;
+	public $DestinationPostalCode;
 
 	/**
 	* @var CountryCodeType
 	**/
-	protected $DestinationCountryCode;
+	public $DestinationCountryCode;
 
 
 	/**

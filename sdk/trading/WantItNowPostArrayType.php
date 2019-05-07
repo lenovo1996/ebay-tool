@@ -17,7 +17,7 @@ class WantItNowPostArrayType extends EbatNs_ComplexType
 	/**
 	* @var WantItNowPostType
 	**/
-	protected $WantItNowPost;
+	public $WantItNowPost;
 
 
 	/**

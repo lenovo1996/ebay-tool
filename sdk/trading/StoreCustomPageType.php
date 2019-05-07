@@ -15,47 +15,47 @@ class StoreCustomPageType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Name;
+	public $Name;
 
 	/**
 	* @var long
 	**/
-	protected $PageID;
+	public $PageID;
 
 	/**
 	* @var string
 	**/
-	protected $URLPath;
+	public $URLPath;
 
 	/**
 	* @var anyURI
 	**/
-	protected $URL;
+	public $URL;
 
 	/**
 	* @var StoreCustomPageStatusCodeType
 	**/
-	protected $Status;
+	public $Status;
 
 	/**
 	* @var string
 	**/
-	protected $Content;
+	public $Content;
 
 	/**
 	* @var boolean
 	**/
-	protected $LeftNav;
+	public $LeftNav;
 
 	/**
 	* @var boolean
 	**/
-	protected $PreviewEnabled;
+	public $PreviewEnabled;
 
 	/**
 	* @var int
 	**/
-	protected $Order;
+	public $Order;
 
 
 	/**

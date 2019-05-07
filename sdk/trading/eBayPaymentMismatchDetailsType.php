@@ -18,17 +18,17 @@ class eBayPaymentMismatchDetailsType extends EbatNs_ComplexType
 	/**
 	* @var MismatchTypeCodeType
 	**/
-	protected $MismatchType;
+	public $MismatchType;
 
 	/**
 	* @var dateTime
 	**/
-	protected $ActionRequiredBy;
+	public $ActionRequiredBy;
 
 	/**
 	* @var AmountType
 	**/
-	protected $MismatchAmount;
+	public $MismatchAmount;
 
 
 	/**

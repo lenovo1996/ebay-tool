@@ -17,17 +17,17 @@ class StoreCustomListingHeaderLinkType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $LinkID;
+	public $LinkID;
 
 	/**
 	* @var int
 	**/
-	protected $Order;
+	public $Order;
 
 	/**
 	* @var StoreCustomListingHeaderLinkCodeType
 	**/
-	protected $LinkType;
+	public $LinkType;
 
 
 	/**

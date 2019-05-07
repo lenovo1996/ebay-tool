@@ -23,7 +23,7 @@ class SellerRatingSummaryArrayType extends EbatNs_ComplexType
 	/**
 	* @var AverageRatingSummaryType
 	**/
-	protected $AverageRatingSummary;
+	public $AverageRatingSummary;
 
 
 	/**

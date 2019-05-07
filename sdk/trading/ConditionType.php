@@ -16,12 +16,12 @@ class ConditionType extends EbatNs_ComplexType
 	/**
 	* @var int
 	**/
-	protected $ID;
+	public $ID;
 
 	/**
 	* @var string
 	**/
-	protected $DisplayName;
+	public $DisplayName;
 
 
 	/**

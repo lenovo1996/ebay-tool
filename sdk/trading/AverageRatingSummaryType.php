@@ -18,12 +18,12 @@ class AverageRatingSummaryType extends EbatNs_ComplexType
 	/**
 	* @var FeedbackSummaryPeriodCodeType
 	**/
-	protected $FeedbackSummaryPeriod;
+	public $FeedbackSummaryPeriod;
 
 	/**
 	* @var AverageRatingDetailsType
 	**/
-	protected $AverageRatingDetails;
+	public $AverageRatingDetails;
 
 
 	/**

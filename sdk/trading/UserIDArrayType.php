@@ -17,7 +17,7 @@ class UserIDArrayType extends EbatNs_ComplexType
 	/**
 	* @var UserIDType
 	**/
-	protected $UserID;
+	public $UserID;
 
 
 	/**

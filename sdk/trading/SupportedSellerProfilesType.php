@@ -18,7 +18,7 @@ class SupportedSellerProfilesType extends EbatNs_ComplexType
 	/**
 	* @var SupportedSellerProfileType
 	**/
-	protected $SupportedSellerProfile;
+	public $SupportedSellerProfile;
 
 
 	/**

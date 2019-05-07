@@ -16,7 +16,7 @@ class GetSellingManagerTemplatesRequestType extends AbstractRequestType
 	/**
 	* @var long
 	**/
-	protected $SaleTemplateID;
+	public $SaleTemplateID;
 
 
 	/**

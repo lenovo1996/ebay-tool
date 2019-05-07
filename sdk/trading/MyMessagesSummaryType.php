@@ -20,47 +20,47 @@ class MyMessagesSummaryType extends EbatNs_ComplexType
 	/**
 	* @var MyMessagesFolderSummaryType
 	**/
-	protected $FolderSummary;
+	public $FolderSummary;
 
 	/**
 	* @var int
 	**/
-	protected $NewAlertCount;
+	public $NewAlertCount;
 
 	/**
 	* @var int
 	**/
-	protected $NewMessageCount;
+	public $NewMessageCount;
 
 	/**
 	* @var int
 	**/
-	protected $UnresolvedAlertCount;
+	public $UnresolvedAlertCount;
 
 	/**
 	* @var int
 	**/
-	protected $FlaggedMessageCount;
+	public $FlaggedMessageCount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalAlertCount;
+	public $TotalAlertCount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalMessageCount;
+	public $TotalMessageCount;
 
 	/**
 	* @var int
 	**/
-	protected $NewHighPriorityCount;
+	public $NewHighPriorityCount;
 
 	/**
 	* @var int
 	**/
-	protected $TotalHighPriorityCount;
+	public $TotalHighPriorityCount;
 
 
 	/**

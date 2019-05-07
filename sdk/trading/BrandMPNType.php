@@ -21,12 +21,12 @@ class BrandMPNType extends EbatNs_ComplexType
 	/**
 	* @var string
 	**/
-	protected $Brand;
+	public $Brand;
 
 	/**
 	* @var string
 	**/
-	protected $MPN;
+	public $MPN;
 
 
 	/**

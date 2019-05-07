@@ -24,52 +24,52 @@ class ListingFeatureDetailsType extends EbatNs_ComplexType
 	/**
 	* @var BoldTitleCodeType
 	**/
-	protected $BoldTitle;
+	public $BoldTitle;
 
 	/**
 	* @var BorderCodeType
 	**/
-	protected $Border;
+	public $Border;
 
 	/**
 	* @var HighlightCodeType
 	**/
-	protected $Highlight;
+	public $Highlight;
 
 	/**
 	* @var GiftIconCodeType
 	**/
-	protected $GiftIcon;
+	public $GiftIcon;
 
 	/**
 	* @var HomePageFeaturedCodeType
 	**/
-	protected $HomePageFeatured;
+	public $HomePageFeatured;
 
 	/**
 	* @var FeaturedFirstCodeType
 	**/
-	protected $FeaturedFirst;
+	public $FeaturedFirst;
 
 	/**
 	* @var FeaturedPlusCodeType
 	**/
-	protected $FeaturedPlus;
+	public $FeaturedPlus;
 
 	/**
 	* @var ProPackCodeType
 	**/
-	protected $ProPack;
+	public $ProPack;
 
 	/**
 	* @var string
 	**/
-	protected $DetailVersion;
+	public $DetailVersion;
 
 	/**
 	* @var dateTime
 	**/
-	protected $UpdateTime;
+	public $UpdateTime;
 
 
 	/**

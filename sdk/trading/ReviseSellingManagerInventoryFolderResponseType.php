@@ -17,7 +17,7 @@ class ReviseSellingManagerInventoryFolderResponseType extends AbstractResponseTy
 	/**
 	* @var SellingManagerFolderDetailsType
 	**/
-	protected $Folder;
+	public $Folder;
 
 
 	/**
