@@ -27,10 +27,16 @@ if (!$_SESSION['userDir']) {
                 <div class="form-group text-center">
                     <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#addAccount">Thêm account
                     </button>
-
-
-                    <button class="btn btn-sm btn-danger" id="export">Export Waiting Shipment Order
+                    <button class="btn btn-sm btn-danger" id="export" data-loading-text="Loading...">Export Waiting
+                        Shipment Order
                     </button>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" id="progress" style="display: none;">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                 </div>
             </div>
         </div>
@@ -127,11 +133,19 @@ if (!$_SESSION['userDir']) {
         for (const value of res.data) {
             tokenList.push(value.id);
         }
+
+        $('#progress').show();
         exportOrder(0);
     });
 
     async function exportOrder(i) {
+
+        var percent = (i + 1) / tokenList.length * 100;
+        $('.progress-bar').css('width', percent + '%');
+
         if (i == tokenList.length) {
+            $('.progress-bar').removeClass('progress-bar-striped');
+            $('.progress-bar').addClass('active');
             console.log(data);
             download('data.txt', data);
             return;
