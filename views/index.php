@@ -34,6 +34,7 @@ if (!$_SESSION['userDir']) {
             </div>
         </div>
         <div class="form-group" id="progress" style="display: none;">
+            <div class="msg"></div>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped active" role="progressbar"
                      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
@@ -139,13 +140,14 @@ if (!$_SESSION['userDir']) {
     });
 
     async function exportOrder(i) {
-
+        $('.msg').text('Đang xử lý ' + i + '/' + tokenList.length + ' Acc...');
         var percent = (i + 1) / tokenList.length * 100;
         $('.progress-bar').css('width', percent + '%');
 
         if (i == tokenList.length) {
-            $('.progress-bar').removeClass('progress-bar-striped');
-            $('.progress-bar').addClass('active');
+            $('.progress-bar').removeClass('progress-bar-striped active');
+            $('.progress-bar').addClass('progress-bar-success');
+            $('#progress').hide();
             console.log(data);
             download('data.txt', data);
             return;
