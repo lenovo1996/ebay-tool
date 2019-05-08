@@ -1,8 +1,8 @@
 <?php
-	session_start();
-	if (!$_SESSION['userDir']) {
-		header('location: /views/login.php');
-	}
+session_start();
+if (!$_SESSION['userDir']) {
+    header('location: /views/login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
 <body style="padding-top:60px;">
 <div class="container" style="width: 70%">
 
-	<?php include '../includes/header.php' ?>
+    <?php include '../includes/header.php' ?>
 
     <div class="col-md-12">
         <div class="panel panel-primary">
@@ -68,95 +68,94 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script>
-	$(document).ready(function () {
-		$.ajax({
-			url: '/api/list-token.php',
-			success: function (res) {
+    $(document).ready(function () {
+        $.ajax({
+            url: '/api/list-token.php',
+            success: function (res) {
 
-				$.each(res.data, function (key, value) {
-					var html = `<div class="col-md-3 text-center">
+                $.each(res.data, function (key, value) {
+                    var html = `<div class="col-md-3 text-center">
                                 <div class="bs-callout bs-callout-danger token-select" data-id="${value.id}" style="cursor: pointer;">
                                     <h4>${value.title}</h4>
                                     <p>${value.atime}</p>
                                 </div>
                                 </div>`;
-					$('.account-list').append(html);
-				});
-			}
-		});
-	});
-	
-	
-	$('.save').click(function () {
-		$.ajax({
-			url: '/api/add-token.php',
-			type: 'post',
-			data: {
-				title: $('#title').val(),
-				token: $('#token').val(),
-			},
-			success: function (res) {
-				alert(res.msg);
-				$('#addAccount').modal('hide');
-				location.reload();
-			}
-		});
-	});
-
-	$(document).on('click', '.token-select', function () {
-		var id = $(this).data('id');
-		$.ajax({
-			url: '/api/select-token.php',
-			type: 'post',
-			data: {
-				id: id
-			},
-			success: function () {
-				location.href = '/views/orders-list.php';
-			}
-		});
-	});
+                    $('.account-list').append(html);
+                });
+            }
+        });
+    });
 
 
-	var tokenList = [];
-	$(document).on('click', '#export', async function () {
-		tokenList = [];
+    $('.save').click(function () {
+        $.ajax({
+            url: '/api/add-token.php',
+            type: 'post',
+            data: {
+                title: $('#title').val(),
+                token: $('#token').val(),
+            },
+            success: function (res) {
+                alert(res.msg);
+                $('#addAccount').modal('hide');
+                location.reload();
+            }
+        });
+    });
 
-		var res = await $.get('/api/list-token.php');
-		for (const value of res.data) {
-			tokenList.push(value.id);
-		}
-		exportOrder(0);
-	});
+    $(document).on('click', '.token-select', function () {
+        var id = $(this).data('id');
+        $.ajax({
+            url: '/api/select-token.php',
+            type: 'post',
+            data: {
+                id: id
+            },
+            success: function () {
+                location.href = '/views/orders-list.php';
+            }
+        });
+    });
 
-	async function exportOrder(i) {
-		if (i == tokenList.length) {
-			alert('Xong!');
-			return;
-		}
-		var idToken = tokenList[i];
-		var r = await $.post('/api/select-token.php', {id: idToken});
 
-		var r2 = await $.ajax({
-			url: '/api/order/order-list.php',
-			data: {
-				waitingShipment: true
-			}
-		});
+    var tokenList = [];
+    $(document).on('click', '#export', async function () {
+        tokenList = [];
 
-		console.log(r2);
+        var res = await $.get('/api/list-token.php');
+        for (const value of res.data) {
+            tokenList.push(value.id);
+        }
+        exportOrder(0);
+    });
 
-        for (const order of r2.list) {
-            var r3 = await $.get('http://ebay-tool.tk/api/order/order-detail.php?json=1&order_id=' + order.id);
+    async function exportOrder(i) {
+        if (i == tokenList.length) {
+            alert('Xong!');
+            return;
+        }
+        var idToken = tokenList[i];
+        var r = await $.post('/api/select-token.php', {id: idToken});
+
+        var r2 = await $.ajax({
+            url: '/api/order/order-list.php',
+            data: {
+                waitingShipment: true
+            }
+        });
+
+        console.log(r2);
+
+        for (const order in r2.list) {
+            var r3 = await $.get('http://ebay-tool.tk/api/order/order-detail.php?json=1&order_id=' + r2.list[order].id);
+            console.log(r3);
         }
 
+        i++;
+        await exportOrder(i);
+    }
 
-
-		i++;
-		await exportOrder(i);
-	}
-
-	async function getOrderInfo() {
+    async function getOrderInfo() {
 
     }
 
