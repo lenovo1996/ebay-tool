@@ -1,8 +1,8 @@
 <?php
-session_start();
-if (!$_SESSION['userDir']) {
-    header('location: /views/login.php');
-}
+	session_start();
+	if (!$_SESSION['userDir']) {
+		header('location: /views/login.php');
+	}
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +14,7 @@ if (!$_SESSION['userDir']) {
     <link href="https://getbootstrap.com/docs/3.3/assets/css/docs.min.css" rel="stylesheet">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
     <style>
         a {
@@ -24,7 +25,7 @@ if (!$_SESSION['userDir']) {
 <body style="padding-top:60px;">
 <div class="container" style="width: 70%">
 
-    <?php include '../includes/header.php' ?>
+	<?php include '../includes/header.php' ?>
 
     <div class="col-md-12">
         <div class="panel panel-primary">
@@ -52,13 +53,20 @@ if (!$_SESSION['userDir']) {
                 </div>
                 <div class="form-group text-center col-md-1">
                     <label>Click</label>
-                    <button class="btn btn sm btn-primary get-orders" data-loading-text="Đang lấy orders ...">Lấy
+                    <button class="btn btn sm btn-primary get-orders" data-loading-text="Đang lấy orders ..."
+                            data-page="1">Lấy
                         orders
                     </button>
                 </div>
                 <div class="clearfix"></div>
                 <div class="orders-list">
                 </div>
+
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
@@ -152,6 +160,33 @@ if (!$_SESSION['userDir']) {
     </div><!-- /.modal -->
 
 
+    <div class="modal fade" id="add-Quantity-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Add/Update Quantity</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Quantity number:</label>
+                        <input class="form-control" id="Quantity_num">
+                    </div>
+                    <input type="hidden" name="item_id">
+                    <input type="hidden" name="sku">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary save-Quantity" data-loading-text="Loading...">Save
+                        changes
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <div class="modal fade" id="order-detail-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -176,65 +211,84 @@ if (!$_SESSION['userDir']) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.vi.min.js"></script>
 
     <script>
-        $('.date').datepicker({
-            format: 'yyyy-mm-dd',
-            todayHighlight: true,
-            autoclose: true,
-        });
+		$('.date').datepicker({
+			format: 'yyyy-mm-dd',
+			todayHighlight: true,
+			autoclose: true,
+		});
 
-        $('.get-orders').click(function () {
-            $(this).button('loading');
+		$(document).on('click', '.get-orders', function () {
+			$(this).button('loading');
 
-            $.ajax({
-                url: '/api/order/order-list.php',
-                data: {
-                    start: $('.start').val(),
-                    end: $('.end').val(),
-                    buyerUserName: $('.buyer_user_name').val(),
-                    waitingShipment: $('.waiting_shipment').prop('checked'),
-                    blankTracking: $('.blank_tracking').prop('checked'),
-                },
-                success: function (res) {
+			var page = $(this).data('page');
 
-                    $('.orders-list').html('');
+			$('.orders-list').html('Loading...');
 
-                    var keys = Object.keys(res);
+			$.ajax({
+				url: '/api/order/order-list.php',
+				data: {
+					start: $('.start').val(),
+					end: $('.end').val(),
+					buyerUserName: $('.buyer_user_name').val(),
+					waitingShipment: $('.waiting_shipment').prop('checked'),
+					blankTracking: $('.blank_tracking').prop('checked'),
+					page: page,
+				},
+				success: function (json) {
+					var res = json.list;
 
-                    keys.sort(function (a, b) {
-                        return b - a;
-                    });
+					var pagination = json.page;
+					$('.pagination').html('');
 
-                    for (var i = 0; i < keys.length; i++) {
+					if (pagination > 1) {
+						for (var m = 1; m <= pagination; m++) {
+							var className = '';
+							if (m == json.current) {
+								className = 'active';
+							}
+							$('.pagination').append('<li><a class="get-orders ' + className + '" data-page="' + m + '">' + m + '</a></li>');
+						}
+					}
 
-                        var item = res[keys[i]];
+					$('.orders-list').html('');
 
-                        var shipped = '';
-                        var markasshipped = '<li><a class="mark-as-shipped" data-status="1">Mark as shipped</a></li>';
-                        var paid = 'N/A';
+					var keys = Object.keys(res);
 
-                        if (item.PaidTime) {
-                            paid = item.PaidTime.substr(0, 10);
-                        }
+					keys.sort(function (a, b) {
+						return b - a;
+					});
 
-                        if (item.ShippedTime) {
-                            shipped = 'Shipped ' + item.ShippedTime.substr(0, 10) + ' <br />';
-                            markasshipped = '<li><a class="mark-not-shipped" data-status="0">Mark not shipped</a></li>';
-                        }
+					for (var i = 0; i < keys.length; i++) {
 
-                        var button = `<li><a class="cancel-order">Cancel order</a></li>`;
+						var item = res[keys[i]];
 
-                        if (item.status == 'Cancelled') {
-                            button = '';
-                            shipped += item.status + '<br />';
-                            markasshipped = '';
-                        }
+						var shipped = '';
+						var markasshipped = '<li><a class="mark-as-shipped" data-status="1">Mark as shipped</a></li>';
+						var paid = 'N/A';
 
-                        var myNote = '';
-                        if (item.note) {
-                            myNote = `<div class="alert alert-warning" style=" padding: 5px; margin-bottom: 0px; ">My note: ${item.note}</div>`;
-                        }
+						if (item.PaidTime) {
+							paid = item.PaidTime.substr(0, 10);
+						}
 
-                        var html = `<div class="bs-callout bs-callout-danger rootEl"  data-orderid="${item.id}" data-transactionid="${item.transactionId}" data-itemid="${item.item.id}">
+						if (item.ShippedTime) {
+							shipped = 'Shipped ' + item.ShippedTime.substr(0, 10) + ' <br />';
+							markasshipped = '<li><a class="mark-not-shipped" data-status="0">Mark not shipped</a></li>';
+						}
+
+						var button = `<li><a class="cancel-order">Cancel order</a></li>`;
+
+						if (item.status == 'Cancelled') {
+							button = '';
+							shipped += item.status + '<br />';
+							markasshipped = '';
+						}
+
+						var myNote = '';
+						if (item.note) {
+							myNote = `<div class="alert alert-warning" style=" padding: 5px; margin-bottom: 0px; ">My note: ${item.note}</div>`;
+						}
+
+						var html = `<div class="bs-callout bs-callout-danger rootEl"  data-orderid="${item.id}" data-transactionid="${item.transactionId}" data-itemid="${item.item.id}">
                         <div class="col-md-2">
                             <div class="dropdown">
                                 ${shipped} (<a class="view-record">${item.saleRecord}</a>)
@@ -247,6 +301,7 @@ if (!$_SESSION['userDir']) {
                                     ${button}
                                     <li><a class="view-record">View record</a></li>
                                     <li><a class="add-note">Add/Update Note</a></li>
+                                    <li><a class="add-Quantity">Update Quantity</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -260,7 +315,8 @@ if (!$_SESSION['userDir']) {
                             </div>
                             <div style="float: left; width: 80%">
                                 <p>
-                                    <a href="https://www.ebay.com/itm/${item.item.id}">${item.item.title}</a> (${item.item.id}) - <span class="badge badge-dark">${item.item.conditionDisplayName}</span>
+                                    <a href="https://www.ebay.com/itm/${item.item.id}">${item.item.title}</a> (${item.item.id}) -
+                                     <span class="badge badge-dark Quantity" data-itemid="${item.item.id}" data-variation='${JSON.stringify(item.item.variation)}'><i class="fa fa-circle-o-notch fa-spin fa-fw margin-bottom"></i></span>
 
                                 </p>
                                 <p>Buyer: ${item.buyerName} - <a href="https://www.ebay.com/usr/${item.BuyerUserID}">${item.BuyerUserID}</a></p>
@@ -281,163 +337,218 @@ if (!$_SESSION['userDir']) {
                         <div class="clearfix"></div>
                     </div>`;
 
-                        $('.orders-list').append(html);
-                    }
+						$('.orders-list').append(html);
+					}
+
+					setTimeout(function () {
+						getQuantity();
+					}, 100);
+					$('.get-orders').button('reset');
+				}
+			});
+		});
+
+		function getQuantity() {
+			var QuantityList = $('.Quantity');
+
+			$.each(QuantityList, function (key, value) {
+				var rootEl = $(value).closest('.rootEl');
+				var itemId = $(value).data('itemid');
+				var variation = JSON.stringify($(value).data('variation'));
+				$.ajax({
+					url: '/api/order/get-quantity.php',
+					data: {
+						itemId: itemId,
+						variation: variation
+					},
+					success: function (res) {
+						$(value).text(res.quantity + ' available');
+						rootEl.data('sku', res.SKU);
+					}
+				});
+			});
+		}
 
 
-                    $('.get-orders').button('reset');
-                }
-            });
-        });
+		$(document).on('click', '.mark-as-shipped, .mark-not-shipped', function () {
+
+			var rootEl = $(this).closest('.rootEl');
+
+			var c = confirm('Bạn chắc chắn thực hiện hành động này chứ?');
+
+			if (c) {
+				var status = $(this).data('status');
+				var orderId = rootEl.data('orderid');
+				var transactionId = rootEl.data('transactionid');
+				$.ajax({
+					url: '/api/order/mark-as-shipped.php',
+					data: {
+						status: status,
+						order_id: orderId,
+						transaction_id: transactionId
+					},
+					success: function (res) {
+						console.log(res.Ack);
+						if (res.Ack == 'Success') {
+							alert("thành công!");
+						}
+					}
+				})
+
+			}
+		});
+
+		$(document).on('click', '.cancel-order', function () {
+			var rootEl = $(this).closest('.rootEl');
+			var orderId = rootEl.data('orderid');
+			$('#cancel-order').modal('show');
+			$('#cancel-order').find('[name="order_id"]').val(orderId);
+		});
+
+		$(document).on('click', '.cancel-order-confirm', function () {
+			$(this).button('loading');
+			var self = this;
+			var orderId = $('#cancel-order').find('[name="order_id"]').val();
+			var reason = $('#cancel-order').find('#reason').val();
+
+			$.ajax({
+				url: '/api/order/cancel-order.php',
+				type: 'post',
+				data: {
+					orderId: orderId,
+					cancelReason: reason
+				},
+				success: function (res) {
+					alert('Đã gửi lệnh cancel order');
+					$('.get-orders')[0].click();
+					$(self).button('reset');
+				}
+			});
+		});
+
+		$(document).on('click', '.edit-tracking', function () {
+			var rootEl = $(this).closest('.rootEl');
+			var orderId = rootEl.data('orderid');
+			$('#add-tracking').modal('show');
+			$('#add-tracking').find('[name="order_id"]').val(orderId);
+		});
 
 
-        $(document).on('click', '.mark-as-shipped, .mark-not-shipped', function () {
+		$(document).on('click', '.save-tracking', function () {
+			$(this).button('loading');
+			var self = this;
+			var orderId = $('#add-tracking').find('[name="order_id"]').val();
+			var tracking_number = $('#add-tracking').find('#tracking_number').val();
+			var shipping_carrier_used = $('#add-tracking').find('#shipping_carrier_used').val();
 
-            var rootEl = $(this).closest('.rootEl');
+			$.ajax({
+				url: '/api/order/add-tracking.php',
+				type: 'post',
+				data: {
+					orderId: orderId,
+					trackingNumber: tracking_number,
+					ShippingCarrierUsed: shipping_carrier_used
+				},
+				success: function (res) {
+					$(self).button('reset');
+					if (res.Ack == 'Success') {
+						alert('Cập nhật tracking number thành công');
+						$('#add-tracking').modal('hide');
+						$('#add-tracking').find('#tracking_number').val('');
+						$('#add-tracking').find('#shipping_carrier_used').val('');
+					} else {
+						alert(res.Errors[0].ShortMessage);
+					}
+					$('.get-orders')[0].click();
+				}
+			});
+		});
 
-            var c = confirm('Bạn chắc chắn thực hiện hành động này chứ?');
+		$(document).on('click', '.add-note', function () {
+			var rootEl = $(this).closest('.rootEl');
+			var orderId = rootEl.data('orderid');
+			var itemId = rootEl.data('itemid');
+			$('#add-note-modal').modal('show');
+			$('#add-note-modal').find('[name="order_id"]').val(orderId);
+			$('#add-note-modal').find('[name="item_id"]').val(itemId);
+		});
 
-            if (c) {
-                var status = $(this).data('status');
-                var orderId = rootEl.data('orderid');
-                var transactionId = rootEl.data('transactionid');
-                $.ajax({
-                    url: '/api/order/mark-as-shipped.php',
-                    data: {
-                        status: status,
-                        order_id: orderId,
-                        transaction_id: transactionId
-                    },
-                    success: function (res) {
-                        console.log(res.Ack);
-                        if (res.Ack == 'Success') {
-                            alert("thành công!");
-                        }
-                    }
-                })
+		$(document).on('click', '.save-note', function () {
+			$(this).button('loading');
+			var self = this;
+			var orderId = $('#add-note-modal').find('[name="order_id"]').val();
+			var itemId = $('#add-note-modal').find('[name="item_id"]').val();
+			var note_content = $('#add-note-modal').find('#note_content').val();
 
-            }
-        });
+			$.ajax({
+				url: '/api/order/add-note.php',
+				type: 'post',
+				data: {
+					orderId: orderId,
+					itemId: itemId,
+					noteContent: note_content
+				},
+				success: function (res) {
+					$(self).button('reset');
+					if (res.Ack == 'Success') {
+						alert('Cập nhật note thành công');
+						$('#add-note-modal').modal('hide');
+						$('#add-note-modal').find('#note_content').val('');
+					} else {
+						alert(res.Errors[0].ShortMessage);
+					}
+					$('.get-orders')[0].click();
+				}
+			});
+		});
 
-        $(document).on('click', '.cancel-order', function () {
-            var rootEl = $(this).closest('.rootEl');
-            var orderId = rootEl.data('orderid');
-            $('#cancel-order').modal('show');
-            $('#cancel-order').find('[name="order_id"]').val(orderId);
-        });
+		$(document).on('click', '.add-Quantity', function () {
+			var rootEl = $(this).closest('.rootEl');
+			var itemId = rootEl.data('itemid');
+			var sku = rootEl.data('sku');
+			$('#add-Quantity-modal').modal('show');
+			$('#add-Quantity-modal').find('[name="item_id"]').val(itemId);
+			$('#add-Quantity-modal').find('[name="sku"]').val(sku);
+		});
 
-        $(document).on('click', '.cancel-order-confirm', function () {
-            $(this).button('loading');
-            var self = this;
-            var orderId = $('#cancel-order').find('[name="order_id"]').val();
-            var reason = $('#cancel-order').find('#reason').val();
+		$(document).on('click', '.save-Quantity', function () {
+			$(this).button('loading');
+			var self = this;
+			var itemId = $('#add-Quantity-modal').find('[name="item_id"]').val();
+			var sku = $('#add-Quantity-modal').find('[name="sku"]').val();
+			var Quantity_num = $('#add-Quantity-modal').find('#Quantity_num').val();
 
-            $.ajax({
-                url: '/api/order/cancel-order.php',
-                type: 'post',
-                data: {
-                    orderId: orderId,
-                    cancelReason: reason
-                },
-                success: function (res) {
-                    alert('Đã gửi lệnh cancel order');
-                    $('.get-orders').click();
-                    $(self).button('reset');
-                }
-            });
-        });
+			$.ajax({
+				url: '/api/order/add-quantity.php',
+				data: {
+					itemId: itemId,
+					quantity: Quantity_num,
+					sku: sku
+				},
+				success: function () {
+					$(self).button('reset');
+					alert('Cập nhật Quantity number thành công');
+					$('#add-Quantity-modal').modal('hide');
+					// $('.get-orders')[0].click();
+				}
+			});
+		});
 
-        $(document).on('click', '.edit-tracking', function () {
-            var rootEl = $(this).closest('.rootEl');
-            var orderId = rootEl.data('orderid');
-            $('#add-tracking').modal('show');
-            $('#add-tracking').find('[name="order_id"]').val(orderId);
-        });
+		$(document).on('click', '.view-record', function () {
+			var rootEl = $(this).closest('.rootEl');
+			var orderId = rootEl.data('orderid');
 
+			$.ajax({
+				url: '/api/order/order-detail.php',
+				data: {
+					order_id: orderId
+				},
+				success: function (res) {
+					$('#detail').html(res);
+					$('#order-detail-modal').modal('show');
+				}
+			})
 
-        $(document).on('click', '.save-tracking', function () {
-            $(this).button('loading');
-            var self = this;
-            var orderId = $('#add-tracking').find('[name="order_id"]').val();
-            var tracking_number = $('#add-tracking').find('#tracking_number').val();
-            var shipping_carrier_used = $('#add-tracking').find('#shipping_carrier_used').val();
-
-            $.ajax({
-                url: '/api/order/add-tracking.php',
-                type: 'post',
-                data: {
-                    orderId: orderId,
-                    trackingNumber: tracking_number,
-                    ShippingCarrierUsed: shipping_carrier_used
-                },
-                success: function (res) {
-                    $(self).button('reset');
-                    if (res.Ack == 'Success') {
-                        alert('Cập nhật tracking number thành công');
-                        $('#add-tracking').modal('hide');
-                        $('#add-tracking').find('#tracking_number').val('');
-                        $('#add-tracking').find('#shipping_carrier_used').val('');
-                    } else {
-                        alert(res.Errors[0].ShortMessage);
-                    }
-                    $('.get-orders').click();
-                }
-            });
-        });
-
-        $(document).on('click', '.add-note', function () {
-            var rootEl = $(this).closest('.rootEl');
-            var orderId = rootEl.data('orderid');
-            var itemId = rootEl.data('itemid');
-            $('#add-note-modal').modal('show');
-            $('#add-note-modal').find('[name="order_id"]').val(orderId);
-            $('#add-note-modal').find('[name="item_id"]').val(itemId);
-        });
-
-        $(document).on('click', '.save-note', function () {
-            $(this).button('loading');
-            var self = this;
-            var orderId = $('#add-note-modal').find('[name="order_id"]').val();
-            var itemId = $('#add-note-modal').find('[name="item_id"]').val();
-            var note_content = $('#add-note-modal').find('#note_content').val();
-
-            $.ajax({
-                url: '/api/order/add-note.php',
-                type: 'post',
-                data: {
-                    orderId: orderId,
-                    itemId: itemId,
-                    noteContent: note_content
-                },
-                success: function (res) {
-                    $(self).button('reset');
-                    if (res.Ack == 'Success') {
-                        alert('Cập nhật note number thành công');
-                        $('#add-note-modal').modal('hide');
-                        $('#add-note-modal').find('#note_content').val('');
-                    } else {
-                        alert(res.Errors[0].ShortMessage);
-                    }
-                    $('.get-orders').click();
-                }
-            });
-        });
-
-        $(document).on('click', '.view-record', function () {
-            var rootEl = $(this).closest('.rootEl');
-            var orderId = rootEl.data('orderid');
-
-            $.ajax({
-                url: '/api/order/order-detail.php',
-                data: {
-                    order_id: orderId
-                },
-                success: function (res) {
-                    $('#detail').html(res);
-                    $('#order-detail-modal').modal('show');
-                }
-            })
-
-        });
+		});
 
     </script>
