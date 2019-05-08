@@ -137,7 +137,6 @@ if (!$_SESSION['userDir']) {
             download('data.txt', data);
             return;
         }
-        trim();
         var idToken = tokenList[i];
         var r = await $.post('/api/select-token.php', {id: idToken});
 
