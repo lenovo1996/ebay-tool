@@ -34,22 +34,21 @@ try {
 }
 if ($json == 1) {
     $Variations = '';
-    if ($transaction->Variations) {
-        foreach ($transaction->Variations->Variation as $variations) {
-            $VariationSpecifics = $variations->VariationSpecifics;
-            $Variations .= $VariationSpecifics[0]->Name .': ' . implode(',', $VariationSpecifics[1]->Value) . ',';
+    if ($transaction->Variation) {
+        foreach ($transaction->Variation->VariationSpecifics as $variations) {
+            $Variations .= $variations->Name . ': ' . implode(',', $variations->Value) . ',';
         }
     }
 
 
     echo json_encode([
-        'paidDate' => date("M jS, Y", strtotime($order->getPaidTime())),
+        'paidDate' => date("M j, Y", strtotime($order->getPaidTime())),
         'saleRecord' => $order->getShippingDetails()->getSellingManagerSalesRecordNumber(),
         'total' => $order->Total->value,
-        'qty' =>  $transaction->getQuantityPurchased(),
-        'Variations' => $Variations,
+        'qty' => $transaction->getQuantityPurchased(),
+        'Variations' => trim($Variations, ','),
         'link' => 'https://www.ebay.com/itm/' . $item->getItemId(),
-        'shippingDetail' => $buyer->UserFirstName . ' ' . $buyer->UserLastName . ',' . $shippingAddr->Name .',' . $shippingAddr->Street1 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
+        'shippingDetail' => $shippingAddr->Name . ',' . $shippingAddr->Street1 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
         'buyerUserName' => $order->BuyerUserID,
         'BuyerEmail' => $buyer->Email,
         'seller' => $order->SellerUserID

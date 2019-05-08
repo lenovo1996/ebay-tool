@@ -119,9 +119,10 @@ if (!$_SESSION['userDir']) {
 
 
     var tokenList = [];
+    var data = '';
     $(document).on('click', '#export', async function () {
         tokenList = [];
-
+        data = '';
         var res = await $.get('/api/list-token.php');
         for (const value of res.data) {
             tokenList.push(value.id);
@@ -132,8 +133,11 @@ if (!$_SESSION['userDir']) {
     async function exportOrder(i) {
         if (i == tokenList.length) {
             alert('Xong!');
+            console.log(data);
+            download('data.txt', data);
             return;
         }
+        trim();
         var idToken = tokenList[i];
         var r = await $.post('/api/select-token.php', {id: idToken});
 
@@ -144,19 +148,26 @@ if (!$_SESSION['userDir']) {
             }
         });
 
-        console.log(r2);
-
         for (const order in r2.list) {
             var r3 = await $.get('http://ebay-tool.tk/api/order/order-detail.php?json=1&order_id=' + r2.list[order].id);
-            console.log(r3);
+            data = r3.seller + '\t' + r3.paiDate + '\t' + r3.saleRecord + '\t' + r3.total + '\t' + r3.qty + '\t' + r3.Variations + '\t' + r3.link + '\t' + r3.shippingDetail + '\t' + r3.buyerUserName + '\t' + r3.buyerEmail + '\n';
         }
 
         i++;
         await exportOrder(i);
     }
 
-    async function getOrderInfo() {
+    function download(filename, text) {
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
 
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
     }
 
 </script>
