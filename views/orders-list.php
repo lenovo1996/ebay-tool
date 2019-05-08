@@ -263,7 +263,7 @@
 
 						var item = res[keys[i]];
 
-						var shipped = '';
+						var shipped = 'Print invoice shipping';
 						var markasshipped = '<li><a class="mark-as-shipped" data-status="1">Mark as shipped</a></li>';
 						var paid = 'N/A';
 
@@ -534,7 +534,7 @@
 					$(self).button('reset');
 					alert('Cập nhật Quantity number thành công');
 					$('#add-Quantity-modal').modal('hide');
-					// $('.get-orders')[0].click();
+					$('.get-orders')[0].click();
 				}
 			});
 		});
