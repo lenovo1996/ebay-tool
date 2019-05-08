@@ -132,7 +132,6 @@ if (!$_SESSION['userDir']) {
 
     async function exportOrder(i) {
         if (i == tokenList.length) {
-            alert('Xong!');
             console.log(data);
             download('data.txt', data);
             return;
@@ -149,7 +148,7 @@ if (!$_SESSION['userDir']) {
 
         for (const order in r2.list) {
             var r3 = await $.get('http://ebay-tool.tk/api/order/order-detail.php?json=1&order_id=' + r2.list[order].id);
-            data = r3.seller + '\t' + r3.paiDate + '\t' + r3.saleRecord + '\t' + r3.total + '\t' + r3.qty + '\t' + r3.Variations + '\t' + r3.link + '\t' + r3.shippingDetail + '\t' + r3.buyerUserName + '\t' + r3.buyerEmail + '\n';
+            data = r3.seller + '\t' + r3.paidDate + '\t' + r3.saleRecord + '\t' + r3.total + '\t' + r3.qty + '\t' + r3.Variations + '\t' + r3.link + '\t' + r3.shippingDetail + '\t' + r3.buyerUserName + '\t' + r3.buyerEmail + '\n';
         }
 
         i++;

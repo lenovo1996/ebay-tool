@@ -50,7 +50,7 @@ if ($json == 1) {
         'link' => 'https://www.ebay.com/itm/' . $item->getItemId(),
         'shippingDetail' => $shippingAddr->Name . ',' . $shippingAddr->Street1 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
         'buyerUserName' => $order->BuyerUserID,
-        'BuyerEmail' => $buyer->Email,
+        'buyerEmail' => $buyer->Email,
         'seller' => $order->SellerUserID
     ]);
     exit;
