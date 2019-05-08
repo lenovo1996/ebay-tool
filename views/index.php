@@ -145,6 +145,13 @@
 		});
 
 		console.log(r2);
+
+        for (const order of r2.list) {
+            var r3 = await $.get('http://ebay-tool.tk/api/order/order-detail.php?json=1&order_id=' + order.id);
+        }
+
+
+
 		i++;
 		await exportOrder(i);
 	}

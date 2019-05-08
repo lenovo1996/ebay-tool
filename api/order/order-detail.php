@@ -1,8 +1,7 @@
 <?php
 
-error_reporting(E_ERROR);
-ini_set('display_errors', 1);
 $orderId = $_GET['order_id'];
+$json = $_GET['json'];
 
 $proxy = require_once '../../session.php';
 
@@ -33,6 +32,31 @@ try {
     $payment = 'N/A';
     $tracking = 'N/A';
 }
+if ($json == 1) {
+    $Variations = '';
+    if ($transaction->Variations) {
+        foreach ($transaction->Variations->Variation as $variations) {
+            $VariationSpecifics = $variations->VariationSpecifics;
+            $Variations .= $VariationSpecifics[0]->Name .': ' . implode(',', $VariationSpecifics[1]->Value) . ',';
+        }
+    }
+
+
+    echo json_encode([
+        'paidDate' => date("M jS, Y", strtotime($order->getPaidTime())),
+        'saleRecord' => $order->getShippingDetails()->getSellingManagerSalesRecordNumber(),
+        'total' => $order->Total->value,
+        'qty' =>  $transaction->getQuantityPurchased(),
+        'Variations' => $Variations,
+        'link' => 'https://www.ebay.com/itm/' . $item->getItemId(),
+        'shippingDetail' => $buyer->UserFirstName . ' ' . $buyer->UserLastName . ',' . $shippingAddr->Name .',' . $shippingAddr->Street1 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
+        'buyerUserName' => $order->BuyerUserID,
+        'BuyerEmail' => $buyer->Email,
+        'seller' => $order->SellerUserID
+    ]);
+    exit;
+}
+
 
 header('Content-Type: text/html');
 echo '
@@ -41,7 +65,7 @@ echo '
 		<div class="panel panel-info">
 			<div class="panel-heading">Purchase detail</div>
 			<div class="panel-body">
-				<div class="list-group-item">Buyer: ' . $buyer->UserFirstName . '' . $buyer->UserLastName . ' (' . $order->BuyerUserID . ')</div>
+				<div class="list-group-item">Buyer: ' . $buyer->UserFirstName . ' ' . $buyer->UserLastName . ' (' . $order->BuyerUserID . ')</div>
 				<div class="list-group-item">Email: ' . $buyer->Email . '</div>
 				<div class="list-group-item">Date paid: ' . $payment . '</div>
 			</div>
