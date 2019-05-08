@@ -25,7 +25,7 @@ $shippingAddr = $order->getShippingAddress();
 $item = $transaction->getItem();
 try {
     $payment = substr($order->getPaidTime(), 0, 10) . ' (' . $order->getCheckoutStatus()->PaymentMethod . ')';
-    if ($transaction->getShippingDetails()) {
+    if ($transaction->getShippingDetails()->getShipmentTrackingDetails()) {
         $tracking = $transaction->getShippingDetails()->getShipmentTrackingDetails()[0]->getShipmentTrackingNumber();
     }
     $tracking = 'N/A';

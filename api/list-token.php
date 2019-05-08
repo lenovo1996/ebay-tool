@@ -24,7 +24,8 @@
 		$m = [
 			'id' => $file,
 			'title' => file_get_contents($userDir . '/' . $file . '/title.txt'),
-			'atime' => date('H:i:s d/m/Y', fileatime($userDir . '/' . $file . '/token.txt'))
+			'atime' => date('H:i:s d/m/Y', fileatime($userDir . '/' . $file . '/token.txt')),
+			'token' => file_get_contents($userDir . '/' . $file . '/token.txt'),
 		];
 		$data[] = $m;
 	}

@@ -51,9 +51,9 @@
 	// -------------------------------------------
 	$notes = [];
 	foreach ($response2->getSoldList()->getOrderTransactionArray() as $rawItem) {
-		$note = $rawItem->getTransaction()->getItem()->getPrivateNotes();
-		$id = $rawItem->getTransaction()->getItem()->getItemId();
-		$notes[$id] = $note;
+		$note = $rawItem->getTransaction()->Item->PrivateNotes;
+		$id = $rawItem->getTransaction()->Item->ItemID;
+		$notes[$id . '-' . $rawItem->getTransaction()->Buyer->UserID] = $note;
 	}
 	// -------------------------------------------
 
@@ -117,7 +117,7 @@
 			'variation' => $variations
 		];
 
-		$order['note'] = $notes[$item->getItemId()];
+		$order['note'] = $notes[$item->getItemId() . '-' . $rawOrder->getBuyerUserId()];
 		$order['total'] = $rawOrder->getTransactionArray()[0]->getTransactionPrice()->value . ' ' . ($rawOrder->getTransactionArray()[0]->getTransactionPrice()->attributeValues['currencyID'] ?? 'USD');
 		$order['transactionId'] = $rawOrder->getTransactionArray()[0]->getTransactionId();
 		$order['PaidTime'] = $rawOrder->getPaidTime();

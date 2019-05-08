@@ -148,6 +148,7 @@
                     </div>
                     <input type="hidden" name="order_id">
                     <input type="hidden" name="item_id">
+                    <input type="hidden" name="sku">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -468,8 +469,10 @@
 			var rootEl = $(this).closest('.rootEl');
 			var orderId = rootEl.data('orderid');
 			var itemId = rootEl.data('itemid');
+			var sku = rootEl.data('sku');
 			$('#add-note-modal').modal('show');
 			$('#add-note-modal').find('[name="order_id"]').val(orderId);
+			$('#add-note-modal').find('[name="sku"]').val(sku);
 			$('#add-note-modal').find('[name="item_id"]').val(itemId);
 		});
 
@@ -477,6 +480,7 @@
 			$(this).button('loading');
 			var self = this;
 			var orderId = $('#add-note-modal').find('[name="order_id"]').val();
+			var sku = $('#add-note-modal').find('[name="sku"]').val();
 			var itemId = $('#add-note-modal').find('[name="item_id"]').val();
 			var note_content = $('#add-note-modal').find('#note_content').val();
 
@@ -486,6 +490,7 @@
 				data: {
 					orderId: orderId,
 					itemId: itemId,
+					sku: sku,
 					noteContent: note_content
 				},
 				success: function (res) {

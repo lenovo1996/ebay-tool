@@ -3,6 +3,7 @@
 	$orderId = $_POST['orderId'];
 	$itemId = $_POST['itemId'];
 	$noteContent = $_POST['noteContent'];
+	$sku = $_POST['sku'];
 
 	$proxy = require_once '../../session.php';
 
@@ -10,6 +11,9 @@
 	$setusernotesrequest = new SetUserNotesRequestType();
 	$setusernotesrequest->setAction("AddOrUpdate");
 	$setusernotesrequest->setItemID($itemId);
+	if (!empty($sku)) {
+		$setusernotesrequest->setSKU($sku);
+	}
 	$setusernotesrequest->setNoteText($noteContent);
 	$setusernotesrequest->setOrderLineItemID($orderId);
 	$setusernotesrequest->setVersion("1101");

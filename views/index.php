@@ -27,6 +27,10 @@
                 <div class="form-group text-center">
                     <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#addAccount">Thêm account
                     </button>
+
+
+                    <button class="btn btn-sm btn-danger" id="export">Export Waiting Shipment Order
+                    </button>
                 </div>
             </div>
         </div>
@@ -112,4 +116,41 @@
 			}
 		});
 	});
+
+
+	var tokenList = [];
+	$(document).on('click', '#export', async function () {
+		tokenList = [];
+
+		var res = await $.get('/api/list-token.php');
+		for (const value of res.data) {
+			tokenList.push(value.id);
+		}
+		exportOrder(0);
+	});
+
+	async function exportOrder(i) {
+		if (i == tokenList.length) {
+			alert('Xong!');
+			return;
+		}
+		var idToken = tokenList[i];
+		var r = await $.post('/api/select-token.php', {id: idToken});
+
+		var r2 = await $.ajax({
+			url: '/api/order/order-list.php',
+			data: {
+				waitingShipment: true
+			}
+		});
+
+		console.log(r2);
+		i++;
+		await exportOrder(i);
+	}
+
+	async function getOrderInfo() {
+
+    }
+
 </script>
