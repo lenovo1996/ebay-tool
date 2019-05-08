@@ -140,7 +140,7 @@ if (!$_SESSION['userDir']) {
     });
 
     async function exportOrder(i) {
-        $('.msg').text('Đang xử lý ' + i + '/' + tokenList.length + ' Acc...');
+        $('.msg').text('Đang xử lý ' + (i + 1) + '/' + tokenList.length + ' Acc...');
         var percent = (i + 1) / tokenList.length * 100;
         $('.progress-bar').css('width', percent + '%');
 
