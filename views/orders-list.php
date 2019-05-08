@@ -530,7 +530,12 @@
 					quantity: Quantity_num,
 					sku: sku
 				},
-				success: function () {
+				success: function (res) {
+				    if (res.Ack == 'Failure') {
+
+                        alert('Lỗi');
+                        return;
+				    }
 					$(self).button('reset');
 					alert('Cập nhật Quantity number thành công');
 					$('#add-Quantity-modal').modal('hide');
