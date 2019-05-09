@@ -19,7 +19,7 @@
 		$membermessage->addMessageMedia($messagemedia);
 	}
 
-	$membermessage->setParentMessageID($_POST['parent_message_id']); // externalMessageID
+	$membermessage->setParentMessageID($_POST['externalMessageID']); // externalMessageID
 	$membermessage->addRecipientID($_POST['sender']);
 	$addmembermessagertqrequest->setVersion("1101");
 
