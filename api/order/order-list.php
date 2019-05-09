@@ -64,6 +64,7 @@
 		'list' => []
 	];
 
+	require_once $sdk_dir . 'ReviseFixedPriceItemRequestType.php';
 
 	foreach ($response->getOrderArray() as $rawOrder) {
 		// filter by user name
@@ -108,6 +109,36 @@
 				$value = str_replace("'", "&apos;", $variation->Value[0]);
 				$variations[$name] = $value;
 			}
+		}
+
+		// set SKU cho những item có variations và chưa có variation sku
+		if (!is_null($variationList) && empty($rawOrder->getTransactionArray()[0]->Variation->SKU)) {
+			$generateSku = 'Lephi_' . substr(md5(rand(1, 1000000)), 0, 5);
+			$revisefixedpriceitemrequest = new ReviseFixedPriceItemRequestType();
+			$fixedPriceItem = new ItemType();
+			$revisefixedpriceitemrequest->setItem($fixedPriceItem);
+			$fixedPriceItem->setItemID($item->getItemId());
+			$fixedPriceVariations = new VariationsType();
+			$fixedPriceItem->setVariations($fixedPriceVariations);
+			$fixedPriceVariation = new VariationType();
+			$fixedPriceVariations->addVariation($fixedPriceVariation);
+			$fixedPriceVariation->setDelete("false");
+			$fixedPriceVariation->setSKU($generateSku);
+
+			$namevaluelistarray = new NameValueListArrayType();
+			$fixedPriceVariation->setVariationSpecifics($namevaluelistarray);
+
+			foreach ($variations as $key => $value) {
+				$namevaluelist = new NameValueListType();
+				$namevaluelistarray->addNameValueList($namevaluelist);
+				$name = str_replace("&apos;", "'", $key);
+				$value = str_replace("&apos;", "'", $value);
+				$namevaluelist->setName($name);
+				$namevaluelist->addValue($value);
+			}
+
+			$revisefixedpriceitemrequest->setVersion("1101");
+			$response22 = $proxy->ReviseFixedPriceItem($revisefixedpriceitemrequest);
 		}
 
 		$order['item'] = [

@@ -193,6 +193,34 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+
+    <div class="modal fade" id="add-price-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Add/Update price</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>price number:</label>
+                        <input class="form-control" id="price">
+                    </div>
+                    <input type="hidden" name="item_id">
+                    <input type="hidden" name="sku">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary save-price" data-loading-text="Loading...">Save
+                        changes
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <div class="modal fade" id="order-detail-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -315,6 +343,7 @@
                                     <li><a class="view-record">View record</a></li>
                                     <li><a class="add-note">Add/Update Note</a></li>
                                     <li><a class="add-Quantity">Update Quantity</a></li>
+                                    <li><a class="add-price">Update price</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -592,10 +621,47 @@
 					$(self).button('reset');
 					alert('Cập nhật Quantity number thành công');
 					$('#add-Quantity-modal').modal('hide');
-					$('.get-orders')[0].click();
+					$('[data-itemid="' + itemId + '"]').find('.Quantity').text(Quantity_num + ' available');
 				}
 			});
 		});
+
+		$(document).on('click', '.add-price', function () {
+			var rootEl = $(this).closest('.rootEl');
+			var itemId = rootEl.data('itemid');
+			var sku = rootEl.data('sku');
+			$('#add-price-modal').modal('show');
+			$('#add-price-modal').find('[name="item_id"]').val(itemId);
+			$('#add-price-modal').find('[name="sku"]').val(sku);
+		});
+
+
+		$(document).on('click', '.save-price', function () {
+			$(this).button('loading');
+			var self = this;
+			var itemId = $('#add-price-modal').find('[name="item_id"]').val();
+			var sku = $('#add-price-modal').find('[name="sku"]').val();
+			var price = $('#add-price-modal').find('#price').val();
+
+			$.ajax({
+				url: '/api/order/change-price.php',
+				data: {
+					itemId: itemId,
+					price: price,
+					sku: sku
+				},
+				success: function (res) {
+					if (res.Ack == 'Failure') {
+						alert('Lỗi');
+						return;
+					}
+					$(self).button('reset');
+					alert('Cập nhật giá thành công');
+					$('#add-price-modal').modal('hide');
+				}
+			});
+		});
+
 
 		$(document).on('click', '.view-record', function () {
 			var rootEl = $(this).closest('.rootEl');
