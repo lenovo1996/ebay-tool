@@ -189,6 +189,9 @@ if (!$_SESSION['userDir']) {
                 $('.msg-title').html(res.subject);
                 $('.msg-body').html(res.text);
                 $('#message').modal('show');
+                var r = $('#message');
+                r.find('[name="externalMessageID"]').val(res.externalMessageID);
+                r.find('[name="sender"]').val(res.sender);
             }
         });
     });
