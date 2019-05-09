@@ -67,7 +67,27 @@
                     <button class="btn btn-sm btn-danger start-change-price" style="display: none">Bắt đầu đổi giá</button>
                 </div>
                 <div class="clearfix"></div>
-                <div class="orders-list col-md-12">
+                <div class="col-md-12">
+                    <div class="bs-callout bs-callout-danger rootEl">
+                        <div class="col-md-2">
+                            <b>Actions</b>
+                        </div>
+                        <div class="col-md-5">
+                            <b>Purchase detail</b>
+                        </div>
+                        <div class="col-md-1">
+                            <b>Quantity</b>
+                        </div>
+
+                        <div class="col-md-2">
+                            <b>Total</b>
+                        </div>
+                        <div class="col-md-2">
+                            <b>Date paid</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="orders-list"></div>
                 </div>
 
                 <nav aria-label="Page navigation">
@@ -372,14 +392,14 @@
                             </div>
                         </div>
                         <div class="col-md-1">
-                            Qty: ${item.qty}
+                            ${item.qty}
                         </div>
                         <div class="col-md-2">
-                            Total: ${item.total}
+                            ${item.total}
                         </div>
 
                         <div class="col-md-2">
-                            Date Paid: ${paid}
+                            ${paid}
                         </div>
                         <div class="clearfix"></div>
                     </div>`;
