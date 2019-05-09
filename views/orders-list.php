@@ -53,13 +53,18 @@
                 </div>
                 <div class="form-group text-center col-md-1">
                     <label>Click</label>
-                    <button class="btn btn sm btn-primary get-orders" data-loading-text="Đang lấy orders ..."
+                    <button class="btn btn-sm btn-primary get-orders" data-loading-text="Đang lấy orders ..."
                             data-page="1">Lấy
                         orders
                     </button>
                 </div>
                 <div class="clearfix"></div>
-                <div class="orders-list">
+                <div class="col-md-12 option" style="display: none">
+                    <button class="btn btn-sm change-multi-quantity">Đổi quantity hàng loạt</button>
+                    <button class="btn btn-sm btn-danger start-change" style="display: none">Bắt đầu đổi</button>
+                </div>
+                <div class="clearfix"></div>
+                <div class="orders-list col-md-12">
                 </div>
 
                 <nav aria-label="Page navigation">
@@ -236,6 +241,8 @@
 					page: page,
 				},
 				success: function (json) {
+					$('.option').show();
+
 					var res = json.list;
 
 					var pagination = json.page;
@@ -263,7 +270,7 @@
 
 						var item = res[keys[i]];
 
-						var shipped = 'Print invoice shipping';
+						var shipped = 'Print invoice shipping<br />';
 						var markasshipped = '<li><a class="mark-as-shipped" data-status="1">Mark as shipped</a></li>';
 						var paid = 'N/A';
 
@@ -280,7 +287,7 @@
 
 						if (item.status == 'Cancelled') {
 							button = '';
-							shipped += item.status + '<br />';
+							shipped = item.status + '<br />';
 							markasshipped = '';
 						}
 
@@ -292,7 +299,7 @@
 						var sku = '';
 						if (item.item.sku) {
 							sku = item.item.sku;
-                        }
+						}
 
 						var html = `<div class="bs-callout bs-callout-danger rootEl"  data-orderid="${item.id}" data-transactionid="${item.transactionId}" data-itemid="${item.item.id}" data-sku="${sku}">
                         <div class="col-md-2">
@@ -321,12 +328,14 @@
                             </div>
                             <div style="float: left; width: 80%">
                                 <p>
-                                    <a href="https://www.ebay.com/itm/${item.item.id}">${item.item.title}</a> (${item.item.id}) -
+                                    <a href="https://www.ebay.com/itm/${item.item.id}" target="_blank">${item.item.title}</a> (${item.item.id}) -
                                      <span class="badge badge-dark Quantity" data-itemid="${item.item.id}" data-variation='${JSON.stringify(item.item.variation)}'><i class="fa fa-circle-o-notch fa-spin fa-fw margin-bottom"></i></span>
 
                                 </p>
                                 <p>Buyer: ${item.buyerName} - <a href="https://www.ebay.com/usr/${item.BuyerUserID}">${item.BuyerUserID}</a></p>
                                 <p>Tracking: <span class="text-warning">${item.TrackingNumber}</span> (<a class="edit-tracking">edit</a>)</p>
+                                <p class="multi-quantity-edit" style="display:none">New quantity: <input class="form-control input-sm quantity-value" style="width: 60px;height: 25px;display: inline;"></p>
+                                <p class="multi-price-edit" style="display:none">New price: <input class="form-control input-sm" style="width: 60px;height: 25px;display: inline;"></p>
                                 ${myNote}
                             </div>
                         </div>
@@ -352,6 +361,46 @@
 					$('.get-orders').button('reset');
 				}
 			});
+		});
+
+		$('.change-multi-quantity').click(function () {
+			$('.start-change').toggle();
+			$('.multi-quantity-edit').toggle();
+		});
+
+		$(document).on('click', '.start-change', function () {
+
+			var quantityList = $('.quantity-value');
+			$.each(quantityList, function (key, value) {
+				var rootEl = $(value).closest('.rootEl');
+				var itemId = rootEl.data('itemid');
+				var sku = rootEl.data('sku');
+				var quantity = $(value).val();
+
+				rootEl.find('.multi-quantity-edit').hide();
+				$(value).val('');
+				if (!quantity) {
+					return;
+				}
+				rootEl.find('.Quantity').html('<i class="fa fa-circle-o-notch fa-spin fa-fw margin-bottom"></i>');
+
+				$.ajax({
+					url: '/api/order/add-quantity.php',
+					data: {
+						itemId: itemId,
+						quantity: quantity,
+						sku: sku
+					},
+					success: function (res) {
+						if (res.Ack == 'Failure') {
+							rootEl.find('.Quantity').html('Lỗi');
+							return;
+						}
+						rootEl.find('.Quantity').html(quantity + ' available');
+					}
+				});
+			});
+
 		});
 
 		function getQuantity() {
@@ -535,11 +584,11 @@
 					sku: sku
 				},
 				success: function (res) {
-				    if (res.Ack == 'Failure') {
+					if (res.Ack == 'Failure') {
 
-                        alert('Lỗi');
-                        return;
-				    }
+						alert('Lỗi');
+						return;
+					}
 					$(self).button('reset');
 					alert('Cập nhật Quantity number thành công');
 					$('#add-Quantity-modal').modal('hide');
