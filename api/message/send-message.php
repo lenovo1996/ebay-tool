@@ -25,6 +25,4 @@
 
 	$response = $proxy->AddMemberMessageRTQ($addmembermessagertqrequest);
 
-	echo json_encode([
-		'result' => $response->getAck()
-	]);
+	echo json_encode($response);
