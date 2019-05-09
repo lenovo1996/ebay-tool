@@ -289,7 +289,12 @@
 							myNote = `<div class="alert alert-warning" style=" padding: 5px; margin-bottom: 0px; ">My note: ${item.note}</div>`;
 						}
 
-						var html = `<div class="bs-callout bs-callout-danger rootEl"  data-orderid="${item.id}" data-transactionid="${item.transactionId}" data-itemid="${item.item.id}">
+						var sku = '';
+						if (item.item.sku) {
+							sku = item.item.sku;
+                        }
+
+						var html = `<div class="bs-callout bs-callout-danger rootEl"  data-orderid="${item.id}" data-transactionid="${item.transactionId}" data-itemid="${item.item.id}" data-sku="${sku}">
                         <div class="col-md-2">
                             <div class="dropdown">
                                 ${shipped} (<a class="view-record">${item.saleRecord}</a>)
@@ -355,16 +360,15 @@
 			$.each(QuantityList, function (key, value) {
 				var rootEl = $(value).closest('.rootEl');
 				var itemId = $(value).data('itemid');
-				var variation = JSON.stringify($(value).data('variation'));
+				var sku = rootEl.data('sku');
 				$.ajax({
 					url: '/api/order/get-quantity.php',
 					data: {
 						itemId: itemId,
-						variation: variation
+						sku: sku
 					},
 					success: function (res) {
 						$(value).text(res.quantity + ' available');
-						rootEl.data('sku', res.SKU);
 					}
 				});
 			});

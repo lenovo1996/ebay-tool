@@ -114,7 +114,8 @@
 			'title' => $item->getTitle(),
 			'image' => 'https://thumbs4.ebaystatic.com/pict/' . $item->getItemId() . '8080_1.jpg',
 			'id' => $item->getItemId(),
-			'variation' => $variations
+			'variation' => $variations,
+			'sku' => $rawOrder->getTransactionArray()[0]->Variation->SKU,
 		];
 
 		$order['note'] = $notes[$item->getItemId() . '-' . $rawOrder->getBuyerUserId()];
