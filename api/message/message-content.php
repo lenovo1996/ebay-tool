@@ -1,8 +1,8 @@
 <?php
 
-	$proxy = require_once '../../session.php';
+	$proxy = require_once '../../session_trading.php';
 
-	require_once $sdk_dir . 'GetMyMessagesRequestType.php';
+	require_once $sdk_dir . '/trading/GetMyMessagesRequestType.php';
 
 	$getmymessagesrequest = new GetMyMessagesRequestType();
 

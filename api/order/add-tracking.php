@@ -5,9 +5,9 @@
 	$trackingNumber = $_POST['trackingNumber'];
 	$shippingCarrierUsed = $_POST['ShippingCarrierUsed'];
 
-	$proxy = require_once '../../session.php';
+	$proxy = require_once '../../session_trading.php';
 
-	require_once $sdk_dir . 'CompleteSaleRequestType.php';
+	require_once $sdk_dir . '/trading/CompleteSaleRequestType.php';
 	$completesalerequest = new CompleteSaleRequestType();
 	$completesalerequest->setOrderID($orderId);
 	$shipment = new ShipmentType();

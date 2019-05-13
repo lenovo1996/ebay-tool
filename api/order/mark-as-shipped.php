@@ -4,9 +4,9 @@
 	$transactionId = $_GET['transaction_id'];
 	$shippedStatus = $_GET['status'];
 
-	$proxy = require_once '../../session.php';
+	$proxy = require_once '../../session_trading.php';
 
-	require_once $sdk_dir . 'CompleteSaleRequestType.php';
+	require_once $sdk_dir . '/trading/CompleteSaleRequestType.php';
 
 	$completesalerequest = new CompleteSaleRequestType();
 

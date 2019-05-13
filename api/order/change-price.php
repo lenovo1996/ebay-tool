@@ -1,12 +1,12 @@
 <?php
 
-	$proxy = require_once '../../session.php';
+	$proxy = require_once '../../session_trading.php';
 
 	$price = $_GET['price'];
 	$itemId = $_GET['itemId'];
 	$sku = $_GET['sku'];
 
-	require_once $sdk_dir . 'ReviseInventoryStatusRequestType.php';
+	require_once $sdk_dir . '/trading/ReviseInventoryStatusRequestType.php';
 	$reviseinventorystatusrequest = new ReviseInventoryStatusRequestType();
 	$inventorystatus = new InventoryStatusType();
 	$reviseinventorystatusrequest->addInventoryStatus($inventorystatus);

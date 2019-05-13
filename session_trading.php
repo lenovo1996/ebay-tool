@@ -10,11 +10,11 @@
 		die;
 	}
 
-	$sdk_dir = $_SERVER["DOCUMENT_ROOT"] . '/sdk/trading/';
+	$sdk_dir = $_SERVER["DOCUMENT_ROOT"] . '/sdk/';
 
-	require_once $sdk_dir . 'EbatNs_Session.php';
-	require_once $sdk_dir . 'EbatNs_ServiceProxy.php';
-	require_once $sdk_dir . 'EbatNs_DataConverter.php';
+	require_once $sdk_dir . '/trading/EbatNs_Session.php';
+	require_once $sdk_dir . '/trading/EbatNs_ServiceProxy.php';
+	require_once $sdk_dir . '/trading/EbatNs_DataConverter.php';
 
 	$token = '';
     if (isset($_SESSION['token'])) {

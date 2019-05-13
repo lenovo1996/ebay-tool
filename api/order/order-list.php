@@ -1,6 +1,6 @@
 <?php
 
-	$proxy = require_once '../../session.php';
+	$proxy = require_once '../../session_trading.php';
 
 
 	$endDate = !empty($_GET['end']) ? $_GET['end'] : date('Y-m-d');
@@ -11,7 +11,7 @@
 	$page = !empty($_GET['page']) ? $_GET['page'] : 1;
 
 	// ---------------------------------------
-	require_once $sdk_dir . 'GetOrdersRequestType.php';
+	require_once $sdk_dir . '/trading/GetOrdersRequestType.php';
 	$getordersrequest = new GetOrdersRequestType();
 
 	if ($startDate) {
@@ -34,7 +34,7 @@
 	$response = $proxy->GetOrders($getordersrequest);
 
 	// ---------------------------------------
-	require_once $sdk_dir . 'GetMyeBaySellingRequestType.php';
+	require_once $sdk_dir . '/trading/GetMyeBaySellingRequestType.php';
 	$getmyebaysellingrequest = new GetMyeBaySellingRequestType();
 	$getmyebaysellingrequest->setHideVariations("true");
 	$itemlistcustomization = new ItemListCustomizationType();
@@ -64,7 +64,7 @@
 		'list' => []
 	];
 
-	require_once $sdk_dir . 'ReviseFixedPriceItemRequestType.php';
+	require_once $sdk_dir . '/trading/ReviseFixedPriceItemRequestType.php';
 
 	foreach ($response->getOrderArray() as $rawOrder) {
 		// filter by user name

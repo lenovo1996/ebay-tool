@@ -5,9 +5,9 @@
 	$noteContent = $_POST['noteContent'];
 	$sku = $_POST['sku'];
 
-	$proxy = require_once '../../session.php';
+	$proxy = require_once '../../session_trading.php';
 
-	require_once $sdk_dir . 'SetUserNotesRequestType.php';
+	require_once $sdk_dir . '/trading/SetUserNotesRequestType.php';
 	$setusernotesrequest = new SetUserNotesRequestType();
 	$setusernotesrequest->setAction("AddOrUpdate");
 	$setusernotesrequest->setItemID($itemId);

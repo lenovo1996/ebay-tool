@@ -3,7 +3,7 @@
 	error_reporting(1);
 	ini_set('display_errors', 1);
 
-	$proxy = require_once '../../session.php';
+	$proxy = require_once '../../session_trading.php';
 
 	$itemId = $_GET['itemId'];
 	$sku = $_GET['sku'];
@@ -15,7 +15,7 @@
 		$values[] = $value;
 	}
 
-	require_once $sdk_dir . 'GetItemRequestType.php';
+	require_once $sdk_dir . '/trading/GetItemRequestType.php';
 	$getitemrequest = new GetItemRequestType();
 	$getitemrequest->setItemID($itemId);
 	if(!empty($sku)) {
