@@ -19,12 +19,10 @@
 		$membermessage->addMessageMedia($messagemedia);
 	}
 
-	$membermessage->setParentMessageID($_POST['parent_message_id']); // externalMessageID
+	$membermessage->setParentMessageID($_POST['externalMessageID']); // externalMessageID
 	$membermessage->addRecipientID($_POST['sender']);
 	$addmembermessagertqrequest->setVersion("1101");
 
 	$response = $proxy->AddMemberMessageRTQ($addmembermessagertqrequest);
 
-	echo json_encode([
-		'result' => $response->getAck()
-	]);
+	echo json_encode($response);
