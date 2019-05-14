@@ -41,7 +41,7 @@
 
         <?php
           if (isset($_GET['id'])) {
-              echo '.id-' . $_GET['id'] . ' { background-color: #c5c5c5 }';
+              echo '.id-' . $_GET['id'] . ' { background-color: #c5c5c5;color: gray;font-size: 12px; }';
           }
           ?>
     </style>
