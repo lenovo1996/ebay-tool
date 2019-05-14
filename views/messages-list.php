@@ -95,14 +95,14 @@
                     <div class="clearfix"></div>
                     <input type="hidden" name="sender">
                     <input type="hidden" name="externalMessageID">
-                    <div class="form-group">
-                        <label>Media url (jpg, png, ...):</label>
-                        <input class="form-control" name="media_url">
-                    </div>
-                    <div class="form-group">
-                        <label>Media name:</label>
-                        <input class="form-control" name="media_name">
-                    </div>
+<!--                    <div class="form-group">-->
+<!--                        <label>Media url (jpg, png, ...):</label>-->
+<!--                        <input class="form-control" name="media_url">-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label>Media name:</label>-->
+<!--                        <input class="form-control" name="media_name">-->
+<!--                    </div>-->
                     <div class="form-group">
                         <label>Body:</label>
                         <textarea class="form-control" name="body"></textarea>
@@ -112,6 +112,9 @@
                         </button>
                     </div>
                 </div>
+                <div class="clearfix"></div>
+                <div id="google_translate_element"></div>
+                <div class="clearfix"></div>
                 <div class="msg-body"></div>
             </div>
         </div>
@@ -122,7 +125,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.vi.min.js"></script>
-
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
 <script>
   $('.date').datepicker({
     format: 'yyyy-mm-dd',
