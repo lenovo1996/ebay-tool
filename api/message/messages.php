@@ -31,6 +31,18 @@
 	$messages = [];
 
 	foreach ($response->getMessages() as $message) {
+		if ($_GET['ebay'] == 'true' && strtolower($message->getSender()) != 'ebay') {
+			continue;
+		}
+
+		if ($_GET['buyer'] == 'true' && strtolower($message->getSender()) == 'ebay') {
+			continue;
+		}
+
+		if ($_GET['notRead'] == 'true' && $message->getRead() == true) {
+			continue;
+		}
+
 		$data['sender'] = $message->getSender();
 		$data['subject'] = $message->getSubject();
 		$data['id'] = $message->getMessageId();

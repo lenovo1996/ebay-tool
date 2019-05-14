@@ -71,13 +71,33 @@
                     </button>
                 </div>
                 <div class="clearfix"></div>
+                <div class="form-group col-md-4">
+                    <label>Sender Ebay:</label>
+                    <input class="ebay" name="sender"
+                           type="radio" <?php echo isset($_GET['ebay']) && $_GET['ebay'] == 'true' ? 'checked' : '' ?>>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Sender buyer:</label>
+                    <input class="buyer" name="sender"
+                           type="radio" <?php echo isset($_GET['buyer']) && $_GET['buyer'] == 'true' ? 'checked' : '' ?>>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label>Chưa đọc</label>
+                    <input class="not-read"
+                           type="checkbox" <?php echo isset($_GET['notRead']) && $_GET['notRead'] == 'true' ? 'checked' : '' ?>>
+                </div>
+                <div class="clearfix"></div>
                 <div class="col-md-12">
                     <div class="bs-callout bs-callout-danger rootEl">
                         <div class="col-md-4">
                             <b>Sender</b>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-4">
                             <b>Subject</b>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-sm btn-primary mark-as-read">Mark as read all</button>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -95,14 +115,6 @@
                     <div class="clearfix"></div>
                     <input type="hidden" name="sender">
                     <input type="hidden" name="externalMessageID">
-<!--                    <div class="form-group">-->
-<!--                        <label>Media url (jpg, png, ...):</label>-->
-<!--                        <input class="form-control" name="media_url">-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label>Media name:</label>-->
-<!--                        <input class="form-control" name="media_name">-->
-<!--                    </div>-->
                     <div class="form-group">
                         <label>Body:</label>
                         <textarea class="form-control" name="body"></textarea>
@@ -125,7 +137,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.vi.min.js"></script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
@@ -147,18 +160,26 @@
       data: {
         start: $('.start').val(),
         end: $('.end').val(),
+        ebay: $('.ebay').prop('checked'),
+        buyer: $('.buyer').prop('checked'),
+        notRead: $('.not-read').prop('checked'),
       },
       success: function (json) {
         $('.get-messages').button('reset');
 
         $('.messages-list').html('');
+        var ebay = $('.ebay').prop('checked');
+        var buyer = $('.buyer').prop('checked');
+        var notRead = $('.not-read').prop('checked');
+
+        var str = 'ebay=' + ebay + '&buyer=' + buyer + '&notRead=' + notRead;
 
         $.each(json, function (key, item) {
           var title = '';
           if (item.read) {
-            title = '<a class="read-this read" href="messages-list.php?id=' + item.id + '" data-msgid="' + item.id + '">' + item.subject + '</a>';
+            title = '<a class="read-this read" href="messages-list.php?' + str + '&id=' + item.id + '" data-msgid="' + item.id + '">' + item.subject + '</a>';
           } else {
-            title = '<a class="read-this not-read" href="messages-list.php?id=' + item.id + '" data-msgid="' + item.id + '">' + item.subject + '</a>';
+            title = '<a class="read-this not-read" href="messages-list.php?' + str + '&id=' + item.id + '" data-msgid="' + item.id + '">' + item.subject + '</a>';
           }
 
           var html = `<div class="bs-callout bs-callout-danger rootEl id-${item.id}">
@@ -179,10 +200,21 @@
     });
   });
 
-  $(document).on('click', '.read-this', function () {
-    var msgId = $(this).data('msgid');
-    getMsg(msgId);
+  $(document).on('click', '.mark-as-read', function () {
+    var list = $('.not-read');
+    $.each(list, function () {
+      var msgId = $(this).data('msgid');
+      $(this).removeClass('not-read');
+      $(this).addClass('read');
+      $.ajax({
+        url: '/api/message/message-content.php',
+        data: {
+          id: msgId
+        }
+      });
+    });
   });
+
 
   function getMsg(msgId) {
     $('.msg-body').html('Loading...');
