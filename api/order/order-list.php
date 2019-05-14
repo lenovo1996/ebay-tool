@@ -73,10 +73,15 @@
 		}
 
 		// filter by waiting shipment
-		if ($waitingShipment == 'true' && (!is_null($rawOrder->getShippedTime()) || $rawOrder->getOrderStatus() == 'Cancelled')) {
-			continue;
-		}
+		if ($waitingShipment == 'true') {
+			if ($rawOrder->getOrderStatus() == 'Cancelled') {
+				continue;
+			}
 
+			if (!is_null($rawOrder->getShippedTime())) {
+				continue;
+			}
+		}
 		// set tracking number and filter by tracking number
 		if ($rawOrder->getTransactionArray()[0]->getShippingDetails()->getShipmentTrackingDetails()) {
 			$order['TrackingNumber'] = $rawOrder->getTransactionArray()[0]->getShippingDetails()->getShipmentTrackingDetails()[0]->getShipmentTrackingNumber();
