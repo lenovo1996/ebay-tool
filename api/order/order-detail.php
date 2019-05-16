@@ -1,8 +1,6 @@
 <?php
-
-error_reporting(E_ERROR);
-ini_set('display_errors', 1);
 $orderId = $_GET['order_id'];
+$json = $_GET['json'];
 
 $proxy = require_once '../../session_trading.php';
 
@@ -17,7 +15,6 @@ $getordersrequest->setVersion("1101");
 $response = $proxy->GetOrders($getordersrequest);
 
 $order = $response->getOrderArray()[0];
-
 $transaction = $order->getTransactionArray()[0];
 $buyer = $transaction->getBuyer();
 $shippingAddr = $order->getShippingAddress();
@@ -33,6 +30,30 @@ try {
     $payment = 'N/A';
     $tracking = 'N/A';
 }
+if ($json == 1) {
+    $Variations = '';
+    if ($transaction->Variation) {
+        foreach ($transaction->Variation->VariationSpecifics as $variations) {
+            $Variations .= $variations->Name . ': ' . implode(',', $variations->Value) . ',';
+        }
+    }
+
+
+    echo json_encode([
+        'paidDate' => date("M j, Y", strtotime($order->getPaidTime())),
+        'saleRecord' => $order->getShippingDetails()->getSellingManagerSalesRecordNumber(),
+        'total' => $order->Total->value,
+        'qty' => $transaction->getQuantityPurchased(),
+        'Variations' => trim($Variations, ','),
+        'link' => 'https://www.ebay.com/itm/' . $item->getItemId(),
+        'shippingDetail' => $shippingAddr->Name . ',' . $shippingAddr->Street1 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
+        'buyerUserName' => $order->BuyerUserID,
+        'buyerEmail' => $buyer->Email,
+        'seller' => $order->SellerUserID
+    ]);
+    exit;
+}
+
 
 header('Content-Type: text/html');
 echo '
@@ -41,7 +62,7 @@ echo '
 		<div class="panel panel-info">
 			<div class="panel-heading">Purchase detail</div>
 			<div class="panel-body">
-				<div class="list-group-item">Buyer: ' . $buyer->UserFirstName . '' . $buyer->UserLastName . ' (' . $order->BuyerUserID . ')</div>
+				<div class="list-group-item">Buyer: ' . $buyer->UserFirstName . ' ' . $buyer->UserLastName . ' (' . $order->BuyerUserID . ')</div>
 				<div class="list-group-item">Email: ' . $buyer->Email . '</div>
 				<div class="list-group-item">Date paid: ' . $payment . '</div>
 			</div>
