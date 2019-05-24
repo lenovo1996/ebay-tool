@@ -49,6 +49,7 @@
                      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                 </div>
             </div>
+            <div class="msg-error"></div>
         </div>
     </div>
 </div>
@@ -84,136 +85,142 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script>
-	$(document).ready(function () {
-		$.ajax({
-			url: '/api/list-token.php',
-			success: function (res) {
+  $(document).ready(function () {
+    $.ajax({
+      url: '/api/list-token.php',
+      success: function (res) {
 
-				$.each(res.data, function (key, value) {
-					var html = `<div class="col-md-3 text-center">
+        $.each(res.data, function (key, value) {
+          var html = `<div class="col-md-3 text-center">
                                 <div class="bs-callout bs-callout-danger" data-id="${value.id}" style="cursor: pointer;">
                                     <span class="pull-right xoa glyphicon glyphicon-remove"></span>
                                     <h4 class="token-select">${value.title}</h4>
                                     <p>${value.atime}</p>
                                 </div>
                                 </div>`;
-					$('.account-list').append(html);
-				});
-			}
-		});
-	});
+          $('.account-list').append(html);
+        });
+      }
+    });
+  });
 
 
-	$('.save').click(function () {
-		$.ajax({
-			url: '/api/add-token.php',
-			type: 'post',
-			data: {
-				title: $('#title').val(),
-				token: $('#token').val(),
-			},
-			success: function (res) {
-				alert(res.msg);
-				$('#addAccount').modal('hide');
-				location.reload();
-			}
-		});
-	});
+  $('.save').click(function () {
+    $.ajax({
+      url: '/api/add-token.php',
+      type: 'post',
+      data: {
+        title: $('#title').val(),
+        token: $('#token').val(),
+      },
+      success: function (res) {
+        alert(res.msg);
+        $('#addAccount').modal('hide');
+        location.reload();
+      }
+    });
+  });
 
-    $(document).on('click', '.xoa', function () {
-      var self = $(this);
-      var id = self.closest('.bs-callout').data('id');
-      $.ajax({
-        url: '/api/remove-token.php',
-        type: 'post',
+  $(document).on('click', '.xoa', function () {
+    var self = $(this);
+    var id = self.closest('.bs-callout').data('id');
+    $.ajax({
+      url: '/api/remove-token.php',
+      type: 'post',
+      data: {
+        id: id,
+      },
+      success: function (res) {
+        alert('Xóa thành công');
+        self.closest('.col-md-3').remove();
+      }
+    });
+  });
+
+  $(document).on('click', '.token-select', function () {
+    var id = $(this).closest('.bs-callout').data('id');
+    $.ajax({
+      url: '/api/select-token.php',
+      type: 'post',
+      data: {
+        id: id
+      },
+      success: function () {
+        location.href = '/views/orders-list.php';
+      }
+    });
+  });
+
+
+  var tokenList = [];
+  var data = '';
+  $(document).on('click', '#export', async function () {
+    tokenList = [];
+    data = '';
+    var res = await $.get('/api/list-token.php');
+    for (const value of res.data) {
+      tokenList.push(value.id);
+    }
+
+    $('#progress').show();
+    exportOrder(0);
+  });
+
+  async function exportOrder(i) {
+    try {
+      $('.msg').text('Đang xử lý ' + (i + 1) + '/' + tokenList.length + ' Acc...');
+      var percent = (i + 1) / tokenList.length * 100;
+      $('.progress-bar').css('width', percent + '%');
+
+      if (i == tokenList.length) {
+        $('.progress-bar').removeClass('progress-bar-striped active');
+        $('.progress-bar').addClass('progress-bar-success');
+        $('#progress').hide();
+
+        if (!data) {
+          alert('Không có order nào');
+          return;
+        }
+
+        console.log(data);
+        download('data.txt', data);
+        return;
+      }
+      var idToken = tokenList[i];
+      var r = await $.post('/api/select-token.php', {id: idToken});
+
+      var r2 = await $.ajax({
+        url: '/api/order/order-list.php',
         data: {
-          id: id,
-        },
-        success: function (res) {
-          alert('Xóa thành công');
-          self.closest('.col-md-3').remove();
+          waitingShipment: true
         }
       });
-    });
 
-	$(document).on('click', '.token-select', function () {
-		var id = $(this).closest('.bs-callout').data('id');
-		$.ajax({
-			url: '/api/select-token.php',
-			type: 'post',
-			data: {
-				id: id
-			},
-			success: function () {
-				location.href = '/views/orders-list.php';
-			}
-		});
-	});
+      for (const order in r2.list) {
+        var r3 = await $.get('/api/order/order-detail.php?json=1&order_id=' + r2.list[order].id + '&json=1');
+        data += r3.seller + '\t' + r3.paidDate + '\t' + r3.saleRecord + '\t' + r3.total + '\t' + r3.qty + '\t' + r3.Variations + '\t' + r3.link + '\t' + r3.shippingDetail + '\t' + r3.buyerUserName + '\t' + r3.buyerEmail + '\n';
+      }
 
+    } catch (e) {
+      var name = $('[data-id="' + tokenList[i] + '"]').find('.token-select').text();
+      $('.msg-error').append('<p>' + name + ' có lỗi, vui lòng kiểm tra</p>');
+    }
 
-	var tokenList = [];
-	var data = '';
-	$(document).on('click', '#export', async function () {
-		tokenList = [];
-		data = '';
-		var res = await $.get('/api/list-token.php');
-		for (const value of res.data) {
-			tokenList.push(value.id);
-		}
+    i++;
+    await exportOrder(i);
+  }
 
-		$('#progress').show();
-		exportOrder(0);
-	});
+  function download(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
 
-	async function exportOrder(i) {
-		$('.msg').text('Đang xử lý ' + (i + 1) + '/' + tokenList.length + ' Acc...');
-		var percent = (i + 1) / tokenList.length * 100;
-		$('.progress-bar').css('width', percent + '%');
+    element.style.display = 'none';
+    document.body.appendChild(element);
 
-		if (i == tokenList.length) {
-			$('.progress-bar').removeClass('progress-bar-striped active');
-			$('.progress-bar').addClass('progress-bar-success');
-			$('#progress').hide();
+    element.click();
 
-			if (!data) {
-				alert('Không có order nào');
-				return;
-			}
-
-			console.log(data);
-			download('data.txt', data);
-			return;
-		}
-		var idToken = tokenList[i];
-		var r = await $.post('/api/select-token.php', {id: idToken});
-
-		var r2 = await $.ajax({
-			url: '/api/order/order-list.php',
-			data: {
-				waitingShipment: true
-			}
-		});
-
-		for (const order in r2.list) {
-			var r3 = await $.get('/api/order/order-detail.php?json=1&order_id=' + r2.list[order].id + '&json=1');
-			data += r3.seller + '\t' + r3.paidDate + '\t' + r3.saleRecord + '\t' + r3.total + '\t' + r3.qty + '\t' + r3.Variations + '\t' + r3.link + '\t' + r3.shippingDetail + '\t' + r3.buyerUserName + '\t' + r3.buyerEmail + '\n';
-		}
-
-		i++;
-		await exportOrder(i);
-	}
-
-	function download(filename, text) {
-		var element = document.createElement('a');
-		element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-		element.setAttribute('download', filename);
-
-		element.style.display = 'none';
-		document.body.appendChild(element);
-
-		element.click();
-
-		document.body.removeChild(element);
-	}
+    document.body.removeChild(element);
+  }
 
 </script>
