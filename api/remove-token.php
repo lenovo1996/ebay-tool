@@ -15,24 +15,7 @@
 
 	$id = $_POST['id'];
 
-	delete_files('/database/' . $userDir . '/' . $id);
 
 	echo json_encode([
-		'result' => true
+		'result' => rmdir('/database/' . $userDir . '/' . $id)
 	]);
-
-
-	function delete_files($target)
-	{
-		if (is_dir($target)) {
-			$files = glob($target . '*', GLOB_MARK);
-
-			foreach ($files as $file) {
-				delete_files($file);
-			}
-
-			rmdir($target);
-		} elseif (is_file($target)) {
-			unlink($target);
-		}
-	}
