@@ -12,6 +12,15 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://getbootstrap.com/docs/3.3/assets/css/docs.min.css" rel="stylesheet">
+    <style>
+        .xoa {
+            position: absolute;
+            top: 25px;
+            color: darkgray;
+            right: 25px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body style="padding-top:60px;">
 <div class="container" style="width: 70%">
@@ -82,8 +91,9 @@
 
 				$.each(res.data, function (key, value) {
 					var html = `<div class="col-md-3 text-center">
-                                <div class="bs-callout bs-callout-danger token-select" data-id="${value.id}" style="cursor: pointer;">
-                                    <h4>${value.title}</h4>
+                                <div class="bs-callout bs-callout-danger" data-id="${value.id}" style="cursor: pointer;">
+                                    <span class="pull-right xoa glyphicon glyphicon-remove"></span>
+                                    <h4 class="token-select">${value.title}</h4>
                                     <p>${value.atime}</p>
                                 </div>
                                 </div>`;
@@ -110,8 +120,24 @@
 		});
 	});
 
+    $(document).on('click', '.xoa', function () {
+      var self = $(this);
+      var id = self.closest('.bs-callout').data('id');
+      $.ajax({
+        url: '/api/remove-token.php',
+        type: 'post',
+        data: {
+          id: id,
+        },
+        success: function (res) {
+          alert('Xóa thành công');
+          self.closest('.col-md-3').remove();
+        }
+      });
+    });
+
 	$(document).on('click', '.token-select', function () {
-		var id = $(this).data('id');
+		var id = $(this).closest('.bs-callout').data('id');
 		$.ajax({
 			url: '/api/select-token.php',
 			type: 'post',
