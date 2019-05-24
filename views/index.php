@@ -196,9 +196,12 @@
         }
       });
 
+      if (r2.list.length > 0) {
+          data += r2.seller + '\n';
+      }
       for (const order in r2.list) {
         var r3 = await $.get('/api/order/order-detail.php?json=1&order_id=' + r2.list[order].id + '&json=1');
-        data += r3.seller + '\t' + r3.paidDate + '\t' + r3.saleRecord + '\t' + r3.total + '\t' + r3.qty + '\t' + r3.Variations + '\t' + r3.link + '\t' + r3.shippingDetail + '\t' + r3.buyerUserName + '\t' + r3.buyerEmail + '\n';
+        data += r3.paidDate + '\t' + r3.saleRecord + '\t' + r3.total + '\t' + r3.qty + '\t' + r3.Variations + '\t' + r3.link + '\t' + r3.shippingDetail + '\t' + r3.buyerUserName + '\t' + r3.buyerEmail + '\n';
       }
 
     } catch (e) {

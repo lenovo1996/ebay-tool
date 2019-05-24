@@ -110,7 +110,7 @@
     <div class="col-md-7">
         <div class="panel panel-primary">
             <div class="panel-heading msg-title"></div>
-            <div class="panel-body">
+            <div class="panel-body" id="message">
                 <div class="reply-form" style="display: none">
                     <div class="clearfix"></div>
                     <input type="hidden" name="sender">

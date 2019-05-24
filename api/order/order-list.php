@@ -58,6 +58,7 @@
 	// -------------------------------------------
 
 	$orders = [
+        'seller' => $response->getOrderArray()[0]->SellerUserID,
 		'current' => $page,
 		'page' => $response->getPaginationResult()->getTotalNumberOfPages(),
 		'total' => $response->getPaginationResult()->getTotalNumberOfEntries(),
