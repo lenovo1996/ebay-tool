@@ -1,8 +1,8 @@
 <?php
-	session_start();
-	if (!$_SESSION['userDir']) {
-		header('location: /views/login.php');
-	}
+session_start();
+if (!$_SESSION['userDir']) {
+    header('location: /views/login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
 <body style="padding-top:60px;">
 <div class="container" style="width: 70%">
 
-	<?php include '../includes/header.php' ?>
+    <?php include '../includes/header.php' ?>
 
     <div class="col-md-12">
         <div class="panel panel-primary">
@@ -85,145 +85,149 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script>
-  $(document).ready(function () {
-    $.ajax({
-      url: '/api/list-token.php',
-      success: function (res) {
+    $(document).ready(function () {
+        $.ajax({
+            url: '/api/list-token.php',
+            success: function (res) {
 
-        $.each(res.data, function (key, value) {
-          var html = `<div class="col-md-3 text-center">
+                $.each(res.data, function (key, value) {
+                    var html = `<div class="col-md-3 text-center">
                                 <div class="bs-callout bs-callout-danger" data-id="${value.id}" style="cursor: pointer;">
                                     <span class="pull-right xoa glyphicon glyphicon-remove"></span>
                                     <h4 class="token-select">${value.title}</h4>
                                     <p>${value.atime}</p>
                                 </div>
                                 </div>`;
-          $('.account-list').append(html);
+                    $('.account-list').append(html);
+                });
+            }
         });
-      }
     });
-  });
 
 
-  $('.save').click(function () {
-    $.ajax({
-      url: '/api/add-token.php',
-      type: 'post',
-      data: {
-        title: $('#title').val(),
-        token: $('#token').val(),
-      },
-      success: function (res) {
-        alert(res.msg);
-        $('#addAccount').modal('hide');
-        location.reload();
-      }
+    $('.save').click(function () {
+        $.ajax({
+            url: '/api/add-token.php',
+            type: 'post',
+            data: {
+                title: $('#title').val(),
+                token: $('#token').val(),
+            },
+            success: function (res) {
+                alert(res.msg);
+                $('#addAccount').modal('hide');
+                location.reload();
+            }
+        });
     });
-  });
 
-  $(document).on('click', '.xoa', function () {
-    var self = $(this);
-    var id = self.closest('.bs-callout').data('id');
-    $.ajax({
-      url: '/api/remove-token.php',
-      type: 'post',
-      data: {
-        id: id,
-      },
-      success: function (res) {
-        alert('Xóa thành công');
-        self.closest('.col-md-3').remove();
-      }
+    $(document).on('click', '.xoa', function () {
+        var self = $(this);
+        var id = self.closest('.bs-callout').data('id');
+        $.ajax({
+            url: '/api/remove-token.php',
+            type: 'post',
+            data: {
+                id: id,
+            },
+            success: function (res) {
+                alert('Xóa thành công');
+                self.closest('.col-md-3').remove();
+            }
+        });
     });
-  });
 
-  $(document).on('click', '.token-select', function () {
-    var id = $(this).closest('.bs-callout').data('id');
-    $.ajax({
-      url: '/api/select-token.php',
-      type: 'post',
-      data: {
-        id: id
-      },
-      success: function () {
-        location.href = '/views/orders-list.php';
-      }
+    $(document).on('click', '.token-select', function () {
+        var id = $(this).closest('.bs-callout').data('id');
+        $.ajax({
+            url: '/api/select-token.php',
+            type: 'post',
+            data: {
+                id: id
+            },
+            success: function () {
+                location.href = '/views/orders-list.php';
+            }
+        });
     });
-  });
 
 
-  var tokenList = [];
-  var data = '';
-  $(document).on('click', '#export', async function () {
-    tokenList = [];
-    data = '';
-    var res = await $.get('/api/list-token.php');
-    for (const value of res.data) {
-      tokenList.push(value.id);
-    }
-
-    $('#progress').show();
-    exportOrder(0);
-  });
-
-  async function exportOrder(i) {
-    try {
-      $('.msg').text('Đang xử lý ' + (i + 1) + '/' + tokenList.length + ' Acc...');
-      var percent = (i + 1) / tokenList.length * 100;
-      $('.progress-bar').css('width', percent + '%');
-
-      if (i == tokenList.length) {
-        $('.progress-bar').removeClass('progress-bar-striped active');
-        $('.progress-bar').addClass('progress-bar-success');
-        $('#progress').hide();
-
-        if (!data) {
-          alert('Không có order nào');
-          return;
+    var tokenList = [];
+    var data = '';
+    $(document).on('click', '#export', async function () {
+        tokenList = [];
+        data = '';
+        var res = await $.get('/api/list-token.php');
+        for (const value of res.data) {
+            tokenList.push(value.id);
         }
 
-        console.log(data);
-        download('data.txt', data);
-        return;
-      }
-      var idToken = tokenList[i];
-      var r = await $.post('/api/select-token.php', {id: idToken});
+        $('#progress').show();
+        exportOrder(0);
+    });
 
-      var r2 = await $.ajax({
-        url: '/api/order/order-list.php',
-        data: {
-          waitingShipment: true
+    async function exportOrder(i) {
+        try {
+            $('.msg').text('Đang xử lý ' + (i + 1) + '/' + tokenList.length + ' Acc...');
+            var percent = (i + 1) / tokenList.length * 100;
+            $('.progress-bar').css('width', percent + '%');
+
+            if (i == tokenList.length) {
+                $('.progress-bar').removeClass('progress-bar-striped active');
+                $('.progress-bar').addClass('progress-bar-success');
+                $('#progress').hide();
+
+                if (!data) {
+                    alert('Không có order nào');
+                    return;
+                }
+
+                console.log(data);
+                download('data.txt', data);
+                return;
+            }
+            var idToken = tokenList[i];
+            var r = await $.post('/api/select-token.php', {id: idToken});
+
+            var r2 = await $.ajax({
+                url: '/api/order/order-list.php',
+                data: {
+                    waitingShipment: true
+                }
+            });
+
+            var is = false;
+            for (const order in r2.list) {
+                var r3 = await $.get('/api/order/order-detail.php?json=1&order_id=' + r2.list[order].id + '&json=1');
+
+                if (!is) {
+                    data += r3.seller + '\n';
+                    is = true;
+                }
+
+                data += r3.paidDate + '\t' + r3.saleRecord + '\t' + r3.total + '\t' + r3.qty + '\t' + r3.Variations + '\t' + r3.link + '\t' + r3.shippingDetail + '\t' + r3.buyerUserName + '\t' + r3.buyerEmail + '\n';
+            }
+
+        } catch (e) {
+            var name = $('[data-id="' + tokenList[i] + '"]').find('.token-select').text();
+            $('.msg-error').append('<p>' + name + ' có lỗi, vui lòng kiểm tra</p>');
         }
-      });
 
-      if (r2.list.length > 0) {
-          data += r2.seller + '\n';
-      }
-      for (const order in r2.list) {
-        var r3 = await $.get('/api/order/order-detail.php?json=1&order_id=' + r2.list[order].id + '&json=1');
-        data += r3.paidDate + '\t' + r3.saleRecord + '\t' + r3.total + '\t' + r3.qty + '\t' + r3.Variations + '\t' + r3.link + '\t' + r3.shippingDetail + '\t' + r3.buyerUserName + '\t' + r3.buyerEmail + '\n';
-      }
-
-    } catch (e) {
-      var name = $('[data-id="' + tokenList[i] + '"]').find('.token-select').text();
-      $('.msg-error').append('<p>' + name + ' có lỗi, vui lòng kiểm tra</p>');
+        i++;
+        await exportOrder(i);
     }
 
-    i++;
-    await exportOrder(i);
-  }
+    function download(filename, text) {
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
 
-  function download(filename, text) {
-    var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    element.setAttribute('download', filename);
+        element.style.display = 'none';
+        document.body.appendChild(element);
 
-    element.style.display = 'none';
-    document.body.appendChild(element);
+        element.click();
 
-    element.click();
-
-    document.body.removeChild(element);
-  }
+        document.body.removeChild(element);
+    }
 
 </script>
