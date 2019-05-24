@@ -13,8 +13,8 @@
 
 	$userDir = $_SESSION['userDir'];
 
-	$id = $_POST['id'];
-	system("rm -rf ".escapeshellarg($dir));
+	$id = $_REQUEST['id'];
+	system("rm -rf ".escapeshellarg($userDir));
 
 	echo json_encode([
 		'result' => true
