@@ -14,8 +14,8 @@
 	$userDir = $_SESSION['userDir'];
 
 	$id = $_POST['id'];
-
+	system("rm -rf ".escapeshellarg($dir));
 
 	echo json_encode([
-		'result' => rmdir('/database/' . $userDir . '/' . $id)
+		'result' => true
 	]);
