@@ -14,7 +14,20 @@
 	$userDir = $_SESSION['userDir'];
 
 	$id = $_REQUEST['id'];
-	system("rm -rf ".escapeshellarg($userDir));
+
+	$dir = $userDir . '/' . $id;
+
+	$it = new RecursiveDirectoryIterator($dir, RecursiveDirectoryIterator::SKIP_DOTS);
+	$files = new RecursiveIteratorIterator($it,
+		RecursiveIteratorIterator::CHILD_FIRST);
+	foreach($files as $file) {
+		if ($file->isDir()){
+			rmdir($file->getRealPath());
+		} else {
+			unlink($file->getRealPath());
+		}
+	}
+	rmdir($dir);
 
 	echo json_encode([
 		'result' => true
