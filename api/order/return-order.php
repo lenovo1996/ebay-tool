@@ -28,17 +28,16 @@
 	foreach ($response->returns as $return) {
 		$returnOrder = [];
 
+        $returnOrder['itemId'] = $return->returnRequest->returnItem[0]->itemId;
 		$returnDetail = returnDetail($returnId, $proxy);
 		$itemDetail = getItemDetail($returnOrder['itemId']);
-		var_dump($itemDetail);
-
+        var_dump($itemDetail);
 		$returnId = $return->ReturnId->id;
 		$returnOrder['id'] = $returnId;
 		$returnOrder['status'] = $return->status;
 		$returnOrder['creationDate'] = $return->creationDate;
 		$returnOrder['type'] = $return->ReturnType;
 		$returnOrder['buyer'] = $return->otherParty->userId;
-		$returnOrder['itemId'] = $return->returnRequest->returnItem[0]->itemId;
 		$returnOrder['itemQty'] = $return->returnRequest->returnItem[0]->returnQuantity;
 		$returnOrder['itemTransaction'] = $return->returnRequest->returnItem[0]->transactionId;
 		$returnOrder['reason'] = $return->returnRequest->comments;

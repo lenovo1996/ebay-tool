@@ -10,6 +10,14 @@
     <div class="panel panel-primary">
         <div class="panel-heading"></div>
         <div class="panel-body text-center" style="height: 92px">
+            <a class="list-group-item" href="/views/return-list.php">Danh Sách Return</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="panel panel-primary">
+        <div class="panel-heading"></div>
+        <div class="panel-body text-center" style="height: 92px">
             <a class="list-group-item" href="/views/orders-list.php">Danh Sách Orders</a>
         </div>
     </div>
