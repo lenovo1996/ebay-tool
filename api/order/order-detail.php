@@ -49,7 +49,7 @@ if ($json == 1) {
         'shippingDetail' => $shippingAddr->Name . ',' . $shippingAddr->Street1 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
         'buyerUserName' => $order->BuyerUserID,
         'buyerEmail' => $buyer->Email,
-        'seller' => $order->SellerUserID
+        'seller' => $_SESSION['title']
     ]);
     exit;
 }
