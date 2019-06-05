@@ -1,4 +1,4 @@
-<div class="col-md-3">
+<div class="col-md-2">
     <div class="panel panel-primary">
         <div class="panel-heading"></div>
         <div class="panel-body text-center" style="height: 92px">
@@ -6,7 +6,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-3">
+<div class="col-md-2">
     <div class="panel panel-primary">
         <div class="panel-heading"></div>
         <div class="panel-body text-center" style="height: 92px">
@@ -14,7 +14,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-3">
+<div class="col-md-2">
     <div class="panel panel-primary">
         <div class="panel-heading"></div>
         <div class="panel-body text-center" style="height: 92px">
@@ -22,7 +22,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-3">
+<div class="col-md-2">
     <div class="panel panel-primary">
         <div class="panel-heading"></div>
         <div class="panel-body text-center" style="height: 92px">
@@ -30,7 +30,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-3">
+<div class="col-md-4">
     <div class="panel panel-primary">
         <div class="panel-heading"></div>
         <div class="panel-body text-center" style="height: 92px">

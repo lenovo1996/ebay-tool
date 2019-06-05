@@ -373,7 +373,7 @@
 
                         <div class="col-md-5">
                             <div style="float: left; width: 15%">
-                                <a href="https://www.ebay.com/itm/292799546666">
+                                <a href="https://www.ebay.com/itm/${item.item.id}">
                                     <img src="https://thumbs4.ebaystatic.com/pict/${item.item.id}8080_1.jpg"
                                          style="width: 90%">
                                 </a>

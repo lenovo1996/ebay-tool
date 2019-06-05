@@ -2,12 +2,11 @@
 
 	$proxy = require_once '../../session_trading.php';
 
-
 	$endDate = !empty($_GET['end']) ? $_GET['end'] : date('Y-m-d');
 	$startDate = !empty($_GET['start']) ? $_GET['start'] : date('Y-m-d', time() - 60 * 60 * 24 * 7);
-	$buyerUserName = $_GET['buyerUserName'];
-	$waitingShipment = $_GET['waitingShipment'];
-	$blankTracking = $_GET['blankTracking'];
+	$buyerUserName = $_GET['buyerUserName'] ?? null;
+	$waitingShipment = $_GET['waitingShipment'] ?? null;
+	$blankTracking = $_GET['blankTracking'] ?? null;
 	$page = !empty($_GET['page']) ? $_GET['page'] : 1;
 
 	// ---------------------------------------
