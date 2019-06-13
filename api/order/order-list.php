@@ -165,11 +165,5 @@
 		$orders['list'][$order['saleRecord']] = $order;
 	}
 
-	if (empty($orders['list'])) {
-        $orders = file_get_contents('http://ebay-tool.tk' . $_SERVER['REQUEST_URI'] .'&page=' . ($page + 1));
-        echo $orders;die;
-    }
-
-
 	echo json_encode($orders);
 
