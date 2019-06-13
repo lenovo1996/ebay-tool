@@ -3,7 +3,7 @@
 	$proxy = require_once '../../session_trading.php';
 
 	$endDate = !empty($_GET['end']) ? $_GET['end'] : date('Y-m-d');
-	$startDate = !empty($_GET['start']) ? $_GET['start'] : date('Y-m-d', time() - 60 * 60 * 24 * 7);
+	$startDate = !empty($_GET['start']) ? $_GET['start'] : date('Y-m-d', time() - 60 * 60 * 24 * 3);
 	$buyerUserName = $_GET['buyerUserName'] ?? null;
 	$waitingShipment = $_GET['waitingShipment'] ?? null;
 	$blankTracking = $_GET['blankTracking'] ?? null;
@@ -164,6 +164,12 @@
 
 		$orders['list'][$order['saleRecord']] = $order;
 	}
+
+	if (empty($orders['list'])) {
+        $orders = file_get_contents('http://ebay-tool.tk' . $_SERVER['REQUEST_URI'] .'&page=' . ($_GET['page'] + 1));
+        echo $orders;die;
+    }
+
 
 	echo json_encode($orders);
 
