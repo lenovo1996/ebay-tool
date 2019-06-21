@@ -390,8 +390,8 @@
                                 <p>Tracking: <span class="text-warning tracking-value">${item.TrackingNumber}</span> (<a class="edit-tracking">edit</a>)</p>
                                 <p class="multi-quantity-edit" style="display:none">New quantity: <input class="form-control input-sm quantity-value" style="width: 60px;height: 25px;display: inline;"></p>
                                 <p class="multi-price-edit" style="display:none">New price: <input class="form-control input-sm price-value" style="width: 60px;height: 25px;display: inline;"></p>
-                                <p class="multi-tracking-edit" style="display:none">Tracking number: <input class="form-control input-sm tracking-value" style="width: 60px;height: 25px;display: inline;"></p>
-                                <p class="multi-tracking-edit" style="display:none">Shipping Carrier Used: <input class="form-control input-sm shipping-value" style="width: 60px;height: 25px;display: inline;"></p>
+                                <p class="multi-tracking-edit" style="display:none">Tracking number: <input class="form-control input-sm tracking-value" style="width: 170px;height: 25px;display: inline;"></p>
+                                <p class="multi-tracking-edit" style="display:none">Shipping Carrier Used: <input class="form-control input-sm shipping-value" style="width: 120px;height: 25px;display: inline;"></p>
                                 ${myNote}
                             </div>
                         </div>
