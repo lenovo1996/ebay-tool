@@ -10,11 +10,9 @@
 	$returnDetail = new getReturnDetailRequest();
 
 	$returnId = new ReturnIdType();
-	$returnId->setid(5113764781);
-
+	$returnId->setid($_GET['id']);
 
 	$returnDetail->setReturnId($returnId);
-
 
 	$response = $proxy->getReturnDetail($returnDetail);
 

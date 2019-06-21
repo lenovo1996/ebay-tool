@@ -1,5 +1,5 @@
 <?php
-
+    error_reporting(null); ini_set('display_errors', 0);
 	$proxy = require_once '../../session_trading.php';
 
 	$endDate = !empty($_GET['end']) ? $_GET['end'] : date('Y-m-d');
@@ -82,87 +82,91 @@
 				continue;
 			}
 		}
-		// set tracking number and filter by tracking number
-		if ($rawOrder->getTransactionArray()[0]->getShippingDetails()->getShipmentTrackingDetails()) {
-			$order['TrackingNumber'] = $rawOrder->getTransactionArray()[0]->getShippingDetails()->getShipmentTrackingDetails()[0]->getShipmentTrackingNumber();
-		} else {
-			$order['TrackingNumber'] = 'N/A';
-		}
 
-		if ($blankTracking == 'true' && $order['TrackingNumber'] != 'N/A') {
-			continue;
-		}
+		foreach ($rawOrder->getTransactionArray() as $key => $transactionArr) {
+            // set tracking number and filter by tracking number
+            if ($transactionArr->getShippingDetails()->getShipmentTrackingDetails()) {
+                $order['TrackingNumber'] = $transactionArr->getShippingDetails()->getShipmentTrackingDetails()[0]->getShipmentTrackingNumber();
+            } else {
+                $order['TrackingNumber'] = 'N/A';
+            }
 
-		$order['id'] = $rawOrder->getOrderId();
-		$order['status'] = $rawOrder->getOrderStatus();
-		$order['shippingService'] = $rawOrder->getShippingDetails()->getShippingServiceOptions()[0]->getShippingService() ?? 'N/A';
+            if ($blankTracking == 'true' && $order['TrackingNumber'] != 'N/A') {
+                continue;
+            }
+
+            $order['id'] = $rawOrder->getOrderId();
+            $order['status'] = $rawOrder->getOrderStatus();
+            $order['shippingService'] = $rawOrder->getShippingDetails()->getShippingServiceOptions()[0]->getShippingService() ?? 'N/A';
 
 
-		$order['saleRecord'] = $rawOrder->getShippingDetails()->getSellingManagerSalesRecordNumber();
+            $order['saleRecord'] = $rawOrder->getShippingDetails()->getSellingManagerSalesRecordNumber();
 
-		$order['paymentMethod'] = $rawOrder->getPaymentMethods()[0];
-		$order['qty'] = $rawOrder->getTransactionArray()[0]->getQuantityPurchased();
+            $order['paymentMethod'] = $rawOrder->getPaymentMethods()[0];
+            $order['qty'] = $transactionArr->getQuantityPurchased();
 
-		$item = $rawOrder->getTransactionArray()[0]->getItem();
+            $item = $transactionArr->getItem();
 
-		$variations = [];
+            $variations = [];
 
-		$variationList = $rawOrder->getTransactionArray()[0]->Variation;
-		if (!is_null($variationList)) {
-			foreach ($variationList->VariationSpecifics as $variation) {
-				$name = str_replace("'", "&apos;", $variation->Name);
-				$value = str_replace("'", "&apos;", $variation->Value[0]);
-				$variations[$name] = $value;
-			}
-		}
+            $variationList = $transactionArr->Variation;
+            if (!is_null($variationList)) {
+                foreach ($variationList->VariationSpecifics as $variation) {
+                    $name = str_replace("'", "&apos;", $variation->Name);
+                    $value = str_replace("'", "&apos;", $variation->Value[0]);
+                    $variations[$name] = $value;
+                }
+            }
 
-		// set SKU cho những item có variations và chưa có variation sku
-		if (!is_null($variationList) && empty($rawOrder->getTransactionArray()[0]->Variation->SKU)) {
-			$generateSku = 'Lephi_' . substr(md5(rand(1, 1000000)), 0, 5);
-			$revisefixedpriceitemrequest = new ReviseFixedPriceItemRequestType();
-			$fixedPriceItem = new ItemType();
-			$revisefixedpriceitemrequest->setItem($fixedPriceItem);
-			$fixedPriceItem->setItemID($item->getItemId());
-			$fixedPriceVariations = new VariationsType();
-			$fixedPriceItem->setVariations($fixedPriceVariations);
-			$fixedPriceVariation = new VariationType();
-			$fixedPriceVariations->addVariation($fixedPriceVariation);
-			$fixedPriceVariation->setDelete("false");
-			$fixedPriceVariation->setSKU($generateSku);
+            // set SKU cho những item có variations và chưa có variation sku
+            if (!is_null($variationList) && empty($transactionArr->Variation->SKU)) {
+                $generateSku = 'Lephi_' . substr(md5(rand(1, 1000000)), 0, 5);
+                $revisefixedpriceitemrequest = new ReviseFixedPriceItemRequestType();
+                $fixedPriceItem = new ItemType();
+                $revisefixedpriceitemrequest->setItem($fixedPriceItem);
+                $fixedPriceItem->setItemID($item->getItemId());
+                $fixedPriceVariations = new VariationsType();
+                $fixedPriceItem->setVariations($fixedPriceVariations);
+                $fixedPriceVariation = new VariationType();
+                $fixedPriceVariations->addVariation($fixedPriceVariation);
+                $fixedPriceVariation->setDelete("false");
+                $fixedPriceVariation->setSKU($generateSku);
 
-			$namevaluelistarray = new NameValueListArrayType();
-			$fixedPriceVariation->setVariationSpecifics($namevaluelistarray);
+                $namevaluelistarray = new NameValueListArrayType();
+                $fixedPriceVariation->setVariationSpecifics($namevaluelistarray);
 
-			foreach ($variations as $key => $value) {
-				$namevaluelist = new NameValueListType();
-				$namevaluelistarray->addNameValueList($namevaluelist);
-				$name = str_replace("&apos;", "'", $key);
-				$value = str_replace("&apos;", "'", $value);
-				$namevaluelist->setName($name);
-				$namevaluelist->addValue($value);
-			}
+                foreach ($variations as $key => $value) {
+                    $namevaluelist = new NameValueListType();
+                    $namevaluelistarray->addNameValueList($namevaluelist);
+                    $name = str_replace("&apos;", "'", $key);
+                    $value = str_replace("&apos;", "'", $value);
+                    $namevaluelist->setName($name);
+                    $namevaluelist->addValue($value);
+                }
 
-			$revisefixedpriceitemrequest->setVersion("1101");
-			$response22 = $proxy->ReviseFixedPriceItem($revisefixedpriceitemrequest);
-		}
+                $revisefixedpriceitemrequest->setVersion("1101");
+                $response22 = $proxy->ReviseFixedPriceItem($revisefixedpriceitemrequest);
+            }
 
-		$order['item'] = [
-			'title' => $item->getTitle(),
-			'image' => 'https://thumbs4.ebaystatic.com/pict/' . $item->getItemId() . '8080_1.jpg',
-			'id' => $item->getItemId(),
-			'variation' => $variations,
-			'sku' => $rawOrder->getTransactionArray()[0]->Variation->SKU,
-		];
+            $order['item'] = [
+                'title' => $item->getTitle(),
+                'image' => 'https://thumbs4.ebaystatic.com/pict/' . $item->getItemId() . '8080_1.jpg',
+                'id' => $item->getItemId(),
+                'variation' => $variations,
+                'sku' => $transactionArr->Variation->SKU,
+            ];
 
-		$order['note'] = $notes[$item->getItemId() . '-' . $rawOrder->getBuyerUserId()];
-		$order['total'] = $rawOrder->getTransactionArray()[0]->getTransactionPrice()->value . ' ' . ($rawOrder->getTransactionArray()[0]->getTransactionPrice()->attributeValues['currencyID'] ?? 'USD');
-		$order['transactionId'] = $rawOrder->getTransactionArray()[0]->getTransactionId();
-		$order['PaidTime'] = $rawOrder->getPaidTime();
-		$order['ShippedTime'] = $rawOrder->getShippedTime();
-		$order['BuyerUserID'] = $rawOrder->getBuyerUserId();
-		$order['buyerName'] = $rawOrder->getTransactionArray()[0]->getBuyer()->getUserFirstName() . ' ' . $rawOrder->getTransactionArray()[0]->getBuyer()->getUserLastName();
+            $order['note'] = $notes[$item->getItemId() . '-' . $rawOrder->getBuyerUserId()];
+            $order['total'] = $transactionArr->getTransactionPrice()->value . ' ' . ($transactionArr->getTransactionPrice()->attributeValues['currencyID'] ?? 'USD');
+            $order['transactionId'] = $transactionArr->getTransactionId();
+            $order['PaidTime'] = $rawOrder->getPaidTime();
+            $order['ShippedTime'] = $rawOrder->getShippedTime();
+            $order['BuyerUserID'] = $rawOrder->getBuyerUserId();
+            $order['buyerName'] = $transactionArr->getBuyer()->getUserFirstName() . ' ' . $transactionArr->getBuyer()->getUserLastName();
 
-		$orders['list'][$order['saleRecord']] = $order;
+            $orders['list'][$order['saleRecord'] + $key] = $order;
+        }
+
 	}
 
 	echo json_encode($orders);

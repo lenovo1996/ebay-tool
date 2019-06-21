@@ -46,9 +46,10 @@ if ($json == 1) {
         'qty' => $transaction->getQuantityPurchased(),
         'Variations' => trim($Variations, ','),
         'link' => 'https://www.ebay.com/itm/' . $item->getItemId(),
-        'shippingDetail' => $shippingAddr->Name . ',' . $shippingAddr->Street1 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
+        'shippingDetail' => $shippingAddr->Name . ',' . $shippingAddr->Street1 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ','.$shippingAddr->PostalCode.',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
         'buyerUserName' => $order->BuyerUserID,
         'buyerEmail' => $buyer->Email,
+        'PostalCode' => $shippingAddr->PostalCode,
         'seller' => $_SESSION['title']
     ]);
     exit;

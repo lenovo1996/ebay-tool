@@ -65,6 +65,8 @@
                     </button>
                     <button class="btn btn-sm change-multi-price">Đổi Giá hàng loạt</button>
                     <button class="btn btn-sm btn-danger start-change-price" style="display: none">Bắt đầu đổi giá</button>
+                    <button class="btn btn-sm change-multi-tracking">Đổi Tracking hàng loạt</button>
+                    <button class="btn btn-sm btn-danger start-change-tracking" style="display: none">Bắt đầu thay đổi tracking</button>
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-md-12">
@@ -385,9 +387,11 @@
 
                                 </p>
                                 <p>Buyer: ${item.buyerName} - <a href="https://www.ebay.com/usr/${item.BuyerUserID}">${item.BuyerUserID}</a></p>
-                                <p>Tracking: <span class="text-warning">${item.TrackingNumber}</span> (<a class="edit-tracking">edit</a>)</p>
+                                <p>Tracking: <span class="text-warning tracking-value">${item.TrackingNumber}</span> (<a class="edit-tracking">edit</a>)</p>
                                 <p class="multi-quantity-edit" style="display:none">New quantity: <input class="form-control input-sm quantity-value" style="width: 60px;height: 25px;display: inline;"></p>
                                 <p class="multi-price-edit" style="display:none">New price: <input class="form-control input-sm price-value" style="width: 60px;height: 25px;display: inline;"></p>
+                                <p class="multi-tracking-edit" style="display:none">Tracking number: <input class="form-control input-sm tracking-value" style="width: 60px;height: 25px;display: inline;"></p>
+                                <p class="multi-tracking-edit" style="display:none">Shipping Carrier Used: <input class="form-control input-sm shipping-value" style="width: 60px;height: 25px;display: inline;"></p>
                                 ${myNote}
                             </div>
                         </div>
@@ -424,6 +428,11 @@
 			$('.start-change-price').toggle();
 			$('.multi-price-edit').toggle();
 		});
+
+        $('.change-multi-tracking').click(function () {
+          $('.start-change-tracking').toggle();
+          $('.multi-tracking-edit').toggle();
+        });
 
 		$(document).on('click', '.start-change-quantity', function () {
 			var quantityList = $('.quantity-value');
@@ -493,6 +502,41 @@
 			});
 
 		});
+
+        $(document).on('click', '.start-change-tracking', function () {
+          var priceList = $('.tracking-value');
+          $.each(priceList, function (key, value) {
+            var rootEl = $(value).closest('.rootEl');
+            var orderId = rootEl.data('orderid');
+            var tracking_number = $(value).val();
+            var shippingCarrier = rootEl.find('.shipping-value').val();
+
+            rootEl.find('.multi-tracking-edit').hide();
+            $(value).val('');
+            if (!tracking_number) {
+              return;
+            }
+
+            rootEl.find('.tracking-value').html('<i class="fa fa-circle-o-notch fa-spin fa-fw margin-bottom"></i>');
+
+            $.ajax({
+              url: '/api/order/add-tracking.php',
+              type: 'post',
+              data: {
+                orderId: orderId,
+                trackingNumber: tracking_number,
+                ShippingCarrierUsed: shippingCarrier
+              },
+              success: function (res) {
+                if (res.Ack == 'Failure') {
+                  rootEl.find('.tracking-value').html('Lỗi');
+                  return;
+                }
+                rootEl.find('.tracking-value').html(tracking_number);
+              }
+            });
+          });
+        });
 
 		function getQuantity() {
 			var QuantityList = $('.Quantity');
