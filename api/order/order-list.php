@@ -166,7 +166,7 @@
 
             $orders['list'][$order['saleRecord'] + $key] = $order;
         }
-
+  
 	}
 
 	echo json_encode($orders);
