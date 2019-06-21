@@ -38,7 +38,7 @@ if ($json == 1) {
         }
     }
 
-
+	$street2 = $shippingAddr->Street2 ?? '';
     echo json_encode([
         'paidDate' => date("M j, Y", strtotime($order->getPaidTime())),
         'saleRecord' => $order->getShippingDetails()->getSellingManagerSalesRecordNumber(),
@@ -46,7 +46,7 @@ if ($json == 1) {
         'qty' => $transaction->getQuantityPurchased(),
         'Variations' => trim($Variations, ','),
         'link' => 'https://www.ebay.com/itm/' . $item->getItemId(),
-        'shippingDetail' => $shippingAddr->Name . ',' . $shippingAddr->Street1 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ','.$shippingAddr->PostalCode.',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
+        'shippingDetail' => $shippingAddr->Name . ',' . $shippingAddr->Street1 . ' ' . $street2 . ',' . $shippingAddr->CityName . ',' . $shippingAddr->StateOrProvince . ','.$shippingAddr->PostalCode.',' . $shippingAddr->CountryName . ',' . $shippingAddr->Phone,
         'buyerUserName' => $order->BuyerUserID,
         'buyerEmail' => $buyer->Email,
         'PostalCode' => $shippingAddr->PostalCode,
